@@ -1,0 +1,2113 @@
+[
+  {
+    "goal": {
+      "id": "1",
+      "title": "Gera enda á fátækadømi í øllum tess líki allastaðni",
+      "indicators": [
+        
+        {
+          "id": "1-1-1",
+          "title": "Partur av fólkinum, ið livir av minni enn altjóða fátækamarkinum, skift á kyn, aldur, arbeiðsstøðu og øki (bý/land)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/1-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "1-2-1",
+          "title": "Partur av fólkinum, ið livir av minni enn fátækamarkinum í landinum, skift á kyn og aldur",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/1-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "1-2-2",
+          "title": "Partur av mannfólki, konufólki og børnum, ið liva í fátækt í øllum líki samsvarandi allýsingunum fyri einstaka landið",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/1-2-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "1-3-1",
+          "title": "Partur av mannfólki, konufólki og børnum ið eru vard av sosialum trygdarskipanum, skift á arbeiðsleys, gomul, fólk ið bera brek, konufólk sum eru við barn, nýfødd, arbeiðsskadd, fátæk og veik",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/1-3-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "1-4-1",
+          "title": "Partur av fólkinum, ið livir í húskjum við atgongd til grundleggjandi tænastur",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/1-4-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "1-4-2",
+          "title": "Partur av fólkinum, ið hevur tryggjað rættindi til jørð við (a) løggildum skjalprógvi og (b) sum uppfata síni rættindi til jørð sum trygg, skift á kyn og slag av jarðarrættindum",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/1-4-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "1-5-1",
+          "title": "Tal av deyðum, horvnum og beinleiðis raktum fólkum, har vanlukka hevur verið atvoldin, fyri hvørjar 100.000 íbúgvar",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/1-5-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "1-5-2",
+          "title": "Beinleiðis búskaparligur missur orsakað av vanlukku í mun til heimsfevnda bruttotjóðarúrtøku (BTÚ)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/1-5-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "1-5-3",
+          "title": "Tal av londum, ið samtykkja og fremja ætlanir at avmarka vanlukkuváðan fyri landið, sambært Sendai-karmin fyri avmarking av vanlukkuváða 2015-2030",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/1-5-3",
+          "status": "notstarted"
+        },
+        {
+          "id": "1-5-4",
+          "title": "Partur av kommununum, ið samtykkja og fremja ætlanir at avmarka vanlukkuváðan í samsvari við landsætlan um avmarkan av vanlukkuváða",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/1-5-4",
+          "status": "notstarted"
+        },
+        {
+          "id": "1-a-1",
+          "title": "Samlað almenn menningarhjálp frá øllum veitarum, ið leggur høvuðsdentin á at minka fátækadømi, sum partur av bruttotjóðarinntøkuni hjá móttakaralandinum",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/1-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "1-a-2",
+          "title": "Partur av samlaðu almennu útreiðslunum brúkt til grundleggjandi tænastur (útbúgving, heilsa og almannavernd)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/1-a-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "1-b-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/1-b-1",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "2",
+      "title": "Gera enda á hungri, tryggja, at matur er tøkur, bøta um føðsludygd og virka fyri burðardyggum landbúnaði",
+      "indicators": [
+        
+        {
+          "id": "2-1-1",
+          "title": "Prosentpartur av undirføddum",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/2-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-1-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/2-1-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-2-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/2-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-2-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/2-2-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-2-3",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/2-2-3",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-3-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/2-3-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-3-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/2-3-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-4-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/2-4-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-5-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/2-5-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-5-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/2-5-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-a-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/2-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-a-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/2-a-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-b-1",
+          "title": "Útflutningsstudningur til landbúnað",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/2-b-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "2-c-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/2-c-1",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "3",
+      "title": "Tryggja øllum heilsugott lív og virka fyri trivnaði fyri øll í øllum aldri",
+      "indicators": [
+        
+        {
+          "id": "3-1-1",
+          "title": "Møður deyðar í barnferð",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-1-2",
+          "title": "Partur av føðingum, har heilsufakligt starvsfólk hevur verið til hjálpar",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-1-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-2-1",
+          "title": "Deyðatíttleikin hjá børnum yngri enn 5 ár",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-2-2",
+          "title": "Nýføðinga-deyðatíttleikin (Børn ið doyggja yngri enn 28 dagar fyri hvørji 1.000 livandi fødd)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-2-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-3-1",
+          "title": "Nýggir HIV-tilburðir fyri hvørjar 1.000 ikki-smittaðar íbúgvar skift á kyn, aldur og vandabólk",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-3-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-3-2",
+          "title": "Nýggir tuberkla-tilburðir fyri hvørjar 100.000 íbúgvar",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-3-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-3-3",
+          "title": "Malariatilburðir fyri hvørjar 1.000 íbúgvar",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-3-3",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-3-4",
+          "title": "Hepatitis B tilburðir fyri hvørjar 100.000 íbúgvar",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-3-4",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-3-5",
+          "title": "Tal av fólki, ið hevur tørv á viðgerð fyri lítið gáaðar tropiskar sjúkur",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-3-5",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-4-1",
+          "title": "Deyð av hjarta-æðra-sjúkum, krabbameini, sukursjúku og kroniskum sjúkum í andaleiðini fyri hvørjar 100.000 íbúgvar",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-4-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-4-2",
+          "title": "Sjálvmorð fyri hvørjar 100.000 íbúgvar",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-4-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-5-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-5-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-5-2",
+          "title": "Rúsdrekkanýtsla, reint alkohol fyri hvørt fólkið eldri enn 15 ár",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-5-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-6-1",
+          "title": "Deyð í ferðsluni fyri hvørjar 100.000 íbúgvar",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-6-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-7-1",
+          "title": "Partur av øllum kvinnum í barnførum aldri (15-49 ár), ið fáa uppfylt sín tørv fyri barnaavmarking við tíðarhóskandi fyribyrging",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-7-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-7-2",
+          "title": "Føðitíttleiki í móðuraldursbólkinum (10-14 ár og 15-19 ár) fyri hvørjar 1.000 kvinnur í aldursolkinum",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-7-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-8-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-8-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-8-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-8-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-9-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-9-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-9-2",
+          "title": "Deyðatalið volt av óreinum vatni, vánaligum kloakkviðurskiftum og vantandi reinføri (WASH)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-9-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-9-3",
+          "title": "Deyð av óætlaðari eitran fyri hvørjar 100.000 íbúgvar",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-9-3",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-a-1",
+          "title": "Aldursjavngjørd útbreiðsla av tubbaknýtslu hjá 15 ára gomlum og eldri",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-b-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-b-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-b-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-b-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-b-3",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-b-3",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-c-1",
+          "title": "Býti og tættleiki av heilsustarvsfólki",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-c-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-d-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-d-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "3-d-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/3-d-2",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "4",
+      "title": "Tryggja øllum inkluderandi og rættvísa dygdargóða útbúgving og virka fyri lívlongum læringarmøguleikum fyri øll",
+      "indicators": [
+        
+        {
+          "id": "4-1-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/4-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "4-1-2",
+          "title": "Prosentpartur ið fullførir grundleggjandi útbúgving (barnaskúlin, framhaldsskúlin, miðnám/yrkisútbúgving)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/4-1-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "4-2-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/4-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "4-2-2",
+          "title": "Prosentpartur av børnum sum luttaka í skipaðari frálæru (eitt ár áðrenn almenna innmeldingaraldurin í barnaskúlan), skift á kyn",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/4-2-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "4-3-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/4-3-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "4-4-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/4-4-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "4-5-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/4-5-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "4-6-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/4-6-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "4-7-1",
+          "title": "Í hvønn mun (i) útbúgving í alheims samborgaraskapi og (ii) útbúgving í burðardyggari menning eru partar av almenna a) útbúgvingarpolitikkinum hjá landinum b) lesiætlanum, c) læraraútbúgving og d) meting av lesandi",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/4-7-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "4-a-1",
+          "title": "Partur av skúlum, ið veita grundleggjandi tænastuveitingar, skift á tænastuveiting",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/4-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "4-b-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/4-b-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "4-c-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/4-c-1",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "5",
+      "title": "Fáa í lag javnstøðu millum kynini og máttmenna allar kvinnur og gentur",
+      "indicators": [
+        
+        {
+          "id": "5-1-1",
+          "title": "Um tað finnast lógarkarmar at fremja, handhevja og hava eftirlit við javnstøðu og ikki-mismuni millum kyn",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/5-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "5-2-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/5-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "5-2-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/5-2-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "5-3-1",
+          "title": "Partur av kvinnum millum 20 og 24 ár, ið vórðu giftar ella ógiftir makar áðrenn 15 ár og áðrenn 18 ár",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/5-3-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "5-3-2",
+          "title": "Partur av gentum og kvinnum 15-49 ár, ið eru umskornar (female genital mutilation, FGM)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/5-3-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "5-4-1",
+          "title": "Partur av tíð brúkt til ólønt húsligt arbeiði og umsorganararbeiði skift á kyn, aldur og staðseting",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/5-4-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "5-5-1",
+          "title": "Partur av sætum hjá kvinnum í (a) tjóðartingum og (b) kommunustýrum",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/5-5-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "5-5-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/5-5-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "5-6-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/5-6-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "5-6-2",
+          "title": "Tal av londum við lógum og reglum, ið tryggja fulla og eins atgongd hjá kvinnum og monnum 15 ár og eldri til kyns- og nøringarheilsutænastur, upplýsing og útbúgving",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/5-6-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "5-a-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/5-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "5-a-2",
+          "title": "Partur av londum, har rættarligir karmar (íroknað siðvenjurætt) tryggja kvinnum eins rættindi til ognarskap og ræði á jørð",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/5-a-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "5-b-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/5-b-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "5-c-1",
+          "title": "Partur av londum, ið hava skipanir til at fylgja við í og almannakunngera játtanir til javnstøðu millum kynini og máttmenning av kvinnum",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/5-c-1",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "6",
+      "title": "Tryggja øllum, at vatn og reinførisviðurskifti eru í lagi og umsitin á burðardyggan hátt",
+      "indicators": [
+        
+        {
+          "id": "6-1-1",
+          "title": "Partur av fólkinum, ið fær trygt rikna veiting av drekkivatni",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/6-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "6-2-1",
+          "title": "Partur av fólkinum, ið nýtir trygt riknar reinføristænastur, heruppií hentleikar at vaska sær um hendurnar við vatni og sápu",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/6-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "6-3-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/6-3-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "6-3-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/6-3-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "6-4-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/6-4-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "6-4-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/6-4-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "6-5-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/6-5-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "6-5-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/6-5-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "6-6-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/6-6-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "6-a-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/6-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "6-b-1",
+          "title": "Partur av kommununum, ið hava gjørt og sett í verk politikkir og mannagongdir fyri nærsamfeløg at luttaka í umsiting av vatnveiting og spillivatni",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/6-b-1",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "7",
+      "title": "Tryggja, at øll fáa álítandi, burðardygga og tíðarhóskandi orku, sum øll hava ráð til",
+      "indicators": [
+        
+        {
+          "id": "7-1-1",
+          "title": "Partur av fólkinum við atgongd til ravmagn",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/7-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "7-1-2",
+          "title": "Partur av fólkinum, ið sum høvuðsorku nýtir reinar orkukeldur við ikki-dálkandi tøkni",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/7-1-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "7-2-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/7-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "7-3-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/7-3-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "7-a-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/7-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "7-b-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/7-b-1",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "8",
+      "title": "At virka fyri varandi, inkluderandi og burðardyggum búskaparvøkstri, fullum og úrtøkugóðum virksemi og sømiligum arbeiði til øll",
+      "indicators": [
+        
+        {
+          "id": "8-1-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/8-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-2-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/8-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-3-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/8-3-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-4-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/8-4-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-4-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/8-4-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-5-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/8-5-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-5-2",
+          "title": "Arbeiðsloysisprosent skift á kyn, aldur og fólk, ið bera brek",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/8-5-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-6-1",
+          "title": "Partur av ungum (15-24 ár) sum ikki eru í útbúgving, arbeiði ella læru",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/8-6-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-7-1",
+          "title": "Partur og tal av 5-17 ára gomlum børnum, ið eru tongd at barnaarbeiði, skift á kyn og aldur",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/8-7-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-8-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/8-8-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-8-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/8-8-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-9-1",
+          "title": "Virðisøking frá ferðavinnu, sum partur av BTÚ",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/8-9-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-10-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/8-10-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-10-2",
+          "title": "Partur av vaksnum (15 á og eldri) ið hava kontu í banka ella øðrum fíggjarstovni ella hjá farpeninga-tænastuveitara",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/8-10-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-a-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/8-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "8-b-1",
+          "title": "Finst ein ment og verksett ætlan á landsstigi fyri at fáa ung í arbeiði, sum serstøk ætlan ella sum partur av landssætlan um arbeiðsvirkni",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/8-b-1",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "9",
+      "title": "Byggja sterk undirstøðukervi, virka fyri inkluderandi og burðardyggari ídnaðarmenning og eggja til nýhugsan",
+      "indicators": [
+        
+        {
+          "id": "9-1-1",
+          "title": "Partur av fólkinum uttan fyri býarøkir, ið býr nærri enn 2 km við ein heilársveg",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/9-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "9-1-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/9-1-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "9-2-1",
+          "title": "Virðisøking frá ídnaðarvinnu sum partur av BTÚ og fyri hvørt fólkið",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/9-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "9-2-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/9-2-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "9-3-1",
+          "title": "Virðisøking frá smáum og miðalstórum virkjum sum partur av virðisøkingini í ídnaðarvinnum samlað",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/9-3-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "9-3-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/9-3-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "9-4-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/9-4-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "9-5-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/9-5-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "9-5-2",
+          "title": "Granskarar (í fulltíðar-ársverkum) fyri hvørja millión íbúgvar",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/9-5-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "9-a-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/9-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "9-b-1",
+          "title": "Virðisøking frá miðal- og hátøknivinnu sum partur av virðisøkingini í ídnaðarvinnum samlað",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/9-b-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "9-c-1",
+          "title": "Partur av fólkinum, ið hevur atgongd til fartelefonnet, skift á tøkni",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/9-c-1",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "10",
+      "title": "Minka ójavnað í londum og ímillum lond",
+      "indicators": [
+        
+        {
+          "id": "10-1-1",
+          "title": "Vakstrarferð av húsarhaldsútreiðslum ella miðalinntøka hjá lægstu 40 prosentini av íbúgvunum og øllum íbúgvunum",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/10-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "10-2-1",
+          "title": "Partur av fólkinum, ið livir av minni enn 50 prosent av miðinntøkuni í landinum, skift á kyn og aldur og fólk, ið bera brek",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/10-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "10-3-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/10-3-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "10-4-1",
+          "title": "Lønir, sum partur av BTÚ",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/10-4-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "10-4-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/10-4-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "10-5-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/10-5-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "10-6-1",
+          "title": "Prosentpartur av limum og atkvøðurættindum hjá menningarlondum í altjóða felagsskapum",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/10-6-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "10-7-1",
+          "title": "Starvsútveganarkostnaðir, ið útlendsk arbeiðsfólk bera sum partur av ársinntøku í móttøkulandinum",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/10-7-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "10-7-2",
+          "title": "Tal av londum, ið hava verksett politikkir at tryggja vælskipað viðurskifti fyri til- og fráflytarar",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/10-7-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "10-7-3",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/10-7-3",
+          "status": "notstarted"
+        },
+        {
+          "id": "10-7-4",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/10-7-4",
+          "status": "notstarted"
+        },
+        {
+          "id": "10-a-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/10-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "10-b-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/10-b-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "10-c-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/10-c-1",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "11",
+      "title": "Gera býir og búsetingar inkluderandi, tryggar, haldgóðar og burðardyggar",
+      "indicators": [
+        
+        {
+          "id": "11-1-1",
+          "title": "Partur av býarfólkinum, ið býr í fátækrabýlingum, ivasamum ella óhóskandi bústaði",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/11-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "11-2-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/11-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "11-3-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/11-3-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "11-3-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/11-3-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "11-4-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/11-4-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "11-5-1",
+          "title": "Tal av deyðum, horvnum og beinleiðis raktum fólkum, har vanlukka hevur verið atvoldin, fyri hvørjar 100.000 íbúgvar",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/11-5-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "11-5-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/11-5-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "11-6-1",
+          "title": "Parturin av burturkasti frá býum, ið verður regluliga innsavnaður og nøktandi viðgjørdur, í mun til samlaðu nøgdina av burturkasti, skift á býir",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/11-6-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "11-6-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/11-6-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "11-7-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/11-7-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "11-7-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/11-7-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "11-a-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/11-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "11-b-1",
+          "title": "Tal av londum, ið samtykkja og fremja ætlanir at avmarka vanlukkuváðan fyri landið, sambært Sendai-karmin fyri avmarking av vanlukkuváða 2015-2030",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/11-b-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "11-b-2",
+          "title": "Partur av kommununum, ið samtykkja og fremja ætlanir at avmarka vanlukkuváðan í samsvari við landsætlan um avmarkan av vanlukkuváða",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/11-b-2",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "12",
+      "title": "Tryggja burðardygg nýtslu- og framleiðslumynstur",
+      "indicators": [
+        
+        {
+          "id": "12-1-1",
+          "title": "Tal av londum ið menna, samtykkja ella seta í gildi politiskar skipanir við tí í hyggju at stuðla uppundir skiftið til burðardygga nýtslu og framleiðslu",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/12-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "12-2-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/12-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "12-2-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/12-2-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "12-3-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/12-3-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "12-4-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/12-4-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "12-4-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/12-4-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "12-5-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/12-5-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "12-6-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/12-6-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "12-7-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/12-7-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "12-8-1",
+          "title": "Í hvønn mun (i) útbúgving í alheims samborgaraskapi og (ii) útbúgving í burðardyggari menning eru partar av almenna a) útbúgvingarpolitikkinum hjá landinum b) lesiætlanum, c) læraraútbúgving og d) meting av lesandi",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/12-8-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "12-a-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/12-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "12-b-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/12-b-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "12-c-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/12-c-1",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "13",
+      "title": "Sum skjótast seta í verk bráðneyðug átøk at berjast ímóti veðurlagsbroytingum og avleiðingum av teimum",
+      "indicators": [
+        
+        {
+          "id": "13-1-1",
+          "title": "Tal av deyðum, horvnum og beinleiðis raktum fólkum, har vanlukka hevur verið atvoldin, fyri hvørjar 100.000 íbúgvar",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/13-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "13-1-2",
+          "title": "Tal av londum, ið samtykkja og fremja ætlanir at avmarka vanlukkuváðan fyri landið, sambært Sendai-karmin fyri avmarking av vanlukkuváða 2015-2030",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/13-1-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "13-1-3",
+          "title": "Partur av kommununum, ið samtykkja og fremja ætlanir at avmarka vanlukkuváðan í samsvari við landsætlan um avmarkan av vanlukkuváða",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/13-1-3",
+          "status": "notstarted"
+        },
+        {
+          "id": "13-2-1",
+          "title": "Tal av londum við fastsettum íkastum fyri landið, langtíðar virkisskráum, tillagingarætlanum fyri landið og tillagingarfráboðanum sum fráboðað avgreiðslustovuni hjá ST fyri rammusáttmála um veðurlagsbroyting (UNFCCC)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/13-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "13-2-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/13-2-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "13-3-1",
+          "title": "Í hvønn mun (i) útbúgving í alheims samborgaraskapi og (ii) útbúgving í burðardyggari menning eru partar av almenna a) útbúgvingarpolitikkinum hjá landinum b) lesiætlanum, c) læraraútbúgving og d) meting av lesandi",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/13-3-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "13-a-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/13-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "13-b-1",
+          "title": "Tal av minst mentu londunum og smáu oyggjaríkjunum í menning við innlendis ásettum íkastum, langtíðarætlanum, innlendis tillagingarætlanum og kunning um tillagingar sum fráboðað avgreiðslustovuni hjá ST fyri rammusáttmála um veðurlagsbroyting (UNFCCC)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/13-b-1",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "14",
+      "title": "Varðveita og á burðardyggan hátt nýta høvini, allan sjógv og sjófeingi til burðardygga menning",
+      "indicators": [
+        
+        {
+          "id": "14-1-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/14-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "14-2-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/14-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "14-3-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/14-3-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "14-4-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/14-4-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "14-5-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/14-5-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "14-6-1",
+          "title": "Gongdin í menningarstigi hjá londum at fremja altjóða tiltøk at fyribeina ólógligum, ófráboðaðum og óskipaðum fiskiskapi",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/14-6-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "14-7-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/14-7-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "14-a-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/14-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "14-b-1",
+          "title": "Gongdin í menningarstigi hjá londum at fremja altjóða tiltøk at fyribeina ólógligum, ófráboðaðum og óskipaðum fiskiskapi",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/14-b-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "14-c-1",
+          "title": "Tal av londum, ið gera framstig umvegis lóggávu, politikki og fyrisitingarmyndugleika at staðfesta, taka við og seta í gildi atgerðir til tess at varðveita og nýta høvini og teirra tilfeingi á burðardyggan hátt sum ásett í ST-havrættarsáttmálanum (UNCLOS)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/14-c-1",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "15",
+      "title": "Verja, endurbøta og virka fyri burðardyggari nýtslu av jarðvistskipanum, á burðardyggan hátt røkja skóg, berjast ímóti oyðimarkarmyndan og steðga og venda landtýningum og lívmargfeldismissi",
+      "indicators": [
+        
+        {
+          "id": "15-1-1",
+          "title": "Skógarlendi sum partur av samlaðu lendisvíddini",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/15-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "15-1-2",
+          "title": "Partur av plássum á landi og í feskvatni, sum eru týðandi fyri lívfrøðiligt margfeldi, og sum eru fevnd av vardum økjum, skift á slag av vistskipan",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/15-1-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "15-2-1",
+          "title": "Framstig at røkka burðardyggari umsiting av skógi",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/15-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "15-3-1",
+          "title": "Partur av oyðiløgdum lendi sammett við samlaða lendisøkið",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/15-3-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "15-4-1",
+          "title": "Í hvønn mun støð, sum eru týðandi fyri lívfrøðiligt margfeldi í fjallavistskipanum, eru vard øki",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/15-4-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "15-4-2",
+          "title": "Vísital fyri fjallagróður",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/15-4-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "15-5-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/15-5-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "15-6-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/15-6-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "15-7-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/15-7-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "15-8-1",
+          "title": "Partur av londum, ið hava samtykt viðkomandi lóggávu og hava sett nóg mikið av tilfeingi av til at fyribyrgja og hava tamarhald á innræsnum fremmandum plantu- og djórasløgum",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/15-8-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "15-9-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/15-9-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "15-a-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/15-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "15-b-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/15-b-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "15-c-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/15-c-1",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "16",
+      "title": "Virka fyri friðsomum og inkluderandi samfeløgum fyri burðardyggari menning. Útvega øllum atgongd til rættartrygd og byggja munagóðar, ábyrgar og inkluderandi stovnar á øllum stigum",
+      "indicators": [
+        
+        {
+          "id": "16-1-1",
+          "title": "Tal av ofrum fyri tilætlað morð fyri hvørjar 100.000 íbúgvar, skift á kyn og aldur",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-1-2",
+          "title": "Deyð av krígsávum fyri hvørji 100.000 fólk skift á kyn, aldur og orsøk",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-1-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-1-3",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-1-3",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-1-4",
+          "title": "Partur av fólkinum, ið kennir seg tryggan at ganga úti einsamallur/einsamøll, har tey búgva",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-1-4",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-2-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-2-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-2-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-2-3",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-2-3",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-3-1",
+          "title": "Partur av harðskapsofrum undanfarnu 12 mánaðirnar, ið fráboðaðu skikkaðum myndugleika ella øðrum alment viðurkendum ósemjuloysara, at tey hava verið offur",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-3-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-3-2",
+          "title": "Partur av fongslaðum, ið ikki hava fingið dóm",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-3-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-3-3",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-3-3",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-4-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-4-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-4-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-4-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-5-1",
+          "title": "Partur av persónum, ið hava verið í sambandi við ein alment settan í minsta lagi eina ferð, og sum mutraðu ein alment settan, ella vórðu bidnir um mutur av hesum alment settu, undanfarnu 12 mánaðirnar",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-5-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-5-2",
+          "title": "Partur av vinnufeløgum, ið hava verið í sambandi við ein alment settan í minsta lagi eina ferð og sum mutraðu ein alment settan, ella vórðu bidnir um mutur av hesum alment settu, undanfarnu 12 mánaðirnar",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-5-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-6-1",
+          "title": "Almennar útreiðslur sum partur av upprunaliga samtykta fíggjarlóg, skift á geira (ella kontuslag ella líknandi)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-6-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-6-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-6-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-7-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-7-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-7-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-7-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-8-1",
+          "title": "Prosentpartur av limum og atkvøðurættindum hjá menningarlondum í altjóða felagsskapum",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-8-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-9-1",
+          "title": "Partur av børnum undir 5 ár, har føðingin er skrásett hjá almennum myndugleika, skift á aldur",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-9-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-10-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-10-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-10-2",
+          "title": "Tal av londum, sum í grundlóg, lóg og/ella politiskt samtykkja og fremja innlitstrygd hjá almenninginum",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-10-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-a-1",
+          "title": "Um tað finst ein óheftur landsstovnur fyri mannarættindi, ið lýkur París Grundreglurnar hjá Sameindu Tjóða",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-a-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "16-b-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/16-b-1",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "17",
+      "title": "Styrkja amboðini at verkseta og stimbra Heimsfevnandi partalagið fyri burðardyggari menning",
+      "indicators": [
+        
+        {
+          "id": "17-1-1",
+          "title": "Samlaðu almennu inntøkurnar sum partur av BTÚ, skift á keldu",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-1-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-1-2",
+          "title": "Partur av fíggjarlógini fíggjaður av skattum",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-1-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-2-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-2-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-3-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-3-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-3-2",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-3-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-4-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-4-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-5-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-5-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-6-1",
+          "title": "Fastnet breiðbands-internethald fyri hvørjar 100 íbúgvar, skift á samskiftisferð",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-6-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-7-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-7-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-8-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-8-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-9-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-9-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-10-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-10-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-11-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-11-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-12-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-12-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-13-1",
+          "title": "Makrobúskaparligt kunningarbretti",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-13-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-14-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-14-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-15-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-15-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-16-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-16-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-17-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-17-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-18-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-18-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-18-2",
+          "title": "Tal av londum við hagtalslóggávu, ið lýkur grundreglurnar fyri almennum hagtølum",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-18-2",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-18-3",
+          "title": "Tal av londum við fult fíggjaðari og verksettari ætlan at veita hagtøl, skift á fíggingarkeldur",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-18-3",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-19-1",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-19-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-19-2",
+          "title": "Partur av londum sum (a) hava hildið minst eina fólka- og bústaðarteljing seinastu 10 árini, og (b) hava rokkið 100 prosent skráseting av føðingum og 80 prosent skráseting av deyðum",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/fo/17-19-2",
+          "status": "notstarted"
+        }]
+    }
+  }]
