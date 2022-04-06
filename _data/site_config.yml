@@ -226,7 +226,7 @@ non_global_metadata: ''
 progress_status:
   status_heading: ''
   status_types: []
-remote_data_prefix: 'https://open-sdg.org/open-sdg-data-starter'
+remote_data_prefix: 'https://hagstovan.github.io/sdg-data/'
 reporting_status:
   title: status.reporting_status
   description: status.description
@@ -241,7 +241,7 @@ reporting_status:
     - value: notapplicable
       label: status.not_applicable
       hide_on_goal_pages: false
-repository_url_data: 'https://github.com/open-sdg/open-sdg-data-starter'
+repository_url_data: 'https://github.com/hagstovan/sdg-data'
 repository_url_site: ''
 search_index_boost: []
 search_index_extra_fields: []
