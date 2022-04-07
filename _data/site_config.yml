@@ -27,8 +27,8 @@ contrast_type: single
 cookie_consent_form:
   enabled: false
 country:
-  name: Australia
-  adjective: Australian
+  name: Faroe Islands
+  adjective: Faroese
 create_goals:
   layout: goal-with-progress
   previous_next_links: false
