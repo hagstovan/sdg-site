@@ -224,7 +224,7 @@ non_global_metadata: ''
 progress_status:
   status_heading: ''
   status_types: []
-remote_data_prefix: 'https://hagstovan.github.io/sdg-data/'
+remote_data_prefix: 'https://hagstovan.github.io/sdg-data'
 reporting_status:
   title: status.reporting_status
   description: status.description
