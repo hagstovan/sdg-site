@@ -136,7 +136,7 @@ var translations = {
         
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220407221152">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220407221831">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -588,7 +588,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_GOAL', "");
+        var currentValue = normalizeCurrentValue('SDG_GOAL', "Goal 1: End poverty in all its forms everywhere");
         var propertyEditor = editor.getEditor('root.SDG_GOAL');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -602,7 +602,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_TARGET', "");
+        var currentValue = normalizeCurrentValue('SDG_TARGET', "Target 1.2: By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions");
         var propertyEditor = editor.getEditor('root.SDG_TARGET');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -616,7 +616,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "");
+        var currentValue = normalizeCurrentValue('SDG_INDICATOR', "Indicator 1.1.1: Proportion of population below the international poverty line, by sex, age, employment status and geographical location (urban/rural)");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1148,7 +1148,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_update_url', "https://github.com/hagstovan/sdg-data/commit/d9dc179c4df738b63761c9456c14d95230e8f989");
+        var currentValue = normalizeCurrentValue('national_metadata_update_url', "https://github.com/hagstovan/sdg-data/commit/89b180f81977cbc35a42ca59b7f5cdd39d33b446");
         var propertyEditor = editor.getEditor('root.national_metadata_update_url');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1330,12 +1330,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20220407221152'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20220407221831'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20220407221152"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20220407221831"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
