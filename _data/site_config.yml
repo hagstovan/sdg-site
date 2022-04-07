@@ -109,10 +109,8 @@ frontpage_cards:
     button_link: 'https://example.com'
     rule_color: ''
 frontpage_goals_grid:
-  title: Our data for Sustainable Development Goal indicators
-  description: >-
-    Click on each goal for our Sustainable Development Goal global indicator
-    data.
+  title: my-custom-translations.my-goals-grid-title
+  description: my-custom-translations.my-goals-grid-description
 frontpage_heading: ''
 frontpage_instructions: ''
 frontpage_introduction_banner:
