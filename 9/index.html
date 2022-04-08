@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="fo" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://hagstovan.github.io/sdg-data/en',
+  remoteDataBaseUrl: 'https://hagstovan.github.io/sdg-data/fo',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -38,7 +38,7 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
-  language: 'en',
+  language: 'fo',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Goal 9 - Industry, innovation and infrastructure - Indicators For The Sustainable Development Goals</title>
+    <title>Mál 9 - Vinna, nýskapan og undirstøðukervi - Ávísar til málini fyri burðardyggari menning</title>
 
 
 
@@ -136,7 +136,7 @@ var translations = {
         
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220408152853">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220408153125">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -150,23 +150,23 @@ var translations = {
         
 
     </head>
-<body class="language-en
+<body class="language-fo
 layout-goal-bootstrap5
 ">
 <!-- <div class="container"> -->
 
 
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Vanligur kontrastur","disable_high_contrast":"Óvirkja stóran kontrast","disclaimer":"Síðan er undir menning. Tú er vælkomin at <a href=\"mailto:%email_address\">viðmerkja </a> síðuna.","enable_high_contrast":"Virkja stóran kontrast","high_contrast":"Stórur kontrastur","skip_link":"","tag_line":"17 mál skulu broyta okkara heim","toggle_menu":"","toggle_search":""};</script>
 
-<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0"></a>
 <div id="disclaimer">
     
 <div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">Alpha</strong>
     
-    This is a development website. We welcome your <a href="mailto:hagstova@hagstova.fo">feedback</a>.
+    Síðan er undir menning. Tú er vælkomin at <a href="mailto:hagstova@hagstova.fo">viðmerkja </a> síðuna.
     
   </div>
 </div>
@@ -177,7 +177,7 @@ layout-goal-bootstrap5
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
             <a class="navbar-brand" href="/sdg-site/" id="home">
-    <img src="/sdg-site/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+    <img src="/sdg-site/assets/img/SDG_logo.png" alt="Mál fyri burðardyggari menning - 17 mál skulu broyta okkara heim" />
 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -185,25 +185,25 @@ layout-goal-bootstrap5
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/goals">Goals</a>
+    <a class="nav-link" href="/sdg-site/goals">Mál</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/reporting-status">Reporting Status</a>
+    <a class="nav-link" href="/sdg-site/reporting-status">Fráboðanarstøða</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/about">About</a>
+    <a class="nav-link" href="/sdg-site/about">Um</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/faq">FAQ</a>
+    <a class="nav-link" href="/sdg-site/faq">OSS</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/news">Updates</a>
+    <a class="nav-link" href="/sdg-site/news">Dagføringar</a>
 </li></ul>
     
                 </div>
                 <div class="header-search-bar">
                     <form class="align-self-lg-end" id="search" action="/sdg-site/search/">
     <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Search</label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
+        <label class="visually-hidden" for="indicator_search">Leita</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Leita">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Search" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Leita" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -222,10 +222,10 @@ layout-goal-bootstrap5
   <div class="btn-group language-toggle-dropdown  dropdown">
     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa fa-globe"></i>
-      English
+      
     </button>
     <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/sdg-site/fo/9/">
+            <a class="dropdown-item" href="/sdg-site/en/9/">
               
             </a>
           </li></ul>
@@ -233,7 +233,7 @@ layout-goal-bootstrap5
 </div>
 
 
-<a title="Enable high contrast" aria-label="Enable high contrast"
+<a title="Virkja stóran kontrast" aria-label="Virkja stóran kontrast"
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -255,10 +255,10 @@ data-event-label="high"
     <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
         
         <li class="breadcrumb-item" >
-            <a href="/sdg-site/">Home</a>
+            <a href="/sdg-site/">Heim</a>
         </li>
         <li class="breadcrumb-item" >
-            <a href="/sdg-site/goals">Goals</a>
+            <a href="/sdg-site/goals">Mál</a>
         </li>
         
         
@@ -271,10 +271,10 @@ data-event-label="high"
     <div class="container">
         <div class="row">
             <div class="col-4 col-md-3 col-lg-2 goal-tiles">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/9.svg" alt="Industry, innovation and infrastructure - Goal 9" id="goal-9" class="goal-icon-image goal-icon-image-svg" />
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/9.svg" alt="Vinna, nýskapan og undirstøðukervi - Mál 9" id="goal-9" class="goal-icon-image goal-icon-image-svg" />
             </div>
             <div class="col-8 col-md-9 col-lg-10">
-                <h1>Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation</h1>
+                <h1>Byggja sterk undirstøðukervi, virka fyri inkluderandi og burðardyggari ídnaðarmenning og eggja til nýhugsan</h1>
             </div>
         </div>
     </div>
@@ -288,7 +288,7 @@ data-event-label="high"
 
 
   <div class="container g-0">
-    <h2 class="goal-page-heading">Targets and indicators</h2>
+    <h2 class="goal-page-heading">Undirmál og ávísar</h2>
 
     
     
@@ -296,11 +296,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 9.1</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 9.1</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Develop quality, reliable, sustainable and resilient infrastructure, including regional and transborder infrastructure, to support economic development and human well-being, with a focus on affordable and equitable access for all</span>
+            <span class="target-name">Ment verða dygdargóð, álítandi, burðardygg og harðfør undirstøðukervi, eisini økis- og undirstøðukervi tvørtur um mørk, fyri at stuðla búskaparligari menning og menniskjaligum trivnaði við denti á rættvísa atgongd fyri øll fyri ein rímiligan kostnað</span>
           </div>
       </div>
         
@@ -314,25 +314,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.1.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 9.1.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/9-1-1">Proportion of the rural population who live within 2 km of an all-season road</a></span>
+              <span class="indicator-name"><a href="/sdg-site/9-1-1">Partur av fólkinum uttan fyri býarøkir, ið býr nærri enn 2 km við ein heilársveg</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -354,25 +354,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.1.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 9.1.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/9-1-2">Passenger and freight volumes, by mode of transport</a></span>
+              <span class="indicator-name"><a href="/sdg-site/9-1-2"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -390,11 +390,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 9.2</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 9.2</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Promote inclusive and sustainable industrialization and, by 2030, significantly raise industry’s share of employment and gross domestic product, in line with national circumstances, and double its share in least developed countries</span>
+            <span class="target-name">Virkað verður fyri inkluderandi og burðardyggari ídnaðargerð og at hækka í stórum partin hjá ídnaðinum av arbeiðsplássum og bruttotjóðarúrtøku fyri 2030 í samljóði við umstøðurnar í landinum. Í teimum minst mentu londunum skal hesin parturin tvífaldast</span>
           </div>
       </div>
         
@@ -408,25 +408,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.2.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 9.2.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/9-2-1">Manufacturing value added as a proportion of GDP and per capita</a></span>
+              <span class="indicator-name"><a href="/sdg-site/9-2-1">Virðisøking frá ídnaðarvinnu sum partur av BTÚ og fyri hvørt fólkið</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -448,25 +448,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.2.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 9.2.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/9-2-2">Manufacturing employment as a proportion of total employment</a></span>
+              <span class="indicator-name"><a href="/sdg-site/9-2-2"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -484,11 +484,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 9.3</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 9.3</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Increase the access of small-scale industrial and other enterprises, in particular in developing countries, to financial services, including affordable credit, and their integration into value chains and markets</span>
+            <span class="target-name">Virkað verður fyri, at smáar ídnaðarfyritøkur og aðrar fyritøkur, serliga í menningarlondum, sleppa betur fram at fíggjartænastum, heruppií lán ella kreditt, og at tær verða betur flættaðar inn í virðisketur og marknaðir</span>
           </div>
       </div>
         
@@ -502,25 +502,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.3.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 9.3.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/9-3-1">Proportion of small-scale industries in total industry value added</a></span>
+              <span class="indicator-name"><a href="/sdg-site/9-3-1">Virðisøking frá smáum og miðalstórum virkjum sum partur av virðisøkingini í ídnaðarvinnum samlað</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -542,25 +542,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.3.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 9.3.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/9-3-2">Proportion of small-scale industries with a loan or line of credit</a></span>
+              <span class="indicator-name"><a href="/sdg-site/9-3-2"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -578,11 +578,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 9.4</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 9.4</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">By 2030, upgrade infrastructure and retrofit industries to make them sustainable, with increased resource-use efficiency and greater adoption of clean and environmentally sound technologies and industrial processes, with all countries taking action in accordance with their respective capabilities</span>
+            <span class="target-name">Fyri 2030 skal undirstøðukervið betrast og ídnaðir uppstigast fyri at gera tey burðardygg, við enn munadyggari tilfeingisnýtslu og meiri nýtslu av reinari og umhvørvisvinaligari tøkni og ídnaðarligum tilgongdum. Øll lond skulu virka í samsvari við ta orku og teir førleikar, tey hava</span>
           </div>
       </div>
         
@@ -596,25 +596,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.4.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 9.4.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/9-4-1">CO2 emission per unit of value added</a></span>
+              <span class="indicator-name"><a href="/sdg-site/9-4-1"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -632,11 +632,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 9.5</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 9.5</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Enhance scientific research, upgrade the technological capabilities of industrial sectors in all countries, in particular developing countries, including, by 2030, encouraging innovation and substantially increasing the number of research and development workers per 1 million people and public and private research and development spending</span>
+            <span class="target-name">Vísindalig gransking skal styrkjast, og tøkniligu avriksevnini í ídnaðargeiranum í øllum londum, serstakliga í menningarlondunum, skulu betrast við millum annað fyri 2030 at stimbra nýskapan og vaksa munandi um talið á teimum, ið arbeiða við gransking og menning fyri hvørja millión íbúgvar, eins og peningin, ið alment og privat verður brúktur til gransking og menning</span>
           </div>
       </div>
         
@@ -650,25 +650,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.5.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 9.5.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/9-5-1">Research and development expenditure as a proportion of GDP</a></span>
+              <span class="indicator-name"><a href="/sdg-site/9-5-1"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -690,79 +690,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.5.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 9.5.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/9-5-2">Researchers (in full-time equivalent) per million inhabitants</a></span>
+              <span class="indicator-name"><a href="/sdg-site/9-5-2">Granskarar (í fulltíðar-ársverkum) fyri hvørja millión íbúgvar</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
-</span>
-
-
-        </li></ul>
-
-
-            </div>
-            
-            
-          </div>
-        
-        <hr class="goal-page-target-rule" />
-    
-      
-      <div class="row align-items-start goal-target">
-          <div class="col-auto goal-page-target-number">
-            <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 9.a</span>
-            </h3>
-          </div>
-          <div class="col goal-page-target-name">
-            <span class="target-name">Facilitate sustainable and resilient infrastructure development in developing countries through enhanced financial, technological and technical support to African countries, least developed countries, landlocked developing countries and small island developing States</span>
-          </div>
-      </div>
-        
-
-          
-          
-          
-          
-
-          <div class="row align-items-start goal-indicator">
-          
-            <div class="col-auto goal-page-indicator-number">
-              <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.a.1</span>
-              </h4>
-            </div>
-            <div class="col goal-page-indicator-name">
-              
-              <span class="indicator-name"><a href="/sdg-site/9-a-1">Total official international support (official development assistance plus other official flows) to infrastructure</a></span>
-              
-
-
-
-
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
-        
-
-
-
-<span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -780,11 +726,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 9.b</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 9.a</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Support domestic technology development, research and innovation in developing countries, including by ensuring a conducive policy environment for, inter alia, industrial diversification and value addition to commodities</span>
+            <span class="target-name">Lætta um at menna burðardygg og harðfør undirstøðukervi í menningarlondum við at økja fíggjarligan, tøkniligan og fakligan stuðul til lond í Afrika, til tey minst mentu londini, til menningarlond, sum ikki sleppa til sjógv, og til smá oyggjaríki í menning</span>
           </div>
       </div>
         
@@ -798,25 +744,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.b.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 9.a.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/9-b-1">Proportion of medium and high-tech industry value added in total value added</a></span>
+              <span class="indicator-name"><a href="/sdg-site/9-a-1"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -834,11 +780,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 9.c</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 9.b</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Significantly increase access to information and communications technology and strive to provide universal and affordable access to the Internet in least developed countries by 2020</span>
+            <span class="target-name">Stuðla heimligari tøkniligari menning, gransking og nýskapan í menningarlondum, millum annað við at tryggja eitt stimbrandi politiskt umhvørvi fyri millum annað ídnaðarligt fjølbroytni og virðisøking á vørur</span>
           </div>
       </div>
         
@@ -852,25 +798,79 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 9.c.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 9.b.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/9-c-1">Proportion of population covered by a mobile network, by technology</a></span>
+              <span class="indicator-name"><a href="/sdg-site/9-b-1">Virðisøking frá miðal- og hátøknivinnu sum partur av virðisøkingini í ídnaðarvinnum samlað</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
+</span>
+
+
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 9.c</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Økja munandi um atgongdina til kunningar- og samskiftistøkni, og strembað verður eftir at veita øllum atgongd til internet fyri rímiligan kostnað í teimum minst mentu londunum fyri 2020</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 9.c.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site/9-c-1">Partur av fólkinum, ið hevur atgongd til fartelefonnet, skift á tøkni</a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -896,11 +896,11 @@ data-event-label="high"
                 <div id="footerLinks">
                     <ul>
                         <li>
-                            <a href="https://open-sdg.org">Built using Open SDG</a>
+                            <a href="https://open-sdg.org">Byggir á Open SDG</a>
                         </li>
                         
                         <li>
-                            <a href="/sdg-site/contact-us">Contact us</a>
+                            <a href="/sdg-site/contact-us">Samband</a>
                             
                         </li>
                         <li>
@@ -914,7 +914,7 @@ data-event-label="high"
                             
                         </li>
                         <li>
-                            <a href="/sdg-site/about/cookies-and-privacy/">Cookies</a>
+                            <a href="/sdg-site/about/cookies-and-privacy/">Farspor</a>
                             
                         </li>
                         
@@ -956,17 +956,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'fjal';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20220408152853'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20220408153125'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20220408152853"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20220408153125"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

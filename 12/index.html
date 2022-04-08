@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="fo" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://hagstovan.github.io/sdg-data/en',
+  remoteDataBaseUrl: 'https://hagstovan.github.io/sdg-data/fo',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -38,7 +38,7 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
-  language: 'en',
+  language: 'fo',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Goal 12 - Responsible consumption and production - Indicators For The Sustainable Development Goals</title>
+    <title>Mál 12 - Ábyrgdarfull nýtsla og framleiðsla - Ávísar til málini fyri burðardyggari menning</title>
 
 
 
@@ -136,7 +136,7 @@ var translations = {
         
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220408152853">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220408153125">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -150,23 +150,23 @@ var translations = {
         
 
     </head>
-<body class="language-en
+<body class="language-fo
 layout-goal-bootstrap5
 ">
 <!-- <div class="container"> -->
 
 
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Vanligur kontrastur","disable_high_contrast":"Óvirkja stóran kontrast","disclaimer":"Síðan er undir menning. Tú er vælkomin at <a href=\"mailto:%email_address\">viðmerkja </a> síðuna.","enable_high_contrast":"Virkja stóran kontrast","high_contrast":"Stórur kontrastur","skip_link":"","tag_line":"17 mál skulu broyta okkara heim","toggle_menu":"","toggle_search":""};</script>
 
-<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0"></a>
 <div id="disclaimer">
     
 <div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">Alpha</strong>
     
-    This is a development website. We welcome your <a href="mailto:hagstova@hagstova.fo">feedback</a>.
+    Síðan er undir menning. Tú er vælkomin at <a href="mailto:hagstova@hagstova.fo">viðmerkja </a> síðuna.
     
   </div>
 </div>
@@ -177,7 +177,7 @@ layout-goal-bootstrap5
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
             <a class="navbar-brand" href="/sdg-site/" id="home">
-    <img src="/sdg-site/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+    <img src="/sdg-site/assets/img/SDG_logo.png" alt="Mál fyri burðardyggari menning - 17 mál skulu broyta okkara heim" />
 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -185,25 +185,25 @@ layout-goal-bootstrap5
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/goals">Goals</a>
+    <a class="nav-link" href="/sdg-site/goals">Mál</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/reporting-status">Reporting Status</a>
+    <a class="nav-link" href="/sdg-site/reporting-status">Fráboðanarstøða</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/about">About</a>
+    <a class="nav-link" href="/sdg-site/about">Um</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/faq">FAQ</a>
+    <a class="nav-link" href="/sdg-site/faq">OSS</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/news">Updates</a>
+    <a class="nav-link" href="/sdg-site/news">Dagføringar</a>
 </li></ul>
     
                 </div>
                 <div class="header-search-bar">
                     <form class="align-self-lg-end" id="search" action="/sdg-site/search/">
     <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Search</label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
+        <label class="visually-hidden" for="indicator_search">Leita</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Leita">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Search" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Leita" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -222,10 +222,10 @@ layout-goal-bootstrap5
   <div class="btn-group language-toggle-dropdown  dropdown">
     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa fa-globe"></i>
-      English
+      
     </button>
     <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/sdg-site/fo/12/">
+            <a class="dropdown-item" href="/sdg-site/en/12/">
               
             </a>
           </li></ul>
@@ -233,7 +233,7 @@ layout-goal-bootstrap5
 </div>
 
 
-<a title="Enable high contrast" aria-label="Enable high contrast"
+<a title="Virkja stóran kontrast" aria-label="Virkja stóran kontrast"
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -255,10 +255,10 @@ data-event-label="high"
     <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
         
         <li class="breadcrumb-item" >
-            <a href="/sdg-site/">Home</a>
+            <a href="/sdg-site/">Heim</a>
         </li>
         <li class="breadcrumb-item" >
-            <a href="/sdg-site/goals">Goals</a>
+            <a href="/sdg-site/goals">Mál</a>
         </li>
         
         
@@ -271,10 +271,10 @@ data-event-label="high"
     <div class="container">
         <div class="row">
             <div class="col-4 col-md-3 col-lg-2 goal-tiles">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/12.svg" alt="Responsible consumption and production - Goal 12" id="goal-12" class="goal-icon-image goal-icon-image-svg" />
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/12.svg" alt="Ábyrgdarfull nýtsla og framleiðsla - Mál 12" id="goal-12" class="goal-icon-image goal-icon-image-svg" />
             </div>
             <div class="col-8 col-md-9 col-lg-10">
-                <h1>Ensure sustainable consumption and production patterns</h1>
+                <h1>Tryggja burðardygg nýtslu- og framleiðslumynstur</h1>
             </div>
         </div>
     </div>
@@ -288,7 +288,7 @@ data-event-label="high"
 
 
   <div class="container g-0">
-    <h2 class="goal-page-heading">Targets and indicators</h2>
+    <h2 class="goal-page-heading">Undirmál og ávísar</h2>
 
     
     
@@ -296,11 +296,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 12.1</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 12.1</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Implement the 10‐Year Framework of Programmes on Sustainable Consumption and Production Patterns, all countries taking action, with developed countries taking the lead, taking into account the development and capabilities of developing countries</span>
+            <span class="target-name">Seta í verk 10 ára Rammusáttmálan um burðardygg nýtslu- og framleiðslumynstur (10YFP). Øll lond fara til verka við ídnaðarlondunum á odda við fyriliti fyri menning og førimuni í menningarlondunum</span>
           </div>
       </div>
         
@@ -314,25 +314,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 12.1.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 12.1.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/12-1-1">Number of countries developing, adopting or implementing policy instruments aimed at supporting the shift to sustainable consumption and production</a></span>
+              <span class="indicator-name"><a href="/sdg-site/12-1-1">Tal av londum ið menna, samtykkja ella seta í gildi politiskar skipanir við tí í hyggju at stuðla uppundir skiftið til burðardygga nýtslu og framleiðslu</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -350,11 +350,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 12.2</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 12.2</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">By 2030, achieve the sustainable management and efficient use of natural resources</span>
+            <span class="target-name">Fyri 2030 skal burðardygg umsiting og munadygg nýtsla av náttúrutilfeingi fáast at virka</span>
           </div>
       </div>
         
@@ -368,25 +368,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 12.2.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 12.2.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/12-2-1">Material footprint, material footprint per capita, and material footprint per GDP</a></span>
+              <span class="indicator-name"><a href="/sdg-site/12-2-1"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -408,25 +408,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 12.2.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 12.2.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/12-2-2">Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP</a></span>
+              <span class="indicator-name"><a href="/sdg-site/12-2-2"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -444,11 +444,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 12.3</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 12.3</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">By 2030, halve per capita global food waste at the retail and consumer levels and reduce food losses along production and supply chains, including post-harvest losses</span>
+            <span class="target-name">Fyri 2030 skal matoyðsl minka niður í helvt fyri hvønn íbúgva um allan heim á smáhandils- og brúkarastigi, og matmissur í framleiðslu- og veitingarketunum skal eisini minka, millum annað tá ið heystað verður</span>
           </div>
       </div>
         
@@ -462,25 +462,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 12.3.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 12.3.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/12-3-1">(a) Food loss index and (b) food waste index</a></span>
+              <span class="indicator-name"><a href="/sdg-site/12-3-1"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -498,11 +498,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 12.4</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 12.4</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">By 2020, achieve the environmentally sound management of chemicals and all wastes throughout their life cycle, in accordance with agreed international frameworks, and significantly reduce their release to air, water and soil in order to minimize their adverse impacts on human health and the environment</span>
+            <span class="target-name">Fyri 2020 skal fáast í lag umhvørvisliga haldgóð umsiting av kemiskum evnum og øllum spillevnum alla lívsringrásina hjá evnunum í samsvari við samtyktar altjóða skipanir, og útlátið út í luft, vatn og jørð skal minka í stórum fyri at avmarka skaðiligu ávirkan teirra á fólkaheilsu og umhvørvið</span>
           </div>
       </div>
         
@@ -516,25 +516,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 12.4.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 12.4.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/12-4-1">Number of parties to international multilateral environmental agreements on hazardous waste, and other chemicals that meet their commitments and obligations in transmitting information as required by each relevant agreement</a></span>
+              <span class="indicator-name"><a href="/sdg-site/12-4-1"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -556,79 +556,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 12.4.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 12.4.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/12-4-2">(a) Hazardous waste generated per capita; and (b) proportion of hazardous waste treated, by type of treatment</a></span>
+              <span class="indicator-name"><a href="/sdg-site/12-4-2"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
-</span>
-
-
-        </li></ul>
-
-
-            </div>
-            
-            
-          </div>
-        
-        <hr class="goal-page-target-rule" />
-    
-      
-      <div class="row align-items-start goal-target">
-          <div class="col-auto goal-page-target-number">
-            <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 12.5</span>
-            </h3>
-          </div>
-          <div class="col goal-page-target-name">
-            <span class="target-name">By 2030, substantially reduce waste generation through prevention, reduction, recycling and reuse</span>
-          </div>
-      </div>
-        
-
-          
-          
-          
-          
-
-          <div class="row align-items-start goal-indicator">
-          
-            <div class="col-auto goal-page-indicator-number">
-              <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 12.5.1</span>
-              </h4>
-            </div>
-            <div class="col goal-page-indicator-name">
-              
-              <span class="indicator-name"><a href="/sdg-site/12-5-1">National recycling rate, tons of material recycled</a></span>
-              
-
-
-
-
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
-        
-
-
-
-<span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -646,11 +592,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 12.6</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 12.5</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Encourage companies, especially large and transnational companies, to adopt sustainable practices and to integrate sustainability information into their reporting cycle</span>
+            <span class="target-name">Fyri 2030 skal alt burturkast, ið framleitt verður, skerjast í stórum við fyribyrging, skerjingum, endurframleiðslu og endurnýtslu</span>
           </div>
       </div>
         
@@ -664,25 +610,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 12.6.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 12.5.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/12-6-1">Number of companies publishing sustainability reports</a></span>
+              <span class="indicator-name"><a href="/sdg-site/12-5-1"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -700,11 +646,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 12.7</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 12.6</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Promote public procurement practices that are sustainable, in accordance with national policies and priorities</span>
+            <span class="target-name">Eggjað verður feløgum, serliga stórum og tvørlandafeløgum, til at taka í nýtslu burðardyggar mannagongdir og at flætta kunning um burðardygd inn í fráboðanarringrásirnar</span>
           </div>
       </div>
         
@@ -718,25 +664,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 12.7.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 12.6.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/12-7-1">Degree of sustainable public procurement policies and action plan implementation</a></span>
+              <span class="indicator-name"><a href="/sdg-site/12-6-1"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -754,11 +700,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 12.8</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 12.7</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">By 2030, ensure that people everywhere have the relevant information and awareness for sustainable development and lifestyles in harmony with nature</span>
+            <span class="target-name">Virkað verður fyri almennum útveganarmannagongdum, sum eru burðardyggar, í samsvari við politikk og raðfestingar hjá londunum</span>
           </div>
       </div>
         
@@ -772,25 +718,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 12.8.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 12.7.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/12-8-1">Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment</a></span>
+              <span class="indicator-name"><a href="/sdg-site/12-7-1"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -808,11 +754,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 12.a</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 12.8</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Support developing countries to strengthen their scientific and technological capacity to move towards more sustainable patterns of consumption and production</span>
+            <span class="target-name">Fyri 2030 verður tryggjað, at fólk allastaðni hava viðkomandi kunning um og ans fyri burðardyggari menning og lívsstíli í samljóði við náttúruna</span>
           </div>
       </div>
         
@@ -826,25 +772,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 12.a.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 12.8.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/12-a-1">Installed renewable energy-generating capacity in developing countries (in watts per capita)</a></span>
+              <span class="indicator-name"><a href="/sdg-site/12-8-1">Í hvønn mun (i) útbúgving í alheims samborgaraskapi og (ii) útbúgving í burðardyggari menning eru partar av almenna a) útbúgvingarpolitikkinum hjá landinum b) lesiætlanum, c) læraraútbúgving og d) meting av lesandi</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -862,11 +808,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 12.b</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 12.a</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Develop and implement tools to monitor sustainable development impacts for sustainable tourism that creates jobs and promotes local culture and products</span>
+            <span class="target-name">Stuðla menningarlondum í at styrkja vísindaligu og tøkniligu evnini at flyta seg nærri burðardyggari nýtslu- og framleiðslumynstrum</span>
           </div>
       </div>
         
@@ -880,25 +826,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 12.b.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 12.a.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/12-b-1">Implementation of standard accounting tools to monitor the economic and environmental aspects of tourism sustainability</a></span>
+              <span class="indicator-name"><a href="/sdg-site/12-a-1"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -916,11 +862,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 12.c</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 12.b</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Rationalize inefficient fossil-fuel subsidies that encourage wasteful consumption by removing market distortions, in accordance with national circumstances, including by restructuring taxation and phasing out those harmful subsidies, where they exist, to reflect their environmental impacts, taking fully into account the specific needs and conditions of developing countries and minimizing the possible adverse impacts on their development in a manner that protects the poor and the affected communities</span>
+            <span class="target-name">Menna og seta í verk amboð at hava eftirlit við, hvussu burðardygg menning ávirkar burðardygga ferðavinnu, sum skapar størv og fremur mentan og vørur í landinum</span>
           </div>
       </div>
         
@@ -934,25 +880,79 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 12.c.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 12.b.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/12-c-1">Amount of fossil-fuel subsidies per unit of GDP (production and consumption)</a></span>
+              <span class="indicator-name"><a href="/sdg-site/12-b-1"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
+</span>
+
+
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 12.c</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Stuðul til gagnlítil fossil-brennievni, sum eggjar til oyðsl, verður skerdur við at taka burtur marknaðaravlagingar, alt eftir landsins umstøðum, millum annað við at umskipa skattareglur og at avtaka skaðiligar stuðulsskipanir, har slíkar finnast, fyri at endurspegla tað árin, tey hava á umhvørvið. Hetta verður alt gjørt við fullum fyriliti fyri tí serliga tørvi og teimum umstøðum, menningarlondini hava, og fyri at avmarka ta skaðiligu ávirkan, tað kann hava á teirra menning, á ein hátt, ið verjir tey fátæku og tey samfeløgini, ið verða ávirkað</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 12.c.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site/12-c-1"></a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -978,11 +978,11 @@ data-event-label="high"
                 <div id="footerLinks">
                     <ul>
                         <li>
-                            <a href="https://open-sdg.org">Built using Open SDG</a>
+                            <a href="https://open-sdg.org">Byggir á Open SDG</a>
                         </li>
                         
                         <li>
-                            <a href="/sdg-site/contact-us">Contact us</a>
+                            <a href="/sdg-site/contact-us">Samband</a>
                             
                         </li>
                         <li>
@@ -996,7 +996,7 @@ data-event-label="high"
                             
                         </li>
                         <li>
-                            <a href="/sdg-site/about/cookies-and-privacy/">Cookies</a>
+                            <a href="/sdg-site/about/cookies-and-privacy/">Farspor</a>
                             
                         </li>
                         
@@ -1038,17 +1038,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'fjal';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20220408152853'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20220408153125'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20220408152853"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20220408153125"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

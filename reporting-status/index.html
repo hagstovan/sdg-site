@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="fo" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://hagstovan.github.io/sdg-data/en',
+  remoteDataBaseUrl: 'https://hagstovan.github.io/sdg-data/fo',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -38,7 +38,7 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
-  language: 'en',
+  language: 'fo',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Indicators For The Sustainable Development Goals</title>
+    <title>Ávísar til málini fyri burðardyggari menning</title>
 
 
 
@@ -136,7 +136,7 @@ var translations = {
         
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220408152853">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220408153125">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -150,23 +150,23 @@ var translations = {
         
 
     </head>
-<body class="language-en
+<body class="language-fo
 layout-reportingstatus-bootstrap5
 ">
 <!-- <div class="container"> -->
 
 
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Vanligur kontrastur","disable_high_contrast":"Óvirkja stóran kontrast","disclaimer":"Síðan er undir menning. Tú er vælkomin at <a href=\"mailto:%email_address\">viðmerkja </a> síðuna.","enable_high_contrast":"Virkja stóran kontrast","high_contrast":"Stórur kontrastur","skip_link":"","tag_line":"17 mál skulu broyta okkara heim","toggle_menu":"","toggle_search":""};</script>
 
-<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0"></a>
 <div id="disclaimer">
     
 <div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">Alpha</strong>
     
-    This is a development website. We welcome your <a href="mailto:hagstova@hagstova.fo">feedback</a>.
+    Síðan er undir menning. Tú er vælkomin at <a href="mailto:hagstova@hagstova.fo">viðmerkja </a> síðuna.
     
   </div>
 </div>
@@ -177,7 +177,7 @@ layout-reportingstatus-bootstrap5
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
             <a class="navbar-brand" href="/sdg-site/" id="home">
-    <img src="/sdg-site/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+    <img src="/sdg-site/assets/img/SDG_logo.png" alt="Mál fyri burðardyggari menning - 17 mál skulu broyta okkara heim" />
 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -185,25 +185,25 @@ layout-reportingstatus-bootstrap5
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/goals">Goals</a>
+    <a class="nav-link" href="/sdg-site/goals">Mál</a>
 </li><li class="nav-item active">
-    <a class="nav-link" href="/sdg-site/reporting-status">Reporting Status</a>
+    <a class="nav-link" href="/sdg-site/reporting-status">Fráboðanarstøða</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/about">About</a>
+    <a class="nav-link" href="/sdg-site/about">Um</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/faq">FAQ</a>
+    <a class="nav-link" href="/sdg-site/faq">OSS</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/news">Updates</a>
+    <a class="nav-link" href="/sdg-site/news">Dagføringar</a>
 </li></ul>
     
                 </div>
                 <div class="header-search-bar">
                     <form class="align-self-lg-end" id="search" action="/sdg-site/search/">
     <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Search</label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
+        <label class="visually-hidden" for="indicator_search">Leita</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Leita">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Search" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Leita" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -222,10 +222,10 @@ layout-reportingstatus-bootstrap5
   <div class="btn-group language-toggle-dropdown  dropdown">
     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa fa-globe"></i>
-      English
+      
     </button>
     <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/sdg-site/fo/reporting-status/">
+            <a class="dropdown-item" href="/sdg-site/en/reporting-status/">
               
             </a>
           </li></ul>
@@ -233,7 +233,7 @@ layout-reportingstatus-bootstrap5
 </div>
 
 
-<a title="Enable high contrast" aria-label="Enable high contrast"
+<a title="Virkja stóran kontrast" aria-label="Virkja stóran kontrast"
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -261,13 +261,13 @@ data-event-label="high"
 
   <h1>
   
-    Reporting status
+    Fráboðanarstøða
   
 </h1>
 
 
 <div class="reporting-status-description">
-  <p>Reporting status provides an overview of how much Sustainable Development Goal (SDG) data %name reports.</p>
+  
 
 </div>
 
@@ -280,19 +280,19 @@ data-event-label="high"
   <div class="goal goal-overall">
     <div class="details">
         <h2 class="status-goal">
-            Overall reporting status
+            Samlað fráboðanarstøða
         </h2>
-        <span class="total"><span>248</span> indicators</span>
+        <span class="total"><span>248</span> ávísar</span>
         <div class="summary">
             <div class="statuses">
             
             <div>
-                <span class="status notstarted"><span class="status-inner">246</span></span><strong>Exploring data sources</strong><span class="value">99%</span>
+                <span class="status notstarted"><span class="status-inner">246</span></span><strong>Kanna dátukeldur</strong><span class="value">99%</span>
             </div>
             
             
             <div>
-                <span class="status complete"><span class="status-inner">2</span></span><strong>Reported online</strong><span class="value">1%</span>
+                <span class="status complete"><span class="status-inner">2</span></span><strong>Fráboðað á netinum</strong><span class="value">1%</span>
             </div>
             
             <br style="clear:both;">
@@ -303,39 +303,39 @@ data-event-label="high"
             
             
             
-            <span class="notstarted" style="width:99.19354838709677%" title="Exploring data sources: 99%"></span>
+            <span class="notstarted" style="width:99.19354838709677%" title="Kanna dátukeldur: 99%"></span>
             
             
             
             
             
-            <span class="complete" style="width:0.8064516129032258%" title="Reported online: 1%"></span>
+            <span class="complete" style="width:0.8064516129032258%" title="Fráboðað á netinum: 1%"></span>
             
             </div>
     </div>
     <br style="clear:both;">
 </div>
-  <h2>Status by goal</h2><div class="goal reporting-status-item">
+  <h2>Støða eftir máli</h2><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/sdg-site/1">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/1.svg" alt="No poverty - Goal 1" width="100" height="100" class="goal-icon-1 goal-icon-image goal-icon-image-svg"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/1.svg" alt="Einki fátækadømi - Mál 1" width="100" height="100" class="goal-icon-1 goal-icon-image goal-icon-image-svg"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site/1">No poverty</a>
+            <a href="/sdg-site/1">Einki fátækadømi</a>
         </h3>
-        <span class="total">13 indicators</span>
+        <span class="total">13 ávísar</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Exploring data sources</strong><span class="value">92%</span>
+                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Kanna dátukeldur</strong><span class="value">92%</span>
                 </div>
                 
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">1</span></span><strong>Reported online</strong><span class="value">8%</span>
+                    <span class="status complete"><span class="status-inner">1</span></span><strong>Fráboðað á netinum</strong><span class="value">8%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -346,13 +346,13 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:92.3076923076923%" title="Exploring data sources: 92%"></span>
+                <span class="notstarted" style="width:92.3076923076923%" title="Kanna dátukeldur: 92%"></span>
                 
                 
                 
                 
                 
-                <span class="complete" style="width:7.692307692307693%" title="Reported online: 8%"></span>
+                <span class="complete" style="width:7.692307692307693%" title="Fráboðað á netinum: 8%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -361,24 +361,24 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/sdg-site/2">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/2.svg" alt="Zero hunger - Goal 2" width="100" height="100" class="goal-icon-2 goal-icon-image goal-icon-image-svg"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/2.svg" alt="Eingin hungur - Mál 2" width="100" height="100" class="goal-icon-2 goal-icon-image goal-icon-image-svg"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site/2">Zero hunger</a>
+            <a href="/sdg-site/2">Eingin hungur</a>
         </h3>
-        <span class="total">14 indicators</span>
+        <span class="total">14 ávísar</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Kanna dátukeldur</strong><span class="value">100%</span>
                 </div>
                 
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fráboðað á netinum</strong><span class="value">0%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -389,13 +389,13 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Kanna dátukeldur: 100%"></span>
                 
                 
                 
                 
                 
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
+                <span class="complete" style="width:0.0%" title="Fráboðað á netinum: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -404,24 +404,24 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/sdg-site/3">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/3.svg" alt="Good health and well-being - Goal 3" width="100" height="100" class="goal-icon-3 goal-icon-image goal-icon-image-svg"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/3.svg" alt="Góð heilsa og vælferð - Mál 3" width="100" height="100" class="goal-icon-3 goal-icon-image goal-icon-image-svg"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site/3">Good health and well-being</a>
+            <a href="/sdg-site/3">Góð heilsa og vælferð</a>
         </h3>
-        <span class="total">28 indicators</span>
+        <span class="total">28 ávísar</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">28</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">28</span></span><strong>Kanna dátukeldur</strong><span class="value">100%</span>
                 </div>
                 
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fráboðað á netinum</strong><span class="value">0%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -432,13 +432,13 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Kanna dátukeldur: 100%"></span>
                 
                 
                 
                 
                 
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
+                <span class="complete" style="width:0.0%" title="Fráboðað á netinum: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -447,24 +447,24 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/sdg-site/4">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/4.svg" alt="Quality education - Goal 4" width="100" height="100" class="goal-icon-4 goal-icon-image goal-icon-image-svg"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/4.svg" alt="Dygdargóð útbúgving - Mál 4" width="100" height="100" class="goal-icon-4 goal-icon-image goal-icon-image-svg"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site/4">Quality education</a>
+            <a href="/sdg-site/4">Dygdargóð útbúgving</a>
         </h3>
-        <span class="total">12 indicators</span>
+        <span class="total">12 ávísar</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Kanna dátukeldur</strong><span class="value">100%</span>
                 </div>
                 
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fráboðað á netinum</strong><span class="value">0%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -475,13 +475,13 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Kanna dátukeldur: 100%"></span>
                 
                 
                 
                 
                 
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
+                <span class="complete" style="width:0.0%" title="Fráboðað á netinum: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -490,24 +490,24 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/sdg-site/5">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/5.svg" alt="Gender equality - Goal 5" width="100" height="100" class="goal-icon-5 goal-icon-image goal-icon-image-svg"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/5.svg" alt="Javnstøða millum kyn - Mál 5" width="100" height="100" class="goal-icon-5 goal-icon-image goal-icon-image-svg"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site/5">Gender equality</a>
+            <a href="/sdg-site/5">Javnstøða millum kyn</a>
         </h3>
-        <span class="total">14 indicators</span>
+        <span class="total">14 ávísar</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Kanna dátukeldur</strong><span class="value">100%</span>
                 </div>
                 
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fráboðað á netinum</strong><span class="value">0%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -518,13 +518,13 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Kanna dátukeldur: 100%"></span>
                 
                 
                 
                 
                 
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
+                <span class="complete" style="width:0.0%" title="Fráboðað á netinum: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -533,24 +533,24 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/sdg-site/6">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/6.svg" alt="Clean water and sanitation - Goal 6" width="100" height="100" class="goal-icon-6 goal-icon-image goal-icon-image-svg"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/6.svg" alt="Reint vatn og reinføri - Mál 6" width="100" height="100" class="goal-icon-6 goal-icon-image goal-icon-image-svg"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site/6">Clean water and sanitation</a>
+            <a href="/sdg-site/6">Reint vatn og reinføri</a>
         </h3>
-        <span class="total">11 indicators</span>
+        <span class="total">11 ávísar</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">11</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">11</span></span><strong>Kanna dátukeldur</strong><span class="value">100%</span>
                 </div>
                 
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fráboðað á netinum</strong><span class="value">0%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -561,13 +561,13 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Kanna dátukeldur: 100%"></span>
                 
                 
                 
                 
                 
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
+                <span class="complete" style="width:0.0%" title="Fráboðað á netinum: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -576,24 +576,24 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/sdg-site/7">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/7.svg" alt="Affordable and clean energy - Goal 7" width="100" height="100" class="goal-icon-7 goal-icon-image goal-icon-image-svg"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/7.svg" alt="Burðardygg orka - Mál 7" width="100" height="100" class="goal-icon-7 goal-icon-image goal-icon-image-svg"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site/7">Affordable and clean energy</a>
+            <a href="/sdg-site/7">Burðardygg orka</a>
         </h3>
-        <span class="total">6 indicators</span>
+        <span class="total">6 ávísar</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">6</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">6</span></span><strong>Kanna dátukeldur</strong><span class="value">100%</span>
                 </div>
                 
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fráboðað á netinum</strong><span class="value">0%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -604,13 +604,13 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Kanna dátukeldur: 100%"></span>
                 
                 
                 
                 
                 
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
+                <span class="complete" style="width:0.0%" title="Fráboðað á netinum: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -619,24 +619,24 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/sdg-site/8">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/8.svg" alt="Decent jobs and economic growth - Goal 8" width="100" height="100" class="goal-icon-8 goal-icon-image goal-icon-image-svg"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/8.svg" alt="Sømiligt arbeiði og búskaparvøkstur - Mál 8" width="100" height="100" class="goal-icon-8 goal-icon-image goal-icon-image-svg"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site/8">Decent jobs and economic growth</a>
+            <a href="/sdg-site/8">Sømiligt arbeiði og búskaparvøkstur</a>
         </h3>
-        <span class="total">16 indicators</span>
+        <span class="total">16 ávísar</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">16</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">16</span></span><strong>Kanna dátukeldur</strong><span class="value">100%</span>
                 </div>
                 
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fráboðað á netinum</strong><span class="value">0%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -647,13 +647,13 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Kanna dátukeldur: 100%"></span>
                 
                 
                 
                 
                 
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
+                <span class="complete" style="width:0.0%" title="Fráboðað á netinum: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -662,24 +662,24 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/sdg-site/9">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/9.svg" alt="Industry, innovation and infrastructure - Goal 9" width="100" height="100" class="goal-icon-9 goal-icon-image goal-icon-image-svg"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/9.svg" alt="Vinna, nýskapan og undirstøðukervi - Mál 9" width="100" height="100" class="goal-icon-9 goal-icon-image goal-icon-image-svg"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site/9">Industry, innovation and infrastructure</a>
+            <a href="/sdg-site/9">Vinna, nýskapan og undirstøðukervi</a>
         </h3>
-        <span class="total">12 indicators</span>
+        <span class="total">12 ávísar</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Kanna dátukeldur</strong><span class="value">100%</span>
                 </div>
                 
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fráboðað á netinum</strong><span class="value">0%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -690,13 +690,13 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Kanna dátukeldur: 100%"></span>
                 
                 
                 
                 
                 
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
+                <span class="complete" style="width:0.0%" title="Fráboðað á netinum: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -705,24 +705,24 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/sdg-site/10">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/10.svg" alt="Reduced inequalities - Goal 10" width="100" height="100" class="goal-icon-10 goal-icon-image goal-icon-image-svg"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/10.svg" alt="Minni ójavni - Mál 10" width="100" height="100" class="goal-icon-10 goal-icon-image goal-icon-image-svg"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site/10">Reduced inequalities</a>
+            <a href="/sdg-site/10">Minni ójavni</a>
         </h3>
-        <span class="total">14 indicators</span>
+        <span class="total">14 ávísar</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Kanna dátukeldur</strong><span class="value">100%</span>
                 </div>
                 
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fráboðað á netinum</strong><span class="value">0%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -733,13 +733,13 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Kanna dátukeldur: 100%"></span>
                 
                 
                 
                 
                 
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
+                <span class="complete" style="width:0.0%" title="Fráboðað á netinum: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -748,24 +748,24 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/sdg-site/11">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/11.svg" alt="Sustainable cities &amp; communities - Goal 11" width="100" height="100" class="goal-icon-11 goal-icon-image goal-icon-image-svg"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/11.svg" alt="Burðardyggir býir og býlingar - Mál 11" width="100" height="100" class="goal-icon-11 goal-icon-image goal-icon-image-svg"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site/11">Sustainable cities & communities</a>
+            <a href="/sdg-site/11">Burðardyggir býir og býlingar</a>
         </h3>
-        <span class="total">14 indicators</span>
+        <span class="total">14 ávísar</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Kanna dátukeldur</strong><span class="value">100%</span>
                 </div>
                 
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fráboðað á netinum</strong><span class="value">0%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -776,13 +776,13 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Kanna dátukeldur: 100%"></span>
                 
                 
                 
                 
                 
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
+                <span class="complete" style="width:0.0%" title="Fráboðað á netinum: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -791,24 +791,24 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/sdg-site/12">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/12.svg" alt="Responsible consumption and production - Goal 12" width="100" height="100" class="goal-icon-12 goal-icon-image goal-icon-image-svg"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/12.svg" alt="Ábyrgdarfull nýtsla og framleiðsla - Mál 12" width="100" height="100" class="goal-icon-12 goal-icon-image goal-icon-image-svg"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site/12">Responsible consumption and production</a>
+            <a href="/sdg-site/12">Ábyrgdarfull nýtsla og framleiðsla</a>
         </h3>
-        <span class="total">13 indicators</span>
+        <span class="total">13 ávísar</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>Kanna dátukeldur</strong><span class="value">100%</span>
                 </div>
                 
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fráboðað á netinum</strong><span class="value">0%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -819,13 +819,13 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Kanna dátukeldur: 100%"></span>
                 
                 
                 
                 
                 
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
+                <span class="complete" style="width:0.0%" title="Fráboðað á netinum: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -834,24 +834,24 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/sdg-site/13">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/13.svg" alt="Climate action - Goal 13" width="100" height="100" class="goal-icon-13 goal-icon-image goal-icon-image-svg"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/13.svg" alt="Veðurlagsátøk - Mál 13" width="100" height="100" class="goal-icon-13 goal-icon-image goal-icon-image-svg"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site/13">Climate action</a>
+            <a href="/sdg-site/13">Veðurlagsátøk</a>
         </h3>
-        <span class="total">8 indicators</span>
+        <span class="total">8 ávísar</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">8</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">8</span></span><strong>Kanna dátukeldur</strong><span class="value">100%</span>
                 </div>
                 
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fráboðað á netinum</strong><span class="value">0%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -862,13 +862,13 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Kanna dátukeldur: 100%"></span>
                 
                 
                 
                 
                 
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
+                <span class="complete" style="width:0.0%" title="Fráboðað á netinum: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -877,24 +877,24 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/sdg-site/14">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/14.svg" alt="Life below water - Goal 14" width="100" height="100" class="goal-icon-14 goal-icon-image goal-icon-image-svg"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/14.svg" alt="Lív í havi - Mál 14" width="100" height="100" class="goal-icon-14 goal-icon-image goal-icon-image-svg"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site/14">Life below water</a>
+            <a href="/sdg-site/14">Lív í havi</a>
         </h3>
-        <span class="total">10 indicators</span>
+        <span class="total">10 ávísar</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">10</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">10</span></span><strong>Kanna dátukeldur</strong><span class="value">100%</span>
                 </div>
                 
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fráboðað á netinum</strong><span class="value">0%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -905,13 +905,13 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Kanna dátukeldur: 100%"></span>
                 
                 
                 
                 
                 
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
+                <span class="complete" style="width:0.0%" title="Fráboðað á netinum: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -920,24 +920,24 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/sdg-site/15">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/15.svg" alt="Life on land - Goal 15" width="100" height="100" class="goal-icon-15 goal-icon-image goal-icon-image-svg"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/15.svg" alt="Lív á landi - Mál 15" width="100" height="100" class="goal-icon-15 goal-icon-image goal-icon-image-svg"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site/15">Life on land</a>
+            <a href="/sdg-site/15">Lív á landi</a>
         </h3>
-        <span class="total">15 indicators</span>
+        <span class="total">15 ávísar</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Exploring data sources</strong><span class="value">93%</span>
+                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Kanna dátukeldur</strong><span class="value">93%</span>
                 </div>
                 
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">1</span></span><strong>Reported online</strong><span class="value">7%</span>
+                    <span class="status complete"><span class="status-inner">1</span></span><strong>Fráboðað á netinum</strong><span class="value">7%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -948,13 +948,13 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:93.33333333333333%" title="Exploring data sources: 93%"></span>
+                <span class="notstarted" style="width:93.33333333333333%" title="Kanna dátukeldur: 93%"></span>
                 
                 
                 
                 
                 
-                <span class="complete" style="width:6.666666666666667%" title="Reported online: 7%"></span>
+                <span class="complete" style="width:6.666666666666667%" title="Fráboðað á netinum: 7%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -963,24 +963,24 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/sdg-site/16">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/16.svg" alt="Peace and justice - strong institutions - Goal 16" width="100" height="100" class="goal-icon-16 goal-icon-image goal-icon-image-svg"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/16.svg" alt="Friður, rættvísi og sterkir stovnar - Mál 16" width="100" height="100" class="goal-icon-16 goal-icon-image goal-icon-image-svg"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site/16">Peace and justice - strong institutions</a>
+            <a href="/sdg-site/16">Friður, rættvísi og sterkir stovnar</a>
         </h3>
-        <span class="total">24 indicators</span>
+        <span class="total">24 ávísar</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">24</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">24</span></span><strong>Kanna dátukeldur</strong><span class="value">100%</span>
                 </div>
                 
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fráboðað á netinum</strong><span class="value">0%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -991,13 +991,13 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Kanna dátukeldur: 100%"></span>
                 
                 
                 
                 
                 
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
+                <span class="complete" style="width:0.0%" title="Fráboðað á netinum: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -1006,24 +1006,24 @@ data-event-label="high"
 </div><div class="goal reporting-status-item">
     <div class="frame goal-tiles">
         <a href="/sdg-site/17">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/17.svg" alt="Partnerships for the goals - Goal 17" width="100" height="100" class="goal-icon-17 goal-icon-image goal-icon-image-svg"/>
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/17.svg" alt="Samstarv um heimsmálini - Mál 17" width="100" height="100" class="goal-icon-17 goal-icon-image goal-icon-image-svg"/>
         </a>
     </div>
     <div class="details">
         <h3 class="status-goal">
-            <a href="/sdg-site/17">Partnerships for the goals</a>
+            <a href="/sdg-site/17">Samstarv um heimsmálini</a>
         </h3>
-        <span class="total">24 indicators</span>
+        <span class="total">24 ávísar</span>
         <div class="summary">
             <div class="statuses">
                 
                 <div>
-                    <span class="status notstarted"><span class="status-inner">24</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                    <span class="status notstarted"><span class="status-inner">24</span></span><strong>Kanna dátukeldur</strong><span class="value">100%</span>
                 </div>
                 
                 
                 <div>
-                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Fráboðað á netinum</strong><span class="value">0%</span>
                 </div>
                 
                 <br style="clear:both;">
@@ -1034,13 +1034,13 @@ data-event-label="high"
                 
                 
                 
-                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                <span class="notstarted" style="width:100.0%" title="Kanna dátukeldur: 100%"></span>
                 
                 
                 
                 
                 
-                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span>
+                <span class="complete" style="width:0.0%" title="Fráboðað á netinum: 0%"></span>
                 
                 </div>
         <div class="divider"></div>
@@ -1066,11 +1066,11 @@ data-event-label="high"
                 <div id="footerLinks">
                     <ul>
                         <li>
-                            <a href="https://open-sdg.org">Built using Open SDG</a>
+                            <a href="https://open-sdg.org">Byggir á Open SDG</a>
                         </li>
                         
                         <li>
-                            <a href="/sdg-site/contact-us">Contact us</a>
+                            <a href="/sdg-site/contact-us">Samband</a>
                             
                         </li>
                         <li>
@@ -1084,7 +1084,7 @@ data-event-label="high"
                             
                         </li>
                         <li>
-                            <a href="/sdg-site/about/cookies-and-privacy/">Cookies</a>
+                            <a href="/sdg-site/about/cookies-and-privacy/">Farspor</a>
                             
                         </li>
                         
@@ -1126,17 +1126,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'fjal';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20220408152853'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20220408153125'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20220408152853"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20220408153125"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="fo" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://hagstovan.github.io/sdg-data/en',
+  remoteDataBaseUrl: 'https://hagstovan.github.io/sdg-data/fo',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -38,7 +38,7 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
-  language: 'en',
+  language: 'fo',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Edit Data: 3.b.1 - Indicators For The Sustainable Development Goals</title>
+    <title>Rætta dátur: 3.b.1 - Ávísar til málini fyri burðardyggari menning</title>
 
 
 
@@ -136,7 +136,7 @@ var translations = {
         
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220408152853">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220408153125">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -150,23 +150,23 @@ var translations = {
         
 
     </head>
-<body class="language-en
+<body class="language-fo
 layout-data-editor
 ">
 <!-- <div class="container"> -->
 
 
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Vanligur kontrastur","disable_high_contrast":"Óvirkja stóran kontrast","disclaimer":"Síðan er undir menning. Tú er vælkomin at <a href=\"mailto:%email_address\">viðmerkja </a> síðuna.","enable_high_contrast":"Virkja stóran kontrast","high_contrast":"Stórur kontrastur","skip_link":"","tag_line":"17 mál skulu broyta okkara heim","toggle_menu":"","toggle_search":""};</script>
 
-<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0"></a>
 <div id="disclaimer">
     
 <div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">Alpha</strong>
     
-    This is a development website. We welcome your <a href="mailto:hagstova@hagstova.fo">feedback</a>.
+    Síðan er undir menning. Tú er vælkomin at <a href="mailto:hagstova@hagstova.fo">viðmerkja </a> síðuna.
     
   </div>
 </div>
@@ -177,7 +177,7 @@ layout-data-editor
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
             <a class="navbar-brand" href="/sdg-site/" id="home">
-    <img src="/sdg-site/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+    <img src="/sdg-site/assets/img/SDG_logo.png" alt="Mál fyri burðardyggari menning - 17 mál skulu broyta okkara heim" />
 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -185,25 +185,25 @@ layout-data-editor
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/goals">Goals</a>
+    <a class="nav-link" href="/sdg-site/goals">Mál</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/reporting-status">Reporting Status</a>
+    <a class="nav-link" href="/sdg-site/reporting-status">Fráboðanarstøða</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/about">About</a>
+    <a class="nav-link" href="/sdg-site/about">Um</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/faq">FAQ</a>
+    <a class="nav-link" href="/sdg-site/faq">OSS</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/news">Updates</a>
+    <a class="nav-link" href="/sdg-site/news">Dagføringar</a>
 </li></ul>
     
                 </div>
                 <div class="header-search-bar">
                     <form class="align-self-lg-end" id="search" action="/sdg-site/search/">
     <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Search</label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
+        <label class="visually-hidden" for="indicator_search">Leita</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Leita">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Search" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Leita" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -222,10 +222,10 @@ layout-data-editor
   <div class="btn-group language-toggle-dropdown  dropdown">
     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa fa-globe"></i>
-      English
+      
     </button>
     <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/sdg-site/fo/3-b-1/data/">
+            <a class="dropdown-item" href="/sdg-site/en/3-b-1/data/">
               
             </a>
           </li></ul>
@@ -233,7 +233,7 @@ layout-data-editor
 </div>
 
 
-<a title="Enable high contrast" aria-label="Enable high contrast"
+<a title="Virkja stóran kontrast" aria-label="Virkja stóran kontrast"
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -251,7 +251,7 @@ data-event-label="high"
 
 <div id="main-content" class="container" role="main">
   <div class="row no-gutters">
-    <div class="col-md-12"><h1>Edit Data: 3.b.1</h1></div>
+    <div class="col-md-12"><h1>Rætta dátur: 3.b.1</h1></div>
   </div>
   <div class="col-md-12 config-widgets">
     <div class="col-md-6 data-grid-buttons">
@@ -386,11 +386,11 @@ data-event-label="high"
                 <div id="footerLinks">
                     <ul>
                         <li>
-                            <a href="https://open-sdg.org">Built using Open SDG</a>
+                            <a href="https://open-sdg.org">Byggir á Open SDG</a>
                         </li>
                         
                         <li>
-                            <a href="/sdg-site/contact-us">Contact us</a>
+                            <a href="/sdg-site/contact-us">Samband</a>
                             
                         </li>
                         <li>
@@ -404,7 +404,7 @@ data-event-label="high"
                             
                         </li>
                         <li>
-                            <a href="/sdg-site/about/cookies-and-privacy/">Cookies</a>
+                            <a href="/sdg-site/about/cookies-and-privacy/">Farspor</a>
                             
                         </li>
                         
@@ -446,17 +446,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'fjal';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20220408152853'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20220408153125'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20220408152853"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20220408153125"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="fo" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://hagstovan.github.io/sdg-data/en',
+  remoteDataBaseUrl: 'https://hagstovan.github.io/sdg-data/fo',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -38,7 +38,7 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
-  language: 'en',
+  language: 'fo',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -105,9 +105,9 @@ var translations = {
         
     <title>
         
-        Indicator 13.1.3 -
+        Ávísi 13.1.3 -
         
-        Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies - Indicators For The Sustainable Development Goals
+        Partur av kommununum, ið samtykkja og fremja ætlanir at avmarka vanlukkuváðan í samsvari við landsætlan um avmarkan av vanlukkuváða - Ávísar til málini fyri burðardyggari menning
     </title>
 
 
@@ -141,7 +141,7 @@ var translations = {
         
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220408152853">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220408153125">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -155,23 +155,23 @@ var translations = {
         
 
     </head>
-<body class="language-en
+<body class="language-fo
 layout-indicator-bootstrap5
 ">
 <!-- <div class="container"> -->
 
 
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Vanligur kontrastur","disable_high_contrast":"Óvirkja stóran kontrast","disclaimer":"Síðan er undir menning. Tú er vælkomin at <a href=\"mailto:%email_address\">viðmerkja </a> síðuna.","enable_high_contrast":"Virkja stóran kontrast","high_contrast":"Stórur kontrastur","skip_link":"","tag_line":"17 mál skulu broyta okkara heim","toggle_menu":"","toggle_search":""};</script>
 
-<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0"></a>
 <div id="disclaimer">
     
 <div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">Alpha</strong>
     
-    This is a development website. We welcome your <a href="mailto:hagstova@hagstova.fo">feedback</a>.
+    Síðan er undir menning. Tú er vælkomin at <a href="mailto:hagstova@hagstova.fo">viðmerkja </a> síðuna.
     
   </div>
 </div>
@@ -182,7 +182,7 @@ layout-indicator-bootstrap5
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
             <a class="navbar-brand" href="/sdg-site/" id="home">
-    <img src="/sdg-site/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+    <img src="/sdg-site/assets/img/SDG_logo.png" alt="Mál fyri burðardyggari menning - 17 mál skulu broyta okkara heim" />
 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -190,25 +190,25 @@ layout-indicator-bootstrap5
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/goals">Goals</a>
+    <a class="nav-link" href="/sdg-site/goals">Mál</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/reporting-status">Reporting Status</a>
+    <a class="nav-link" href="/sdg-site/reporting-status">Fráboðanarstøða</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/about">About</a>
+    <a class="nav-link" href="/sdg-site/about">Um</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/faq">FAQ</a>
+    <a class="nav-link" href="/sdg-site/faq">OSS</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/news">Updates</a>
+    <a class="nav-link" href="/sdg-site/news">Dagføringar</a>
 </li></ul>
     
                 </div>
                 <div class="header-search-bar">
                     <form class="align-self-lg-end" id="search" action="/sdg-site/search/">
     <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Search</label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
+        <label class="visually-hidden" for="indicator_search">Leita</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Leita">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Search" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Leita" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -227,10 +227,10 @@ layout-indicator-bootstrap5
   <div class="btn-group language-toggle-dropdown  dropdown">
     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa fa-globe"></i>
-      English
+      
     </button>
     <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/sdg-site/fo/13-1-3/">
+            <a class="dropdown-item" href="/sdg-site/en/13-1-3/">
               
             </a>
           </li></ul>
@@ -238,7 +238,7 @@ layout-indicator-bootstrap5
 </div>
 
 
-<a title="Enable high contrast" aria-label="Enable high contrast"
+<a title="Virkja stóran kontrast" aria-label="Virkja stóran kontrast"
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -273,15 +273,15 @@ data-event-label="high"
       >
         <% if(allowedFields.indexOf(fieldItem.field) == -1) { %><h6><% } else { %><h5><% } %>
           <span aria-hidden="true"><%=translations.t(fieldItem.label)%><i class="fa fa-chevron-down"></i></span>
-          <span class="sr-only">Show sub-categories: <%=translations.t(fieldItem.label)%></span>
+          <span class="sr-only">Vís undirflokkar: <%=translations.t(fieldItem.label)%></span>
         <% if(allowedFields.indexOf(fieldItem.field) == -1) { %></h6><% } else { %></h5><% } %>
       </button>
       <div class="variable-options">
         <fieldset>
-          <legend class="sr-only">Sub-categories - <%=translations.t(fieldItem.field)%></legend>
+          <legend class="sr-only">Undirflokkar - <%=translations.t(fieldItem.field)%></legend>
           <div>
-            <button data-type="select">Select all</button>
-            <button data-type="clear">Clear all</button>
+            <button data-type="select">Vel allar</button>
+            <button data-type="clear">Frável allar</button>
           </div>
           <% _.each(fieldItem.values, function(item) { %>
             <label>
@@ -292,10 +292,10 @@ data-event-label="high"
       </div>
 
       <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
-        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Available when '<%= translations.t(_.find(edges, { To: fieldItem.field }).From) %>' is selected
+        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Tøkar tá '<%= translations.t(_.find(edges, { To: fieldItem.field }).From) %>' er valt
         </div>
         <div class="no-data-hint" id="no-data-hint-<%=fieldItem.field.replace(/ /g, '-')%>">
-          No options available because of filters above
+          Ongar dátur tí filtur eru omanfyri
         </div>
       <% }%>
 
@@ -307,9 +307,9 @@ data-event-label="high"
   
   <% if(units.length > 1) { %>
   
-    <h4>Unit of Measurement</h4>
+    <h4>Mátieind</h4>
     <fieldset>
-      <legend class="sr-only">Unit of Measurement</legend>
+      <legend class="sr-only">Mátieind</legend>
       <% _.each(units, function(unitsItem, index) { %>
         <% var checked = (selectedUnit) ? (selectedUnit==unitsItem) : (index==0); %>
         <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
@@ -324,9 +324,9 @@ data-event-label="high"
   
   <% if(serieses.length > 1) { %>
   
-    <h4>Series</h4>
+    <h4>Røð</h4>
     <fieldset>
-      <legend class="sr-only">Series</legend>
+      <legend class="sr-only">Røð</legend>
       <% _.each(serieses, function(seriesItem, index) { %>
         <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
         <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%></label>
@@ -337,9 +337,9 @@ data-event-label="high"
   
 </script>
 
-<script>translations['indicator'] = {"annotation_2030_target":"2030 indicator target","annotation_series_break":"Series break","announce_data_added":"Chart and table updated to include data.","announce_data_not_available":"Chart and table shows no data.","announce_data_removed":"Chart and table updated to exclude data.","chart":"Chart","chart_annotation":"Chart annotation","clear_all":"Clear all","clear_selections":"Clear selections","data_keyboard_navigation":"Press enter to browse data points with left and right arrow keys.","data_not_available":"This data is not available. Please choose alternative data to display.","data_tabular_alternative":"For tabular data alternative see Table tab.","dataset_size_warning":"There are too many datasets to show on the chart. Not all will be shown until you remove some selections.","download_chart":"Download Chart CSV","download_chart_image":"Download Chart Image","download_chart_image_title":"Download chart as image","download_csv":"Download CSV","download_csv_title":"Download as CSV","download_geojson":"Download GeoJSON","download_geojson_title":"Download as GeoJSON","download_headline":"Download Headline CSV","download_headline_title":"Download headline data as CSV","download_source":"Download Source CSV","download_source_sdmx":"Download Source SDMX","download_source_sdmx_title":"Download source data as SDMX","download_source_title":"Download source data as CSV","download_table":"Download Table CSV","edit":"Edit","edit_configuration":"Edit Configuration","edit_data":"Edit Data","edit_metadata":"Edit Metadata","footnote":"Footnote","geographical_area":"Geographical Area","global_metadata":"Global Metadata","global_metadata_blurb":"This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href=\"https://unstats.un.org/sdgs/metadata/\">Complete global metadata</a> is provided by the UN Statistics Division.","legend_help":"Click on the legend to remove individual lines from the chart.","loading":"Loading","loading_map":"Loading map","map":"Map","map_search":"Search","map_search_hide":"Hide search","map_search_show":"Show search","map_year_slider":"Year slider","national_metadata":"National Metadata","national_metadata_blurb":"This table provides metadata for the actual indicator available from %country_name statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from %country_adjective statistics, this table should be consulted for information on national methodology and other %country_adjective-specific metadata information.","next":"Next indicator","no_data_hint":"No options available because of filters above","plot_legend_description":"Plot legend: list of lines included in chart","previous":"Previous indicator","select_all":"Select all","series":"Series","series_help":"Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.","source":"Source","sources":"Sources","status":"Indicator status","sub_categories":"Sub-categories","sub_categories_show":"Show sub-categories:","table":"Table","table_column_sort":"Click to sort by this column","tags":"Tags","unit":"Unit","unit_of_measurement":"Unit of Measurement","units_type":"Units type","variable_hint":"Available when '%field' is selected","view_indicator_list":"View this goal's indicator list"};</script>
+<script>translations['indicator'] = {"annotation_2030_target":"2030-málsávísi","annotation_series_break":"Dátubrot","announce_data_added":"Talmynd og talva dagførar taka dátur við.","announce_data_not_available":"Talmynd og talva vísa ongar dátur.","announce_data_removed":"Talmynd og talva dagførdar at leggja dátur burturúr.","chart":"Talmynd","chart_annotation":"Viðmerking til talmynd","clear_all":"Frável allar","clear_selections":"Frável valdar","data_keyboard_navigation":"Trýst á inn-knappin fyri at skifta millum dátupunkt við høgra- og vinstrapíli.","data_not_available":"Hesar dátur eru ikki tøkar. Vinarliga vel aðrar dátur at vísa.","data_tabular_alternative":"Dátur í talvusniði síggjast á spjaldrinum Talva.","dataset_size_warning":"Dátusettini eru ov nógv at verða víst í talmyndini. Ikki øll verða víst fyrr enn tú strikar nøkur val.","download_chart":"Tak niður talmynd sum CSV","download_chart_image":"Tak niður talmynd sum mynd","download_chart_image_title":"Tak niður talmynd sum mynd","download_csv":"Tak niður CSV","download_csv_title":"Tak niður sum CSV","download_geojson":"Tak niður GeoJSON","download_geojson_title":"Tak niður sum GeoJSON","download_headline":"Tak niður CSV við yvirskrift","download_headline_title":"Tak niður yvirskriftsdátur sum CSV","download_source":"Tak niður keldu sum CSV","download_source_sdmx":"Tak niður SDMX sum keldu","download_source_sdmx_title":"Tak niður keldudátur sum SDMX","download_source_title":"Tak niður keldudátur sum CSV","download_table":"Tak niður talvu sum CSV","edit":"Rætta","edit_configuration":"Rætta uppseting","edit_data":"Rætta dátur","edit_metadata":"Rætta metadátur","footnote":"Fótnota","geographical_area":"Landafrøðiligt øki","global_metadata":"Altjóða metadátur","global_metadata_blurb":"Henda talvan kunnar um metadáturnar, ið eru ásettar av Hagfrøðinevndini hjá ST. <a href=\"https://unstats.un.org/sdgs/metadata/\">Fullfíggjaðar altjóða metadátur</a> frá Hagfrøðistovninum hjá ST.","legend_help":"Trýst á teknlýsing fyri at leggja einstakar linjur burtur úr talmyndini.","loading":"Innlesur","loading_map":"Innlesur kort","map":"Kort","map_search":"Leita","map_search_hide":"Krógva leiting","map_search_show":"Vís leiting","map_year_slider":"Ársdragil","national_metadata":"Innlendis metadátur","national_metadata_blurb":"Henda talvan vísir metadátur fyri tann ávísan, ið er tøkur úr %country_name hagtølum, ið liggur næst upp at altjóða SDG-ávísanum. Gev gætur, at sjálvt tá altjóða SDG-ávísin er fult tøkur úr %country_adjective hagtølum, eigur at verða hugt í hesa talva eftir kunning um innlendis háttalag og aðrar upplýsingar um serstakar %country_adjective metadátur.","next":"Næsti ávísi","no_data_hint":"Ongar dátur tí filtur eru omanfyri","plot_legend_description":"Strikulýsing: listi av linjum í talmyndini","previous":"Undanfarni ávísi","select_all":"Vel allar","series":"Røð","series_help":"Vel flokkar úr fallmyndunum niðanfyri fyri at síggja ymiskar greiningar av dátunum. Summar greiningar verða ikki tøkar, fyrr enn hægri stig er valt.","source":"Kelda","sources":"Keldur","status":"Støða hjá ávísa","sub_categories":"Undirflokkar","sub_categories_show":"Vís undirflokkar:","table":"Talva","table_column_sort":"Trýst fyri at raðskipa eftir hesum teiginum","tags":"Frámerki","unit":"Eind","unit_of_measurement":"Mátieind","units_type":"Slag av eind","variable_hint":"Tøkar tá '%field' er valt","view_indicator_list":"Vís lilstan av ávísum til hetta málið"};</script>
 
-<script>translations['data'] = {"female":"Females","male":"Males","sex":"Sex"};</script>
+<script>translations['data'] = {"female":"Kvinnur","male":"Menn","sex":"Kyn"};</script>
 
 
 <div class="container">
@@ -348,14 +348,14 @@ data-event-label="high"
     <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
         
         <li class="breadcrumb-item">
-            <a href="/sdg-site/">Home</a>
+            <a href="/sdg-site/">Heim</a>
         </li>
         <li class="breadcrumb-item">
-            <a href="/sdg-site/goals">Goals</a>
+            <a href="/sdg-site/goals">Mál</a>
         </li>
         
         <li class="breadcrumb-item">
-            <a href="/sdg-site/13" title="Take urgent action to combat climate change and its impacts">Goal 13</a>
+            <a href="/sdg-site/13" title="Sum skjótast seta í verk bráðneyðug átøk at berjast ímóti veðurlagsbroytingum og avleiðingum av teimum">Mál 13</a>
         </li>
         
     </ol>
@@ -369,9 +369,9 @@ data-event-label="high"
         <div class="row">
             
             <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
-                <a href="/sdg-site/13" title="View this goal's indicator list">
-                    <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/13.svg"
-                        alt="Climate action - Goal 13"
+                <a href="/sdg-site/13" title="Vís lilstan av ávísum til hetta málið">
+                    <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/13.svg"
+                        alt="Veðurlagsátøk - Mál 13"
                         id="goal-13"
                         class="goal-icon-image goal-icon-image-svg" />
                 </a>
@@ -381,9 +381,9 @@ data-event-label="high"
                 <div>
                     <h1>
                         
-                        Indicator 13.1.3
+                        Ávísi 13.1.3
                         
-                        <span class="lead-copy">Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies</span>
+                        <span class="lead-copy">Partur av kommununum, ið samtykkja og fremja ætlanir at avmarka vanlukkuváðan í samsvari við landsætlan um avmarkan av vanlukkuváða</span>
                     </h1>
                 </div>
             </div>
@@ -409,7 +409,7 @@ data-event-label="high"
   data-indicatorid='indicator_13-1-3'
   data-id="13-1-3"
   data-country="Faroe Islands"
-  data-charttitle="Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies"
+  data-charttitle="Partur av kommununum, ið samtykkja og fremja ætlanir at avmarka vanlukkuváðan í samsvari við landsætlan um avmarkan av vanlukkuváða"
   data-charttitles="[]"
   data-measurementunit=""
   data-xaxislabel=""
@@ -425,7 +425,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;},{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Year&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -454,7 +454,7 @@ data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to indicator.national_metadata tab"
 
-            >National Metadata</button>
+            >Innlendis metadátur</button>
         </li>
     
         
@@ -475,7 +475,7 @@ data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to indicator.global_metadata tab"
 
-            >Global Metadata</button>
+            >Altjóða metadátur</button>
         </li>
     
         
@@ -496,13 +496,13 @@ data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to indicator.sources tab"
 
-            >Sources</button>
+            >Keldur</button>
         </li>
     
     
     
         <li role="presentation" class="nav-item">
-            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#edit" aria-controls="edit" role="tab">Edit</a>
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#edit" aria-controls="edit" role="tab">Rætta</a>
         </li>
     
 </ul>
@@ -516,7 +516,7 @@ data-event-label="Change to indicator.sources tab"
         
         <div role="tabpanel" class="tab-pane active" id="national">
             <article>
-                <p>This table provides metadata for the actual indicator available from %country_name statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from %country_adjective statistics, this table should be consulted for information on national methodology and other %country_adjective-specific metadata information.</p>
+                <p>Henda talvan vísir metadátur fyri tann ávísan, ið er tøkur úr %country_name hagtølum, ið liggur næst upp at altjóða SDG-ávísanum. Gev gætur, at sjálvt tá altjóða SDG-ávísin er fult tøkur úr %country_adjective hagtølum, eigur at verða hugt í hesa talva eftir kunning um innlendis háttalag og aðrar upplýsingar um serstakar %country_adjective metadátur.</p>
 
                 <table class="table">
   
@@ -738,7 +738,7 @@ data-event-label="Change to indicator.sources tab"
         
         <div role="tabpanel" class="tab-pane " id="global">
             <article>
-                <p>This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href="https://unstats.un.org/sdgs/metadata/">Complete global metadata</a> is provided by the UN Statistics Division.</p>
+                <p>Henda talvan kunnar um metadáturnar, ið eru ásettar av Hagfrøðinevndini hjá ST. <a href="https://unstats.un.org/sdgs/metadata/">Fullfíggjaðar altjóða metadátur</a> frá Hagfrøðistovninum hjá ST.</p>
 
                 <table class="table">
   
@@ -747,7 +747,7 @@ data-event-label="Change to indicator.sources tab"
       
       
       <tr>
-        <th scope="row">Indicator </th>
+        <th scope="row">Ávísi </th>
         <td>
           
             <p>Indicator 13.1.3: Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies</p>
@@ -763,7 +763,7 @@ data-event-label="Change to indicator.sources tab"
       
       
       <tr>
-        <th scope="row">Target </th>
+        <th scope="row">Undirmál </th>
         <td>
           
             <p>Target 13.1: Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries</p>
@@ -779,7 +779,7 @@ data-event-label="Change to indicator.sources tab"
       
       
       <tr>
-        <th scope="row">Metadata update </th>
+        <th scope="row">Dagføring av metadátum </th>
         <td>
           
             <p>2018-02-01</p>
@@ -795,7 +795,7 @@ data-event-label="Change to indicator.sources tab"
       
       
       <tr>
-        <th scope="row">International organisations(s) responsible for global monitoring </th>
+        <th scope="row">Altjóða felagssskapur/felagsskapir við heimsfevnandi eftirlitsábyrgd </th>
         <td>
           
             <p>United Nations Office for Disaster Reduction (UNISDR)</p>
@@ -811,7 +811,7 @@ data-event-label="Change to indicator.sources tab"
       
       
       <tr>
-        <th scope="row">Related indicators </th>
+        <th scope="row">Samsvarandi ávísar </th>
         <td>
           
             <p>1.5; 11.5; 11.b; 13.1; 2.4; 3.6; 3.9; 3.d; 4.a; 6.6; 9.1; 9.a; 11.1; 11.3; 11.c; 13.2; 13.3; 13.a; 13.b; 14.2; 15.1; 15.2; 15.3; 15.9.</p>
@@ -972,15 +972,15 @@ data-event-label="Change to indicator.sources tab"
   
 
 
-  <a class="btn btn-primary" href="data">Edit Data</a>
+  <a class="btn btn-primary" href="data">Rætta dátur</a>
   
 
   
-  <a class="btn btn-primary" href="metadata">Edit Metadata</a>
+  <a class="btn btn-primary" href="metadata">Rætta metadátur</a>
   
 
   
-  <a class="btn btn-primary" href="config">Edit Configuration</a>
+  <a class="btn btn-primary" href="config">Rætta uppseting</a>
   
 
 </div>
@@ -1003,11 +1003,11 @@ data-event-label="Change to indicator.sources tab"
                 <div id="footerLinks">
                     <ul>
                         <li>
-                            <a href="https://open-sdg.org">Built using Open SDG</a>
+                            <a href="https://open-sdg.org">Byggir á Open SDG</a>
                         </li>
                         
                         <li>
-                            <a href="/sdg-site/contact-us">Contact us</a>
+                            <a href="/sdg-site/contact-us">Samband</a>
                             
                         </li>
                         <li>
@@ -1021,7 +1021,7 @@ data-event-label="Change to indicator.sources tab"
                             
                         </li>
                         <li>
-                            <a href="/sdg-site/about/cookies-and-privacy/">Cookies</a>
+                            <a href="/sdg-site/about/cookies-and-privacy/">Farspor</a>
                             
                         </li>
                         
@@ -1067,17 +1067,17 @@ data-event-label="Change to indicator.sources tab"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'fjal';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20220408152853'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20220408153125'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20220408152853"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20220408153125"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

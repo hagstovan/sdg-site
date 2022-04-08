@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="fo" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://hagstovan.github.io/sdg-data/en',
+  remoteDataBaseUrl: 'https://hagstovan.github.io/sdg-data/fo',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -38,7 +38,7 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
-  language: 'en',
+  language: 'fo',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Goal 16 - Peace and justice - strong institutions - Indicators For The Sustainable Development Goals</title>
+    <title>Mál 16 - Friður, rættvísi og sterkir stovnar - Ávísar til málini fyri burðardyggari menning</title>
 
 
 
@@ -136,7 +136,7 @@ var translations = {
         
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220408152853">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220408153125">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -150,23 +150,23 @@ var translations = {
         
 
     </head>
-<body class="language-en
+<body class="language-fo
 layout-goal-bootstrap5
 ">
 <!-- <div class="container"> -->
 
 
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Vanligur kontrastur","disable_high_contrast":"Óvirkja stóran kontrast","disclaimer":"Síðan er undir menning. Tú er vælkomin at <a href=\"mailto:%email_address\">viðmerkja </a> síðuna.","enable_high_contrast":"Virkja stóran kontrast","high_contrast":"Stórur kontrastur","skip_link":"","tag_line":"17 mál skulu broyta okkara heim","toggle_menu":"","toggle_search":""};</script>
 
-<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0"></a>
 <div id="disclaimer">
     
 <div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">Alpha</strong>
     
-    This is a development website. We welcome your <a href="mailto:hagstova@hagstova.fo">feedback</a>.
+    Síðan er undir menning. Tú er vælkomin at <a href="mailto:hagstova@hagstova.fo">viðmerkja </a> síðuna.
     
   </div>
 </div>
@@ -177,7 +177,7 @@ layout-goal-bootstrap5
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
             <a class="navbar-brand" href="/sdg-site/" id="home">
-    <img src="/sdg-site/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+    <img src="/sdg-site/assets/img/SDG_logo.png" alt="Mál fyri burðardyggari menning - 17 mál skulu broyta okkara heim" />
 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -185,25 +185,25 @@ layout-goal-bootstrap5
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/goals">Goals</a>
+    <a class="nav-link" href="/sdg-site/goals">Mál</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/reporting-status">Reporting Status</a>
+    <a class="nav-link" href="/sdg-site/reporting-status">Fráboðanarstøða</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/about">About</a>
+    <a class="nav-link" href="/sdg-site/about">Um</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/faq">FAQ</a>
+    <a class="nav-link" href="/sdg-site/faq">OSS</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/sdg-site/news">Updates</a>
+    <a class="nav-link" href="/sdg-site/news">Dagføringar</a>
 </li></ul>
     
                 </div>
                 <div class="header-search-bar">
                     <form class="align-self-lg-end" id="search" action="/sdg-site/search/">
     <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Search</label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
+        <label class="visually-hidden" for="indicator_search">Leita</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Leita">
         <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Search" id="search-btn" type="submit">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Leita" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </span>
@@ -222,10 +222,10 @@ layout-goal-bootstrap5
   <div class="btn-group language-toggle-dropdown  dropdown">
     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa fa-globe"></i>
-      English
+      
     </button>
     <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/sdg-site/fo/16/">
+            <a class="dropdown-item" href="/sdg-site/en/16/">
               
             </a>
           </li></ul>
@@ -233,7 +233,7 @@ layout-goal-bootstrap5
 </div>
 
 
-<a title="Enable high contrast" aria-label="Enable high contrast"
+<a title="Virkja stóran kontrast" aria-label="Virkja stóran kontrast"
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -255,10 +255,10 @@ data-event-label="high"
     <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
         
         <li class="breadcrumb-item" >
-            <a href="/sdg-site/">Home</a>
+            <a href="/sdg-site/">Heim</a>
         </li>
         <li class="breadcrumb-item" >
-            <a href="/sdg-site/goals">Goals</a>
+            <a href="/sdg-site/goals">Mál</a>
         </li>
         
         
@@ -271,10 +271,10 @@ data-event-label="high"
     <div class="container">
         <div class="row">
             <div class="col-4 col-md-3 col-lg-2 goal-tiles">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/16.svg" alt="Peace and justice - strong institutions - Goal 16" id="goal-16" class="goal-icon-image goal-icon-image-svg" />
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/16.svg" alt="Friður, rættvísi og sterkir stovnar - Mál 16" id="goal-16" class="goal-icon-image goal-icon-image-svg" />
             </div>
             <div class="col-8 col-md-9 col-lg-10">
-                <h1>Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels</h1>
+                <h1>Virka fyri friðsomum og inkluderandi samfeløgum fyri burðardyggari menning. Útvega øllum atgongd til rættartrygd og byggja munagóðar, ábyrgar og inkluderandi stovnar á øllum stigum</h1>
             </div>
         </div>
     </div>
@@ -288,7 +288,7 @@ data-event-label="high"
 
 
   <div class="container g-0">
-    <h2 class="goal-page-heading">Targets and indicators</h2>
+    <h2 class="goal-page-heading">Undirmál og ávísar</h2>
 
     
     
@@ -296,11 +296,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 16.1</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 16.1</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Significantly reduce all forms of violence and related death rates everywhere</span>
+            <span class="target-name">Skerja í stórum allan harðskap og deyða í sambandi við harðskap allastaðni</span>
           </div>
       </div>
         
@@ -314,25 +314,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.1.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.1.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-1-1">Number of victims of intentional homicide per 100,000 population, by sex and age</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-1-1">Tal av ofrum fyri tilætlað morð fyri hvørjar 100.000 íbúgvar, skift á kyn og aldur</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -354,25 +354,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.1.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.1.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-1-2">Conflict-related deaths per 100,000 population, by sex, age and cause</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-1-2">Deyð av krígsávum fyri hvørji 100.000 fólk skift á kyn, aldur og orsøk</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -394,25 +394,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.1.3</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.1.3</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-1-3">Proportion of population subjected to (a) physical violence, (b) psychological violence and (c) sexual violence in the previous 12 months</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-1-3"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -434,25 +434,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.1.4</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.1.4</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-1-4">Proportion of population that feel safe walking alone around the area they live</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-1-4">Partur av fólkinum, ið kennir seg tryggan at ganga úti einsamallur/einsamøll, har tey búgva</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -470,11 +470,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 16.2</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 16.2</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">End abuse, exploitation, trafficking and all forms of violence against and torture of children</span>
+            <span class="target-name">Beint verður fyri misnýtslu, eyðræning, mannahandli og øllum harðskapi og pínslu í øllum líki móti børnum</span>
           </div>
       </div>
         
@@ -488,25 +488,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.2.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.2.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-2-1">Proportion of children aged 1–17 years who experienced any physical punishment and/or psychological aggression by caregivers in the past month</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-2-1"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -528,25 +528,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.2.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.2.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-2-2">Number of victims of human trafficking per 100,000 population, by sex, age and form of exploitation</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-2-2"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -568,25 +568,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.2.3</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.2.3</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-2-3">Proportion of young women and men aged 18–29 years who experienced sexual violence by age 18</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-2-3"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -604,11 +604,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 16.3</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 16.3</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Promote the rule of law at the national and international levels and ensure equal access to justice for all</span>
+            <span class="target-name">Fremja rættartrygd á lands- og altjóða stigi, og øllum verður tryggjað somu atgongd til rættvísa rættargongd</span>
           </div>
       </div>
         
@@ -622,25 +622,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.3.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.3.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-3-1">Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-3-1">Partur av harðskapsofrum undanfarnu 12 mánaðirnar, ið fráboðaðu skikkaðum myndugleika ella øðrum alment viðurkendum ósemjuloysara, at tey hava verið offur</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -662,25 +662,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.3.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.3.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-3-2">Unsentenced detainees as a proportion of overall prison population</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-3-2">Partur av fongslaðum, ið ikki hava fingið dóm</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -702,25 +702,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.3.3</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.3.3</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-3-3">Proportion of the population who have experienced a dispute in the past two years and who accessed a formal or informal dispute resolution mechanism, by type of mechanism</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-3-3"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -738,11 +738,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 16.4</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 16.4</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">By 2030, significantly reduce illicit financial and arms flows, strengthen the recovery and return of stolen assets and combat all forms of organized crime</span>
+            <span class="target-name">Fyri 2030 verður ólógligur peninga- og vápnaflutningur skerdur í stórum, og nógv meira verður gjørt við at finna aftur og bera aftur stolnar ognir og berja niður skipað brotsmannavirksemi</span>
           </div>
       </div>
         
@@ -756,25 +756,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.4.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.4.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-4-1">Total value of inward and outward illicit financial flows (in current United States dollars)</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-4-1"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -796,25 +796,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.4.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.4.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-4-2">Proportion of seized, found or surrendered arms whose illicit origin or context has been traced or established by a competent authority in line with international instruments</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-4-2"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -832,11 +832,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 16.5</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 16.5</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Substantially reduce corruption and bribery in all their forms</span>
+            <span class="target-name">Skerja munandi korruptión og mutur í øllum líki</span>
           </div>
       </div>
         
@@ -850,25 +850,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.5.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.5.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-5-1">Proportion of persons who had at least one contact with a public official and who paid a bribe to a public official, or were asked for a bribe by those public officials, during the previous 12 months</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-5-1">Partur av persónum, ið hava verið í sambandi við ein alment settan í minsta lagi eina ferð, og sum mutraðu ein alment settan, ella vórðu bidnir um mutur av hesum alment settu, undanfarnu 12 mánaðirnar</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -890,25 +890,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.5.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.5.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-5-2">Proportion of businesses that had at least one contact with a public official and that paid a bribe to a public official, or were asked for a bribe by those public officials during the previous 12 months</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-5-2">Partur av vinnufeløgum, ið hava verið í sambandi við ein alment settan í minsta lagi eina ferð og sum mutraðu ein alment settan, ella vórðu bidnir um mutur av hesum alment settu, undanfarnu 12 mánaðirnar</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -926,11 +926,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 16.6</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 16.6</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Develop effective, accountable and transparent institutions at all levels</span>
+            <span class="target-name">Menna munadyggar, ábyrgar og gjøgnumskygdar stovnar á øllum stigum</span>
           </div>
       </div>
         
@@ -944,25 +944,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.6.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.6.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-6-1">Primary government expenditures as a proportion of original approved budget, by sector (or by budget codes or similar)</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-6-1">Almennar útreiðslur sum partur av upprunaliga samtykta fíggjarlóg, skift á geira (ella kontuslag ella líknandi)</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -984,25 +984,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.6.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.6.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-6-2">Proportion of population satisfied with their last experience of public services</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-6-2"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -1020,11 +1020,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 16.7</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 16.7</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Ensure responsive, inclusive, participatory and representative decision-making at all levels</span>
+            <span class="target-name">Tryggja eftirfarandi, inkluderandi, luttakandi og umboðandi avgerðargongdir á øllum stigum</span>
           </div>
       </div>
         
@@ -1038,25 +1038,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.7.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.7.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-7-1">Proportions of positions in national and local institutions, including (a) the legislatures; (b) the public service; and (c) the judiciary, compared to national distributions, by sex, age, persons with disabilities and population groups</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-7-1"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -1078,25 +1078,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.7.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.7.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-7-2">Proportion of population who believe decision-making is inclusive and responsive, by sex, age, disability and population group</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-7-2"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -1114,11 +1114,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 16.8</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 16.8</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Broaden and strengthen the participation of developing countries in the institutions of global governance</span>
+            <span class="target-name">Útbyggja og styrkja luttøku hjá menningarlondum í altjóða stjórnarstovnum</span>
           </div>
       </div>
         
@@ -1132,25 +1132,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.8.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.8.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-8-1">Proportion of members and voting rights of developing countries in international organizations</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-8-1">Prosentpartur av limum og atkvøðurættindum hjá menningarlondum í altjóða felagsskapum</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -1168,11 +1168,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 16.9</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 16.9</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">By 2030, provide legal identity for all, including birth registration</span>
+            <span class="target-name">Fyri 2030 syrgja fyri, at øll fáa ein løgligan samleika, heruppií føðiskráseting</span>
           </div>
       </div>
         
@@ -1186,25 +1186,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.9.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.9.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-9-1">Proportion of children under 5 years of age whose births have been registered with a civil authority, by age</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-9-1">Partur av børnum undir 5 ár, har føðingin er skrásett hjá almennum myndugleika, skift á aldur</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -1222,11 +1222,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 16.10</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 16.10</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Ensure public access to information and protect fundamental freedoms, in accordance with national legislation and international agreements</span>
+            <span class="target-name">Tryggja almenna atgongd til upplýsingar og verju av grundleggjandi frælsirættindum í samsvari við landsins lógir og altjóða avtalur</span>
           </div>
       </div>
         
@@ -1240,25 +1240,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.10.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.10.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-10-1">Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 months</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-10-1"></a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -1280,79 +1280,25 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.10.2</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.10.2</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-10-2">Number of countries that adopt and implement constitutional, statutory and/or policy guarantees for public access to information</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-10-2">Tal av londum, sum í grundlóg, lóg og/ella politiskt samtykkja og fremja innlitstrygd hjá almenninginum</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
-</span>
-
-
-        </li></ul>
-
-
-            </div>
-            
-            
-          </div>
-        
-        <hr class="goal-page-target-rule" />
-    
-      
-      <div class="row align-items-start goal-target">
-          <div class="col-auto goal-page-target-number">
-            <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 16.a</span>
-            </h3>
-          </div>
-          <div class="col goal-page-target-name">
-            <span class="target-name">Strengthen relevant national institutions, including through international cooperation, for building capacity at all levels, in particular in developing countries, to prevent violence and combat terrorism and crime</span>
-          </div>
-      </div>
-        
-
-          
-          
-          
-          
-
-          <div class="row align-items-start goal-indicator">
-          
-            <div class="col-auto goal-page-indicator-number">
-              <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.a.1</span>
-              </h4>
-            </div>
-            <div class="col goal-page-indicator-name">
-              
-              <span class="indicator-name"><a href="/sdg-site/16-a-1">Existence of independent national human rights institutions in compliance with the Paris Principles</a></span>
-              
-
-
-
-
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
-        
-
-
-
-<span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -1370,11 +1316,11 @@ data-event-label="high"
       <div class="row align-items-start goal-target">
           <div class="col-auto goal-page-target-number">
             <h3 class="goal-target">
-              <span class="target-number"><span class="visually-hidden">Target</span> 16.b</span>
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 16.a</span>
             </h3>
           </div>
           <div class="col goal-page-target-name">
-            <span class="target-name">Promote and enforce non-discriminatory laws and policies for sustainable development</span>
+            <span class="target-name">Styrkja viðkomandi landsstovnar við millum øðrum altjóða samstarvi fyri at fáa til vega førleika á øllum stigum, serstakliga í menningarlondum, til tess at forða fyri harðskapi og at berja niður yvirgang og brotsverk 16.b Fremja og halda uppi lógir og politikkir um burðardygga menning, ið fylgja meginregluni um ikki-mismun</span>
           </div>
       </div>
         
@@ -1388,25 +1334,79 @@ data-event-label="high"
           
             <div class="col-auto goal-page-indicator-number">
               <h4>
-                <span class="indicator-number"><span class="visually-hidden">Indicator</span> 16.b.1</span>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.a.1</span>
               </h4>
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-b-1">Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-a-1">Um tað finst ein óheftur landsstovnur fyri mannarættindi, ið lýkur París Grundreglurnar hjá Sameindu Tjóða</a></span>
               
 
 
 
 
-    <ul class="tags list-unstyled list-inline" aria-label="Tags"><li class="list-inline-item">
-        <span class="visually-hidden">Indicator status</span>
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
         
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Kanna dátukeldur</span>
+</span>
+
+
+        </li></ul>
+
+
+            </div>
+            
+            
+          </div>
+        
+        <hr class="goal-page-target-rule" />
+    
+      
+      <div class="row align-items-start goal-target">
+          <div class="col-auto goal-page-target-number">
+            <h3 class="goal-target">
+              <span class="target-number"><span class="visually-hidden">Undirmál</span> 16.b</span>
+            </h3>
+          </div>
+          <div class="col goal-page-target-name">
+            <span class="target-name">Fremja og halda uppi lógir og politikkir um burðardygga menning, ið fylgja meginregluni um ikki-mismunviðgerð, og virkað verður fyri sálarheilsu og vælveru</span>
+          </div>
+      </div>
+        
+
+          
+          
+          
+          
+
+          <div class="row align-items-start goal-indicator">
+          
+            <div class="col-auto goal-page-indicator-number">
+              <h4>
+                <span class="indicator-number"><span class="visually-hidden">Ávísi</span> 16.b.1</span>
+              </h4>
+            </div>
+            <div class="col goal-page-indicator-name">
+              
+              <span class="indicator-name"><a href="/sdg-site/16-b-1"></a></span>
+              
+
+
+
+
+    <ul class="tags list-unstyled list-inline" aria-label="Frámerki"><li class="list-inline-item">
+        <span class="visually-hidden">Støða hjá ávísa</span>
+        
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">Kanna dátukeldur</span>
 </span>
 
 
@@ -1432,11 +1432,11 @@ data-event-label="high"
                 <div id="footerLinks">
                     <ul>
                         <li>
-                            <a href="https://open-sdg.org">Built using Open SDG</a>
+                            <a href="https://open-sdg.org">Byggir á Open SDG</a>
                         </li>
                         
                         <li>
-                            <a href="/sdg-site/contact-us">Contact us</a>
+                            <a href="/sdg-site/contact-us">Samband</a>
                             
                         </li>
                         <li>
@@ -1450,7 +1450,7 @@ data-event-label="high"
                             
                         </li>
                         <li>
-                            <a href="/sdg-site/about/cookies-and-privacy/">Cookies</a>
+                            <a href="/sdg-site/about/cookies-and-privacy/">Farspor</a>
                             
                         </li>
                         
@@ -1492,17 +1492,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'fjal';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20220408152853'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20220408153125'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20220408152853"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20220408153125"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
