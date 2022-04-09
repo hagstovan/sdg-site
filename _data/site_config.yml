@@ -31,11 +31,11 @@ country:
   adjective: Faroese
 create_goals:
   layout: goal-with-progress
-  previous_next_links: false
+  previous_next_links: true
   goals: []
 create_indicators:
   layout: indicator
-  previous_next_links: false
+  previous_next_links: true
 create_pages:
   - filename: ''
     folder: /
