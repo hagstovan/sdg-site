@@ -2295,6 +2295,10 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 .goal-icon-image {
   box-shadow: none !important; }
 
+/* Goal-tiles hover effect; replacing shadow effect */
+.goal-tile:hover {
+  opacity: 0.85; }
+
 /* Next-Previous goals, padding on bottom */
 .previous-next-links {
   padding-bottom: 5px; }
