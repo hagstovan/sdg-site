@@ -2321,6 +2321,10 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   margin-top: 0;
   margin-bottom: 12px; }
 
+/* Indicator margin left on mobile layout;  */
+.layout-goal-bootstrap5 .goal-page-indicator-number {
+  margin-left: 20px; }
+
 /* Background color on indicator goal banner and white text */
 .heading.goal-banner.goal-1 {
   background-color: #E52B3D !important;
