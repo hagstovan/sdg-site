@@ -30,7 +30,7 @@ country:
   name: Faroe Islands
   adjective: Faroese
 create_goals:
-  layout: goal-with-progress
+  layout: goal-by-target
   previous_next_links: true
   goals: []
 create_indicators:
