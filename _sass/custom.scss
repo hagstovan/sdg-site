@@ -8,6 +8,11 @@
       padding-bottom: 5px;
 }
 
+/* Adjust margin on goal-banner */
+.goal-banner h1{
+    margin-top: 6px !important;
+}
+
 /* Background color on indicator goal banner and white text */
 .heading.goal-banner.goal-1{
     background-color: #E52B3D !important;
