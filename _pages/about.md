@@ -1,6 +1,6 @@
 ---
 title: About
-language: en
+language: fo
 permalink: /about/
 layout: page
 ---
