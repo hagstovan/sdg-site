@@ -2314,12 +2314,15 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 /* Gray background for indicator level */
 .layout-goal-bootstrap5 .goal-indicator {
   margin-top: 0px !important;
-  background-color: #f9f9f9 !important;
+  background-color: #f9f9f9;
   padding-top: 20px !important; }
 
 .layout-goal-bootstrap5 .goal-target {
   margin-top: 0;
   margin-bottom: 12px; }
+
+body.contrast-high > .layout-goal-bootstrap5 .goal-indicator {
+  background-color: transparent !important; }
 
 /* Indicator margin left on mobile layout;  */
 .layout-goal-bootstrap5 .goal-page-indicator-number {
