@@ -2327,7 +2327,7 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 
 /* Background color on indicator goal banner and white text */
 .heading.goal-banner.goal-1 {
-  background-color: #E52B3D !important;
+  background-color: #E52B3D;
   color: #ffffff !important; }
 
 body.contrast-high > .heading.goal-banner.goal-1 {
