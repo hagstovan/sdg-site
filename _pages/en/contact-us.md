@@ -2,7 +2,7 @@
 layout: page
 title: Contact us
 language: en
-permalink: /contact-us/
+permalink: /en/contact-us/
 ---
 ### We are interested in your feedback regarding this website and its contents.
 
