@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact us
-language: en
+language: fo
 permalink: /contact-us/
 ---
 ### We are interested in your feedback regarding this website and its contents.
