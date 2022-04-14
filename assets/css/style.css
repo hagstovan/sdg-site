@@ -2294,8 +2294,11 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 /* Frontpage banner */
 .frontpage-banner {
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   background-color: green; }
+
+.site-intro {
+  color: white; }
 
 /* Remove shadow from goals in goal overview */
 .goal-icon-image {
