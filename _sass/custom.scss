@@ -2,12 +2,15 @@
 
 /* Frontpage banner */
 .frontpage-banner {
-      padding-top:20px;
-      padding-bottom:60px;
       background-color:#417D46;
       background-image: url('/sdg-site/assets/img/background.jpg');
       background-size: cover;
       background-position: center;      
+}
+.frontpage-banner-gradient {
+padding-top: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+    padding-bottom: 60px;
 }
 .site-intro{
       color: white;
