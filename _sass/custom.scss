@@ -12,8 +12,11 @@
 .site-intro{
       color: white;
 }
+body > div.frontpage-banner > div > div > h1 {
+      font-weight: 700;
+}
 body > div.frontpage-banner > div > div > div > a {
-    color: white;
+      color: white;
 }
 
 /* Remove shadow from goals in goal overview */
