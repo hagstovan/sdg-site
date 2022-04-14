@@ -14,10 +14,16 @@ release) this can replace frontpage.html.
 <div id="main-content" class="container" role="main">
 
     {% if site.frontpage_introduction_banner %}
-    <div class="site-intro">
-        <h1>{{ site.frontpage_introduction_banner.title | t }}</h1>
-        <div class="lead-copy">{{ site.frontpage_introduction_banner.description | t | markdownify }}</div>
-    </div>
+    
+    <div class="frontpage-banner">
+        <div class="container">
+            <div class="site-intro">
+                <h1>{{ site.frontpage_introduction_banner.title | t }}</h1>
+                <div class="lead-copy">{{ site.frontpage_introduction_banner.description | t }}</div>
+            </div>
+        </div>
+    </div>    
+    
     {% endif %}
 
     {% if site.frontpage_goals_grid %}
@@ -25,7 +31,7 @@ release) this can replace frontpage.html.
 
         {% if site.frontpage_goals_grid.title %}
      
-        <h2 class="frontpage-goals-grid-title">test test{{ site.frontpage_goals_grid.title | t }}</h2>
+        <h2 class="frontpage-goals-grid-title">{{ site.frontpage_goals_grid.title | t }}</h2>
         {% endif %}
 
         {% if site.frontpage_goals_grid.description %}
