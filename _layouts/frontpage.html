@@ -3,10 +3,18 @@
 <div id="main-content" class="container" role="main">
 
     {% if site.frontpage_introduction_banner %}
-    <div class="site-intro spacer medium">
-        <h1>{{ site.frontpage_introduction_banner.title | t }}</h1>
-        <p class="lead-copy">{{ site.frontpage_introduction_banner.description | t }}</p>
-    </div>
+    
+    
+    <div style="background-color:green; padding-top:20px; padding-bottom:30px">
+        <div class="container">
+            <div class="site-intro spacer medium">
+                <h1>{{ site.frontpage_introduction_banner.title | t }}</h1>
+                <div class="lead-copy"><p>{{ site.frontpage_introduction_banner.description | t }}</p></div>
+            </div>
+        </div>
+    </div>    
+    
+    
     {% endif %}
 
     {% assign country_name = site.country.name | t %}
