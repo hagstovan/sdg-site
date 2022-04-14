@@ -1,4 +1,4 @@
-﻿accessible_charts: true
+accessible_charts: true
 accessible_tabs: true
 analytics:
   ua: ''
@@ -65,6 +65,7 @@ data_fields:
   units: ''
   series: ''
 date_formats: []
+decimal_separator: ','
 disclaimer:
   phase: ''
   message: ''
