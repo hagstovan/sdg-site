@@ -16,10 +16,12 @@ release) this can replace frontpage.html.
     {% if site.frontpage_introduction_banner %}
     
     <div class="frontpage-banner">
-        <div class="container">
-            <div class="site-intro">
-                <h1>{{ site.frontpage_introduction_banner.title | t }}</h1>
-                <div class="lead-copy">{{ site.frontpage_introduction_banner.description | t }}</div>
+        <div class="frontpage-banner-gradient">        
+            <div class="container">
+                <div class="site-intro">
+                    <h1>{{ site.frontpage_introduction_banner.title | t }}</h1>
+                    <div class="lead-copy">{{ site.frontpage_introduction_banner.description | t }}</div>
+                </div>
             </div>
         </div>
     </div>    
