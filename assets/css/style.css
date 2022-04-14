@@ -2312,6 +2312,11 @@ body > div.frontpage-banner > div > div > div > h1 {
 body > div.frontpage-banner > div > div > div > div > a {
   color: white; }
 
+/* Remove line above goals on frontpage */
+.frontpage-goals-grid {
+  margin: 0px 0 0px 0 !important;
+  border-top: 0px solid !important; }
+
 /* Remove shadow from goals in goal overview */
 .goal-icon-image {
   box-shadow: none !important; }
