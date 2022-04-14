@@ -2293,9 +2293,9 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 
 /* Frontpage banner */
 .frontpage-banner {
-  padding-top: 10px;
-  padding-bottom: 40px;
-  background-color: green;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  background-color: #417D46;
   background-image: url("/sdg-site/assets/img/background.jpg");
   background-size: cover;
   background-position: center; }
