@@ -2635,3 +2635,12 @@ body.contrast-high > goal-17-backgroundcolor {
 .frame.goal-tiles {
   padding-top: 13px;
   padding-left: 9px; }
+
+.status {
+  color: #ffffff; }
+
+.goal-stats.complete {
+  background-color: #1a7f37 !important; }
+
+.goal-stats {
+  border: 1px solid #fff; }
