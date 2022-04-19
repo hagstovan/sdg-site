@@ -2631,3 +2631,7 @@ body.contrast-high > goal-17-backgroundcolor {
 /* White color on vistied goal headline-link on Reporting status-site */
 #main-content > div > div.goal.reporting-status-item > div.details > h3 > a:visited {
   color: #ffffff !important; }
+
+.frame.goal-tiles {
+  padding-top: 13px;
+  padding-left: 9px; }
