@@ -2647,3 +2647,6 @@ body.contrast-high > .goal-17-backgroundcolor {
 
 .goal-stats .complete {
   background-color: #27ae60 !important; }
+
+div > div.goal.reporting-status-item > div.details > h3.status-goal > a {
+  color: #ffffff; }
