@@ -2644,3 +2644,6 @@ body.contrast-high > .goal-17-backgroundcolor {
 
 .goal-stats {
   border: 1px solid #fff !important; }
+
+.goal-stats .complete {
+  background-color: #27ae60 !important; }
