@@ -375,3 +375,10 @@ div > div.goal.reporting-status-item > div.details > h3.status-goal > a{
 div > div.goal.goal-overall > div > div.goal-stats {
     border: 1px solid #95a5a6 !important;
 }
+.statuses > div .status.complete .status-inner {
+    background: #27ae60 !important;
+}
+
+div.details > div.summary > div > div > span.status.complete {
+    background: #27ae60 !important;
+}
