@@ -27,7 +27,7 @@ contrast_type: single
 cookie_consent_form:
   enabled: false
 country:
-  name: my-custom-translations.faroeislands
+  name: data.faroeislands
   adjective: Faroese
 create_goals:
   layout: goal-by-target
