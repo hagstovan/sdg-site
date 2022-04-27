@@ -1211,7 +1211,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site/11-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-2-1",
@@ -1251,7 +1251,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site/11-5-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-5-2",
@@ -1275,7 +1275,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site/11-6-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-6-2",
@@ -1315,7 +1315,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site/11-b-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "11-b-2",
@@ -1323,7 +1323,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site/11-b-2",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
