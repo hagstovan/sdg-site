@@ -9,39 +9,36 @@
     <div class="row">
         <div class="col-sm-2 col-xs-2 text-center mb-5">
           <img src="/assets/img/indicator_flag/iceland.png" style="height: 50px">
-            <div><a href="https://visar.hagstofa.is/heimsmarkmidin{{ page.url }}" target="_blank">{{ page.t.data.iceland | t }}</a></div>
+            <div><a href="https://visar.hagstofa.is/heimsmarkmidin/en/{{ page.url | split: "/" | last }}" target="_blank">{{ page.t.data.iceland | t }}</a></div>
         </div>
         
         <div class="col-sm-2 col-xs-2 text-center mb-5">
           <img src="/assets/img/indicator_flag/canada.png" style="height: 50px">
-            <div><a href="https://sdgcif-data-canada-oddcic-donnee.github.io{{ page.url }}" target="_blank">{{ page.t.data.canada | t }}</a></div>
+            <div><a href="https://sdgcif-data-canada-oddcic-donnee.github.io/{{ page.url | split: "/" | last }}" target="_blank">{{ page.t.data.canada | t }}</a></div>
         </div>
 
         <div class="col-sm-2 col-xs-2 text-center mb-5">
           <img src="/assets/img/indicator_flag/germany.png" style="height: 50px">
-            <div><a href="http://sdg-indikatoren.de{{ page.url }}" target="_blank">{{ page.t.data.germany | t }}</a></div>
+            <div><a href="http://sdg-indikatoren.de/en/{{ page.url | split: "/" | last }}" target="_blank">{{ page.t.data.germany | t }}</a></div>
         </div>
         
         <div class="col-sm-2 col-xs-2 text-center mb-5">
           <img src="/assets/img/indicator_flag/ukraine.png" style="height: 50px">
-            <div><a href="https://sdg.ukrstat.gov.ua{{ page.url }}" target="_blank">{{ page.t.data.ukraine | t }}</a></div>
+            <div><a href="https://sdg.ukrstat.gov.ua/en/{{ page.url | split: "/" | last }}" target="_blank">{{ page.t.data.ukraine | t }}</a></div>
         </div>
         
         <div class="col-sm-2 col-xs-2 text-center mb-5">
           <img src="/assets/img/indicator_flag/unitedkingdom.png" style="height: 50px">
-            <div><a href="https://sdgdata.gov.uk{{ page.url }}" target="_blank">{{ page.t.data.unitedkingdom | t }}</a></div>
+            <div><a href="https://sdgdata.gov.uk/{{ page.url | split: "/" | last }}" target="_blank">{{ page.t.data.unitedkingdom | t }}</a></div>
         </div>
 
         <div class="col-sm-2 col-xs-2 text-center mb-5">
           <img src="/assets/img/indicator_flag/unitedstates.png" style="height: 50px">
-            <div><a href="https://sdg.data.gov{{ page.url }}" target="_blank">{{ page.t.data.unitedstates | t }}</a></div>
+            <div><a href="https://sdg.data.gov/en/{{ page.url | split: "/" | last }}" target="_blank">{{ page.t.data.unitedstates | t }}</a></div>
         </div>
+
         
-        {{ page.url | split:'/' | first }}
-        test2
-        
-         {{ page.url | split: "/" | last }}
-        test
+         
         
         
         
