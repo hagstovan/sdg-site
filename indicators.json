@@ -103,7 +103,7 @@
         },
         {
           "id": "1-b-1",
-          "title": "Almannar útreiðslur til fátækrahjálp",
+          "title": "Almennar útreiðslur burturav til fátøk",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/1-b-1",
@@ -127,7 +127,7 @@
         },
         {
           "id": "2-1-2",
-          "title": "Prevalence of hampulige or álvarsamt mat ísecurity í íbúgvunum, based á mat Insecurity Experience Scale (FIES)",
+          "title": "Útbreiðsla av nøkrum ella álvarsligum føðslutroti í fólkinum, bygt á ávísan fyri føðslutrygd (FIES - Food Insecurity Experience Scale)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/2-1-2",
@@ -135,7 +135,7 @@
         },
         {
           "id": "2-2-1",
-          "title": "Prevalence of stunting (height for age <-2 standard deviation frá median of World Health Health (WHO) Child Growth Standards) millum børn undir 5 ár av aldrinum",
+          "title": "Útbreiðsla av vakstrartarni (hædd fyri aldurin <-2 standardfrávik frá miðvirðinum fyri barnavakstrarstandardinum hjá Heimsheilsustovninum (WHO)) millum børn yngri enn 5 ár",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/2-2-1",
@@ -143,7 +143,7 @@
         },
         {
           "id": "2-2-2",
-          "title": "Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation frá median of WHO Child Growth Standards) millum børn undir 5 ár av aldrinum, við type (wasting and ovt)",
+          "title": "Útbreiðsla av føðslutroti (vekt í mun til hædd >+2 ella <-2 standardfrávik frá miðvirðinum fyri barnavakstrarstandardinum hjá Heimsheilsustovninum (WHO)) millum børn yngri enn 5 ár, skift á slag (soltni og yvirvekt)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/2-2-2",
@@ -151,7 +151,7 @@
         },
         {
           "id": "2-2-3",
-          "title": "Prevalence of anaemia in kvinnur aged 15 to 49 ár, by barnsburði status (percentage)",
+          "title": "Útbreiðsla av blóðtroti hjá kvinnum 15 til 49 ára gamlar, skift á um tað er barnakona ella ikki (prosentpartur)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/2-2-3",
@@ -159,7 +159,7 @@
         },
         {
           "id": "2-3-1",
-          "title": "Volume of production per ́d by classes of farming/pastoral/forestry enterprise size",
+          "title": "Framleiðslunøgd fyri hvørja arbeiðseind flokkað eftir stødd á framleiðslueind í jarðarbrúki/húsdýravinnu/skógrøkt",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/2-3-1",
@@ -167,7 +167,7 @@
         },
         {
           "id": "2-3-2",
-          "title": "Average inntøku av lítlum-scale matum, við sexum og nous status.",
+          "title": "Miðalinntøka hjá lutfalsliga smáum matframleiðarum, skift á kyn og hvørt talan er um upprunafólk",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/2-3-2",
@@ -175,7 +175,7 @@
         },
         {
           "id": "2-4-1",
-          "title": "Proportion of agricultural area undir virkin og hjálpir einum landbúnaði.",
+          "title": "Partur av landbúnaðarlendinum við burðardyggari landbúnaðarframleiðslu",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/2-4-1",
@@ -183,7 +183,7 @@
         },
         {
           "id": "2-5-1",
-          "title": "Number av plantum og djóra tilfeingi til mat og ein landbúnað tryggur í øðrum medium ella long-termum facilitum.",
+          "title": "Tal av (a) plantu- og (b) djóraílegutilfeingi at nýta til matna og landbúnað ið er tryggjað varðveislu í annaðhvørt miðallangari ella langari goymslu",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/2-5-1",
@@ -191,7 +191,7 @@
         },
         {
           "id": "2-5-2",
-          "title": "Proportion of local elvir til tíman, sum verður í vanda fyri at vága út.",
+          "title": "Partur av staðbundnum sløgum ið eru mett í vanda fyri at verða týnd",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/2-5-2",
@@ -199,7 +199,7 @@
         },
         {
           "id": "2-a-1",
-          "title": "landbúnað ellaientation index for stjórninaitures",
+          "title": "Vísital hjá landbúnaðinum fyri almennar útreiðslur",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/2-a-1",
@@ -207,7 +207,7 @@
         },
         {
           "id": "2-a-2",
-          "title": "Total alment rennur (official development stuðul pluss aðrar alment rennur) til ein landbúnað sector",
+          "title": "Samantaldi almenni peningaflutningurin (almenn menningarhjálp umfram onnur almenn fígging) til landbúnaðargeiran",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/2-a-2",
@@ -223,7 +223,7 @@
         },
         {
           "id": "2-c-1",
-          "title": "Indicator of mat prís anomalies",
+          "title": "Ávísi fyri frávik í matvøruprísum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/2-c-1",
@@ -327,7 +327,7 @@
         },
         {
           "id": "3-5-1",
-          "title": "Coverage of viðgerðs (pharmacological, sálar og avvenjingarilitation og eftircare services) for evni brúka etingarólags",
+          "title": "Dekningur av viðgerðarinntrivum (við heilivági, sálarsosialari viðgerð umframt endurbúgving og eftirviðgerð) fyri bundinskap av rúsevnum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-5-1",
@@ -359,7 +359,7 @@
         },
         {
           "id": "3-7-2",
-          "title": "Føðitíttleiki í móðuraldursbólkinum (10-14 ár og 15-19 ár) fyri hvørjar 1.000 kvinnur í aldursolkinum",
+          "title": "Føðitíttleiki hjá hálvvaksnum (10-14 ár og 15-19 ár) fyri hvørjar 1.000 kvinnur í aldursbólkinum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-7-2",
@@ -367,7 +367,7 @@
         },
         {
           "id": "3-8-1",
-          "title": "Coverage of essential heilsu services",
+          "title": "Dekningur grundleggjandi heilsutænastum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-8-1",
@@ -375,7 +375,7 @@
         },
         {
           "id": "3-8-2",
-          "title": "Proportion av íbúgvunum við stórum húsitures á heilsu sum ein part av totalum arbeiðiiture ella inntøku.",
+          "title": "Partur av fólkinum har stórur partur av húskisútreiðslunum fer til heilsuveitingar, í mun til heildarútreiðslurnar ella -inntøkurnar hjá húskinum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-8-2",
@@ -383,7 +383,7 @@
         },
         {
           "id": "3-9-1",
-          "title": "Mortality rate at eggja til hús og amient luft dálking.",
+          "title": "Deyðatalið volt av dálkaða inniluft og luftdálking uttandura",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-9-1",
@@ -415,7 +415,7 @@
         },
         {
           "id": "3-b-1",
-          "title": "Proportion av málinum, sum eru fjaldur av øllum vacines included í sínum tjóðar programme.",
+          "title": "Partur av fólkinum í móttakarabólkinum, ið hevur fingið allar koppingar ásettar í koppingarætlanini fyri landið",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-b-1",
@@ -423,7 +423,7 @@
         },
         {
           "id": "3-b-2",
-          "title": "Total net alment menn hjálpa til lækna kanningar og grundleggjandi heilsu sectors",
+          "title": "Samlað almenn nettomenningarhjálp til læknafrøðiliga gransking og grundleggjandi heilsugeirar",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-b-2",
@@ -431,7 +431,7 @@
         },
         {
           "id": "3-b-3",
-          "title": "Proportion av heilsu facilitum, sum hava ein core, sum hevur ein core, sum hevur ráð til at gera, og hevur ráð til at fáa eina ótýning",
+          "title": "Partur av heilsustovnum, ið hevur ein grundstovn av týðandi alneyðugum heilivági tøkan og fyri rímiligan prís í longdini",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-b-3",
@@ -447,7 +447,7 @@
         },
         {
           "id": "3-d-1",
-          "title": "International Health Regulations (IHR) capacity and health emergencyness",
+          "title": "Tilbúgving innan altjóða heilsuviðtøkur (IHR) og fyribúningur til heilsuneyðstøðu",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-d-1",
@@ -455,7 +455,7 @@
         },
         {
           "id": "3-d-2",
-          "title": "Percentage of blóðstream infections due to selected antimicrobial-resistant organisms",
+          "title": "Prosentpartur av blóðeitran vegna útvaldar fjølmótstøðuførar mikroorganismur",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-d-2",
@@ -471,7 +471,7 @@
         
         {
           "id": "4-1-1",
-          "title": "Proportion of børn og ung fólk (a) í próvtøl 2/3; (b) í endanum av primary; og (c) í endanum av lægri secondary, í minsta lagi eitt minimum, sum er í (i) at lesa og (ii) støddfrøði, við sex",
+          "title": "Partur av børnum og ungum (a) í 2/3. flokki; (b) við endan av barnaskúlanum og (c) við endan av framhaldsskúlanum, ið hava rokkið minstaførleikar í (i) lesing og (ii) rokning, skift á kyn",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/4-1-1",
@@ -487,7 +487,7 @@
         },
         {
           "id": "4-2-1",
-          "title": "Proportion av børnum 24-59 mánaðir, sum eru menn, sum eru í góðari heilsu, læra og sálar-being, av sexum",
+          "title": "Partur av 24-59 mánaðar gomlum børnum, ið mennast aldurssamsvarandi við heilsu, læring og trivnaði, skift á kyn",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/4-2-1",
@@ -503,7 +503,7 @@
         },
         {
           "id": "4-3-1",
-          "title": "Participations av ungdómum og vaksin í formal og ikki-formal útbúgving og training í fyrra 12 mánaðir, við sex",
+          "title": "Prosentpartur av ungum og vaksnum í formligari og óformligari útbúgving og læru undanfarnu 12 mánaðir, skift á kyn",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/4-3-1",
@@ -511,7 +511,7 @@
         },
         {
           "id": "4-4-1",
-          "title": "Proportion of ungdóm og vaksin við kunning og samskiftis tøkni (ICT) førleikarnar, við sløg av skillum.",
+          "title": "Partur av ungum og vaksnum við grundleggjandi førleikum í samskiftis- og kunningartøkni, skift á slag av førleika",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/4-4-1",
@@ -519,7 +519,7 @@
         },
         {
           "id": "4-5-1",
-          "title": "Parity indices (female/male, rural/urban, bottom/top ríkidømi quintile and onnur so sum disability status, elektronous fólks and conflict-affected, as data gerast tøk) for all útbúgving indicators on hendan list, sum kann vera disaggregated",
+          "title": "Javnmetisvísar (kvinnur/menn, bý/land, fátækasti/ríkasti fimtipartur og onnur tílík tvíbýti so sum avlamisstøðu, upprunafólk og krígsrakt, so hvørt sum dátur verða tøkar) fyri allar útbúgvingarávísarnar á hesum lista, ið kunnu sundurgreinast",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/4-5-1",
@@ -527,7 +527,7 @@
         },
         {
           "id": "4-6-1",
-          "title": "Proportion of population in a given age groupchieving í minsta lagi a fixed level of serfrøðingur í functional (a) literacy and (b) numeracy førleikarnar, by sex",
+          "title": "Partur av fólkinum í givnum aldursbólki, ið røkkur eitt ávíst minstamark av førleika at (a) lesa og (b) rokna, skift á kyn",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/4-6-1",
@@ -559,7 +559,7 @@
         },
         {
           "id": "4-c-1",
-          "title": "Proportion av lærarum við minsta lagi kravdi qualifications, av útbúgving.",
+          "title": "Partur av lærarum við kravdu førleikunum, skift á útbúgvingarstig",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/4-c-1",
@@ -583,7 +583,7 @@
         },
         {
           "id": "5-2-1",
-          "title": "Proportion of nakrantíð-partnered kvinnur og gentur, sum vóru 15 ár og eldri evni til likamlig, sex ella sálar harðskap av einum núverandi ella fyrrverandi í 12 mánaðir, av formum av harðskapi og við aldrinum",
+          "title": "Partur av kvinnum og gentum eldri enn 15, ið hava verið í parlagi og verið fyri likamligum, kynsligum ella sálarligum harðskapi framdum av núverandi ella fyrrverandi maka undanfarnu 12 mánaðir, skift á slag av harðskapi og aldur",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/5-2-1",
@@ -591,7 +591,7 @@
         },
         {
           "id": "5-2-2",
-          "title": "Proportion av kvinnum og gentur 15 ár og eldri evni til kynsligt harðskap av fólki, enn ein ítimate partner í fyrra 12 mánaðir, av aldrinum og stað fyri at koma fyrirence",
+          "title": "Partur av kvinnum og gentum 15 ár og eldri, ið hava verið fyri kynsligum harðskapi framdum av øðrum enn ástarvini undanfarnu 12 mánaðir, skift á aldur og brotsstað",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/5-2-2",
@@ -639,7 +639,7 @@
         },
         {
           "id": "5-6-1",
-          "title": "Proportion of kvinnur 15–49 ár, sum gera teirra egnu avgerðir, sum hava gjørt, contraceptive use and reproductive health umsorgan",
+          "title": "Partur av kvinnum 15-49 ár, sum taka egnar upplýstar avgerðir viðvíkjandi kynsligum viðurskiftum, gitnaðarverju og nøringar-heilsurøkt",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/5-6-1",
@@ -655,7 +655,7 @@
         },
         {
           "id": "5-a-1",
-          "title": "(a) Proportion of total agricultural population við owner ella trygt rættindi yvir agricultural land, by sex; og (b) part av kvinnum millum eigarin ella rættindi-bearers of agricultural land, við type of tenure",
+          "title": "(a) Partur av samlaða fólkatalinum í landbúnaði við ognarrætti ella tryggjaðum rættindum til landunaðarjørð, skift á kyn; og (b) partur av kvinnum millum eigarar ella rættindahavarar til landbúnaðarjørð, skift á slag av rættindum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/5-a-1",
@@ -671,7 +671,7 @@
         },
         {
           "id": "5-b-1",
-          "title": "Proportion of individualar, sum eiga eina fartelefon, við sex.",
+          "title": "Partur av einstaklingum ið eiga fartelefon, skift á kyn",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/5-b-1",
@@ -711,7 +711,7 @@
         },
         {
           "id": "6-3-1",
-          "title": "Proportion av heimum og í ídnaðarvatnum rennur trygt við øllum góðum viðfarinum.",
+          "title": "Partur av spillivatni, ið verður viðgjørt trygt",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/6-3-1",
@@ -719,7 +719,7 @@
         },
         {
           "id": "6-3-2",
-          "title": "Proportion av líkum av vatni við góðum vatni.",
+          "title": "Partur av vatnkeldum við góðari vatngóðsku",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/6-3-2",
@@ -727,7 +727,7 @@
         },
         {
           "id": "6-4-1",
-          "title": "Change in vatn-use efficiency over time",
+          "title": "Broyting av vatnnýtslumunadygd við tíðini",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/6-4-1",
@@ -735,7 +735,7 @@
         },
         {
           "id": "6-4-2",
-          "title": "Level av vatni trýsti: feskvatn taka seg aftur sum ein mun av tøkum vatni.",
+          "title": "Vatnstrongdarstig: feskvatnsútvinning sum partur av tøkum vatnfeingi",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/6-4-2",
@@ -743,7 +743,7 @@
         },
         {
           "id": "6-5-1",
-          "title": "Degree of integrated vatn resources management",
+          "title": "Stig av heildarvirkandi vatnfeingisumsiting",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/6-5-1",
@@ -751,7 +751,7 @@
         },
         {
           "id": "6-5-2",
-          "title": "Proportion of transboundary basin area við eini skurðviðgerð, sum er til vatn samstarv.",
+          "title": "Partur av vatnøkjum, sum fara um landamark og sum eru partur av samstarvi um vatnýtslu",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/6-5-2",
@@ -759,7 +759,7 @@
         },
         {
           "id": "6-6-1",
-          "title": "Broyt/broytið í mun til vatn í samband við vatn- og á.",
+          "title": "Broyting í vavi av vatntongdum vistskipanum við tíðini",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/6-6-1",
@@ -863,7 +863,7 @@
         },
         {
           "id": "8-3-1",
-          "title": "Proportion of informal arbeiði í total arbeiði, við sector og sex.",
+          "title": "Partur av óformligum størvum í mun til øll størv, skift á geira og kyn",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/8-3-1",
@@ -927,7 +927,7 @@
         },
         {
           "id": "8-8-2",
-          "title": "Level of national compliance við mangrovu rættindi (falufrælsi of elektro and collective bargaining) based on International Labour Organization (ILO) textual sources and nationalon, by sex and migrant status",
+          "title": "Í hvønn mun landið lýkur arbeiðararættindi (skipanarfrælsi og sáttmálasamráðingar) grundað á ásetingar hjá altjóða arbeiðarafelagsskapinum (ILO) og landsins lóggávu, skift á kyn og innflytarastøðu",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/8-8-2",
@@ -943,7 +943,7 @@
         },
         {
           "id": "8-10-1",
-          "title": "(a) Number of commercial banki per 100,000 vaksin og (b) number of automated teller machines (ATMs) per 100,000 vaksin",
+          "title": "(a) Tal av bankadeildum fyri hvørji 100.000 vaksin og (b) tað av sjálvtøkum fyri hvørji 100.000 vaksin",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/8-10-1",
@@ -991,7 +991,7 @@
         },
         {
           "id": "9-1-2",
-          "title": "Ferðafólk og farmar volumear, við mode of transport",
+          "title": "Ferðafólkatal og nøgd av vøruflutningi, skift á slag av flutningi",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/9-1-2",
@@ -1023,7 +1023,7 @@
         },
         {
           "id": "9-3-2",
-          "title": "Proportion of smá-scaleídnað við einum láni ella linei av keypskorti.",
+          "title": "Partur av smáum og miðalstórum virkjum við einum láni ella kredittveitara",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/9-3-2",
@@ -1039,7 +1039,7 @@
         },
         {
           "id": "9-5-1",
-          "title": "Research og menniture sum ein mun av mangrovu.",
+          "title": "Útreiðslur til gransking og menning sum partur av BTÚ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/9-5-1",
@@ -1739,7 +1739,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site/16-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-1-2",
@@ -1959,7 +1959,7 @@
         },
         {
           "id": "17-3-1",
-          "title": "Fremmandafólk beinleiðis íløgur, almenna menn og Suðurkorea-South samstarv sum ein mun av stóra inntøku.",
+          "title": "Nýtt fæfeingi virkjað til menningarlond frá fleiri keldum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/17-3-1",
@@ -1967,7 +1967,7 @@
         },
         {
           "id": "17-3-2",
-          "title": "Volume of remittances (in United Usa) as a proportion of total.",
+          "title": "Nøgdin av peningasendingum hjá tilflytarum til heimlandið (í US dollars) sum partur av BTÚ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/17-3-2",
@@ -2015,7 +2015,7 @@
         },
         {
           "id": "17-9-1",
-          "title": "Dollar value of fíggjar og fakt hjálp (including gjøgnum North-South, South‐South og t.",
+          "title": "Dollarvirðið av fíggjarligum og tøkniligum stuðli (heruppií umvegis Norður-Suður og tríkantssamstarv) tilsagdur menningarlond",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/17-9-1",
@@ -2079,7 +2079,7 @@
         },
         {
           "id": "17-17-1",
-          "title": "Amount í USA gjørdi av almennum-private partners for infrastructure",
+          "title": "Upphædd í US dollars, sum er tilsøgd almenn-privat partaløg fyri undirstøðukervi",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/17-17-1",
@@ -2087,7 +2087,7 @@
         },
         {
           "id": "17-18-1",
-          "title": "Statistical capacity indicator for Sustainable Development Goal monitoring",
+          "title": "Ávísi fyri hagfrøðiliga førleikan at vaka yvir tey burðardyggu menningarmálini (SDG)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/17-18-1",
