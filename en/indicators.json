@@ -883,7 +883,15 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site/en/8-4-2",
-          "status": "notstarted"
+          "status": "complete"
+        },
+        {
+          "id": "8-4-2 ",
+          "title": "global_indicators.8-4-2 -title",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/en/8-4-2 ",
+          "status": "complete"
         },
         {
           "id": "8-5-1",

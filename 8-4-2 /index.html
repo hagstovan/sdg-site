@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="fo" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
+<script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
+
+        <script>
+// This is where we initialise any global variables, namespaced in "opensdg".
+var opensdg = {
+
+  // A base URL for asynchronous calls to SDG data.
+  remoteDataBaseUrl: 'https://hagstovan.github.io/sdg-data/fo',
+
+  chartConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Chart.js.
+  chartConfigAlter: function(callback) {
+    this.chartConfigAlterations.push(callback);
+  },
+
+  tableConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Datatables.
+  tableConfigAlter: function(callback) {
+    this.tableConfigAlterations.push(callback);
+  },
+
+  // A hook which can be replaced to alter whether/how the values that are
+  // displayed on indicator tables/graphs get rounded.
+  dataRounding: function(value) {
+    // Alterations go here.
+    return value;
+  },
+
+  // A hook which can be used to alter the data before it is displayed on charts/tables.
+  dataDisplayAlterations: [],
+  dataDisplayAlter: function(callback) {
+    this.dataDisplayAlterations.push(callback);
+  },
+
+  language: 'fo',
+};
+
+// For backwards compatibility, some of these might need to be global.
+// @TODO: Remove these eventually.
+var remoteDataBaseUrl = opensdg.remoteDataBaseUrl;
+
+</script>
+
+        <script>
+// JavaScript container for translation data.
+var translations = {
+  //Javascript version of the "t" filter from jekyll-open-sdg-plugins.
+  t: function(key) {
+
+    if (!key || typeof key !== 'string') {
+      return '';
+    }
+
+    // The majority of uses of this function are to translate disaggregation
+    // data. To spare data providers of needing to enter "data." in front of
+    // their disaggregation data, we specifically look for that here.
+    if (typeof this.data === 'object' && this.data !== null && this.data[key]) {
+      return this.data[key];
+    }
+
+    var originalKey = key;
+    var drilled = this;
+    var levelsDrilled = 0;
+    var levels = key.split('.');
+
+    for (var level in levels) {
+      // If we have drilled down to soon, abort.
+      if (typeof drilled !== 'object') {
+        break;
+      }
+
+      if (levels[level] in drilled) {
+        drilled = drilled[levels[level]];
+        levelsDrilled += 1;
+      }
+    }
+
+    // If we didn't drill the right number of levels, return the original string.
+    if (levels.length != levelsDrilled) {
+      return originalKey;
+    }
+
+    // Otherwise we must have drilled all the way.
+    return drilled;
+  },
+};
+</script>
+
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title and meta description
+        ================================================== -->
+
+        
+    <title>
+        
+        Ávísi 8.4.2  -
+        
+        global_indicators.8-4-2 -title - Ávísar til málini fyri burðardyggari menning
+    </title>
+
+
+
+        <meta name="description" content="">
+        <meta property="og:description" content="">
+        
+        <meta name="robots" content="noindex, nofollow">
+        
+        <link rel="canonical" href="/">
+
+        <!--[if IE 9]>
+        <script src="/sdg-site/assets/js/lib/classList.js"></script>
+        <![endif]-->
+
+        
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/sdg-site/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/sdg-site/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/sdg-site/assets/img/favicons/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/sdg-site/assets/img/favicons/favicon.ico" />
+
+
+        
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+        
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220608084144">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
+        <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
+        <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
+        
+
+        
+
+    </head>
+<body class="language-fo
+layout-indicator-bootstrap5
+">
+<!-- <div class="container"> -->
+
+
+
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Vanligur kontrastur","disable_high_contrast":"Óvirkja stóran kontrast","disclaimer":"Síðan er undir menning. Tú er vælkomin at <a href=\"mailto:%email_contacts.suggestions\">viðmerkja </a> síðuna.","enable_high_contrast":"Virkja stóran kontrast","high_contrast":"Stórur kontrastur","skip_link":"Leyp til høvuðsinnihald","tag_line":"17 mál skulu broyta okkara heim","toggle_menu":"Valmyndaskiftari. Trýst fyri at víðka ella minka valmyndina.","toggle_search":"Leitiskiftari. Trýst fyri at víðka ella minka leititeigin."};</script>
+
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Leyp til høvuðsinnihald</a>
+<div id="disclaimer">
+    
+<div class="container">
+  <div class="disclaimer-alert">
+    <strong class="phase-tag">Alpha</strong>
+    
+    Síðan er undir menning. Tú er vælkomin at <a href="mailto:%email_contacts.suggestions">viðmerkja </a> síðuna.
+    
+  </div>
+</div>
+
+</div>
+
+<header role="banner" class="">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
+            <a class="navbar-brand" href="/sdg-site/" id="home">
+    <img src="/sdg-site/assets/img/SDG_logo.png" alt="Mál fyri burðardyggari menning - 17 mál skulu broyta okkara heim" />
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex flex-wrap w-100 justify-content-between">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site/goals">Mál</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site/reporting-status">Fráboðanarstøða</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site/about">Um</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site/faq">OSS</a>
+</li><li class="nav-item ">
+    <a class="nav-link" href="/sdg-site/news">Dagføringar</a>
+</li></ul>
+    
+                </div>
+                <div class="header-search-bar">
+                    <form class="align-self-lg-end" id="search" action="/sdg-site/search/">
+    <div class="input-group">
+        <label class="visually-hidden" for="indicator_search">Leita</label>
+        <input class="form-control" type="search" name="q" id="indicator_search" title="Leita">
+        <span class="input-group-append">
+            <button class="btn btn-outline-secondary ms-n5" aria-label="Leita" id="search-btn" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </span>
+    </div>
+</form>
+
+                </div>
+                <div class="header-toggles d-flex">
+
+
+
+
+
+  <div class="language-toggle-container">
+  
+  <div class="btn-group language-toggle-dropdown  dropdown">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa fa-globe"></i>
+      Føroyskt
+    </button>
+    <ul class="dropdown-menu"><li>
+            <a class="dropdown-item" href="/sdg-site/en/8-4-2%20/">
+              English
+            </a>
+          </li></ul>
+  </div>
+</div>
+
+
+<a title="Virkja stóran kontrast" aria-label="Virkja stóran kontrast"
+    data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="high"
+>A</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<div id="top" tabindex=-1></div>
+
+
+
+
+
+<script type="text/template" id="item_template">
+  <% _.each(fields, function(fieldItem) { %>
+    <div class="variable-selector
+      <% if(allowedFields.indexOf(fieldItem.field) == -1) { %> disallowed <% }%>
+      <% if (typeof childFields !== 'undefined' && childFields.indexOf(fieldItem.field) !== -1) { %> child <% }%>
+      <% // @deprecated start %>
+      <% if (typeof childFields === 'undefined' && allowedFields.indexOf(fieldItem.field) == -1) { %> child <% }%>
+      <% // @deprecated end %>
+      "
+      data-field="<%=fieldItem.field%>"
+    >
+      <button class='accessBtn' tabindex='0' aria-expanded='false'
+        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
+        aria-describedby='variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>'
+        <% }%>
+      >
+        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %><h6><% } else { %><h5><% } %>
+          <span aria-hidden="true"><%=translations.t(fieldItem.label)%><i class="fa fa-chevron-down"></i></span>
+          <span class="sr-only">Vís undirflokkar: <%=translations.t(fieldItem.label)%></span>
+        <% if(allowedFields.indexOf(fieldItem.field) == -1) { %></h6><% } else { %></h5><% } %>
+      </button>
+      <div class="variable-options">
+        <fieldset>
+          <legend class="sr-only">Undirflokkar - <%=translations.t(fieldItem.field)%></legend>
+          <div>
+            <button data-type="select">Vel allar</button>
+            <button data-type="clear">Frável allar</button>
+          </div>
+          <% _.each(fieldItem.values, function(item) { %>
+            <label>
+              <input type="checkbox" <%=item.checked ? 'checked' : ''%> value="<%=item.value%>" data-field="<%=fieldItem.field%>" /><%=translations.t(item.value)%>
+            </label>
+          <% }); %>
+        </fieldset>
+      </div>
+
+      <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
+        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Tøkar tá '<%= translations.t(_.find(edges, { To: fieldItem.field }).From) %>' er valt
+        </div>
+        <div class="no-data-hint" id="no-data-hint-<%=fieldItem.field.replace(/ /g, '-')%>">
+          Ongar dátur tí filtur eru omanfyri
+        </div>
+      <% }%>
+
+    </div>
+  <% }); %>
+</script>
+
+<script type="text/template" id="units_template">
+  
+  <% if(units.length > 1) { %>
+  
+    <h4>Mátieind</h4>
+    <fieldset>
+      <legend class="sr-only">Mátieind</legend>
+      <% _.each(units, function(unitsItem, index) { %>
+        <% var checked = (selectedUnit) ? (selectedUnit==unitsItem) : (index==0); %>
+        <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
+      <% }); %>
+    </fieldset>
+  
+  <% } %>
+  
+</script>
+
+<script type="text/template" id="series_template">
+  
+  <% if(serieses.length > 1) { %>
+  
+    <h4>Røð</h4>
+    <fieldset>
+      <legend class="sr-only">Røð</legend>
+      <% _.each(serieses, function(seriesItem, index) { %>
+        <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
+        <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%></label>
+      <% }); %>
+    </fieldset>
+  
+  <% } %>
+  
+</script>
+
+<script>translations['indicator'] = {"annotation_2030_target":"2030-málsávísi","annotation_series_break":"Dátubrot","announce_data_added":"Talmynd og talva dagførar taka dátur við.","announce_data_not_available":"Talmynd og talva vísa ongar dátur.","announce_data_removed":"Talmynd og talva dagførdar at leggja dátur burturúr.","chart":"Talmynd","chart_annotation":"Viðmerking til talmynd","clear_all":"Frável allar","clear_selections":"Frável valdar","data_keyboard_navigation":"Trýst á inn-knappin fyri at skifta millum dátupunkt við høgra- og vinstrapíli.","data_not_available":"Hesar dátur eru ikki tøkar. Vinarliga vel aðrar dátur at vísa.","data_tabular_alternative":"Dátur í talvusniði síggjast á spjaldrinum Talva.","dataset_size_warning":"Dátusettini eru ov nógv at verða víst í talmyndini. Ikki øll verða víst fyrr enn tú strikar nøkur val.","download_chart":"Tak niður talmynd sum CSV","download_chart_image":"Tak niður talmynd sum mynd","download_chart_image_title":"Tak niður talmynd sum mynd","download_csv":"Tak niður CSV","download_csv_title":"Tak niður sum CSV","download_geojson":"Tak niður GeoJSON","download_geojson_title":"Tak niður sum GeoJSON","download_headline":"Tak niður CSV við yvirskrift","download_headline_title":"Tak niður yvirskriftsdátur sum CSV","download_source":"Tak niður keldu sum CSV","download_source_sdmx":"Tak niður SDMX sum keldu","download_source_sdmx_title":"Tak niður keldudátur sum SDMX","download_source_title":"Tak niður keldudátur sum CSV","download_table":"Tak niður talvu sum CSV","edit":"Rætta","edit_configuration":"Rætta uppseting","edit_data":"Rætta dátur","edit_metadata":"Rætta metadátur","footnote":"Fótnota","geographical_area":"Landafrøðiligt øki","global_metadata":"Altjóða metadátur","global_metadata_blurb":"Henda talvan kunnar um metadáturnar, ið eru ásettar av Hagfrøðinevndini hjá ST. <a href=\"https://unstats.un.org/sdgs/metadata/\">Fullfíggjaðar altjóða metadátur</a> frá Hagfrøðistovninum hjá ST.","legend_help":"Trýst á teknlýsing fyri at leggja einstakar linjur burtur úr talmyndini.","loading":"Innlesur","loading_map":"Innlesur kort","map":"Kort","map_search":"Leita","map_search_hide":"Krógva leiting","map_search_show":"Vís leiting","map_year_slider":"Ársdragil","national_metadata":"Innlendis metadátur","national_metadata_blurb":"Henda talvan vísir metadátur fyri tann ávísan, ið er tøkur úr %country.name hagtølum, ið liggur næst upp at altjóða SDG-ávísanum. Gev gætur, at sjálvt tá altjóða SDG-ávísin er fult tøkur úr %country.adjective hagtølum, eigur at verða hugt í hesa talva eftir kunning um innlendis háttalag og aðrar upplýsingar um serstakar %country.adjective metadátur.","next":"Næsti ávísi","no_data_hint":"Ongar dátur tí filtur eru omanfyri","plot_legend_description":"Strikulýsing: listi av linjum í talmyndini","previous":"Undanfarni ávísi","select_all":"Vel allar","series":"Røð","series_help":"Vel flokkar úr fallmyndunum niðanfyri fyri at síggja ymiskar greiningar av dátunum. Summar greiningar verða ikki tøkar, fyrr enn hægri stig er valt.","source":"Kelda","sources":"Keldur","status":"Støða hjá ávísa","sub_categories":"Undirflokkar","sub_categories_show":"Vís undirflokkar:","table":"Talva","table_column_sort":"Trýst fyri at raðskipa eftir hesum teiginum","tags":"Frámerki","unit":"Eind","unit_of_measurement":"Mátieind","units_type":"Slag av eind","variable_hint":"Tøkar tá '%field' er valt","view_indicator_list":"Vís lilstan av ávísum til hetta málið"};</script>
+
+<script>translations['data'] = {"00-14years":"yngri enn 15 ár","00-17years":"00-17 ár","10-14years":"10-14 ár","15-17years":"15-17 ár","15-19years":"15-19 ár","15-24years":"15-24 ár","18-24years":"18-24 ár","25-39years":"25-39 ár","25-44years":"25-44 ár","25-54years":"25-54 ár","40-49years":"40-49 ár","45-54years":"45-54 ár","50-59years":"50-59 ár","55-64years":"55-64 ár","55-66years":"55-66 ár","60years":"60+ ár","67years":"67+ ár","CO2equivalentmilliontonnes":"CO2-javngild mió. tons","Year":"Ane","age":"Aldur","biggjarmunicipality":"Bíggjar kommuna","biofuel":"Lívfrøðilig brennievni","biomass":"Biomassi","bottom40percentofthepopulation":"Lægstu 40 prosentini av íbúgvunum","canada":"Kanada","cancer":"Krabbamein","cardiovasculardisease":"Hjarta-æðra-sjúkur","chiefmedicalofficer":"Landslæknin","conservativeparty":"Fólkaflokkurin","cronicalrespiratorydiseases":"Kroniskar sjúkur í andaleiðini","data.indicator-1-1-1-answer":"Hagstovan metir, at sera fá ella eingi fólk liva av minni enn altjóða fátækamarkinum. Øll í Føroyum hava rætt til almannaveiting, ið er væl hægri enn markið fyri ógvisligari fátækt.   Einki alment fátækamark er ásett í Føroyum. Í staðin er roknað eitt fátækaváðamark, ið er 60% (ella 50%) av miðinntøkuni (medianini) av javnvirðisinntøkuni hjá húskjum. Hetta svarar til meira enn 300 krónur um dagin, og er sostatt munandi hægri enn $1,25.","denmark":"Danmark","dentists":"Tannlæknar","diabetes":"Sukursjúka","disease":"Sjúkubólkur","domesticmaterialconsumption":"Innlendis tilfarsnýtsla","domesticmaterialconsumptionpercapita":"Innlendis tilfarsnýtsla fyri hvønn íbúgva","domesticmaterialconsumptionperunitofgdp":"Innlendis tilfarsnýtsla fyri hvørja BTÚ-eind","education":"Útbúgving","eidismunicipality":"Eiðis kommuna","elduvikarmunicipality":"Elduvíkar kommuna","energysource":"Orkukelda","essentialservice":"Grundleggjandi tænasta","eysturmunicipality":"Eysturkommuna","famjinsmunicipality":"Fámjins kommuna","faroeislands":"Føroyar","female":"Kvinnur","fossilenergyandotherproducts":"Lívrunnin brennievni og aðrar framleiðslur","fuglafjardarmunicipality":"Fuglafjarðar kommuna","fugloyarmunicipality":"Fugloyar kommuna","fulltimeequivalent":"Ársverk","funningsmunicipality":"Funnings kommuna","ge15years":"15+ ár","ge65years":"65+ ár","geothermal":"Jarðhiti","germany":"Týskland","gjaarmunicipality":"Gjáar kommuna","gotumunicipality":"Gøtu kommuna","grants":"Ríkisstudningur","growthrateofdisposableincome":"Inntøkubólkur","haldorsvikarmunicipality":"Haldórsvíkar kommuna","health":"Heilsa","hestsmunicipality":"Hests kommuna","hosvikarmunicipality":"Hósvíkar kommuna","hovsmunicipality":"Hovs kommuna","husamunicipality":"Húsa kommuna","husavikarmunicipality":"Húsavíkar kommuna","hvalbiarmunicipality":"Hvalbiar kommuna","hvalvikarmunicipality":"Hvalvíkar kommuna","hvannasundsmunicipality":"Hvannasunds kommuna","hydro":"Vatn","iceland":"Ísland","independenceparty":"Sjálvstýri","indicator":"Ávísi","indicatordevelopmenttext":"Vís gongdina fyri hendan ávísan í øðrum londum","kirkjuboarmunicipality":"Kirkjubøar kommuna","klaksvikarmunicipality":"Klaksvíkar kommuna","kunoyarmunicipality":"Kunoyar kommuna","kvivikarmunicipality":"Kvívíkar kommuna","leirvikarmunicipality":"Leirvíkar kommuna","levelofgovernment":"Stjórnarstig","localgovernment":"Kommunustýri","location":"Staðseting","lowersecondaryeducation":"Framhaldsskúlin 8. - 10. flokk","male":"Menn","materialtype":"Slag av tilfari","measure":"Mát","medicaldoctors":"Læknar","metallicminerals":"Metalmálmur","midvagsmunicipality":"Miðvágs kommuna","mikladalsmunicipality":"Mikladals kommuna","mykinesmunicipality":"Mykines kommuna","nesmunicipality":"Nes kommuna","nolsoyarmunicipality":"Nólsoyar kommuna","non-metallicminerals":"Ikki-metalhavin steinsløg","nursingandmidwiferypersonnel":"Ljósmøður, sjúkrarøktar- og heilsustarvsfólk","occupation":"Starv","ocean":"Havið","officialdevelopmentassistanceforscholarships":"Menningarstuðul latin sum lestrarstuðul","otherrevenue":"Onnur inntøka","oyndarfjardarmunicipality":"Oyndarfjarðar kommuna","parliament":"Løgtingið","per10000population":"Fyri hvørjar 10.000 íbúgvar","pharmacists":"Heiliráðfrøðingar","police":"Løgreglan","porkerismunicipality":"Porkeris kommuna","primaryeducation":"Barnaskúlin 1. - 7. flokk","progress":"Framsókn","republicanparty":"Tjóðveldi","runavikarmunicipality":"Runavíkar kommuna","rural":"Bygd","saksunarmunicipality":"Saksunar kommuna","sandavagsmunicipality":"Sandavágs kommuna","sandsmunicipality":"Sands kommuna","sex":"Kyn","sjovarmunicipality":"Sjóvar kommuna","skalamunicipality":"Skála kommuna","skalavikarmunicipality":"Skálavíkar kommuna","skopunarmunicipality":"Skopunar kommuna","skugvoyarmunicipality":"Skúgvoyar kommuna","socialcontributions":"Sosial gjøld","socialdemocraticparty":"Javnaðarflokkurin","socialprotection":"Almannavernd","solar":"Sólin","sorvagsmunicipality":"Sørvágs kommuna","source":"Kelda","sumbiarmunicipality":"Sumbiar kommuna","sundamunicipality":"Sunda kommuna","svinoyarmunicipality":"Svínoyar kommuna","taxes":"Skattir","thecentreparty":"Miðflokkurin","torshavnarmunicipality":"Tórshavnar kommuna","total":"Tilsamans","totalrenewable":"Varandi orkukeldur tilsamans","tvoroyrarmunicipality":"Tvøroyrar kommuna","ukraine":"Ukraina","unionistparty":"Sambandsflokkurin","unitedkingdom":"Bretland","unitedstates":"USA","uppersecondaryeducation":"Miðnáms- ella yrkisútbúgving","urban":"Býur","vagamunicipality":"Vága kommuna","vagsmunicipality":"Vágs kommuna","vestmannamunicipality":"Vestmanna kommuna","vidareidismunicipality":"Viðareiðis kommuna","wind":"Vindur"};</script>
+
+
+<div class="container">
+  
+<nav>
+    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
+        
+        <li class="breadcrumb-item">
+            <a href="/sdg-site/">Heim</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="/sdg-site/goals">Mál</a>
+        </li>
+        
+        <li class="breadcrumb-item">
+            <a href="/sdg-site/8" title="At virka fyri varandi, inkluderandi og burðardyggum búskaparvøkstri, fullum og úrtøkugóðum virksemi og sømiligum arbeiði til øll">Mál 8</a>
+        </li>
+        
+    </ol>
+</nav>
+
+
+  
+    
+<div class="previous-next-links d-flex justify-content-between">
+    <div class="text-left">
+        <a class="btn btn-primary" href="/sdg-site/8-4-2" aria-labelledby="previous-link">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            <span id="previous-link" class="d-none d-md-inline">Undanfarni ávísi</span>
+        </a>
+    </div>
+    <div class="text-right">
+        <a class="btn btn-primary" href="/sdg-site/8-5-1" aria-labelledby="next-link">
+            <span id="next-link" class="d-none d-md-inline">Næsti ávísi</span>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
+
+
+  
+</div>
+<div class="heading goal-banner indicator goal-8">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
+                <a href="/sdg-site/8" title="Vís lilstan av ávísum til hetta málið">
+                    <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/8.svg"
+                        alt="Sømiligt arbeiði og búskaparvøkstur - Mál 8"
+                        id="goal-8"
+                        class="goal-icon-image goal-icon-image-svg" />
+                </a>
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 indicator-details">
+            
+                <div>
+                    <h1>
+                        
+                        Ávísi 8.4.2 
+                        
+                        <span class="lead-copy">global_indicators.8-4-2 -title</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main-content" class="container goal-8" role="main">
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+
+<div class="row"
+  id="indicatorData"
+  data-indicatorid='indicator_8-4-2 '
+  data-id="8-4-2 "
+  data-country="data.faroeislands"
+  data-charttitle="global_indicators.8-4-2 -title"
+  data-charttitles="null"
+  data-measurementunit=""
+  data-xaxislabel=""
+  data-showdata="true"
+  data-graphtype="line"
+  data-graphtypes="null"
+  data-geocoderegex=""
+  data-showmap=""
+  data-startvalues="null"
+  data-graphlimits="null"
+  data-stackeddisaggregation=""
+  data-graphannotations="null"
+  data-graphtargetlines="null"
+  data-graphseriesbreaks="null"
+  data-indicatordownloads="null"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;},{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ane&quot;},{&quot;name&quot;:&quot;data.materialtype&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&quot;,&quot;Biomassi&quot;,&quot;Lívrunnin brennievni og aðrar framleiðslur&quot;,&quot;Metalmálmur&quot;,&quot;Ikki-metalhavin steinsløg&quot;,&quot;Tilsamans&quot;]},&quot;title&quot;:&quot;Slag av tilfari&quot;},{&quot;name&quot;:&quot;data.measure&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&quot;,&quot;Innlendis tilfarsnýtsla&quot;,&quot;Innlendis tilfarsnýtsla fyri hvønn íbúgva&quot;,&quot;Innlendis tilfarsnýtsla fyri hvørja BTÚ-eind&quot;]},&quot;title&quot;:&quot;Mát&quot;}]}"
+  data-compositebreakdownlabel=""
+  data-precision="null"
+>
+  
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Undirflokkar</h4>
+    <p>Vel flokkar úr fallmyndunum niðanfyri fyri at síggja ymiskar greiningar av dátunum. Summar greiningar verða ikki tøkar, fyrr enn hægri stig er valt.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/sdg-site/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    <a href="https://hagstovan.github.io/sdg-data/fo/headline/8-4-2 .csv" class="btn btn-primary btn-download" download="indicator_8-4-2 .csv" tabindex="0" role="button">Tak niður CSV við yvirskrift</a>
+
+    <a href="https://hagstovan.github.io/sdg-data/fo/data/8-4-2 .csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_8-4-2 .csv' tabindex='0' role='button'>Tak niður keldu sum CSV</a>
+
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>global_indicators.8-4-2 -title</caption>
+      <thead>
+        
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+  </div>
+
+  <div id="datatableFooter">
+    
+    
+    
+    
+  </div>
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/sdg-site/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">Dátur í talvusniði síggjast á spjaldrinum Talva.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Talmynd</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Talva</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Ávaring:</span></i>
+      Dátusettini eru ov nógv at verða víst í talmyndini. Ikki øll verða víst fyrr enn tú strikar nøkur val.
+    </div>
+
+    
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">global_indicators.8-4-2 -title</h4>
+          <div id="chart" class="plot-container">
+            
+              <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+            
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Mátieind:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Fótnota:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Dátur seinast dagførdar:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    <dl>
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button id="btnSave" title="Tak niður talmynd sum mynd" class='btn btn-primary btn-download'>
+          Tak niður talmynd sum mynd
+        </button><!-- 
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Trýst fyri at raðskipa eftir hesum teiginum</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Mátieind:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Fótnota:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Dátur seinast dagførdar:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    <dl>
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
+  
+    
+  <div class="tab-content">
+    <div class="col-sm-12 col-xs-12 mb-12 pb-4">
+        <div>
+            <img style="vertical-align:middle; height: 16px" src="/assets/img/indicator_flag/resize.png"> 
+            <span style=""> Vís gongdina fyri hendan ávísan í øðrum londum</span>
+        </div>
+    </div>
+    
+    <div class="row">
+        
+        <div class="col-sm-2 col-xs-2 text-center mb-5">
+            
+            
+          <a href="https://www.dst.dk/globalsdg/8.4.2%20" target="_blank"><img src="/assets/img/indicator_flag/denmark.png" style="height: 50px"></a>
+            <div><a href="https://www.dst.dk/globalsdg/8.4.2%20" target="_blank">Danmark</a></div>
+        </div>        
+        
+        <div class="col-sm-2 col-xs-2 text-center mb-5">
+          <a href="https://visar.hagstofa.is/heimsmarkmidin/en/8-4-2%20" target="_blank"><img src="/assets/img/indicator_flag/iceland.png" style="height: 50px"></a>
+            <div><a href="https://visar.hagstofa.is/heimsmarkmidin/en/8-4-2%20" target="_blank">Ísland</a></div>
+        </div>
+        
+        <div class="col-sm-2 col-xs-2 text-center mb-5">
+          <a href="https://sdgcif-data-canada-oddcic-donnee.github.io/8-4-2%20" target="_blank"><img src="/assets/img/indicator_flag/canada.png" style="height: 50px"></a>
+            <div><a href="https://sdgcif-data-canada-oddcic-donnee.github.io/8-4-2%20" target="_blank">Kanada</a></div>
+        </div>
+
+        <div class="col-sm-2 col-xs-2 text-center mb-5">
+          <a href="http://sdg-indikatoren.de/en/8-4-2%20" target="_blank"><img src="/assets/img/indicator_flag/germany.png" style="height: 50px"></a>
+            <div><a href="http://sdg-indikatoren.de/en/8-4-2%20" target="_blank">Týskland</a></div>
+        </div>
+        
+        <div class="col-sm-2 col-xs-2 text-center mb-5">
+          <a href="https://sdg.ukrstat.gov.ua/8-4-2%20" target="_blank"><img src="/assets/img/indicator_flag/ukraine.png" style="height: 50px"></a>
+            <div><a href="https://sdg.ukrstat.gov.ua/8-4-2%20" target="_blank">Ukraina</a></div>
+        </div>
+        
+        <div class="col-sm-2 col-xs-2 text-center mb-5">
+          <a href="https://sdgdata.gov.uk/8-4-2%20" target="_blank"><img src="/assets/img/indicator_flag/unitedkingdom.png" style="height: 50px"></a>
+            <div><a href="https://sdgdata.gov.uk/8-4-2%20" target="_blank">Bretland</a></div>
+        </div>
+
+        <div class="col-sm-2 col-xs-2 text-center mb-5">
+          <a href="https://sdg.data.gov/8-4-2%20" target="_blank"><img src="/assets/img/indicator_flag/unitedstates.png" style="height: 50px"></a>
+            <div><a href="https://sdg.data.gov/8-4-2%20" target="_blank">USA</a></div>
+        </div>
+
+        
+         
+        
+        
+        
+    </div>
+    
+    
+</div>
+
+    
+  <div class="mt-4">
+<ul class="nav nav-tabs" role="tablist">
+    
+    
+        
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link active"
+                data-bs-toggle="tab"
+                id="tab-national"
+                data-bs-target="#national"
+                aria-controls="national"
+                role="tab"
+                data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to indicator.national_metadata tab"
+
+            >Innlendis metadátur</button>
+        </li>
+    
+        
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link "
+                data-bs-toggle="tab"
+                id="tab-global"
+                data-bs-target="#global"
+                aria-controls="global"
+                role="tab"
+                data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to indicator.global_metadata tab"
+
+            >Altjóða metadátur</button>
+        </li>
+    
+        
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link "
+                data-bs-toggle="tab"
+                id="tab-sources"
+                data-bs-target="#sources"
+                aria-controls="sources"
+                role="tab"
+                data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to indicator.sources tab"
+
+            >Keldur</button>
+        </li>
+    
+    
+    
+        <li role="presentation" class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#edit" aria-controls="edit" role="tab">Rætta</a>
+        </li>
+    
+</ul>
+
+<div class="tab-content">
+    
+        
+        
+        
+        
+        
+        <div role="tabpanel" class="tab-pane active" id="national">
+            <article>
+                <p>Henda talvan vísir metadátur fyri tann ávísan, ið er tøkur úr %country.name hagtølum, ið liggur næst upp at altjóða SDG-ávísanum. Gev gætur, at sjálvt tá altjóða SDG-ávísin er fult tøkur úr %country.adjective hagtølum, eigur at verða hugt í hesa talva eftir kunning um innlendis háttalag og aðrar upplýsingar um serstakar %country.adjective metadátur.</p>
+
+                <table class="table">
+  
+  
+  
+  
+  
+  
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</table>
+
+            </article>
+        </div>
+        
+        
+        
+        
+        
+        <div role="tabpanel" class="tab-pane " id="global">
+            <article>
+                <p>Henda talvan kunnar um metadáturnar, ið eru ásettar av Hagfrøðinevndini hjá ST. <a href="https://unstats.un.org/sdgs/metadata/">Fullfíggjaðar altjóða metadátur</a> frá Hagfrøðistovninum hjá ST.</p>
+
+                <table class="table">
+  
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+        
+          
+</table>
+
+            </article>
+        </div>
+        
+        
+        
+        
+        
+        <div role="tabpanel" class="tab-pane " id="sources">
+            <article>
+                
+                <!-- Count the non-empty sources (up to 5) -->
+
+
+
+
+
+            </article>
+        </div>
+        
+    
+    
+        <div role="tabpanel" class="tab-pane" id="edit">
+            <div class="edit-container">
+  
+  
+
+  
+  
+
+
+  <a class="btn btn-primary" href="data">Rætta dátur</a>
+  
+
+  
+  <a class="btn btn-primary" href="metadata">Rætta metadátur</a>
+  
+
+  
+  <a class="btn btn-primary" href="config">Rætta uppseting</a>
+  
+
+</div>
+
+        </div>
+    
+</div>
+  
+</div>
+  </div>
+</div>
+
+</div>
+
+
+<footer role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="footerLinks">
+                    <ul>
+                        <li>
+                            <a href="https://open-sdg.org">Byggir á Open SDG</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/sdg-site/contact-us">Samband</a>
+                            
+                        </li>
+                        <li>
+                            
+                            <a href="https://twitter.com/hagstovan" target="_blank">Twitter</a>
+                            
+                        </li>
+                        <li>
+                            
+                            <a href="https://facebook.com/hagstovan" target="_blank">Facebook</a>
+                            
+                        </li>
+                        <li>
+                            <a href="/sdg-site/about/cookies-and-privacy/">Farspor</a>
+                            
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="/sdg-site/config">Configuration</a>
+                        </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+
+<script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+
+
+
+
+
+
+
+<script>translations['general'] = translations['general'] || {};
+    translations['general']['hide'] = 'krógva';</script>
+
+<script>translations['search'] = translations['search'] || {};
+    translations['search']['search'] = 'Leita';</script>
+
+<script src='/sdg-site/assets/js/sdg.js?v=20220608084144'></script>
+
+
+    
+    
+    <script src="/sdg-site/assets/js/custom.js?v=20220608084144"></script><script>
+    new indicatorInit();
+    new accessibilitySwitcher();
+</script>
+
+
+</body>
+</html>
+
