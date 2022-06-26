@@ -41,10 +41,6 @@ var opensdg = {
   language: 'fo',
 };
 
-// For backwards compatibility, some of these might need to be global.
-// @TODO: Remove these eventually.
-var remoteDataBaseUrl = opensdg.remoteDataBaseUrl;
-
 </script>
 
         <script>
@@ -123,25 +119,18 @@ var translations = {
         <script src="/sdg-site/assets/js/lib/classList.js"></script>
         <![endif]-->
 
-        
-
-
-
-
-<link rel="apple-touch-icon" sizes="180x180" href="/sdg-site/assets/img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/sdg-site/assets/img/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/sdg-site/assets/img/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/sdg-site/assets/img/favicons/favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="/sdg-site/assets/img/favicons/favicon.ico" />
 
 
         
-        
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
-        
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220624124710">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220626123749">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -152,26 +141,32 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
         
 
+        <!--[if IE]>
+        <link rel="stylesheet" href="/sdg-site/assets/css/ie.css">
+        <![endif]-->
+
         
 
     </head>
 <body class="language-fo
-layout-indicator-bootstrap5
+layout-indicator
 ">
 <!-- <div class="container"> -->
 
-
-
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Vanligur kontrastur","disable_high_contrast":"Óvirkja stóran kontrast","disclaimer":"Síðan er undir menning. Tú er vælkomin at <a href=\"mailto:%email_contacts.suggestions\">viðmerkja </a> síðuna.","enable_high_contrast":"Virkja stóran kontrast","high_contrast":"Stórur kontrastur","skip_link":"Leyp til høvuðsinnihald","tag_line":"17 mál skulu broyta okkara heim","toggle_menu":"Valmyndaskiftari. Trýst fyri at víðka ella minka valmyndina.","toggle_search":"Leitiskiftari. Trýst fyri at víðka ella minka leititeigin."};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Vanligur kontrastur","disable_high_contrast":"Óvirkja stóran kontrast","disclaimer":"Síðan er undir menning. Tú er vælkomin at <a href=\"mailto:%email_contacts.suggestions\">viðmerkja </a> síðuna.","enable_high_contrast":"Virkja stóran kontrast","high_contrast":"Stórur kontrastur","internet_explorer_message":"Vit hava varnast, at tú/tit brúkar/brúka internet Explorer at vitja hesa heimasíðuna. Internet Explorer er nú stig av Microsoft. Sum eitt úrslit, so gevur henda heimasíðan ikki longur stuðul til nakra version av Internet Explorer. Nøkur eyðkenni á hesi síðuni fer ikki at rigga. Tú/tit átti/áttu at brúkt eina nýmótans browser so sum Edge, Chrome, Firefox, ella Safari. Um tú/tit hevur/hava trupult við at seta ella atgongd til eina aðra browser, set/setið teg/tykkum í samband við teg/tykkum.tygum.","internet_explorer_message_title":"Hesin internet browserin er ikki longur stuðul","skip_link":"Leyp til høvuðsinnihald","tag_line":"17 mál skulu broyta okkara heim","toggle_menu":"Valmyndaskiftari. Trýst fyri at víðka ella minka valmyndina.","toggle_search":"Leitiskiftari. Trýst fyri at víðka ella minka leititeigin."};</script>
 
 <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Leyp til høvuðsinnihald</a>
+<div class="container internet-explorer-message">
+    <h2 class="internet-explorer-message-title">Hesin internet browserin er ikki longur stuðul</h2>
+    <p class="internet-explorer-message-body">Vit hava varnast, at tú/tit brúkar/brúka internet Explorer at vitja hesa heimasíðuna. Internet Explorer er nú stig av Microsoft. Sum eitt úrslit, so gevur henda heimasíðan ikki longur stuðul til nakra version av Internet Explorer. Nøkur eyðkenni á hesi síðuni fer ikki at rigga. Tú/tit átti/áttu at brúkt eina nýmótans browser so sum Edge, Chrome, Firefox, ella Safari. Um tú/tit hevur/hava trupult við at seta ella atgongd til eina aðra browser, set/setið teg/tykkum í samband við teg/tykkum.tygum.</p>
+</div>
 <div id="disclaimer">
     
 <div class="container">
   <div class="disclaimer-alert">
     <strong class="phase-tag">Alpha</strong>
     
-    Síðan er undir menning. Tú er vælkomin at <a href="mailto:%email_contacts.suggestions">viðmerkja </a> síðuna.
+    Síðan er undir menning. Tú er vælkomin at <a href="mailto:hagstova@hagstova.fo">viðmerkja </a> síðuna.
     
   </div>
 </div>
@@ -238,7 +233,15 @@ layout-indicator-bootstrap5
 </div>
 
 
-<a title="Virkja stóran kontrast" aria-label="Virkja stóran kontrast"
+
+                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
+    <i class="fa fa-globe language-toggle-globe-links"></i>
+    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-en list-inline-item">
+            <a class="language-toggle-link" href="/sdg-site/en/3-3-2/">
+                English
+            </a>
+        </li></ul>
+</div></span><a title="Virkja stóran kontrast" aria-label="Virkja stóran kontrast"
     data-contrast-switch-to="" href="javascript:void(0)" data-on="click"
 data-event-category="Accessibility"
 data-event-action="Change contrast setting"
@@ -253,16 +256,11 @@ data-event-label="high"
 
 
 
-
-
 <script type="text/template" id="item_template">
   <% _.each(fields, function(fieldItem) { %>
     <div class="variable-selector
       <% if(allowedFields.indexOf(fieldItem.field) == -1) { %> disallowed <% }%>
       <% if (typeof childFields !== 'undefined' && childFields.indexOf(fieldItem.field) !== -1) { %> child <% }%>
-      <% // @deprecated start %>
-      <% if (typeof childFields === 'undefined' && allowedFields.indexOf(fieldItem.field) == -1) { %> child <% }%>
-      <% // @deprecated end %>
       "
       data-field="<%=fieldItem.field%>"
     >
@@ -443,7 +441,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;},{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ár&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -467,14 +465,20 @@ data-event-label="high"
     
 
 
+
+
 <div id="headlineTable">
 
   <div id="datatables">
 
+    
     <a href="https://hagstovan.github.io/sdg-data/fo/headline/3-3-2.csv" class="btn btn-primary btn-download" download="indicator_3-3-2.csv" tabindex="0" role="button">Tak niður CSV við yvirskrift</a>
+    
+    <a href="https://hagstovan.github.io/sdg-data/fo/data/3-3-2.csv" class="btn btn-primary btn-download" download='indicator_3-3-2.csv' tabindex='0' role='button'>Tak niður keldu sum CSV</a>
 
-    <a href="https://hagstovan.github.io/sdg-data/fo/data/3-3-2.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_3-3-2.csv' tabindex='0' role='button'>Tak niður keldu sum CSV</a>
+    <p class="no-js-disaggregation-hint">Download source CSV for disaggregations</p>
 
+    
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
       <caption>Nýggir tuberkla-tilburðir fyri hvørjar 100.000 íbúgvar</caption>
@@ -841,8 +845,10 @@ data-event-label="high"
         
       </tbody>
     </table>
+    
   </div>
 
+  
   <div id="datatableFooter">
     
     
@@ -855,6 +861,7 @@ data-event-label="high"
     <p>Fótnota: </p>
     
   </div>
+  
 
 </div>
 
@@ -933,21 +940,18 @@ data-event-label="Change to Table tab"
     </div>
 
     
-    
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">Nýggir tuberkla-tilburðir fyri hvørjar 100.000 íbúgvar</h4>
           <div id="chart" class="plot-container">
-            
-              <canvas
+            <canvas
     role="img"
     aria-labelledby="chart-heading"
     aria-describedby="table-alternative chart-annotations"
     tabindex="0"
  ></canvas>
 
-            
           </div>
           <div id="plotLegend"></div>
           
@@ -991,7 +995,7 @@ data-event-label="Change to Table tab"
         ></dd>
         
         
-    <dl>
+    </dl>
 </div>
 
         </div>
@@ -1056,7 +1060,7 @@ data-event-label="Change to Table tab"
         ></dd>
         
         
-    <dl>
+    </dl>
 </div>
 
 <div id="tableSelectionDownload" class="clearfix"></div>
@@ -1072,81 +1076,6 @@ data-event-label="Change to Table tab"
 </section>
 
   
-    
-  <div class="tab-content">
-    <div class="col-sm-12 col-xs-12 mb-12 pb-4">
-        <div>
-            <img style="vertical-align:middle; height: 16px" src="/assets/img/indicator_flag/resize.png"> 
-            <span style=""> Vís gongdina fyri hendan ávísan í øðrum londum</span>
-        </div>
-    </div>
-    
-    <div class="row">
-        
-        <div class="col-sm-2 col-xs-2 text-center mb-5">
-            
-            
-          <a href="https://www.dst.dk/globalsdg/3.3.2" target="_blank"><img src="/assets/img/indicator_flag/denmark.png" style="height: 50px"></a>
-            <div><a href="https://www.dst.dk/globalsdg/3.3.2" target="_blank">Danmark</a></div>
-        </div>        
-        
-        <div class="col-sm-2 col-xs-2 text-center mb-5">
-          <a href="https://visar.hagstofa.is/heimsmarkmidin/en/3-3-2" target="_blank"><img src="/assets/img/indicator_flag/iceland.png" style="height: 50px"></a>
-            <div><a href="https://visar.hagstofa.is/heimsmarkmidin/en/3-3-2" target="_blank">Ísland</a></div>
-        </div>
-        
-        <div class="col-sm-2 col-xs-2 text-center mb-5">
-          <a href="https://sdgcif-data-canada-oddcic-donnee.github.io/3-3-2" target="_blank"><img src="/assets/img/indicator_flag/canada.png" style="height: 50px"></a>
-            <div><a href="https://sdgcif-data-canada-oddcic-donnee.github.io/3-3-2" target="_blank">Kanada</a></div>
-        </div>
-
-        <div class="col-sm-2 col-xs-2 text-center mb-5">
-          <a href="http://sdg-indikatoren.de/en/3-3-2" target="_blank"><img src="/assets/img/indicator_flag/germany.png" style="height: 50px"></a>
-            <div><a href="http://sdg-indikatoren.de/en/3-3-2" target="_blank">Týskland</a></div>
-        </div>
-        
-        <div class="col-sm-2 col-xs-2 text-center mb-5">
-          <a href="https://sdg.ukrstat.gov.ua/3-3-2" target="_blank"><img src="/assets/img/indicator_flag/ukraine.png" style="height: 50px"></a>
-            <div><a href="https://sdg.ukrstat.gov.ua/3-3-2" target="_blank">Ukraina</a></div>
-        </div>
-        
-        <div class="col-sm-2 col-xs-2 text-center mb-5">
-          <a href="https://sdgdata.gov.uk/3-3-2" target="_blank"><img src="/assets/img/indicator_flag/unitedkingdom.png" style="height: 50px"></a>
-            <div><a href="https://sdgdata.gov.uk/3-3-2" target="_blank">Bretland</a></div>
-        </div>
-
-        <div class="col-sm-2 col-xs-2 text-center mb-5">
-          <a href="https://sdg.data.gov/3-3-2" target="_blank"><img src="/assets/img/indicator_flag/unitedstates.png" style="height: 50px"></a>
-            <div><a href="https://sdg.data.gov/3-3-2" target="_blank">USA</a></div>
-        </div>
-        
-        <div class="col-sm-2 col-xs-2 text-center mb-5">
-          <a href="https://sdg.gov.pl/en/statistics_glob/3-3-2" target="_blank"><img src="/assets/img/indicator_flag/poland.png" style="height: 50px"></a>
-            <div><a href="https://sdg.gov.pl/en/statistics_glob/3-3-2" target="_blank">Pólland</a></div>
-        </div>        
-        
-        <div class="col-sm-2 col-xs-2 text-center mb-5">
-          <a href="https://sustainabledevelopment-rwanda.github.io/3-3-2" target="_blank"><img src="/assets/img/indicator_flag/rwanda.png" style="height: 50px"></a>
-            <div><a href="https://sustainabledevelopment-rwanda.github.io/3-3-2" target="_blank">Ruanda</a></div>
-        </div>      
-        
-         <div class="col-sm-2 col-xs-2 text-center mb-5">
-          <a href="https://kostat-sdg-kor.github.io/sdg-indicators/en/3-3-2" target="_blank"><img src="/assets/img/indicator_flag/southkorea.png" style="height: 50px"></a>
-            <div><a href="https://kostat-sdg-kor.github.io/sdg-indicators/en/3-3-2" target="_blank">Suðurkorea</a></div>
-        </div>    
-        
-         <div class="col-sm-2 col-xs-2 text-center mb-5">
-          <a href="https://sustainabledevelopment-ghana.github.io/3-3-2" target="_blank"><img src="/assets/img/indicator_flag/ghana.png" style="height: 50px"></a>
-            <div><a href="https://sustainabledevelopment-ghana.github.io/3-3-2" target="_blank">Gana</a></div>
-        </div>            
-        
-        
-    </div>
-    
-    
-</div>
-
-    
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
     
@@ -1231,7 +1160,7 @@ data-event-label="Change to indicator.sources tab"
         
         <div role="tabpanel" class="tab-pane active" id="national">
             <article>
-                <p>Henda talvan vísir metadátur fyri tann ávísan, ið er tøkur úr %country.name hagtølum, ið liggur næst upp at altjóða SDG-ávísanum. Gev gætur, at sjálvt tá altjóða SDG-ávísin er fult tøkur úr %country.adjective hagtølum, eigur at verða hugt í hesa talva eftir kunning um innlendis háttalag og aðrar upplýsingar um serstakar %country.adjective metadátur.</p>
+                <p>Henda talvan vísir metadátur fyri tann ávísan, ið er tøkur úr Føroyar hagtølum, ið liggur næst upp at altjóða SDG-ávísanum. Gev gætur, at sjálvt tá altjóða SDG-ávísin er fult tøkur úr Faroese hagtølum, eigur at verða hugt í hesa talva eftir kunning um innlendis háttalag og aðrar upplýsingar um serstakar Faroese metadátur.</p>
 
                 <table class="table">
   
@@ -1708,8 +1637,8 @@ data-event-label="Change to indicator.sources tab"
   </div>
 </div>
 
+  <a href="#top">Aftur til toppin</a>
 </div>
-
 
 <footer role="contentinfo">
     <div class="container">
@@ -1754,21 +1683,15 @@ data-event-label="Change to indicator.sources tab"
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
-
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
-
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.2.2/dist/chartjs-plugin-annotation.min.js" integrity="sha256-XuHhf6q+GD7fscc96mTm/228GXf1Nn9wOYOE0EgeFzY=" crossorigin="anonymous"></script>
-
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
@@ -1787,12 +1710,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20220624124710'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20220626123749'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20220624124710"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20220626123749"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
@@ -1800,4 +1723,3 @@ data-event-label="Change to indicator.sources tab"
 
 </body>
 </html>
-
