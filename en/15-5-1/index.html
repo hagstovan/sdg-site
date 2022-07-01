@@ -130,7 +130,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220701084426">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220701091736">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -420,17 +420,15 @@ data-event-label="high"
     <h4 id="definition">Definition</h4>
 <p>The Red List Index measures change in aggregate extinction risk across groups of species. It is based on genuine changes in the number of species in each category of extinction risk on The IUCN Red List of Threatened Species (www.iucnredlist.org)</p>
 
-<p><strong><em>The index is calculated based on these weight categories:</em></strong></p>
-<blockquote>
-  <p><em>Least Concerned:</em>  <strong>0</strong> <br />
+<p><strong><em>The index is calculated based on these weight categories:</em></strong> <br />
+<em>Least Concerned:</em>  <strong>0</strong> <br />
 <em>Near Threatened:</em>  <strong>1</strong> <br />
 <em>Vulnerable:</em>  <strong>2</strong> <br />
 <em>Endangered:</em>  <strong>3</strong> <br />
 <em>Critically Endangered:</em>  <strong>4</strong> <br />
 <em>Possibly Extinct:</em>  <strong>5</strong></p>
-</blockquote>
 
-<p>The Red List Index has a value between 0 (all extinct) og 1 (all <em>least concern</em>)</p>
+<p>The Red List Index has a value between 0 (all <em>possibly extinct</em>) og 1 (all <em>least concern</em>)</p>
 
   </div>
 </div>
@@ -1745,12 +1743,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20220701084426'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20220701091736'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20220701084426"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20220701091736"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
