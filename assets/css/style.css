@@ -2558,20 +2558,20 @@ body > div.frontpage-banner > div > div > div > div > a {
   margin-top: 6px !important; }
 
 /* Gray background for indicator level */
-.layout-goal-bootstrap5 .goal-indicator {
+.layout-goal .goal-indicator {
   margin-top: 0px !important;
   background-color: #f9f9f9;
   padding-top: 20px !important; }
 
-.layout-goal-bootstrap5 .goal-target {
+.layout-goal .goal-target {
   margin-top: 0;
   margin-bottom: 12px; }
 
-body.contrast-high.layout-goal-bootstrap5 .goal-indicator {
+body.contrast-high.layout-goal .goal-indicator {
   background-color: transparent !important; }
 
 /* Indicator margin left on mobile layout;  */
-.layout-goal-bootstrap5 .goal-page-indicator-number {
+.layout-goal .goal-page-indicator-number {
   margin-left: 20px; }
 
 /* Background color on indicator goal banner and white text */
