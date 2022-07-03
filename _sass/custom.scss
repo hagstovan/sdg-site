@@ -18,8 +18,12 @@ padding-top: 20px;
 body > div.frontpage-banner > div > div > div > h1 {
       font-weight: 700;
 }
-body > div.frontpage-banner >  div > div > div > div > a {
-      color: white;
+div.frontpage-banner > div > div > div > div > p > a {
+      color: white !important;
+}
+
+div.frontpage-banner > div > div > div > div > p > a:visited{
+      color: white !important;
 }
 
 /* Remove line above goals on frontpage */
