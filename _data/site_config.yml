@@ -69,7 +69,7 @@ decimal_separator: ','
 disclaimer:
   phase: ''
   message: ''
-  hidden: false
+  hidden: true
 email_contacts:
   questions: hagstova@hagstova.fo
   suggestions: hagstova@hagstova.fo
