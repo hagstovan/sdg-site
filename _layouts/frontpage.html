@@ -34,22 +34,22 @@
     {% endif %}
 
     {% if site.frontpage_cards %}
-    <div class="frontpage-cards">
+    <!-- <div class="frontpage-cards"> -->
     {% for card in site.frontpage_cards %}
         {% assign remainder = forloop.index | modulo: 3 %}
 
         {% if remainder == 1 or forloop.first %}
-        <div class="row">
+        <!-- <div class="row"> -->
         {% endif %}
 
         {% include components/card.html card=card %}
 
         {% if remainder == 0 or forloop.last %}
-        </div>
+        <!-- </div> -->
         {% endif %}
 
     {% endfor %}
-    </div>
+    <!-- </div>--> 
     {% endif %}
 
 </div>
