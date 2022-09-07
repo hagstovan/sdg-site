@@ -2512,6 +2512,10 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   color: black; }
 
 /* Frontpage banner */
+body.contrast-high .frontpage-banner {
+  background-color: transparent !important;
+  background-image: none; }
+
 .frontpage-banner {
   background-color: #417D46;
   background-image: url("/sdg-site/assets/img/background.jpg");
@@ -2883,7 +2887,16 @@ div > div.goal.goal-overall > div > div.goal-stats {
   border: 1px solid #95a5a6 !important; }
 
 .statuses > div .status.complete .status-inner {
-  background: #27ae60 !important; }
+  background-color: #27ae60 !important; }
 
 div.details > div.summary > div > div > span.status.complete {
-  background: #27ae60 !important; }
+  background-color: #27ae60 !important; }
+
+.layout-reportingstatus #main-content .value {
+  color: #ffffff !important; }
+
+body.contrast-high .goal.reporting-status-item {
+  background-color: transparent; }
+
+body.contrast-high .goal-stats span.complete {
+  background-color: white !important; }
