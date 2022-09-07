@@ -394,20 +394,17 @@ div > div.goal.goal-overall > div > div.goal-stats {
     border: 1px solid #95a5a6 !important;
 }
 .statuses > div .status.complete .status-inner {
-    background: #27ae60 !important;
+    background-color: #27ae60 !important;
 }
-
 div.details > div.summary > div > div > span.status.complete {
-    background: #27ae60 !important;
+    background-color: #27ae60 !important;
 }
-
 .layout-reportingstatus #main-content .value {
     color: #ffffff !important;
 }
 body.contrast-high .goal.reporting-status-item {
     background-color: transparent;
 }
-    
 body.contrast-high .goal-stats span.complete {
     background-color: white !important;
 }
