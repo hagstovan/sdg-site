@@ -38,6 +38,9 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
+  // Disaggregations which should be ignored on indicator pages.
+  ignoredDisaggregations: null,
+
   language: 'fo',
 };
 
@@ -130,7 +133,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220908072148">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220914224458">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -894,11 +897,16 @@ data-event-label="Change to indicator.sources tab"
         
         
         
+        
+        
+        
+        
         <div role="tabpanel" class="tab-pane active" id="national">
             <article>
                 <p>Henda talvan vísir metadátur fyri tann ávísan, ið er tøkur úr Føroyar hagtølum, ið liggur næst upp at altjóða SDG-ávísanum. Gev gætur, at sjálvt tá altjóða SDG-ávísin er fult tøkur úr Faroese hagtølum, eigur at verða hugt í hesa talva eftir kunning um innlendis háttalag og aðrar upplýsingar um serstakar Faroese metadátur.</p>
 
-                <table class="table">
+                <table class="table metadata-content">
+  <tbody>
   
   
   
@@ -906,132 +914,218 @@ data-event-label="Change to indicator.sources tab"
   
   
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
-        
-          
+      
       
         
           
       
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
         
           
   
@@ -1107,6 +1201,7 @@ data-event-label="Change to indicator.sources tab"
   
   
   
+  </tbody>
 </table>
 
             </article>
@@ -1116,14 +1211,19 @@ data-event-label="Change to indicator.sources tab"
         
         
         
+        
+        
+        
+        
         <div role="tabpanel" class="tab-pane " id="global">
             <article>
                 <p>Henda talvan kunnar um metadáturnar, ið eru ásettar av Hagfrøðinevndini hjá ST. <a href="https://unstats.un.org/sdgs/metadata/">Fullfíggjaðar altjóða metadátur</a> frá Hagfrøðistovninum hjá ST.</p>
 
-                <table class="table">
+                <table class="table metadata-content">
+  <tbody>
   
       
-        
+      
       
       
       <tr>
@@ -1139,7 +1239,7 @@ data-event-label="Change to indicator.sources tab"
       
   
       
-        
+      
       
       
       <tr>
@@ -1155,7 +1255,7 @@ data-event-label="Change to indicator.sources tab"
       
   
       
-        
+      
       
       
       <tr>
@@ -1171,7 +1271,7 @@ data-event-label="Change to indicator.sources tab"
       
   
       
-        
+      
       
       
       <tr>
@@ -1187,7 +1287,7 @@ data-event-label="Change to indicator.sources tab"
       
   
       
-        
+      
       
       
       <tr>
@@ -1318,12 +1418,19 @@ data-event-label="Change to indicator.sources tab"
   
   
       
+      
+      
         
           
+  </tbody>
 </table>
 
             </article>
         </div>
+        
+        
+        
+        
         
         
         
@@ -1368,7 +1475,7 @@ data-event-label="Change to indicator.sources tab"
         </div>
     
 </div>
-  
+
 </div>
   </div>
 </div>
@@ -1418,12 +1525,12 @@ data-event-label="Change to indicator.sources tab"
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
@@ -1446,12 +1553,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20220908072148'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20220914224458'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20220908072148"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20220914224458"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
