@@ -297,11 +297,21 @@ opensdg.autotrack = function(preset, category, action, label) {
       opensdg.dataDisplayAlterations.forEach(function(callback) {
         value = callback(value);
       });
-      if (this._precision || this._precision === 0) {
-        value = Number.parseFloat(value).toFixed(this._precision);
+      if (typeof value !== 'number') {
+        if (this._precision || this._precision === 0) {
+          value = Number.parseFloat(value).toFixed(this._precision);
+        }
+        if (this._decimalSeparator) {
+          value = value.toString().replace('.', this._decimalSeparator);
+        }
       }
-      if (this._decimalSeparator) {
-        value = value.toString().replace('.', this._decimalSeparator);
+      else {
+        var localeOpts = {};
+        if (this._precision || this._precision === 0) {
+            localeOpts.minimumFractionDigits = this._precision;
+            localeOpts.maximumFractionDigits = this._precision;
+        }
+        value = value.toLocaleString(opensdg.language, localeOpts);
       }
       return value;
     },
@@ -3721,7 +3731,7 @@ opensdg.chartTypes.base = function(info) {
                     backgroundColor: 'rgba(0,0,0,0.7)',
                     callbacks: {
                         label: function (tooltipItem) {
-                            return translations.t(tooltipItem.dataset.label) + ': ' + alterDataDisplay(tooltipItem.formattedValue, tooltipItem.dataset, 'chart tooltip');
+                            return translations.t(tooltipItem.dataset.label) + ': ' + alterDataDisplay(tooltipItem.raw, tooltipItem.dataset, 'chart tooltip');
                         },
                         afterBody: function () {
                             var unit = MODEL.selectedUnit ? translations.t(MODEL.selectedUnit) : MODEL.measurementUnit;
@@ -4292,13 +4302,26 @@ function alterDataDisplay(value, info, context) {
     opensdg.dataDisplayAlterations.forEach(function (callback) {
         altered = callback(altered, info, context);
     });
-    // Now apply our custom precision control if needed.
-    if (VIEW._precision || VIEW._precision === 0) {
-        altered = Number.parseFloat(altered).toFixed(VIEW._precision);
+    // If the returned value is not a number, use the legacy logic for
+    // precision and decimal separator.
+    if (typeof altered !== 'number') {
+        // Now apply our custom precision control if needed.
+        if (VIEW._precision || VIEW._precision === 0) {
+            altered = Number.parseFloat(altered).toFixed(VIEW._precision);
+        }
+        // Now apply our custom decimal separator if needed.
+        if (OPTIONS.decimalSeparator) {
+            altered = altered.toString().replace('.', OPTIONS.decimalSeparator);
+        }
     }
-    // Now apply our custom decimal separator if needed.
-    if (OPTIONS.decimalSeparator) {
-        altered = altered.toString().replace('.', OPTIONS.decimalSeparator);
+    // Otherwise if we have a number, use toLocaleString instead.
+    else {
+        var localeOpts = {};
+        if (VIEW._precision || VIEW._precision === 0) {
+            localeOpts.minimumFractionDigits = VIEW._precision;
+            localeOpts.maximumFractionDigits = VIEW._precision;
+        }
+        altered = altered.toLocaleString(opensdg.language, localeOpts);
     }
     return altered;
 }
@@ -5288,12 +5311,7 @@ $(function() {
     timeSliderDragUpdate: true,
     speedSlider: false,
     position: 'bottomleft',
-    // Player options.
-    playerOptions: {
-      transitionTime: 1000,
-      loop: false,
-      startOver: true
-    },
+    playButton: false,
   };
 
   L.Control.YearSlider = L.Control.TimeDimension.extend({
@@ -5392,14 +5410,6 @@ $(function() {
       // delimited string of YYYY-MM-DD dates.
       times: years.map(function(y) { return y.time }).join(','),
       currentTime: new Date(years[0].time).getTime(),
-    });
-    // Create the player.
-    options.player = new L.TimeDimension.Player(options.playerOptions, options.timeDimension);
-    options.player.on('play', function() {
-      $('.timecontrol-play').attr('title', 'Pause');
-    });
-    options.player.on('stop', function() {
-      $('.timecontrol-play').attr('title', 'Play');
     });
     // Listen for time changes.
     if (typeof options.yearChangeCallback === 'function') {

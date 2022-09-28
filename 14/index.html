@@ -128,7 +128,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220919151002">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220928093357">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -151,12 +151,12 @@ layout-goal
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Vanligur kontrastur","disable_high_contrast":"Óvirkja stóran kontrast","disclaimer":"Síðan er undir menning. Tú er vælkomin at <a href=\"mailto:%email_contacts.suggestions\">viðmerkja </a> síðuna.","enable_high_contrast":"Virkja stóran kontrast","high_contrast":"Stórur kontrastur","internet_explorer_message":"Vit hava varnast, at tú/tit brúkar/brúka internet Explorer at vitja hesa heimasíðuna. Internet Explorer er nú stig av Microsoft. Sum eitt úrslit, so gevur henda heimasíðan ikki longur stuðul til nakra version av Internet Explorer. Nøkur eyðkenni á hesi síðuni fer ikki at rigga. Tú/tit átti/áttu at brúkt eina nýmótans browser so sum Edge, Chrome, Firefox, ella Safari. Um tú/tit hevur/hava trupult við at seta ella atgongd til eina aðra browser, set/setið teg/tykkum í samband við teg/tykkum.tygum.","internet_explorer_message_title":"Hesin internet browserin er ikki longur stuðul","skip_link":"Leyp til høvuðsinnihald","tag_line":"17 mál skulu broyta okkara heim","toggle_menu":"Valmyndaskiftari. Trýst fyri at víðka ella minka valmyndina.","toggle_search":"Leitiskiftari. Trýst fyri at víðka ella minka leititeigin."};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Vanligur kontrastur","disable_high_contrast":"Óvirkja stóran kontrast","disclaimer":"Síðan er undir menning. Tú er vælkomin at <a href=\"mailto:%email_contacts.suggestions\">viðmerkja </a> síðuna.","enable_high_contrast":"Virkja stóran kontrast","hide_menu":"Krógva valmynd til at finna runt","high_contrast":"Stórur kontrastur","internet_explorer_message":"Vit hava varnast, at tú/tit brúkar/brúka internet Explorer at vitja hesa heimasíðuna. Internet Microsoft tekur nú Explorer stigvíst aftur. Tessvegna stuðlar henda heimasíðan ikki longur nakra útgávu av Internet Explorer. Nakrir týðandi liðir á hesi síðuni fara ikki at rigga. Ein nýggjari kagi skuldi verið nýttur, so sum Edge, Chrome, Firefox, ella Safari. Spyr avvarðandi kt-deil, um trupulleikar eru at skifta til annan kaga.","internet_explorer_message_title":"Hesin internet-kagin er ikki longur stuðlaður","show_menu":"Vís valmynd til at finna runt","skip_link":"Leyp til høvuðsinnihald","tag_line":"17 mál skulu broyta okkara heim","toggle_menu":"Valmyndaskiftari. Trýst fyri at víðka ella minka valmyndina.","toggle_search":"Leitiskiftari. Trýst fyri at víðka ella minka leititeigin."};</script>
 
 <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Leyp til høvuðsinnihald</a>
 <div class="container internet-explorer-message">
-    <h2 class="internet-explorer-message-title">Hesin internet browserin er ikki longur stuðul</h2>
-    <p class="internet-explorer-message-body">Vit hava varnast, at tú/tit brúkar/brúka internet Explorer at vitja hesa heimasíðuna. Internet Explorer er nú stig av Microsoft. Sum eitt úrslit, so gevur henda heimasíðan ikki longur stuðul til nakra version av Internet Explorer. Nøkur eyðkenni á hesi síðuni fer ikki at rigga. Tú/tit átti/áttu at brúkt eina nýmótans browser so sum Edge, Chrome, Firefox, ella Safari. Um tú/tit hevur/hava trupult við at seta ella atgongd til eina aðra browser, set/setið teg/tykkum í samband við teg/tykkum.tygum.</p>
+    <h2 class="internet-explorer-message-title">Hesin internet-kagin er ikki longur stuðlaður</h2>
+    <p class="internet-explorer-message-body">Vit hava varnast, at tú/tit brúkar/brúka internet Explorer at vitja hesa heimasíðuna. Internet Microsoft tekur nú Explorer stigvíst aftur. Tessvegna stuðlar henda heimasíðan ikki longur nakra útgávu av Internet Explorer. Nakrir týðandi liðir á hesi síðuni fara ikki at rigga. Ein nýggjari kagi skuldi verið nýttur, so sum Edge, Chrome, Firefox, ella Safari. Spyr avvarðandi kt-deil, um trupulleikar eru at skifta til annan kaga.</p>
 </div>
 <div id="disclaimer">
     
@@ -288,16 +288,24 @@ data-event-label="high"
 </div>
 
 
+
+
+
+
 <div id="main-content" class="container" role="main">
 
   
 
 
 
-  <div class="container g-0">
-    <h2 class="goal-page-heading">Undirmál og ávísar</h2>
-
-    
+  <div class="container g-0 ">
+    <div class="row align-items-end">
+      <div class="col">
+        <h2 class="goal-page-heading">Undirmál og ávísar</h2>
+      </div>
+      
+    </div>
+    <hr class="goal-page-column-header-rule">
     
       
       <div class="row align-items-start goal-target">
@@ -309,6 +317,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fyri 2025 skal forðast fyri og munandi minkast um alla havdálking, serliga dálking frá virksemi á landi, íroknað burturkast á sjónum og dálking frá taðevnum</span>
           </div>
+          
       </div>
         
 
@@ -363,6 +372,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fyri 2020 skulu vistskipanir í høvum og fram við strendur verða vardar og umsitast á burðardyggan hátt fyri at sleppa undan munandi skaðiligari ávirkan millum annað við at styrkja teirra mótstøðuføri. Gera átøk at fáa tær endurskaptar til tess at fáa sunn og úrtøkugóð høv</span>
           </div>
+          
       </div>
         
 
@@ -417,6 +427,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Havsúrgan skal minkast, og lagt verður eftir ávirkanini frá súrgan, millum annað við meiri vísindaligum samstarvi á øllum stigum</span>
           </div>
+          
       </div>
         
 
@@ -471,6 +482,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fyri 2020 skal fiskiskapur verða væl skipaður og endi verða gjørdur á ovurfiskiskapi, ólógligari, ófráboðaðari og óskipaðari fiskiveiðu og oyðandi veiðiháttum. Settar verða í verk vísindaliga grundaðar umsitingarætlanir til tess at fáa fiskastovnar at koma fyri seg aftur skjótast gjørligt, og í minsta lagi upp til eitt støði, har teir kunnu ala av sær burðardygga veiðu, mett eftir teirra lívfrøðiligu serkennum</span>
           </div>
+          
       </div>
         
 
@@ -525,6 +537,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fyri 2020 skulu í minsta lagi 10 prosent av øllum stranda- og havleiðum verða vard í samsvari við lands- og altjóða lóg og grundað á bestu tøku vísindaligu vitanina</span>
           </div>
+          
       </div>
         
 
@@ -579,6 +592,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fyri 2020 skal ávísur stuðul til fiskivinnuna, sum ger sítt til at eggja til ovurorku og ovurfisking, verða bannaður. Beint verður fyri stuðulsskipanum, sum eggja til ólógligan, ófráboðaðan og óskipaðan fiskiskap, og nýggjur stuðul av slíkum slagi verður ikki innførdur. Alt hetta viðurkennandi, at hóskandi og munadygg, serstøk og ymisk viðgerð fyri menningarlond og tey minst mentu londini skal vera ein samskipaður táttur í fiskivinnustuðulssamráðingum hjá Heimshandilsfelagsskapinum (WTO)*</span>
           </div>
+          
       </div>
         
 
@@ -633,6 +647,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fyri 2030 økja búskaparligu fyrimunirnir til smá oyggjaríki í menning og tey minst mentu londini frá burðardyggari nýtslu av havfeingi, millum annað við burðardyggari umsiting av fiskivinnu, alivinnu og ferðavinnu</span>
           </div>
+          
       </div>
         
 
@@ -687,6 +702,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Økja vísindaliga kunnleikan, menna granskingarførleikar og flyta øðrum havtøknifrøði við atliti at Intergovernmental Oceonographic Commission Criteria and Guidelines on the Transfer of Marine Technology til tess at bøta um heilsustøðuna í høvunum og økja um íkastið, sum havsins lívfrøðiliga margfeldið gevur menningini av menningarlondum, serstakliga smáum oyggjaríkjum í menning og teimum minst mentu londunum</span>
           </div>
+          
       </div>
         
 
@@ -741,6 +757,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Veita smáútróðri atgongd til havfeingi og marknaðir</span>
           </div>
+          
       </div>
         
 
@@ -795,6 +812,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Økja verju og burðardygga nýtslu av høvunum og teirra tilfeingi við at seta í verk altjóða lóg, sum hon sæst í ST-havrættarsáttmálanum (UNCLOS), sum setur lógarkarmin um at varðveita og nýta høvini og teirra tilfeingi á burðardyggan hátt, sum nevnt í grein 158 í “The Future We Want”</span>
           </div>
+          
       </div>
         
 
@@ -912,12 +930,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20220919151002'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20220928093357'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20220919151002"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20220928093357"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

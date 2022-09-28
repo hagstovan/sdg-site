@@ -128,7 +128,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220919151002">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220928093357">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -151,12 +151,12 @@ layout-goal
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Vanligur kontrastur","disable_high_contrast":"Óvirkja stóran kontrast","disclaimer":"Síðan er undir menning. Tú er vælkomin at <a href=\"mailto:%email_contacts.suggestions\">viðmerkja </a> síðuna.","enable_high_contrast":"Virkja stóran kontrast","high_contrast":"Stórur kontrastur","internet_explorer_message":"Vit hava varnast, at tú/tit brúkar/brúka internet Explorer at vitja hesa heimasíðuna. Internet Explorer er nú stig av Microsoft. Sum eitt úrslit, so gevur henda heimasíðan ikki longur stuðul til nakra version av Internet Explorer. Nøkur eyðkenni á hesi síðuni fer ikki at rigga. Tú/tit átti/áttu at brúkt eina nýmótans browser so sum Edge, Chrome, Firefox, ella Safari. Um tú/tit hevur/hava trupult við at seta ella atgongd til eina aðra browser, set/setið teg/tykkum í samband við teg/tykkum.tygum.","internet_explorer_message_title":"Hesin internet browserin er ikki longur stuðul","skip_link":"Leyp til høvuðsinnihald","tag_line":"17 mál skulu broyta okkara heim","toggle_menu":"Valmyndaskiftari. Trýst fyri at víðka ella minka valmyndina.","toggle_search":"Leitiskiftari. Trýst fyri at víðka ella minka leititeigin."};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Vanligur kontrastur","disable_high_contrast":"Óvirkja stóran kontrast","disclaimer":"Síðan er undir menning. Tú er vælkomin at <a href=\"mailto:%email_contacts.suggestions\">viðmerkja </a> síðuna.","enable_high_contrast":"Virkja stóran kontrast","hide_menu":"Krógva valmynd til at finna runt","high_contrast":"Stórur kontrastur","internet_explorer_message":"Vit hava varnast, at tú/tit brúkar/brúka internet Explorer at vitja hesa heimasíðuna. Internet Microsoft tekur nú Explorer stigvíst aftur. Tessvegna stuðlar henda heimasíðan ikki longur nakra útgávu av Internet Explorer. Nakrir týðandi liðir á hesi síðuni fara ikki at rigga. Ein nýggjari kagi skuldi verið nýttur, so sum Edge, Chrome, Firefox, ella Safari. Spyr avvarðandi kt-deil, um trupulleikar eru at skifta til annan kaga.","internet_explorer_message_title":"Hesin internet-kagin er ikki longur stuðlaður","show_menu":"Vís valmynd til at finna runt","skip_link":"Leyp til høvuðsinnihald","tag_line":"17 mál skulu broyta okkara heim","toggle_menu":"Valmyndaskiftari. Trýst fyri at víðka ella minka valmyndina.","toggle_search":"Leitiskiftari. Trýst fyri at víðka ella minka leititeigin."};</script>
 
 <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Leyp til høvuðsinnihald</a>
 <div class="container internet-explorer-message">
-    <h2 class="internet-explorer-message-title">Hesin internet browserin er ikki longur stuðul</h2>
-    <p class="internet-explorer-message-body">Vit hava varnast, at tú/tit brúkar/brúka internet Explorer at vitja hesa heimasíðuna. Internet Explorer er nú stig av Microsoft. Sum eitt úrslit, so gevur henda heimasíðan ikki longur stuðul til nakra version av Internet Explorer. Nøkur eyðkenni á hesi síðuni fer ikki at rigga. Tú/tit átti/áttu at brúkt eina nýmótans browser so sum Edge, Chrome, Firefox, ella Safari. Um tú/tit hevur/hava trupult við at seta ella atgongd til eina aðra browser, set/setið teg/tykkum í samband við teg/tykkum.tygum.</p>
+    <h2 class="internet-explorer-message-title">Hesin internet-kagin er ikki longur stuðlaður</h2>
+    <p class="internet-explorer-message-body">Vit hava varnast, at tú/tit brúkar/brúka internet Explorer at vitja hesa heimasíðuna. Internet Microsoft tekur nú Explorer stigvíst aftur. Tessvegna stuðlar henda heimasíðan ikki longur nakra útgávu av Internet Explorer. Nakrir týðandi liðir á hesi síðuni fara ikki at rigga. Ein nýggjari kagi skuldi verið nýttur, so sum Edge, Chrome, Firefox, ella Safari. Spyr avvarðandi kt-deil, um trupulleikar eru at skifta til annan kaga.</p>
 </div>
 <div id="disclaimer">
     
@@ -288,16 +288,24 @@ data-event-label="high"
 </div>
 
 
+
+
+
+
 <div id="main-content" class="container" role="main">
 
   
 
 
 
-  <div class="container g-0">
-    <h2 class="goal-page-heading">Undirmál og ávísar</h2>
-
-    
+  <div class="container g-0 ">
+    <div class="row align-items-end">
+      <div class="col">
+        <h2 class="goal-page-heading">Undirmál og ávísar</h2>
+      </div>
+      
+    </div>
+    <hr class="goal-page-column-header-rule">
     
       
       <div class="row align-items-start goal-target">
@@ -309,6 +317,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Skerja í stórum allan harðskap og deyða í sambandi við harðskap allastaðni</span>
           </div>
+          
       </div>
         
 
@@ -483,6 +492,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Beint verður fyri misnýtslu, eyðræning, mannahandli og øllum harðskapi og pínslu í øllum líki móti børnum</span>
           </div>
+          
       </div>
         
 
@@ -617,6 +627,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fremja rættartrygd á lands- og altjóða stigi, og øllum verður tryggjað somu atgongd til rættvísa rættargongd</span>
           </div>
+          
       </div>
         
 
@@ -751,6 +762,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fyri 2030 verður ólógligur peninga- og vápnaflutningur skerdur í stórum, og nógv meira verður gjørt við at finna aftur og bera aftur stolnar ognir og berja niður skipað brotsmannavirksemi</span>
           </div>
+          
       </div>
         
 
@@ -845,6 +857,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Skerja munandi korruptión og mutur í øllum líki</span>
           </div>
+          
       </div>
         
 
@@ -939,6 +952,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Menna munadyggar, ábyrgar og gjøgnumskygdar stovnar á øllum stigum</span>
           </div>
+          
       </div>
         
 
@@ -1033,6 +1047,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Tryggja eftirfarandi, inkluderandi, luttakandi og umboðandi avgerðargongdir á øllum stigum</span>
           </div>
+          
       </div>
         
 
@@ -1127,6 +1142,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Útbyggja og styrkja luttøku hjá menningarlondum í altjóða stjórnarstovnum</span>
           </div>
+          
       </div>
         
 
@@ -1181,6 +1197,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fyri 2030 syrgja fyri, at øll fáa ein løgligan samleika, heruppií føðiskráseting</span>
           </div>
+          
       </div>
         
 
@@ -1235,6 +1252,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Tryggja almenna atgongd til upplýsingar og verju av grundleggjandi frælsirættindum í samsvari við landsins lógir og altjóða avtalur</span>
           </div>
+          
       </div>
         
 
@@ -1329,6 +1347,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Styrkja viðkomandi landsstovnar við millum øðrum altjóða samstarvi fyri at fáa til vega førleika á øllum stigum, serstakliga í menningarlondum, til tess at forða fyri harðskapi og at berja niður yvirgang og brotsverk 16.b Fremja og halda uppi lógir og politikkir um burðardygga menning, ið fylgja meginregluni um ikki-mismun</span>
           </div>
+          
       </div>
         
 
@@ -1383,6 +1402,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fremja og halda uppi lógir og politikkir um burðardygga menning, ið fylgja meginregluni um ikki-mismunviðgerð, og virkað verður fyri sálarheilsu og vælveru</span>
           </div>
+          
       </div>
         
 
@@ -1500,12 +1520,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20220919151002'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20220928093357'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20220919151002"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20220928093357"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

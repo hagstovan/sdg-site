@@ -128,7 +128,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220919151002">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20220928093357">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -151,12 +151,12 @@ layout-goal
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Vanligur kontrastur","disable_high_contrast":"Óvirkja stóran kontrast","disclaimer":"Síðan er undir menning. Tú er vælkomin at <a href=\"mailto:%email_contacts.suggestions\">viðmerkja </a> síðuna.","enable_high_contrast":"Virkja stóran kontrast","high_contrast":"Stórur kontrastur","internet_explorer_message":"Vit hava varnast, at tú/tit brúkar/brúka internet Explorer at vitja hesa heimasíðuna. Internet Explorer er nú stig av Microsoft. Sum eitt úrslit, so gevur henda heimasíðan ikki longur stuðul til nakra version av Internet Explorer. Nøkur eyðkenni á hesi síðuni fer ikki at rigga. Tú/tit átti/áttu at brúkt eina nýmótans browser so sum Edge, Chrome, Firefox, ella Safari. Um tú/tit hevur/hava trupult við at seta ella atgongd til eina aðra browser, set/setið teg/tykkum í samband við teg/tykkum.tygum.","internet_explorer_message_title":"Hesin internet browserin er ikki longur stuðul","skip_link":"Leyp til høvuðsinnihald","tag_line":"17 mál skulu broyta okkara heim","toggle_menu":"Valmyndaskiftari. Trýst fyri at víðka ella minka valmyndina.","toggle_search":"Leitiskiftari. Trýst fyri at víðka ella minka leititeigin."};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Vanligur kontrastur","disable_high_contrast":"Óvirkja stóran kontrast","disclaimer":"Síðan er undir menning. Tú er vælkomin at <a href=\"mailto:%email_contacts.suggestions\">viðmerkja </a> síðuna.","enable_high_contrast":"Virkja stóran kontrast","hide_menu":"Krógva valmynd til at finna runt","high_contrast":"Stórur kontrastur","internet_explorer_message":"Vit hava varnast, at tú/tit brúkar/brúka internet Explorer at vitja hesa heimasíðuna. Internet Microsoft tekur nú Explorer stigvíst aftur. Tessvegna stuðlar henda heimasíðan ikki longur nakra útgávu av Internet Explorer. Nakrir týðandi liðir á hesi síðuni fara ikki at rigga. Ein nýggjari kagi skuldi verið nýttur, so sum Edge, Chrome, Firefox, ella Safari. Spyr avvarðandi kt-deil, um trupulleikar eru at skifta til annan kaga.","internet_explorer_message_title":"Hesin internet-kagin er ikki longur stuðlaður","show_menu":"Vís valmynd til at finna runt","skip_link":"Leyp til høvuðsinnihald","tag_line":"17 mál skulu broyta okkara heim","toggle_menu":"Valmyndaskiftari. Trýst fyri at víðka ella minka valmyndina.","toggle_search":"Leitiskiftari. Trýst fyri at víðka ella minka leititeigin."};</script>
 
 <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Leyp til høvuðsinnihald</a>
 <div class="container internet-explorer-message">
-    <h2 class="internet-explorer-message-title">Hesin internet browserin er ikki longur stuðul</h2>
-    <p class="internet-explorer-message-body">Vit hava varnast, at tú/tit brúkar/brúka internet Explorer at vitja hesa heimasíðuna. Internet Explorer er nú stig av Microsoft. Sum eitt úrslit, so gevur henda heimasíðan ikki longur stuðul til nakra version av Internet Explorer. Nøkur eyðkenni á hesi síðuni fer ikki at rigga. Tú/tit átti/áttu at brúkt eina nýmótans browser so sum Edge, Chrome, Firefox, ella Safari. Um tú/tit hevur/hava trupult við at seta ella atgongd til eina aðra browser, set/setið teg/tykkum í samband við teg/tykkum.tygum.</p>
+    <h2 class="internet-explorer-message-title">Hesin internet-kagin er ikki longur stuðlaður</h2>
+    <p class="internet-explorer-message-body">Vit hava varnast, at tú/tit brúkar/brúka internet Explorer at vitja hesa heimasíðuna. Internet Microsoft tekur nú Explorer stigvíst aftur. Tessvegna stuðlar henda heimasíðan ikki longur nakra útgávu av Internet Explorer. Nakrir týðandi liðir á hesi síðuni fara ikki at rigga. Ein nýggjari kagi skuldi verið nýttur, so sum Edge, Chrome, Firefox, ella Safari. Spyr avvarðandi kt-deil, um trupulleikar eru at skifta til annan kaga.</p>
 </div>
 <div id="disclaimer">
     
@@ -288,16 +288,24 @@ data-event-label="high"
 </div>
 
 
+
+
+
+
 <div id="main-content" class="container" role="main">
 
   
 
 
 
-  <div class="container g-0">
-    <h2 class="goal-page-heading">Undirmál og ávísar</h2>
-
-    
+  <div class="container g-0 ">
+    <div class="row align-items-end">
+      <div class="col">
+        <h2 class="goal-page-heading">Undirmál og ávísar</h2>
+      </div>
+      
+    </div>
+    <hr class="goal-page-column-header-rule">
     
       
       <div class="row align-items-start goal-target">
@@ -309,6 +317,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fyri 2030 at minka talið á mammum, sum doyggja í barnferð, um allan heim til undir 70 fyri hvørji 100.000 livandi fødd børn</span>
           </div>
+          
       </div>
         
 
@@ -403,6 +412,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fyri 2030 at gera enda á, at nýfødd børn og børn undir 5 ára aldur doyggja, tá ið tað kann fyribyrgjast, við at øll lond seta sær sum mið at minka deyðatalið á nýføðingum til í mesta lagi 12 fyri hvørjar 1.000 livandi nýføðingar, og deyðatalið á børnum undir 5 ár niður í 25 fyri hvørji 1.000 livandi fødd í mesta lagi</span>
           </div>
+          
       </div>
         
 
@@ -460,7 +470,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/3-2-2">Nýføðinga-deyðatíttleikin (Børn ið doyggja yngri enn 28 dagar fyri hvørji 1.000 livandi fødd)</a></span>
+              <span class="indicator-name"><a href="/sdg-site/3-2-2">Nýføðinga-deyðatíttleikin (børn ið doyggja yngri enn 28 dagar fyri hvørji 1.000 livandi fødd)</a></span>
               
 
 
@@ -497,6 +507,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fyri 2030 at steðga farsóttum sum eyðkvæmi, tuberklum, malaria og øðrum lítið gáaðum tropiskum sjúkum og basa livrarbruna, vatnbornum sjúkum og øðrum smittandi sjúkum</span>
           </div>
+          
       </div>
         
 
@@ -711,6 +722,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fyri 2030 skal deyðatalið, har fólk doyggja tíðliga sum fylgja av ikki-smittandi sjúkum, skerjast við einum triðingi við fyribyrging og viðgerð, og virkað verður fyri sálarheilsu og vælveru"</span>
           </div>
+          
       </div>
         
 
@@ -805,6 +817,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Meira verður gjørt við at fyribyrgja og viðgera rúsevnismisnýtslu, sum fatar um narkotikamisnýtslu og skaðiliga alkoholnýtslu</span>
           </div>
+          
       </div>
         
 
@@ -899,6 +912,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fyri 2020 skal deyði og løstur, sum stendst av ferðsluvanlukkum, verða skerdur niður í helvt um allan heim</span>
           </div>
+          
       </div>
         
 
@@ -953,6 +967,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fyri 2030 verður tryggjað, at øll fáa atgongd til kyns- og nøringarheilsutænastur heruppií barnaavmarking, upplýsing og útbúgving, og at nøringarheilsa verður flættað inn í átaksætlanir og skráir í ymsu londunum</span>
           </div>
+          
       </div>
         
 
@@ -1047,6 +1062,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Øll skulu vera fevnd av heilsuskipanum, sum millum annað fevna um fíggjarliga váðaverju, atgongd til dygdargóðar grundleggjandi heilsutænastur og atgongd til tryggar, virknar, dygdargóðar, lívsneyðugar og kostnaðarrímiligar heilivágir og koppsetingar</span>
           </div>
+          
       </div>
         
 
@@ -1141,6 +1157,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Fyri 2030 skal skerjast í stórum talið av deyðum og sjúkum, ið standast av vandamiklum kemiskum evnum og dálking og eitran av luft, vatni og mold</span>
           </div>
+          
       </div>
         
 
@@ -1275,6 +1292,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Styrkja arbeiðið at seta í verk rammusáttmálan hjá Heimsheilsustovninum WHO um eftirlit við tubbaki í øllum londum, har tað er viðkomandi</span>
           </div>
+          
       </div>
         
 
@@ -1329,6 +1347,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Gransking í og menning av koppsetingarevnum og heilivági fyri smittandi og ikki smittandi sjúkur, sum fyrst og fremst ávirka menningarlond, skal stimbrast. Sleppast má fram at lívsneyðugum heilivági og koppsetingarevnum fyri rímiligan pening í samsvari við Doha kunngerðina um TRIPS-sáttmálan og almannaheilsu (Doha Declaration), sum staðfestir rættin hjá menningarlondum til fulnar at nýta greinirnar í sáttmálanum um Handilstongd hvarv í lógum um upphavsrætt (TRIPS Agreement), hvat smidleika viðvíkur at verja almannaheilsu og serstakliga at útvega øllum atgongd til heilivág</span>
           </div>
+          
       </div>
         
 
@@ -1463,6 +1482,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Munandi øking í heilsufígging og at útvega, menna, læra og varðveita heilsuarbeiðsmegi í menningarlondunum, serstakliga í teimum minst mentu londunum og smáum oyggjaríkjum í menning</span>
           </div>
+          
       </div>
         
 
@@ -1517,6 +1537,7 @@ data-event-label="high"
           <div class="col goal-page-target-name">
             <span class="target-name">Øll lond, serstakliga menningarlond, skulu styrkja síni evni at fáa ávaringar um heilsuváðar í góðari tíð, at minka um váða og handfara heilsuváða bæði hjá sær sjálvum og á altjóða stigi</span>
           </div>
+          
       </div>
         
 
@@ -1674,12 +1695,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20220919151002'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20220928093357'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20220919151002"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20220928093357"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
