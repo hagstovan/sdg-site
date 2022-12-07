@@ -4,5 +4,4 @@ gem "jekyll", "3.8.4"
 gem "html-proofer"
 gem "jekyll-remote-theme"
 gem "deep_merge"
-gem "jekyll-open-sdg-plugins", "2.1.0.pre.beta1"
-
+gem "jekyll-open-sdg-plugins", "2.1.0"
