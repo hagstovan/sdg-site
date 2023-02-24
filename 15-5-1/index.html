@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20230224102836">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20230224111543">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -425,14 +425,15 @@ data-event-label="high"
 <p>Reyðlistavísitalið málir broyting í samlaða týningarvandanum tvørtur um bólkar av plantu- og djórasløgum. Tað er grundað á veruligar broytingar í tali av sløgum í hvørjum bólki av týningarvanda á listanum hjá IUCN (Altjóða Náttúruverndarfelagsskapurin, www.iucnredlist.org).</p>
 
 <p><strong><em>Vísitalið er roknað við støði í hesum vektflokkunum:</em></strong><br />
-<em>Ikki hótt:</em> <strong>0</strong> <br />
-<em>Nærum hótt:</em> <strong>1</strong> <br />
-<em>Viðkvæmt:</em> <strong>2</strong><br />
-<em>Í vanda:</em> <strong>3</strong> <br />
-<em>Hættisliga í vanda:</em> <strong>4</strong><br />
-<em>Møguliga útdeytt:</em> <strong>5</strong></p>
+  <em>Ikki hótt:</em> <strong>0</strong> <br />
+  <em>Nærum hótt:</em> <strong>1</strong> <br />
+  <em>Viðkvæmt:</em> <strong>2</strong><br />
+  <em>Í vanda:</em> <strong>3</strong> <br />
+  <em>Hættisliga í vanda:</em> <strong>4</strong><br />
+  <em>Møguliga útdeytt:</em> <strong>5</strong> <br />
+Reyðlistavísitalið liggur millum 0 (alt <em>møguliga útdeytt</em>) og 1 (alt <em>ikki hótt</em>)</p>
 
-<p>Reyðlistavísitalið liggur millum 0 (alt <em>møguliga útdeytt</em>) og 1 (alt <em>ikki hótt</em>)</p>
+<h4 id="talið-fyri-føroyar-er-roknað-út-frá-23-súgdýrasløgum-og-61-fuglasløgum">Talið fyri Føroyar er roknað út frá 23 súgdýrasløgum og 61 fuglasløgum</h4>
 
   </div>
 </div>
@@ -463,7 +464,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;data.confidenslevel&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Lowerbound&quot;,&quot;Reyðlistavísital&quot;,&quot;Upperbound&quot;,&quot;&quot;]},&quot;title&quot;:&quot;data.confidenslevel&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -494,409 +495,15 @@ data-event-label="high"
   <div id="datatables">
 
     
-    <a href="https://hagstovan.github.io/sdg-data/fo/headline/15-5-1.csv" class="btn btn-primary btn-download" download="indicator_15-5-1.csv" tabindex="0" role="button">Tak niður dátur til yvirskrift (.csv)</a>
-    
     <a href="https://hagstovan.github.io/sdg-data/fo/data/15-5-1.csv" class="btn btn-primary btn-download" download='indicator_15-5-1.csv' tabindex='0' role='button'>Tak niður keldudátur (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Tak niður keldudátur fyri sundurgreiningar (.csv)</p>
 
     
-    <h3>Dátur til yvirskrift</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Reyðlistavísital</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>1993</td>
-          
-          
-          
-          <td class="table-value">0.87901</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>1994</td>
-          
-          
-          
-          <td class="table-value">0.87892</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>1995</td>
-          
-          
-          
-          <td class="table-value">0.87917</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>1996</td>
-          
-          
-          
-          <td class="table-value">0.8791</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>1997</td>
-          
-          
-          
-          <td class="table-value">0.8785</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>1998</td>
-          
-          
-          
-          <td class="table-value">0.87852</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>1999</td>
-          
-          
-          
-          <td class="table-value">0.87878</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2000</td>
-          
-          
-          
-          <td class="table-value">0.877</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2001</td>
-          
-          
-          
-          <td class="table-value">0.8769</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2002</td>
-          
-          
-          
-          <td class="table-value">0.87637</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2003</td>
-          
-          
-          
-          <td class="table-value">0.87482</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2004</td>
-          
-          
-          
-          <td class="table-value">0.87421</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2005</td>
-          
-          
-          
-          <td class="table-value">0.87469</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2006</td>
-          
-          
-          
-          <td class="table-value">0.8731</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2007</td>
-          
-          
-          
-          <td class="table-value">0.87444</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2008</td>
-          
-          
-          
-          <td class="table-value">0.87484</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2009</td>
-          
-          
-          
-          <td class="table-value">0.87601</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2010</td>
-          
-          
-          
-          <td class="table-value">0.87407</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2011</td>
-          
-          
-          
-          <td class="table-value">0.88164</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2012</td>
-          
-          
-          
-          <td class="table-value">0.88123</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2013</td>
-          
-          
-          
-          <td class="table-value">0.87937</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2014</td>
-          
-          
-          
-          <td class="table-value">0.87604</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2015</td>
-          
-          
-          
-          <td class="table-value">0.87251</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2016</td>
-          
-          
-          
-          <td class="table-value">0.87297</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2017</td>
-          
-          
-          
-          <td class="table-value">0.87239</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td class="table-value">0.87269</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td class="table-value">0.87289</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">0.87301</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">0.87323</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2022</td>
-          
-          
-          
-          <td class="table-value">0.87348</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>Ongar dátur tøkar til yvirskrift</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    <p>Kelda: Hagstova Føroya</p>
-    
-    
-    <p>Landafrøðiligt øki: </p>
-    
-    
-    <p>Mátieind: </p>
-    
-    
-    <p>Fótnota: </p>
-    
-  </div>
   
 
 </div>
@@ -2438,12 +2045,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20230224102836'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20230224111543'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20230224102836"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20230224111543"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
