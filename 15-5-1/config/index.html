@@ -129,7 +129,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20230224113339">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20230224115133">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -578,7 +578,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('data_start_values', []);
+        var currentValue = normalizeCurrentValue('data_start_values', [{"field":"data.confidenslevel","value":"data.lowerbound"},{"field":"data.confidenslevel","value":"data.rli"},{"field":"data.confidenslevel","value":"data.upperbound"}]);
         var propertyEditor = editor.getEditor('root.data_start_values');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -812,7 +812,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('page_content', "#### Allýsing \nReyðlistavísitalið málir broyting í samlaða týningarvandanum tvørtur um bólkar av plantu- og djórasløgum. Tað er grundað á veruligar broytingar í tali av sløgum í hvørjum bólki av týningarvanda á listanum hjá IUCN (Altjóða Náttúruverndarfelagsskapurin, www.iucnredlist.org).  \n\n***Vísitalið er roknað við støði í hesum vektflokkunum:***  \n  *Ikki hótt:* **0**   \n  *Nærum hótt:* **1**   \n  *Viðkvæmt:* **2**  \n  *Í vanda:* **3**   \n  *Hættisliga í vanda:* **4**  \n  *Møguliga útdeytt:* **5**   \nReyðlistavísitalið liggur millum 0 (alt *møguliga útdeytt*) og 1 (alt *ikki hótt*)  \n\n#### Talið fyri Føroyar er roknað út frá 23 súgdýrasløgum og 61 fuglasløgum\n");
+        var currentValue = normalizeCurrentValue('page_content', "#### Allýsing \nReyðlistavísitalið málir broyting í samlaða týningarvandanum tvørtur um bólkar av plantu- og djórasløgum. Tað er grundað á veruligar broytingar í tali av sløgum í hvørjum bólki av týningarvanda á listanum hjá IUCN (Altjóða Náttúruverndarfelagsskapurin, www.iucnredlist.org).  \n\n***Vísitalið er roknað við støði í hesum vektflokkunum:***  \n  *Ikki hótt:* **0**   \n  *Nærum hótt:* **1**   \n  *Viðkvæmt:* **2**  \n  *Í vanda:* **3**   \n  *Hættisliga í vanda:* **4**  \n  *Møguliga útdeytt:* **5**   \nReyðlistavísitalið liggur millum 0 (alt *møguliga útdeytt*) og 1 (alt *ikki hótt*)  \n\n#### Talið fyri Føroyar er roknað út frá 23 súgdýrasløgum og 61 fuglasløgum\n**95% álitis-talstrekki** eru roknað at leggja upp fyri  \n • tal av sløgum við tørvandi dátum og  \n • óvsissuna um júst nær broytingar henda (við tað at tað kunnu ganga fleiri ár millum metingarnar)  \nSostatt er óvissa um nágreiniliga virðið fyri hvørt einstaka ár\n");
         var propertyEditor = editor.getEditor('root.page_content');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1045,12 +1045,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20230224113339'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20230224115133'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20230224113339"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20230224115133"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
