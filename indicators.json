@@ -263,7 +263,7 @@
         },
         {
           "id": "3-2-2",
-          "title": "Nýføðinga-deyðatíttleikin (børn ið doyggja yngri enn 28 dagar fyri hvørji 1.000 livandi fødd)",
+          "title": "Nýføðinga-deyðatíttleikin",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-2-2",
@@ -859,7 +859,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site/8-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-3-1",
@@ -1415,7 +1415,7 @@
         },
         {
           "id": "12-a-1",
-          "title": "Uppsett framleiðsluorka í menningarlondum (í watt fyri hvønn íbúgva)",
+          "title": "Uppsett framleiðsluorka til varandi orku í menningarlondum (í watt fyri hvønn íbúgva)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/12-a-1",
