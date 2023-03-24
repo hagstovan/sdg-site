@@ -551,7 +551,7 @@
         },
         {
           "id": "4-b-1",
-          "title": "Stuðul til persónar úr menningarlondum til at lesa í Føroyum",
+          "title": "data.4-b-1-graphtitle",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/4-b-1",
@@ -2035,7 +2035,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site/17-12-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-13-1",
