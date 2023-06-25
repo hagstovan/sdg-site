@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex%2Cfetch"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -43,6 +43,20 @@ var opensdg = {
   ignoredDisaggregations: null,
 
   language: 'fo',
+
+  mapColors: {
+    "default": [
+        "#c4e1c6",
+        "#b0d1b3",
+        "#9bc2a1",
+        "#87b28f",
+        "#74a37c",
+        "#60946b",
+        "#4d8559",
+        "#3a7747",
+        "#276836"
+    ]
+},
 };
 
 </script>
@@ -103,16 +117,15 @@ var translations = {
         ================================================== -->
 
         
+    
     <title>Mál 11 - Burðardyggir býir og býlingar - Ávísar til málini fyri burðardyggari menning</title>
+    
 
 
 
-        <meta name="description" content="">
-        <meta property="og:description" content="">
         
         <meta name="robots" content="noindex, nofollow">
         
-        <link rel="canonical" href="/">
 
         <!--[if IE 9]>
         <script src="/sdg-site/assets/js/lib/classList.js"></script>
@@ -123,13 +136,14 @@ var translations = {
 <link rel="icon" type="image/png" sizes="16x16" href="/sdg-site/assets/img/favicons/favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="/sdg-site/assets/img/favicons/favicon.ico" />
 
+        
 
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20230606212005">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20230625130600">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -139,6 +153,9 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
         
+
+        
+
 
         <!--[if IE]>
         <link rel="stylesheet" href="/sdg-site/assets/css/ie.css">
@@ -269,13 +286,13 @@ data-event-label="high"
     
 <div class="previous-next-links d-flex justify-content-between">
     <div class="text-left">
-        <a class="btn btn-primary" href="/sdg-site/10" aria-labelledby="previous-link">
+        <a class="btn btn-primary" href="/sdg-site/10/" aria-labelledby="previous-link">
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
             <span id="previous-link" class="d-none d-md-inline">Undanfarna mál</span>
         </a>
     </div>
     <div class="text-right">
-        <a class="btn btn-primary" href="/sdg-site/12" aria-labelledby="next-link">
+        <a class="btn btn-primary" href="/sdg-site/12/" aria-labelledby="next-link">
             <span id="next-link" class="d-none d-md-inline">Næsta mál</span>
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
         </a>
@@ -293,7 +310,11 @@ data-event-label="high"
                 <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/11.svg" alt="Burðardyggir býir og býlingar - Mál 11" id="goal-11" class="goal-icon-image goal-icon-image-svg" />
             </div>
             <div class="col-8 col-md-9 col-lg-10 goal-details">
-                <h1>Gera býir og búsetingar inkluderandi, tryggar, haldgóðar og burðardyggar</h1>
+                <h1>
+                    
+                        Gera býir og búsetingar inkluderandi, tryggar, haldgóðar og burðardyggar
+                    
+                </h1>
             </div>
         </div>
     </div>
@@ -347,7 +368,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/11-1-1">Partur av býarfólkinum, ið býr í fátækrabýlingum, ivasamum ella óhóskandi bústaði</a></span>
+              <span class="indicator-name"><a href="/sdg-site/11-1-1/">Partur av býarfólkinum, ið býr í fátækrabýlingum, ivasamum ella óhóskandi bústaði</a></span>
               
 
 
@@ -360,7 +381,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -402,7 +423,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/11-2-1">Partur av fólkinum, ið hevur høgliga atgongd til almennan flutning, skift á kyn, aldur og persónar, ið bera brek</a></span>
+              <span class="indicator-name"><a href="/sdg-site/11-2-1/">Partur av fólkinum, ið hevur høgliga atgongd til almennan flutning, skift á kyn, aldur og persónar, ið bera brek</a></span>
               
 
 
@@ -457,7 +478,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/11-3-1">Lutfall millum lendisnýtslu og fólkavøkstur</a></span>
+              <span class="indicator-name"><a href="/sdg-site/11-3-1/">Lutfall millum lendisnýtslu og fólkavøkstur</a></span>
               
 
 
@@ -497,7 +518,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/11-3-2">Partur av býum við beinleiðis borgaraluttøku í býarskipan og umsiting, ið virkar regluliga og fólkaræðisligt</a></span>
+              <span class="indicator-name"><a href="/sdg-site/11-3-2/">Partur av býum við beinleiðis borgaraluttøku í býarskipan og umsiting, ið virkar regluliga og fólkaræðisligt</a></span>
               
 
 
@@ -552,7 +573,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/11-4-1">Heildarútgjøld fyri hvønn íbúgva til at friða, verja og varðveita allan mentunar- og náttúruarv, skift á keldu (almenn, privat), slag av arvi (mentan, náttúra) og stjórnarstøði (land, sýsla, kommuna)</a></span>
+              <span class="indicator-name"><a href="/sdg-site/11-4-1/">Heildarútgjøld fyri hvønn íbúgva til at friða, verja og varðveita allan mentunar- og náttúruarv, skift á keldu (almenn, privat), slag av arvi (mentan, náttúra) og stjórnarstøði (land, sýsla, kommuna)</a></span>
               
 
 
@@ -607,7 +628,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/11-5-1">Tal av deyðum, horvnum og beinleiðis raktum fólkum, har vanlukka hevur verið atvoldin, fyri hvørjar 100.000 íbúgvar</a></span>
+              <span class="indicator-name"><a href="/sdg-site/11-5-1/">Tal av deyðum, horvnum og beinleiðis raktum fólkum, har vanlukka hevur verið atvoldin, fyri hvørjar 100.000 íbúgvar</a></span>
               
 
 
@@ -620,7 +641,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -647,7 +668,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/11-5-2">Beinleiðis fíggjarligt tap volt av vanlukkum í mun til altjóða BTÚ</a></span>
+              <span class="indicator-name"><a href="/sdg-site/11-5-2/">Beinleiðis fíggjarligt tap volt av vanlukkum í mun til altjóða BTÚ</a></span>
               
 
 
@@ -687,7 +708,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/11-5-3">global_indicators.11-5-3-title</a></span>
+              <span class="indicator-name"><a href="/sdg-site/11-5-3/">global_indicators.11-5-3-title</a></span>
               
 
 
@@ -742,7 +763,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/11-6-1">Parturin av burturkasti frá býum, ið verður regluliga innsavnaður og nøktandi viðgjørdur, í mun til samlaðu nøgdina av burturkasti, skift á býir</a></span>
+              <span class="indicator-name"><a href="/sdg-site/11-6-1/">Parturin av burturkasti frá býum, ið verður regluliga innsavnaður og nøktandi viðgjørdur, í mun til samlaðu nøgdina av burturkasti, skift á býir</a></span>
               
 
 
@@ -755,7 +776,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -782,7 +803,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/11-6-2">Fólkatalsvektað ársmiðalvirði av bitlum (t.d. PM2,5 og PM10) í býum</a></span>
+              <span class="indicator-name"><a href="/sdg-site/11-6-2/">Fólkatalsvektað ársmiðalvirði av bitlum (t.d. PM2,5 og PM10) í býum</a></span>
               
 
 
@@ -795,7 +816,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -837,7 +858,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/11-7-1">Miðalparturin av bygdum lendi í býum, sum er atkomandi til almenna nýtslu fyri øll, skift á kyn, aldur og persónar, ið bera brek</a></span>
+              <span class="indicator-name"><a href="/sdg-site/11-7-1/">Miðalparturin av bygdum lendi í býum, sum er atkomandi til almenna nýtslu fyri øll, skift á kyn, aldur og persónar, ið bera brek</a></span>
               
 
 
@@ -877,7 +898,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/11-7-2">Partur av persónum, sum eru offur fyri kropsligum ella kynsligum ónáðum, skift á kyn, aldur, avlamisstøðu og misbrotsstaði, undanfarnu 12 mánaðir</a></span>
+              <span class="indicator-name"><a href="/sdg-site/11-7-2/">Partur av persónum, sum eru offur fyri kropsligum ella kynsligum ónáðum, skift á kyn, aldur, avlamisstøðu og misbrotsstaði, undanfarnu 12 mánaðir</a></span>
               
 
 
@@ -932,7 +953,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/11-a-1">Tal av londum við býarmenningar- og økismenningarætlanum, sum (a) írokna fólkatalsbroytingar, (b) tryggja javna menning í økjunum og (c) vaksa um fíggjarpolitiska rásarúmið</a></span>
+              <span class="indicator-name"><a href="/sdg-site/11-a-1/">Tal av londum við býarmenningar- og økismenningarætlanum, sum (a) írokna fólkatalsbroytingar, (b) tryggja javna menning í økjunum og (c) vaksa um fíggjarpolitiska rásarúmið</a></span>
               
 
 
@@ -987,7 +1008,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/11-b-1">Tal av londum, ið samtykkja og fremja ætlanir at avmarka vanlukkuváðan fyri landið, sambært Sendai-karmin fyri avmarking av vanlukkuváða 2015-2030</a></span>
+              <span class="indicator-name"><a href="/sdg-site/11-b-1/">Tal av londum, ið samtykkja og fremja ætlanir at avmarka vanlukkuváðan fyri landið, sambært Sendai-karmin fyri avmarking av vanlukkuváða 2015-2030</a></span>
               
 
 
@@ -1000,7 +1021,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -1027,7 +1048,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/11-b-2">Partur av kommununum, ið samtykkja og fremja ætlanir at avmarka vanlukkuváðan í samsvari við landsætlan um avmarkan av vanlukkuváða</a></span>
+              <span class="indicator-name"><a href="/sdg-site/11-b-2/">Partur av kommununum, ið samtykkja og fremja ætlanir at avmarka vanlukkuváðan í samsvari við landsætlan um avmarkan av vanlukkuváða</a></span>
               
 
 
@@ -1040,7 +1061,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -1127,12 +1148,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20230606212005'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20230625130600'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20230606212005"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20230625130600"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

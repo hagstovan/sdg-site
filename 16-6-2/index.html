@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex%2Cfetch"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -43,6 +43,20 @@ var opensdg = {
   ignoredDisaggregations: null,
 
   language: 'fo',
+
+  mapColors: {
+    "default": [
+        "#c4e1c6",
+        "#b0d1b3",
+        "#9bc2a1",
+        "#87b28f",
+        "#74a37c",
+        "#60946b",
+        "#4d8559",
+        "#3a7747",
+        "#276836"
+    ]
+},
 };
 
 </script>
@@ -112,12 +126,9 @@ var translations = {
 
 
 
-        <meta name="description" content="">
-        <meta property="og:description" content="">
         
         <meta name="robots" content="noindex, nofollow">
         
-        <link rel="canonical" href="/">
 
         <!--[if IE 9]>
         <script src="/sdg-site/assets/js/lib/classList.js"></script>
@@ -128,13 +139,14 @@ var translations = {
 <link rel="icon" type="image/png" sizes="16x16" href="/sdg-site/assets/img/favicons/favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="/sdg-site/assets/img/favicons/favicon.ico" />
 
+        
 
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20230606212005">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20230625130600">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -144,6 +156,9 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
         
+
+        
+
 
         <!--[if IE]>
         <link rel="stylesheet" href="/sdg-site/assets/css/ie.css">
@@ -326,8 +341,9 @@ data-event-label="high"
     <fieldset>
       <legend class="sr-only">Røð</legend>
       <% _.each(serieses, function(seriesItem, index) { %>
+        <% var isProxy = (proxySerieses.includes(seriesItem)) %>
         <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
-        <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%></label>
+        <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%> <%=isProxy ? proxyPill : ''%></label>
       <% }); %>
     </fieldset>
   
@@ -353,7 +369,7 @@ data-event-label="high"
         </li>
         
         <li class="breadcrumb-item">
-            <a href="/sdg-site/16"
+            <a href="/sdg-site/16/"
                title="Mál 16 - Friður, rættvísi og sterkir stovnar"
                aria-label="Mál  - ">
                Mál 16
@@ -368,13 +384,13 @@ data-event-label="high"
     
 <div class="previous-next-links d-flex justify-content-between">
     <div class="text-left">
-        <a class="btn btn-primary" href="/sdg-site/16-6-1" aria-labelledby="previous-link">
+        <a class="btn btn-primary" href="/sdg-site/16-6-1/" aria-labelledby="previous-link">
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
             <span id="previous-link" class="d-none d-md-inline">Undanfarni ávísi</span>
         </a>
     </div>
     <div class="text-right">
-        <a class="btn btn-primary" href="/sdg-site/16-7-1" aria-labelledby="next-link">
+        <a class="btn btn-primary" href="/sdg-site/16-7-1/" aria-labelledby="next-link">
             <span id="next-link" class="d-none d-md-inline">Næsti ávísi</span>
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
         </a>
@@ -389,7 +405,7 @@ data-event-label="high"
         <div class="row">
             
             <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
-                <a href="/sdg-site/16" aria-label="Vís undirmál og ávísar undir málinum 16" title="Vís undirmál og ávísar undir málinum 16">
+                <a href="/sdg-site/16/" aria-label="Vís undirmál og ávísar undir málinum 16" title="Vís undirmál og ávísar undir málinum 16">
                     <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/16.svg"
                         alt="Friður, rættvísi og sterkir stovnar - Mál 16"
                         id="goal-16"
@@ -411,6 +427,8 @@ data-event-label="high"
     </div>
 </div>
 <div id="main-content" class="container goal-16" role="main">
+  
+
   
 
   
@@ -1328,12 +1346,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20230606212005'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20230625130600'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20230606212005"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20230625130600"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

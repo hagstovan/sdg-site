@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex%2Cfetch"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -43,6 +43,20 @@ var opensdg = {
   ignoredDisaggregations: null,
 
   language: 'fo',
+
+  mapColors: {
+    "default": [
+        "#c4e1c6",
+        "#b0d1b3",
+        "#9bc2a1",
+        "#87b28f",
+        "#74a37c",
+        "#60946b",
+        "#4d8559",
+        "#3a7747",
+        "#276836"
+    ]
+},
 };
 
 </script>
@@ -103,16 +117,15 @@ var translations = {
         ================================================== -->
 
         
+    
     <title>Mál 16 - Friður, rættvísi og sterkir stovnar - Ávísar til málini fyri burðardyggari menning</title>
+    
 
 
 
-        <meta name="description" content="">
-        <meta property="og:description" content="">
         
         <meta name="robots" content="noindex, nofollow">
         
-        <link rel="canonical" href="/">
 
         <!--[if IE 9]>
         <script src="/sdg-site/assets/js/lib/classList.js"></script>
@@ -123,13 +136,14 @@ var translations = {
 <link rel="icon" type="image/png" sizes="16x16" href="/sdg-site/assets/img/favicons/favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="/sdg-site/assets/img/favicons/favicon.ico" />
 
+        
 
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20230606212005">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20230625130600">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -139,6 +153,9 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
         
+
+        
+
 
         <!--[if IE]>
         <link rel="stylesheet" href="/sdg-site/assets/css/ie.css">
@@ -269,13 +286,13 @@ data-event-label="high"
     
 <div class="previous-next-links d-flex justify-content-between">
     <div class="text-left">
-        <a class="btn btn-primary" href="/sdg-site/15" aria-labelledby="previous-link">
+        <a class="btn btn-primary" href="/sdg-site/15/" aria-labelledby="previous-link">
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
             <span id="previous-link" class="d-none d-md-inline">Undanfarna mál</span>
         </a>
     </div>
     <div class="text-right">
-        <a class="btn btn-primary" href="/sdg-site/17" aria-labelledby="next-link">
+        <a class="btn btn-primary" href="/sdg-site/17/" aria-labelledby="next-link">
             <span id="next-link" class="d-none d-md-inline">Næsta mál</span>
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
         </a>
@@ -293,7 +310,11 @@ data-event-label="high"
                 <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/16.svg" alt="Friður, rættvísi og sterkir stovnar - Mál 16" id="goal-16" class="goal-icon-image goal-icon-image-svg" />
             </div>
             <div class="col-8 col-md-9 col-lg-10 goal-details">
-                <h1>Virka fyri friðsomum og inkluderandi samfeløgum fyri burðardyggari menning. Útvega øllum atgongd til rættartrygd og byggja munagóðar, ábyrgar og inkluderandi stovnar á øllum stigum</h1>
+                <h1>
+                    
+                        Virka fyri friðsomum og inkluderandi samfeløgum fyri burðardyggari menning. Útvega øllum atgongd til rættartrygd og byggja munagóðar, ábyrgar og inkluderandi stovnar á øllum stigum
+                    
+                </h1>
             </div>
         </div>
     </div>
@@ -347,7 +368,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-1-1">Tal av ofrum fyri tilætlað morð fyri hvørjar 100.000 íbúgvar, skift á kyn og aldur</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-1-1/">Tal av ofrum fyri tilætlað morð fyri hvørjar 100.000 íbúgvar, skift á kyn og aldur</a></span>
               
 
 
@@ -360,7 +381,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -387,7 +408,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-1-2">Deyð av krígsávum fyri hvørji 100.000 fólk skift á kyn, aldur og orsøk</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-1-2/">Deyð av krígsávum fyri hvørji 100.000 fólk skift á kyn, aldur og orsøk</a></span>
               
 
 
@@ -400,7 +421,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -427,7 +448,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-1-3">Partur av fólkinum, ið hevur verið fyri (a) likamligum harðskapi, (b) sálarligum harðskapi og (c) kynsligum harðskapi undanfarnu 12 mánaðir</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-1-3/">Partur av fólkinum, ið hevur verið fyri (a) likamligum harðskapi, (b) sálarligum harðskapi og (c) kynsligum harðskapi undanfarnu 12 mánaðir</a></span>
               
 
 
@@ -467,7 +488,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-1-4">Partur av fólkinum, ið kennir seg tryggan at ganga úti einsamallur/einsamøll, har tey búgva</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-1-4/">Partur av fólkinum, ið kennir seg tryggan at ganga úti einsamallur/einsamøll, har tey búgva</a></span>
               
 
 
@@ -480,7 +501,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -522,7 +543,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-2-1">Partur av 1-17 ára gomlum børnum, ið frá umsorganarpersónum hava verið fyri nøkrum slagi av liklamligari revsing og/ella sálarligari ágongd yvirhøvur</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-2-1/">Partur av 1-17 ára gomlum børnum, ið frá umsorganarpersónum hava verið fyri nøkrum slagi av liklamligari revsing og/ella sálarligari ágongd yvirhøvur</a></span>
               
 
 
@@ -562,7 +583,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-2-2">Tal av offrum fyri ólógligum menniskjahandli fyri hvørjar 100.000 íbúgvar, skift á kyn, aldur og slag av misnýtslu</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-2-2/">Tal av offrum fyri ólógligum menniskjahandli fyri hvørjar 100.000 íbúgvar, skift á kyn, aldur og slag av misnýtslu</a></span>
               
 
 
@@ -602,7 +623,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-2-3">Partur av ungum kvinnum og monnum 18-29 ár, ið vóru fyri kynsligum harðskapi 18 ára gomul</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-2-3/">Partur av ungum kvinnum og monnum 18-29 ár, ið vóru fyri kynsligum harðskapi 18 ára gomul</a></span>
               
 
 
@@ -657,7 +678,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-3-1">Partur av harðskapsofrum undanfarnu 12 mánaðirnar, ið fráboðaðu skikkaðum myndugleika ella øðrum alment viðurkendum ósemjuloysara, at tey hava verið offur</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-3-1/">Partur av harðskapsofrum undanfarnu 12 mánaðirnar, ið fráboðaðu skikkaðum myndugleika ella øðrum alment viðurkendum ósemjuloysara, at tey hava verið offur</a></span>
               
 
 
@@ -670,7 +691,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -697,7 +718,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-3-2">Partur av fongslaðum, ið ikki hava fingið dóm</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-3-2/">Partur av fongslaðum, ið ikki hava fingið dóm</a></span>
               
 
 
@@ -710,7 +731,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -737,7 +758,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-3-3">Partur av fólkinum, ið hevur verið uppi í ósemjum ella rættartrætum undanfarnu tvey árini, og sum nýtti formligar ella óformligar ósemjuloysarar, skift á slag av ósemjuloysn</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-3-3/">Partur av fólkinum, ið hevur verið uppi í ósemjum ella rættartrætum undanfarnu tvey árini, og sum nýtti formligar ella óformligar ósemjuloysarar, skift á slag av ósemjuloysn</a></span>
               
 
 
@@ -792,7 +813,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-4-1">Heildarvirði av inngangandi og útgangandi ólógligum peningastreymum (í US dollars)</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-4-1/">Heildarvirði av inngangandi og útgangandi ólógligum peningastreymum (í US dollars)</a></span>
               
 
 
@@ -832,7 +853,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-4-2">Partur av inndrignum, funnum ella avhendaðum vápnum har ólógligur uppruni og slóð eru sannað av skikkaðum myndugleika samsvarandi altjóða rættarvenjum</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-4-2/">Partur av inndrignum, funnum ella avhendaðum vápnum har ólógligur uppruni og slóð eru sannað av skikkaðum myndugleika samsvarandi altjóða rættarvenjum</a></span>
               
 
 
@@ -887,7 +908,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-5-1">Partur av persónum, ið hava verið í sambandi við ein alment settan í minsta lagi eina ferð, og sum mutraðu ein alment settan, ella vórðu bidnir um mutur av hesum alment settu, undanfarnu 12 mánaðirnar</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-5-1/">Partur av persónum, ið hava verið í sambandi við ein alment settan í minsta lagi eina ferð, og sum mutraðu ein alment settan, ella vórðu bidnir um mutur av hesum alment settu, undanfarnu 12 mánaðirnar</a></span>
               
 
 
@@ -900,7 +921,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -927,7 +948,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-5-2">Partur av vinnufeløgum, ið hava verið í sambandi við ein alment settan í minsta lagi eina ferð og sum mutraðu ein alment settan, ella vórðu bidnir um mutur av hesum alment settu, undanfarnu 12 mánaðirnar</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-5-2/">Partur av vinnufeløgum, ið hava verið í sambandi við ein alment settan í minsta lagi eina ferð og sum mutraðu ein alment settan, ella vórðu bidnir um mutur av hesum alment settu, undanfarnu 12 mánaðirnar</a></span>
               
 
 
@@ -940,7 +961,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -982,7 +1003,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-6-1">Almennar útreiðslur sum partur av upprunaliga samtykta fíggjarlóg, skift á geira (ella kontuslag ella líknandi)</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-6-1/">Almennar útreiðslur sum partur av upprunaliga samtykta fíggjarlóg, skift á geira (ella kontuslag ella líknandi)</a></span>
               
 
 
@@ -995,7 +1016,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -1022,7 +1043,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-6-2">Partur av fólkinum, ið vóru nøgd við seinastu almennu tænastuni, tey upplivdu</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-6-2/">Partur av fólkinum, ið vóru nøgd við seinastu almennu tænastuni, tey upplivdu</a></span>
               
 
 
@@ -1077,7 +1098,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-7-1">Partur av størvum í lands- og landsluta-stovnum, heruppií (a) lóggávuvald, (b) almenn tænasta, og (c) dómsvald samanborið við býtið í landinum, skift á kyn, aldur, persónar, ið bera brek, og fólkabólkar</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-7-1/">Partur av størvum í lands- og landsluta-stovnum, heruppií (a) lóggávuvald, (b) almenn tænasta, og (c) dómsvald samanborið við býtið í landinum, skift á kyn, aldur, persónar, ið bera brek, og fólkabólkar</a></span>
               
 
 
@@ -1117,7 +1138,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-7-2">Partur av fólkinum, ið heldur avgerðartilgongdir fevna um øll og eru eftirgáandi, skift á kyn, aldur, persónar ið bera brek og fólkabólkar</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-7-2/">Partur av fólkinum, ið heldur avgerðartilgongdir fevna um øll og eru eftirgáandi, skift á kyn, aldur, persónar ið bera brek og fólkabólkar</a></span>
               
 
 
@@ -1172,7 +1193,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-8-1">Prosentpartur av limum og atkvøðurættindum hjá menningarlondum í altjóða felagsskapum</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-8-1/">Prosentpartur av limum og atkvøðurættindum hjá menningarlondum í altjóða felagsskapum</a></span>
               
 
 
@@ -1185,7 +1206,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -1227,7 +1248,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-9-1">Partur av børnum undir 5 ár, har føðingin er skrásett hjá almennum myndugleika, skift á aldur</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-9-1/">Partur av børnum undir 5 ár, har føðingin er skrásett hjá almennum myndugleika, skift á aldur</a></span>
               
 
 
@@ -1240,7 +1261,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -1282,7 +1303,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-10-1">Tal av staðfestum manndrápum, fólkaránum, tvungnum hvørvingum, tilvildarligum frælsistøkum og píningum móti blaðfólki og atknýttum miðlafólki, yrkisfelagslimum og mannarættindaforsprákarum seinastu 12 mánaðirnar</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-10-1/">Tal av staðfestum manndrápum, fólkaránum, tvungnum hvørvingum, tilvildarligum frælsistøkum og píningum móti blaðfólki og atknýttum miðlafólki, yrkisfelagslimum og mannarættindaforsprákarum seinastu 12 mánaðirnar</a></span>
               
 
 
@@ -1295,7 +1316,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -1322,7 +1343,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-10-2">Tal av londum, sum í grundlóg, lóg og/ella politiskt samtykkja og fremja innlitstrygd hjá almenninginum</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-10-2/">Tal av londum, sum í grundlóg, lóg og/ella politiskt samtykkja og fremja innlitstrygd hjá almenninginum</a></span>
               
 
 
@@ -1335,7 +1356,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -1377,7 +1398,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-a-1">Um tað finst ein óheftur landsstovnur fyri mannarættindi, ið lýkur París Grundreglurnar hjá Sameindu Tjóða</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-a-1/">Um tað finst ein óheftur landsstovnur fyri mannarættindi, ið lýkur París Grundreglurnar hjá Sameindu Tjóða</a></span>
               
 
 
@@ -1390,7 +1411,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -1432,7 +1453,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/16-b-1">Partur av fólkinum, ið sigur seg persónliga at hava kent seg fyri mismuni ella ónáðum undanfarnu 12 mánaðir vegna mismunir, sum eru ólógligir sambært altjóða lóg um mannarættindi</a></span>
+              <span class="indicator-name"><a href="/sdg-site/16-b-1/">Partur av fólkinum, ið sigur seg persónliga at hava kent seg fyri mismuni ella ónáðum undanfarnu 12 mánaðir vegna mismunir, sum eru ólógligir sambært altjóða lóg um mannarættindi</a></span>
               
 
 
@@ -1532,12 +1553,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20230606212005'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20230625130600'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20230606212005"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20230625130600"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

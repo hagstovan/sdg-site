@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CObject.entries%2CArray.from%2CSet%2CArray.prototype.findIndex%2Cfetch"></script>
 <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
 
         <script>
@@ -43,6 +43,20 @@ var opensdg = {
   ignoredDisaggregations: null,
 
   language: 'fo',
+
+  mapColors: {
+    "default": [
+        "#c4e1c6",
+        "#b0d1b3",
+        "#9bc2a1",
+        "#87b28f",
+        "#74a37c",
+        "#60946b",
+        "#4d8559",
+        "#3a7747",
+        "#276836"
+    ]
+},
 };
 
 </script>
@@ -103,16 +117,15 @@ var translations = {
         ================================================== -->
 
         
+    
     <title>Mál 6 - Reint vatn og reinføri - Ávísar til málini fyri burðardyggari menning</title>
+    
 
 
 
-        <meta name="description" content="">
-        <meta property="og:description" content="">
         
         <meta name="robots" content="noindex, nofollow">
         
-        <link rel="canonical" href="/">
 
         <!--[if IE 9]>
         <script src="/sdg-site/assets/js/lib/classList.js"></script>
@@ -123,13 +136,14 @@ var translations = {
 <link rel="icon" type="image/png" sizes="16x16" href="/sdg-site/assets/img/favicons/favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="/sdg-site/assets/img/favicons/favicon.ico" />
 
+        
 
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20230606212005">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20230625130600">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -139,6 +153,9 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
         
+
+        
+
 
         <!--[if IE]>
         <link rel="stylesheet" href="/sdg-site/assets/css/ie.css">
@@ -269,13 +286,13 @@ data-event-label="high"
     
 <div class="previous-next-links d-flex justify-content-between">
     <div class="text-left">
-        <a class="btn btn-primary" href="/sdg-site/5" aria-labelledby="previous-link">
+        <a class="btn btn-primary" href="/sdg-site/5/" aria-labelledby="previous-link">
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
             <span id="previous-link" class="d-none d-md-inline">Undanfarna mál</span>
         </a>
     </div>
     <div class="text-right">
-        <a class="btn btn-primary" href="/sdg-site/7" aria-labelledby="next-link">
+        <a class="btn btn-primary" href="/sdg-site/7/" aria-labelledby="next-link">
             <span id="next-link" class="d-none d-md-inline">Næsta mál</span>
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
         </a>
@@ -293,7 +310,11 @@ data-event-label="high"
                 <img src="https://open-sdg.org/sdg-translations/assets/img/goals/fo/6.svg" alt="Reint vatn og reinføri - Mál 6" id="goal-6" class="goal-icon-image goal-icon-image-svg" />
             </div>
             <div class="col-8 col-md-9 col-lg-10 goal-details">
-                <h1>Tryggja øllum, at vatn og reinførisviðurskifti eru í lagi og umsitin á burðardyggan hátt</h1>
+                <h1>
+                    
+                        Tryggja øllum, at vatn og reinførisviðurskifti eru í lagi og umsitin á burðardyggan hátt
+                    
+                </h1>
             </div>
         </div>
     </div>
@@ -347,7 +368,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/6-1-1">Partur av fólkinum, ið fær trygt rikna veiting av drekkivatni</a></span>
+              <span class="indicator-name"><a href="/sdg-site/6-1-1/">Partur av fólkinum, ið fær trygt rikna veiting av drekkivatni</a></span>
               
 
 
@@ -360,7 +381,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -402,7 +423,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/6-2-1">Partur av fólkinum, ið nýtir trygt riknar reinføristænastur, heruppií hentleikar at vaska sær um hendurnar við vatni og sápu</a></span>
+              <span class="indicator-name"><a href="/sdg-site/6-2-1/">Partur av fólkinum, ið nýtir trygt riknar reinføristænastur, heruppií hentleikar at vaska sær um hendurnar við vatni og sápu</a></span>
               
 
 
@@ -415,7 +436,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -457,7 +478,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/6-3-1">Partur av spillivatni, ið verður viðgjørt trygt</a></span>
+              <span class="indicator-name"><a href="/sdg-site/6-3-1/">Partur av spillivatni, ið verður viðgjørt trygt</a></span>
               
 
 
@@ -497,7 +518,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/6-3-2">Partur av vatnkeldum við góðari vatngóðsku</a></span>
+              <span class="indicator-name"><a href="/sdg-site/6-3-2/">Partur av vatnkeldum við góðari vatngóðsku</a></span>
               
 
 
@@ -552,7 +573,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/6-4-1">Broyting av vatnnýtslumunadygd við tíðini</a></span>
+              <span class="indicator-name"><a href="/sdg-site/6-4-1/">Broyting av vatnnýtslumunadygd við tíðini</a></span>
               
 
 
@@ -592,7 +613,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/6-4-2">Vatnstrongdarstig: feskvatnsútvinning sum partur av tøkum vatnfeingi</a></span>
+              <span class="indicator-name"><a href="/sdg-site/6-4-2/">Vatnstrongdarstig: feskvatnsútvinning sum partur av tøkum vatnfeingi</a></span>
               
 
 
@@ -647,7 +668,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/6-5-1">Stig av heildarvirkandi vatnfeingisumsiting</a></span>
+              <span class="indicator-name"><a href="/sdg-site/6-5-1/">Stig av heildarvirkandi vatnfeingisumsiting</a></span>
               
 
 
@@ -687,7 +708,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/6-5-2">Partur av vatnøkjum, sum fara um landamark og sum eru partur av samstarvi um vatnýtslu</a></span>
+              <span class="indicator-name"><a href="/sdg-site/6-5-2/">Partur av vatnøkjum, sum fara um landamark og sum eru partur av samstarvi um vatnýtslu</a></span>
               
 
 
@@ -742,7 +763,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/6-6-1">Broyting í vavi av vatntongdum vistskipanum við tíðini</a></span>
+              <span class="indicator-name"><a href="/sdg-site/6-6-1/">Broyting í vavi av vatntongdum vistskipanum við tíðini</a></span>
               
 
 
@@ -797,7 +818,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/6-a-1">Nøgd av almennum menningarstuðli tongd at vatn- og reinførismálum, ið er partur av stjórnarsamskipaðari útgjaldsætlan</a></span>
+              <span class="indicator-name"><a href="/sdg-site/6-a-1/">Nøgd av almennum menningarstuðli tongd at vatn- og reinførismálum, ið er partur av stjórnarsamskipaðari útgjaldsætlan</a></span>
               
 
 
@@ -810,7 +831,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -852,7 +873,7 @@ data-event-label="high"
             </div>
             <div class="col goal-page-indicator-name">
               
-              <span class="indicator-name"><a href="/sdg-site/6-b-1">Partur av kommununum, ið hava gjørt og sett í verk politikkir og mannagongdir fyri nærsamfeløg at luttaka í umsiting av vatnveiting og spillivatni</a></span>
+              <span class="indicator-name"><a href="/sdg-site/6-b-1/">Partur av kommununum, ið hava gjørt og sett í verk politikkir og mannagongdir fyri nærsamfeløg at luttaka í umsiting av vatnveiting og spillivatni</a></span>
               
 
 
@@ -865,7 +886,7 @@ data-event-label="high"
 
 
 <span class="status complete">
-    <span class="status-inner">Fráboðað</span>
+    <span class="status-inner">Fráboðað á netinum</span>
 </span>
 
 
@@ -952,12 +973,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20230606212005'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20230625130600'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20230606212005"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20230625130600"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
