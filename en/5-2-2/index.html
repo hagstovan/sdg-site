@@ -119,6 +119,8 @@ var translations = {
         
     <title>
         
+        Indicator 5.2.2 -
+        
         Proportion of women and girls aged 15 years and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months, by age and place of occurrence - Indicators For The Sustainable Development Goals
     </title>
 
@@ -144,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20231026081913">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20231026085955">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -356,6 +358,27 @@ data-event-label="high"
 
 <div class="container">
   
+<nav>
+    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
+        
+        <li class="breadcrumb-item">
+            <a href="/sdg-site/en/">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="/sdg-site/en/goals">Goals</a>
+        </li>
+        
+        <li class="breadcrumb-item">
+            <a href="/sdg-site/en/5/"
+               title="Goal 5 - Gender equality"
+               aria-label="Goal  - ">
+               Goal 5
+            </a>
+        </li>
+        
+    </ol>
+</nav>
+
 
   
     
@@ -381,10 +404,20 @@ data-event-label="high"
     <div class="container">
         <div class="row">
             
-            <div class="col-12 indicator-details">
+            <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
+                <a href="/sdg-site/en/5/" aria-label="View targets and indicators for Goal 5" title="View targets and indicators for Goal 5">
+                    <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/5.svg"
+                        alt="Gender equality - Goal 5"
+                        id="goal-5"
+                        class="goal-icon-image goal-icon-image-svg" />
+                </a>
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 indicator-details">
             
                 <div>
                     <h1>
+                        
+                        Indicator 5.2.2
                         
                         <span class="lead-copy">Proportion of women and girls aged 15 years and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months, by age and place of occurrence</span>
                     </h1>
@@ -539,7 +572,25 @@ data-event-label="Change to indicator.national_metadata tab"
     
         
         
-            
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link "
+                data-bs-toggle="tab"
+                id="tab-global"
+                data-bs-target="#global"
+                aria-controls="global"
+                role="tab"
+                data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to indicator.global_metadata tab"
+
+            >Global Metadata</button>
+        </li>
+    
         
         
         
@@ -1295,12 +1346,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20231026081913'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20231026085955'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20231026081913"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20231026085955"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
