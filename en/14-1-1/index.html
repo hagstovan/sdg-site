@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20231102134928">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20231102141924">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -480,7 +480,7 @@ These measurements show variations in quantity of phytoplankton</p>
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Chlorophyll-a deviations, remote sensing (%)&quot;,&quot;Chlorophyll-a anomaly, remote sensing (%)&quot;,&quot;Nutrients in Skopun (coastal waters), deviation from mean (%)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;data.frequencyofchlorophyll-aconcentration&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;High frequency&quot;,&quot;Moderate frequency&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Frequency of Chlorophyll-a concentration&quot;},{&quot;name&quot;:&quot;data.nutrient&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Nitrogen&quot;,&quot;Silica&quot;,&quot;Prosphate&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Nutrient&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;data.measure&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Chlorophyll-a deviations, remote sensing (%)&quot;,&quot;data.chlorophyll-aanomalyremotesensing&quot;,&quot;Nutrients in Skopun (coastal waters), deviation from mean (%)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Measure&quot;},{&quot;name&quot;:&quot;data.frequencyofchlorophyll-aconcentration&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;High frequency&quot;,&quot;Moderate frequency&quot;,&quot;Extreme frequency&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Frequency of Chlorophyll-a concentration&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -511,325 +511,15 @@ These measurements show variations in quantity of phytoplankton</p>
   <div id="datatables">
 
     
-    <a href="https://hagstovan.github.io/sdg-data/en/headline/14-1-1.csv" class="btn btn-primary btn-download" download="indicator_14-1-1.csv" tabindex="0" role="button">Download headline data (.csv)</a>
-    
     <a href="https://hagstovan.github.io/sdg-data/en/data/14-1-1.csv" class="btn btn-primary btn-download" download='indicator_14-1-1.csv' tabindex='0' role='button'>Download source data (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
 
     
-    <h3>Headline data</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Index of eutrophication in territorial waters</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col">Value</th>
-        
-        
-        
-        <th scope="col" class="table-value">Series</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2005</td>
-          
-          
-          
-          <td>4.89118</td>
-          
-          
-          
-          <td class="table-value">Chlorophyll-a deviations, remote sensing (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2006</td>
-          
-          
-          
-          <td>3.70124</td>
-          
-          
-          
-          <td class="table-value">Chlorophyll-a deviations, remote sensing (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2007</td>
-          
-          
-          
-          <td>3.06608</td>
-          
-          
-          
-          <td class="table-value">Chlorophyll-a deviations, remote sensing (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2008</td>
-          
-          
-          
-          <td>5.38985</td>
-          
-          
-          
-          <td class="table-value">Chlorophyll-a deviations, remote sensing (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2009</td>
-          
-          
-          
-          <td>8.33331</td>
-          
-          
-          
-          <td class="table-value">Chlorophyll-a deviations, remote sensing (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2010</td>
-          
-          
-          
-          <td>10.04076</td>
-          
-          
-          
-          <td class="table-value">Chlorophyll-a deviations, remote sensing (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2011</td>
-          
-          
-          
-          <td>11.6396</td>
-          
-          
-          
-          <td class="table-value">Chlorophyll-a deviations, remote sensing (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2012</td>
-          
-          
-          
-          <td>3.69643</td>
-          
-          
-          
-          <td class="table-value">Chlorophyll-a deviations, remote sensing (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2013</td>
-          
-          
-          
-          <td>6.30942</td>
-          
-          
-          
-          <td class="table-value">Chlorophyll-a deviations, remote sensing (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2014</td>
-          
-          
-          
-          <td>7.05934</td>
-          
-          
-          
-          <td class="table-value">Chlorophyll-a deviations, remote sensing (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2015</td>
-          
-          
-          
-          <td>4.37811</td>
-          
-          
-          
-          <td class="table-value">Chlorophyll-a deviations, remote sensing (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2016</td>
-          
-          
-          
-          <td>2.52618</td>
-          
-          
-          
-          <td class="table-value">Chlorophyll-a deviations, remote sensing (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2017</td>
-          
-          
-          
-          <td>4.39161</td>
-          
-          
-          
-          <td class="table-value">Chlorophyll-a deviations, remote sensing (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td>3.87649</td>
-          
-          
-          
-          <td class="table-value">Chlorophyll-a deviations, remote sensing (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td>6.09887</td>
-          
-          
-          
-          <td class="table-value">Chlorophyll-a deviations, remote sensing (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td>6.08639</td>
-          
-          
-          
-          <td class="table-value">Chlorophyll-a deviations, remote sensing (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td>3.59289</td>
-          
-          
-          
-          <td class="table-value">Chlorophyll-a deviations, remote sensing (%)</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>No headline data available</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    <p>Source: Statistics Faroe Islands</p>
-    
-    
-    <p>Geographical Area: </p>
-    
-    
-    <p>Unit of Measurement: per cent</p>
-    
-    
-    <p>Footnote: </p>
-    
-  </div>
   
 
 </div>
@@ -2611,12 +2301,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20231102134928'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20231102141924'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20231102134928"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20231102141924"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
