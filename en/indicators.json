@@ -158,6 +158,14 @@
           "status": "notstarted"
         },
         {
+          "id": "2-2-4",
+          "title": "Prevalence of minimum dietary diversity, by population group (children aged 6 to 23.9 months and non-pregnant women aged 15 to 49 years)",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/en/2-2-4/",
+          "status": "notstarted"
+        },
+        {
           "id": "2-3-1",
           "title": "Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size",
           "description": "",
@@ -940,6 +948,14 @@
           "keywords": "",
           "href": "/sdg-site/en/8-9-1/",
           "status": "complete"
+        },
+        {
+          "id": "8-9-2",
+          "title": "Employed persons in the tourism industries",
+          "description": "",
+          "keywords": "",
+          "href": "/sdg-site/en/8-9-2/",
+          "status": "notstarted"
         },
         {
           "id": "8-10-1",
