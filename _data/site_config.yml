@@ -65,7 +65,7 @@ data_fields:
   units: ''
   series: ''
 date_formats: []
-decimal_separator: ','
+decimal_separator: ''
 disclaimer:
   phase: ''
   message: ''
