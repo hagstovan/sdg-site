@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - develop
-  workflow_dispatch:
-  #schedule:
-  #  - cron: '10 0 * * *'
+  schedule:
+  # * is a special character in YAML so you have to quote this string
+  - cron:  '10 9 * * *'
 
 permissions:
   contents: write
