@@ -37,6 +37,7 @@ jobs:
         FOLDER: _site
         CLEAN: true
     - name: Rebuild site
+      if: github.event_name == 'schedule'
       run: |
         curl -L \
           -X POST \
