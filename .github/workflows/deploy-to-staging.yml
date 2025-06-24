@@ -5,7 +5,7 @@ on:
     branches:
       - develop  # or whichever branch you want to trigger on push
   schedule:
-    - cron: '5 9 * * *'  # 09:05 UTC daily
+    - cron: '5 8 * * *'  # 09:05 UTC daily
   workflow_dispatch:
 
 permissions:
