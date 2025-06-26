@@ -15,7 +15,7 @@
         },
         {
           "id": "1-2-1",
-          "title": "Fátækaváði 50% eftir mát, kyn, aldur, ár og eind",
+          "title": "Partur av fólkinum, ið livir av minni enn fátækamarkinum í landinum, skift á kyn og aldur",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/1-2-1/",
@@ -95,7 +95,7 @@
         },
         {
           "id": "1-a-2",
-          "title": "Fátækaváði 50% eftir mát, grundleggjandi tænasta, ár og eind",
+          "title": "Partur av samlaðu almennu útreiðslunum brúkt til grundleggjandi tænastur (útbúgving, heilsa og almannavernd)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/1-a-2/",
@@ -247,7 +247,7 @@
         
         {
           "id": "3-1-1",
-          "title": "Møður deyðar í barnferð eftir ár, eind og mát",
+          "title": "Møður deyðar í barnferð",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-1-1/",
@@ -255,7 +255,7 @@
         },
         {
           "id": "3-1-2",
-          "title": "Føðingar eftir Ávísi 3.1.2",
+          "title": "Partur av føðingum, har heilsufakligt starvsfólk hevur verið til hjálpar",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-1-2/",
@@ -263,7 +263,7 @@
         },
         {
           "id": "3-2-1",
-          "title": "Deyðatal eftir ár, eind og mát",
+          "title": "Deyðatíttleikin hjá børnum yngri enn 5 ár",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-2-1/",
@@ -271,7 +271,7 @@
         },
         {
           "id": "3-2-2",
-          "title": "Deyðatal eftir ár, eind og mát",
+          "title": "Nýføðinga-deyðatíttleikin",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-2-2/",
@@ -279,7 +279,7 @@
         },
         {
           "id": "3-3-1",
-          "title": "HIV-tilburðir eftir ár, eind, mát og kyn",
+          "title": "Nýggir HIV-tilburðir fyri hvørjar 1.000 ikki-smittaðar íbúgvar skift á kyn, aldur og vandabólk",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-3-1/",
@@ -287,7 +287,7 @@
         },
         {
           "id": "3-3-2",
-          "title": "Deyðatal eftir ár, eind og mát",
+          "title": "Nýggir tuberkla-tilburðir fyri hvørjar 100.000 íbúgvar",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-3-2/",
@@ -319,7 +319,7 @@
         },
         {
           "id": "3-4-1",
-          "title": "Deyðatal eftir ár, eind, kyn og mát",
+          "title": "Deyð av hjarta-æðra-sjúkum, krabbameini, sukursjúku og kroniskum sjúkum í andaleiðini fyri hvørjar 100.000 íbúgvar",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-4-1/",
@@ -327,7 +327,7 @@
         },
         {
           "id": "3-4-2",
-          "title": "Sjálvmorð eftir ár, eind og mát",
+          "title": "Sjálvmorð fyri hvørjar 100.000 íbúgvar",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-4-2/",
@@ -343,7 +343,7 @@
         },
         {
           "id": "3-5-2",
-          "title": "Rúsdrekkanýtsla eftir ár, eind og mát",
+          "title": "Rúsdrekkanýtsla, reint alkohol fyri hvørt fólkið eldri enn 15 ár",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-5-2/",
@@ -351,7 +351,7 @@
         },
         {
           "id": "3-6-1",
-          "title": "Deyðatal eftir ár, eind og mát",
+          "title": "Deyð í ferðsluni fyri hvørjar 100.000 íbúgvar",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-6-1/",
@@ -367,7 +367,7 @@
         },
         {
           "id": "3-7-2",
-          "title": "Føðitíttleiki eftir ár, eind og mát",
+          "title": "Føðitíttleiki hjá hálvvaksnum (10-14 ár og 15-19 ár) fyri hvørjar 1.000 kvinnur í aldursbólkinum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-7-2/",
@@ -407,7 +407,7 @@
         },
         {
           "id": "3-9-3",
-          "title": "deyðatíttleiki eftir ár, eind og mát",
+          "title": "Deyð av óætlaðari eitran fyri hvørjar 100.000 íbúgvar",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-9-3/",
@@ -415,7 +415,7 @@
         },
         {
           "id": "3-a-1",
-          "title": "Útbreiðsla av tubbaki eftir ár, eind, mát og kyn",
+          "title": "Aldursjavngjørd útbreiðsla av tubbaknýtslu hjá 15 ára gomlum og eldri",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-a-1/",
@@ -447,7 +447,7 @@
         },
         {
           "id": "3-c-1",
-          "title": "Heilsustarvsfólk eftir mát, eind, ár og starv",
+          "title": "Býti og tættleiki av heilsustarvsfólki",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/3-c-1/",
@@ -487,7 +487,7 @@
         },
         {
           "id": "4-1-2",
-          "title": "Útbúgving eftir mát, Útbúgving, ár, eind og kyn",
+          "title": "Prosentpartur ið fullførir grundleggjandi útbúgving (barnaskúlin, framhaldsskúlin, miðnám/yrkisútbúgving)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/4-1-2/",
@@ -503,7 +503,7 @@
         },
         {
           "id": "4-2-2",
-          "title": "Útbúgving eftir ár, eind, mát og kyn",
+          "title": "Prosentpartur av børnum sum luttaka í skipaðari frálæru (eitt ár áðrenn almenna innmeldingaraldurin í barnaskúlan), skift á kyn",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/4-2-2/",
@@ -559,7 +559,7 @@
         },
         {
           "id": "4-b-1",
-          "title": "Útbúgving eftir ár, eind og mát",
+          "title": "Stuðul til persónar úr menningarlondum til at lesa í Føroyum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/4-b-1/",
@@ -607,7 +607,7 @@
         },
         {
           "id": "5-3-1",
-          "title": "Giftar kvinnur eftir ár, eind og mát",
+          "title": "Partur av kvinnum millum 20 og 24 ár, ið vórðu giftar ella ógiftir makar áðrenn 15 ár og áðrenn 18 ár",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/5-3-1/",
@@ -631,7 +631,7 @@
         },
         {
           "id": "5-5-1",
-          "title": "Javnstøða eftir mát, flokkur, ár og eind",
+          "title": "Partur av sætum hjá kvinnum í (a) tjóðartingum og (b) kommunustýrum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/5-5-1/",
@@ -639,7 +639,7 @@
         },
         {
           "id": "5-5-2",
-          "title": "Ólønt arbeiði eftir starv, ár, eind, mát og alment/privat",
+          "title": "Partur av kvinnum í leiðslustørvum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/5-5-2/",
@@ -775,7 +775,7 @@
         },
         {
           "id": "6-a-1",
-          "title": "Vatnveiting eftir ár, eind og mát",
+          "title": "Nøgd av almennum menningarstuðli tongd at vatn- og reinførismálum, ið er partur av stjórnarsamskipaðari útgjaldsætlan",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/6-a-1/",
@@ -815,7 +815,7 @@
         },
         {
           "id": "7-2-1",
-          "title": "Varandi orkukeldur eftir ár, eind, mát og varandi orkukelda",
+          "title": "Partur av varandi orku í samanløgdu endaligu orkunýtsluni",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/7-2-1/",
@@ -839,7 +839,7 @@
         },
         {
           "id": "7-b-1",
-          "title": "Varandi orkukeldur eftir ár, eind, mát og orkukelda",
+          "title": "Uppsett framleiðsluorka til varandi orku í menningarlondum (í watt upp á íbúgvan)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/7-b-1/",
@@ -887,7 +887,7 @@
         },
         {
           "id": "8-4-2",
-          "title": "tons eftir ár, slag av tilfari, eind og mát",
+          "title": "Innlendis tilfarsnýtsla, innlendis tilfarsnýtsla upp á íbúgvan og innlendis tilfarsnýtslan í mun til BTÚ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/8-4-2/",
@@ -903,7 +903,7 @@
         },
         {
           "id": "8-5-2",
-          "title": "Arbeiðsloysi eftir kyn, aldur, mát, ár og eind",
+          "title": "Arbeiðsloysisprosent skift á kyn, aldur og fólk, ið bera brek",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/8-5-2/",
@@ -927,7 +927,7 @@
         },
         {
           "id": "8-8-1",
-          "title": "arbeiðsvanlukkur eftir avleiðing, ár, eind, mát og kyn",
+          "title": "Deyðiligar og ikki-deyðiligar arbeiðsvanlukkur fyri hvørjar 100.000 arbeiðarar, skift á kyn og innflytarastøðu",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/8-8-1/",
@@ -943,7 +943,7 @@
         },
         {
           "id": "8-9-1",
-          "title": "%-partur eftir ár, eind og mát",
+          "title": "Virðisøking frá ferðavinnu, sum partur av BTÚ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/8-9-1/",
@@ -975,7 +975,7 @@
         },
         {
           "id": "8-a-1",
-          "title": "Vatnveiting eftir ár, eind og mát",
+          "title": "Tilsagnir og útgjøld at stuðla handli",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/8-a-1/",
@@ -999,7 +999,7 @@
         
         {
           "id": "9-1-1",
-          "title": "Bygdarøki eftir ár, eind og mát",
+          "title": "Partur av fólkinum uttan fyri býarøkir, ið býr nærri enn 2 km við ein heilársveg",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/9-1-1/",
@@ -1015,7 +1015,7 @@
         },
         {
           "id": "9-2-1",
-          "title": "Framleiðsluídnaður eftir ár, mát og eind",
+          "title": "Virðisøking frá ídnaðarvinnu sum partur av BTÚ og fyri hvørt fólkið",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/9-2-1/",
@@ -1023,7 +1023,7 @@
         },
         {
           "id": "9-2-2",
-          "title": "Framleiðsluídnaður eftir mát, ár og eind",
+          "title": "Arbeiðsvirkin í framleiðsluvinnuni sum partur av øllum arbeiðsvirknum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/9-2-2/",
@@ -1031,7 +1031,7 @@
         },
         {
           "id": "9-3-1",
-          "title": "Framleiðsluídnaður eftir ár, eind og mát",
+          "title": "Virðisøking frá smáum og miðalstórum virkjum sum partur av virðisøkingini í ídnaðarvinnum samlað",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/9-3-1/",
@@ -1047,7 +1047,7 @@
         },
         {
           "id": "9-4-1",
-          "title": "CO2 útlát eftir mát, kelda, ár og eind",
+          "title": "CO2-útlát sum partur av virðisøking",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/9-4-1/",
@@ -1071,7 +1071,7 @@
         },
         {
           "id": "9-a-1",
-          "title": "Ídnaður eftir mát, ár og eind",
+          "title": "Samantald upphædd av almennum altjóða stuðli (almennur menningarstuðul umframt onnur almenn fígging) til undirstøðukervi",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/9-a-1/",
@@ -1079,7 +1079,7 @@
         },
         {
           "id": "9-b-1",
-          "title": "Ídnaður eftir mát, ár og eind",
+          "title": "Virðisøking frá miðal- og hátøknivinnu sum partur av virðisøkingini í ídnaðarvinnum samlað",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/9-b-1/",
@@ -1087,7 +1087,7 @@
         },
         {
           "id": "9-c-1",
-          "title": "Fartelefonnet eftir ár, eind og mát",
+          "title": "Partur av fólkinum, ið hevur atgongd til fartelefonnet, skift á tøkni",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/9-c-1/",
@@ -1103,7 +1103,7 @@
         
         {
           "id": "10-1-1",
-          "title": "Inntøkuvøkstur eftir ár, eind, mát og inntøkubólkur",
+          "title": "Vakstrarferð av húsarhaldsútreiðslum ella miðalinntøka hjá lægstu 40 prosentini av íbúgvunum og øllum íbúgvunum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/10-1-1/",
@@ -1111,7 +1111,7 @@
         },
         {
           "id": "10-2-1",
-          "title": "Fátækaváðamark eftir kyn, aldur, mát, ár og eind",
+          "title": "Partur av fólkinum, ið livir av minni enn 50 prosent av miðinntøkuni í landinum, skift á kyn og aldur og fólk, ið bera brek",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/10-2-1/",
@@ -1295,7 +1295,7 @@
         },
         {
           "id": "11-6-2",
-          "title": "Burturkast eftir ár, eind, mát og Bitlastødd",
+          "title": "Fólkatalsvektað ársmiðalvirði av bitlum (t.d. PM2,5 og PM10) í býum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/11-6-2/",
@@ -1367,7 +1367,7 @@
         },
         {
           "id": "12-2-2",
-          "title": "tons eftir ár, slag av tilfari, eind og mát",
+          "title": "Innlendis tilfarsnýtsla, innlendis tilfarsnýtsla upp á íbúgvan og innlendis tilfarsnýtslan í mun til BTÚ",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/12-2-2/",
@@ -1399,7 +1399,7 @@
         },
         {
           "id": "12-5-1",
-          "title": "Varandi orkukeldur eftir eind, mát og year",
+          "title": "Endurnýtslustigið í landinum, tons av endurnýttum tilfari",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/12-5-1/",
@@ -1431,7 +1431,7 @@
         },
         {
           "id": "12-a-1",
-          "title": "Varandi orkukeldur eftir year, mát, orkukelda og eind",
+          "title": "Uppsett framleiðsluorka til varandi orku í menningarlondum (í watt fyri hvønn íbúgva)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/12-a-1/",
@@ -1495,7 +1495,7 @@
         },
         {
           "id": "13-2-2",
-          "title": "CO2 útlát eftir ár, mát og eind",
+          "title": "Samlaða árliga útlátið av vakstrarhúsgassi",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/13-2-2/",
@@ -1535,7 +1535,7 @@
         
         {
           "id": "14-1-1",
-          "title": "Heimsmál eftir ár, eind og mát",
+          "title": "(a) vísital fyri ovtaðing við strendurnar, og (b) tættleikin av plastleivdum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/14-1-1/",
@@ -1567,7 +1567,7 @@
         },
         {
           "id": "14-5-1",
-          "title": "Heimsmál eftir mát, ár og eind",
+          "title": "Partur av havleiðum, ið eru vard øki",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/14-5-1/",
@@ -1575,7 +1575,7 @@
         },
         {
           "id": "14-6-1",
-          "title": "Unregulated fishing eftir ár, eind og mát",
+          "title": "Menningarstig at fremja altjóða tiltøk at fyribeina ólógligum, ófráboðaðum og óskipaðum fiskiskapi",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/14-6-1/",
@@ -1583,7 +1583,7 @@
         },
         {
           "id": "14-7-1",
-          "title": "Heimsmál eftir mát, ár og eind",
+          "title": "Burðardyggur fiskiskapur sum partur av BTÚ í smáum oyggjaríkjum í menning, minst mentu londunum og í øllum londum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/14-7-1/",
@@ -1599,7 +1599,7 @@
         },
         {
           "id": "14-b-1",
-          "title": "Útróður eftir ár, eind og mát",
+          "title": "Menningarstig at fremja lógar/kunngerðar/politiskar/stovnsligar karmar ið viðurkenna og verja atgongurættindi hjá útróðri til havfeingi",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/14-b-1/",
@@ -1623,7 +1623,7 @@
         
         {
           "id": "15-1-1",
-          "title": "Skógir eftir Ávísi 15.1.1",
+          "title": "Skógarlendi sum partur av samlaðu lendisvíddini",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/15-1-1/",
@@ -1671,7 +1671,7 @@
         },
         {
           "id": "15-5-1",
-          "title": "Heimsmál eftir mát, vísital, ár og eind",
+          "title": "Reyðlistavísital",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/15-5-1/",
@@ -1711,7 +1711,7 @@
         },
         {
           "id": "15-a-1",
-          "title": "Ídnaður eftir mát, ár og eind",
+          "title": "(a) Almennur menningarstuðul til varðveitslu og burðardygga nýtslu av lívmargfeldi og (b) inntøkur og fæ fingið til vegar við fíggjaramboðum tongdum at lívmargfeldi",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/15-a-1/",
@@ -1743,7 +1743,7 @@
         
         {
           "id": "16-1-1",
-          "title": "Morð eftir ár, mát og eind",
+          "title": "Tal av ofrum fyri tilætlað morð fyri hvørjar 100.000 íbúgvar, skift á kyn og aldur",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/16-1-1/",
@@ -1807,7 +1807,7 @@
         },
         {
           "id": "16-3-2",
-          "title": "Fongslað eftir ár, eind og mát",
+          "title": "Partur av fongslaðum, ið ikki hava fingið dóm",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/16-3-2/",
@@ -1855,7 +1855,7 @@
         },
         {
           "id": "16-6-1",
-          "title": "Almennar útreiðslur eftir ár, eind og mát",
+          "title": "Almennar útreiðslur sum partur av upprunaliga samtykta fíggjarlóg, skift á geira (ella kontuslag ella líknandi)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/16-6-1/",
@@ -1895,7 +1895,7 @@
         },
         {
           "id": "16-9-1",
-          "title": "Føðingar eftir ár, eind og mát",
+          "title": "Partur av børnum undir 5 ár, har føðingin er skrásett hjá almennum myndugleika, skift á aldur",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/16-9-1/",
@@ -1951,7 +1951,7 @@
         },
         {
           "id": "17-1-2",
-          "title": "Almennar útreiðslur eftir ár, eind og mát",
+          "title": "Partur av fíggjarlógini fíggjaður av skattum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/17-1-2/",
@@ -1959,7 +1959,7 @@
         },
         {
           "id": "17-2-1",
-          "title": "Ídnaður eftir ár, eind og mát",
+          "title": "Netto almennur menningarstuðul, samantalda upphæddin og til minst mentu londini sum partur av samlaðu bruttotjóðarinntøkuni (BTI) hjá gevaralondunum í Felagsskapinum fyri búskaparligum samstarvi og menning (OECD)",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/17-2-1/",
@@ -1999,7 +1999,7 @@
         },
         {
           "id": "17-6-1",
-          "title": "Internet eftir mát, bandbreidd, ár og eind",
+          "title": "Fastnet breiðbands-internethald fyri hvørjar 100 íbúgvar, skift á samskiftisferð",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/17-6-1/",
@@ -2039,7 +2039,7 @@
         },
         {
           "id": "17-11-1",
-          "title": "Internet eftir landabólkur, ár, eind og mát",
+          "title": "Parturin hjá menningarlondunum og teimum minst mentu londunum av útflutninginum í heiminum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/17-11-1/",
@@ -2119,7 +2119,7 @@
         },
         {
           "id": "17-19-1",
-          "title": "Ídnaður eftir ár, eind og mát",
+          "title": "Dollarvirðið av øllum tilfeingi, ið er sett av til at styrkja hagtalsliga førleikan í menningarlondum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/17-19-1/",
