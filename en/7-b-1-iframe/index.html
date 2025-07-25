@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20250724122823">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20250725104629">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -325,7 +325,7 @@ layout-indicator-iframe
   data-indicatorid='indicator_7-b-1'
   data-id="7-b-1"
   data-country="data.faroeislands"
-  data-charttitle="Installed renewable energy-generating capacity in developing countries (in watts per capita)"
+  data-charttitle="Installed renewable energy-generating capacity"
   data-charttitles="[]"
   data-measurementunit="Watts per capita"
   data-xaxislabel=""
@@ -341,7 +341,7 @@ layout-indicator-iframe
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Watts per capita&quot;,&quot;&quot;]},&quot;title&quot;:&quot;unit&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Installed renewable energy-generating capacity (in watts per capita)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;measure&quot;},{&quot;name&quot;:&quot;energy source&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Hydro&quot;,&quot;Wind&quot;,&quot;Solar&quot;,&quot;Ocean&quot;,&quot;Biofuel&quot;,&quot;Geothermal&quot;,&quot;&quot;]},&quot;title&quot;:&quot;energy source&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -372,517 +372,15 @@ layout-indicator-iframe
   <div id="datatables">
 
     
-    <a role="button" href="https://hagstovan.github.io/sdg-data/en/headline/7-b-1.csv" class="btn btn-primary btn-download" download="indicator_7-b-1.csv" tabindex="0" role="button">Download headline data (.csv)</a>
-    
     <a role="button" href="https://hagstovan.github.io/sdg-data/en/data/7-b-1.csv" class="btn btn-primary btn-download" download='indicator_7-b-1.csv' tabindex='0' role='button'>Download source data (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
 
     
-    <h3>Headline data</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Installed renewable energy-generating capacity in developing countries (in watts per capita)</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col">Value</th>
-        
-        
-        
-        <th scope="col">Units</th>
-        
-        
-        
-        <th scope="col" class="table-value">Series</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2000</td>
-          
-          
-          
-          <td>704.7568311469</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2001</td>
-          
-          
-          
-          <td>694.2318625093</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2002</td>
-          
-          
-          
-          <td>682.3114778759</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2003</td>
-          
-          
-          
-          <td>713.2133719578</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2004</td>
-          
-          
-          
-          <td>704.2415258218</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2005</td>
-          
-          
-          
-          <td>740.55640236</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2006</td>
-          
-          
-          
-          <td>740.756106415</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2007</td>
-          
-          
-          
-          <td>741.0327976011</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2008</td>
-          
-          
-          
-          <td>739.6284252605</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2009</td>
-          
-          
-          
-          <td>737.0028687594</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2010</td>
-          
-          
-          
-          <td>735.613715251</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2011</td>
-          
-          
-          
-          <td>736.9268232284</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2012</td>
-          
-          
-          
-          <td>991.8638593876</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2013</td>
-          
-          
-          
-          <td>996.0291885824</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2014</td>
-          
-          
-          
-          <td>1239.9762863116</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2015</td>
-          
-          
-          
-          <td>1238.9618446903</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2016</td>
-          
-          
-          
-          <td>1220.4410048523</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2017</td>
-          
-          
-          
-          <td>1205.7038834951</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td>1118.3160415004</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td>1036.4354956053</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td>1150.1727291201</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td>1224.7465121598</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2022</td>
-          
-          
-          
-          <td>1200.8596256268</td>
-          
-          
-          
-          <td>Watts per capita</td>
-          
-          
-          
-          <td class="table-value">Installed renewable energy-generating capacity (in watts per capita)</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>No headline data available</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    <p>Source: Statistics Faroe Islands</p>
-    
-    
-    <p>Geographical Area: </p>
-    
-    
-    <p>Unit of Measurement: Watts per capita</p>
-    
-    
-    <p>Footnote: <b>Goal 7. Ensure access to affordable, reliable, sustainable and modern energy for all</b>## <b><u>Target 7.b</u></b># By 2030, expand infrastructure and upgrade technology for supplying modern and sustainable energy services for all in developing count ries, in particular least developed countries, small island developing States and landlocked developing countries, in accordance with their respective programmes of support##  <u>Indicator 7.b.1</u>#  Installed renewable energy-generating capacity in dev eloping countries (in watts per capita)</p>
-    
-  </div>
   
 
 </div>
@@ -966,7 +464,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Installed renewable energy-generating capacity in developing countries (in watts per capita)
+            Installed renewable energy-generating capacity
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -997,9 +495,6 @@ data-event-label="Change to Table tab"
 
         
 
-        
-        <dt>Footnote:</dt>
-        <dd><b>Goal 7. Ensure access to affordable, reliable, sustainable and modern energy for all</b>## <b><u>Target 7.b</u></b># By 2030, expand infrastructure and upgrade technology for supplying modern and sustainable energy services for all in developing count ries, in particular least developed countries, small island developing States and landlocked developing countries, in accordance with their respective programmes of support##  <u>Indicator 7.b.1</u>#  Installed renewable energy-generating capacity in dev eloping countries (in watts per capita)</dd>
         
 
         
@@ -1073,9 +568,6 @@ data-event-label="Change to Table tab"
 
         
 
-        
-        <dt>Footnote:</dt>
-        <dd><b>Goal 7. Ensure access to affordable, reliable, sustainable and modern energy for all</b>## <b><u>Target 7.b</u></b># By 2030, expand infrastructure and upgrade technology for supplying modern and sustainable energy services for all in developing count ries, in particular least developed countries, small island developing States and landlocked developing countries, in accordance with their respective programmes of support##  <u>Indicator 7.b.1</u>#  Installed renewable energy-generating capacity in dev eloping countries (in watts per capita)</dd>
         
 
         
@@ -2353,12 +1845,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20250724122823'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20250725104629'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20250724122823"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20250725104629"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
