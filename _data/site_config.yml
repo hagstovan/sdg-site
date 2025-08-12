@@ -169,6 +169,7 @@ map_layers:
     subfolder: regions
     label: Regions
 map_options:
+  disaggregation_controls: true
   minZoom: 5
   maxZoom: 10
   tileURL: ''
