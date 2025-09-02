@@ -147,7 +147,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20250901222022">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20250902084126">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -335,7 +335,7 @@ layout-indicator-iframe
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;outcome&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Ikki-deyðilig&quot;,&quot;Deyðilig&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Avleiðing&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Í tali&quot;,&quot;&quot;]},&quot;title&quot;:&quot;eind&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Persónar&quot;,&quot;pr. 100.000 arbeiðsvirkin&quot;,&quot;&quot;]},&quot;title&quot;:&quot;mát&quot;},{&quot;name&quot;:&quot;sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Menn&quot;,&quot;Kvinnur&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Kyn&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;outcome&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Ikki-deyðilig&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Avleiðing&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Í tali&quot;,&quot;&quot;]},&quot;title&quot;:&quot;eind&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Persónar&quot;,&quot;pr. 100.000 arbeiðsvirkin&quot;,&quot;&quot;]},&quot;title&quot;:&quot;mát&quot;},{&quot;name&quot;:&quot;sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Menn&quot;,&quot;Kvinnur&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Kyn&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -366,15 +366,577 @@ layout-indicator-iframe
   <div id="datatables">
 
     
+    <a role="button" href="https://hagstovan.github.io/sdg-data/fo/headline/8-8-1.csv" class="btn btn-primary btn-download" download="indicator_8-8-1.csv" tabindex="0" role="button">Tak niður dátur til yvirskrift (.csv)</a>
+    
     <a role="button" href="https://hagstovan.github.io/sdg-data/fo/data/8-8-1.csv" class="btn btn-primary btn-download" download='indicator_8-8-1.csv' tabindex='0' role='button'>Tak niður keldudátur (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Tak niður keldudátur fyri sundurgreiningar (.csv)</p>
 
     
-    <h3>Ongar dátur tøkar til yvirskrift</h3>
+    <h3>Dátur til yvirskrift</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Deyðiligar og ikki-deyðiligar arbeiðsvanlukkur fyri hvørjar 100.000 arbeiðarar, skift á kyn og innflytatastøðu</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col">Units</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>1.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Persónar</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>3.64723904</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">pr. 100.000 arbeiðsvirkin</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Persónar</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">pr. 100.000 arbeiðsvirkin</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Persónar</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">pr. 100.000 arbeiðsvirkin</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>1.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Persónar</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>3.5988051967</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">pr. 100.000 arbeiðsvirkin</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>1.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Persónar</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>3.6489691662</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">pr. 100.000 arbeiðsvirkin</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>1.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Persónar</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>3.597769383</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">pr. 100.000 arbeiðsvirkin</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Persónar</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">pr. 100.000 arbeiðsvirkin</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>2.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Persónar</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>6.9986352661</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">pr. 100.000 arbeiðsvirkin</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Persónar</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">pr. 100.000 arbeiðsvirkin</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>1.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Persónar</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>3.2818089331</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">pr. 100.000 arbeiðsvirkin</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>1.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Persónar</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>3.2044092672</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">pr. 100.000 arbeiðsvirkin</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>3.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Persónar</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>9.6033803899</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">pr. 100.000 arbeiðsvirkin</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Persónar</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">pr. 100.000 arbeiðsvirkin</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    <p>Kelda: Hagstova Føroya</p>
+    
+    
+    <p>Landafrøðiligt øki: </p>
+    
+    
+    <p>Mátieind: </p>
+    
+    
+    <p>Fótnota: </p>
+    
+  </div>
   
 
 </div>
@@ -1850,12 +2412,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20250901222022'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20250902084126'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20250901222022"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20250902084126"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

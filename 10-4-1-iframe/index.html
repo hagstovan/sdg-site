@@ -147,7 +147,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20250901222022">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20250902084126">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -319,7 +319,7 @@ layout-indicator-iframe
   data-indicatorid='indicator_10-4-1'
   data-id="10-4-1"
   data-country="data.faroeislands"
-  data-charttitle="Lønir og atknýtt gjøld sum %-partur av BTÚ í ársins prísum"
+  data-charttitle="Lønir, sum partur av BTÚ"
   data-charttitles="[]"
   data-measurementunit="Prosent"
   data-xaxislabel=""
@@ -335,7 +335,7 @@ layout-indicator-iframe
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;%&quot;,&quot;&quot;]},&quot;title&quot;:&quot;eind&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Lønir, sum partur av BTÚ&quot;,&quot;&quot;]},&quot;title&quot;:&quot;mát&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -366,15 +366,577 @@ layout-indicator-iframe
   <div id="datatables">
 
     
+    <a role="button" href="https://hagstovan.github.io/sdg-data/fo/headline/10-4-1.csv" class="btn btn-primary btn-download" download="indicator_10-4-1.csv" tabindex="0" role="button">Tak niður dátur til yvirskrift (.csv)</a>
+    
     <a role="button" href="https://hagstovan.github.io/sdg-data/fo/data/10-4-1.csv" class="btn btn-primary btn-download" download='indicator_10-4-1.csv' tabindex='0' role='button'>Tak niður keldudátur (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Tak niður keldudátur fyri sundurgreiningar (.csv)</p>
 
     
-    <h3>Ongar dátur tøkar til yvirskrift</h3>
+    <h3>Dátur til yvirskrift</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Lønir, sum partur av BTÚ</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col">Units</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>1998</td>
+          
+          
+          
+          <td>56.6144785011</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1999</td>
+          
+          
+          
+          <td>57.0217363671</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2000</td>
+          
+          
+          
+          <td>57.110230013</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2001</td>
+          
+          
+          
+          <td>57.9970383257</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2002</td>
+          
+          
+          
+          <td>60.2622559976</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2003</td>
+          
+          
+          
+          <td>61.1513699807</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2004</td>
+          
+          
+          
+          <td>61.089497929</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2005</td>
+          
+          
+          
+          <td>61.5237373259</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2006</td>
+          
+          
+          
+          <td>58.6788568762</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2007</td>
+          
+          
+          
+          <td>59.406733737</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2008</td>
+          
+          
+          
+          <td>61.2949730969</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>61.0387605716</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>58.824022815</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>58.0542051351</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>57.686973221</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>55.1226130986</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>53.7848215814</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>53.5808742854</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>51.8364997729</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>52.4897087971</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>54.0442418102</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>54.294409533</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>56.0979597939</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>54.3564970942</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>52.9750183252</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2023</td>
+          
+          
+          
+          <td>52.8987418417</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Lønir, sum partur av BTÚ</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    <p>Kelda: Hagstova Føroya</p>
+    
+    
+    <p>Landafrøðiligt øki: </p>
+    
+    
+    <p>Mátieind: Prosent</p>
+    
+    
+    <p>Fótnota: </p>
+    
+  </div>
   
 
 </div>
@@ -458,7 +1020,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Lønir og atknýtt gjøld sum %-partur av BTÚ í ársins prísum
+            Lønir, sum partur av BTÚ
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -1633,12 +2195,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20250901222022'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20250902084126'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20250901222022"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20250902084126"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
