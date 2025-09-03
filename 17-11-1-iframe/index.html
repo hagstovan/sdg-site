@@ -147,7 +147,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20250902084126">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20250903083950">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -356,7 +356,7 @@ layout-indicator-iframe
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;countrygroup&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Menningarlond og minst mentu londini&quot;,&quot;Minst mentu londini&quot;,&quot;Menningarlond uttan Kina&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Landabólkur&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Mió. kr.&quot;,&quot;% av samlaða handlinum&quot;,&quot;&quot;]},&quot;title&quot;:&quot;eind&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Vøruinnflutningur&quot;,&quot;Vøruútflutningur&quot;,&quot;&quot;]},&quot;title&quot;:&quot;mát&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;countrygroup&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Minst mentu londini&quot;,&quot;Menningarlond uttan Kina&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Landabólkur&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Mió. kr.&quot;,&quot;% av samlaða handlinum&quot;,&quot;&quot;]},&quot;title&quot;:&quot;eind&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Vøruinnflutningur&quot;,&quot;Vøruútflutningur&quot;,&quot;&quot;]},&quot;title&quot;:&quot;mát&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -387,15 +387,2857 @@ layout-indicator-iframe
   <div id="datatables">
 
     
+    <a role="button" href="https://hagstovan.github.io/sdg-data/fo/headline/17-11-1.csv" class="btn btn-primary btn-download" download="indicator_17-11-1.csv" tabindex="0" role="button">Tak niður dátur til yvirskrift (.csv)</a>
+    
     <a role="button" href="https://hagstovan.github.io/sdg-data/fo/data/17-11-1.csv" class="btn btn-primary btn-download" download='indicator_17-11-1.csv' tabindex='0' role='button'>Tak niður keldudátur (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Tak niður keldudátur fyri sundurgreiningar (.csv)</p>
 
     
-    <h3>Ongar dátur tøkar til yvirskrift</h3>
+    <h3>Dátur til yvirskrift</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Parturin hjá menningarlondunum og teimum minst mentu londunum av útflutninginum í heiminum</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col">Units</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>1988</td>
+          
+          
+          
+          <td>56.2864</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1988</td>
+          
+          
+          
+          <td>92.2814</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1988</td>
+          
+          
+          
+          <td>1.7476508908</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1988</td>
+          
+          
+          
+          <td>3.9358172962</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1989</td>
+          
+          
+          
+          <td>45.0167</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1989</td>
+          
+          
+          
+          <td>23.0665</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1989</td>
+          
+          
+          
+          <td>1.7791103069</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1989</td>
+          
+          
+          
+          <td>0.9116402747</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1990</td>
+          
+          
+          
+          <td>33.3541</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1990</td>
+          
+          
+          
+          <td>9.6577</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1990</td>
+          
+          
+          
+          <td>1.6003259178</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1990</td>
+          
+          
+          
+          <td>0.3745526646</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1991</td>
+          
+          
+          
+          <td>33.2322</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1991</td>
+          
+          
+          
+          <td>18.7134</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1991</td>
+          
+          
+          
+          <td>1.7163536134</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1991</td>
+          
+          
+          
+          <td>0.6728125126</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1992</td>
+          
+          
+          
+          <td>57.2174</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1992</td>
+          
+          
+          
+          <td>22.6652</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1992</td>
+          
+          
+          
+          <td>2.8581998697</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1992</td>
+          
+          
+          
+          <td>0.8589435395</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1993</td>
+          
+          
+          
+          <td>45.5506</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1993</td>
+          
+          
+          
+          <td>37.7538</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1993</td>
+          
+          
+          
+          <td>3.1940500435</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1993</td>
+          
+          
+          
+          <td>1.7704627069</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1994</td>
+          
+          
+          
+          <td>65.933</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1994</td>
+          
+          
+          
+          <td>7.4311</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1994</td>
+          
+          
+          
+          <td>4.2098822953</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1994</td>
+          
+          
+          
+          <td>0.3578955581</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1995</td>
+          
+          
+          
+          <td>68.4153</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1995</td>
+          
+          
+          
+          <td>10.4663</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1995</td>
+          
+          
+          
+          <td>3.8162193996</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1995</td>
+          
+          
+          
+          <td>0.5165305265</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1996</td>
+          
+          
+          
+          <td>87.7282</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1996</td>
+          
+          
+          
+          <td>91.2863</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1996</td>
+          
+          
+          
+          <td>4.0801982609</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1996</td>
+          
+          
+          
+          <td>3.7661174722</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1997</td>
+          
+          
+          
+          <td>98.1914</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1997</td>
+          
+          
+          
+          <td>51.0948</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1997</td>
+          
+          
+          
+          <td>4.1433655785</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1997</td>
+          
+          
+          
+          <td>1.984274943</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1998</td>
+          
+          
+          
+          <td>228.521</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1998</td>
+          
+          
+          
+          <td>35.9537</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1998</td>
+          
+          
+          
+          <td>8.780988421</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1998</td>
+          
+          
+          
+          <td>1.2253398469</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1999</td>
+          
+          
+          
+          <td>235.0997</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1999</td>
+          
+          
+          
+          <td>29.2059</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1999</td>
+          
+          
+          
+          <td>7.1214568284</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1999</td>
+          
+          
+          
+          <td>0.8930741141</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2000</td>
+          
+          
+          
+          <td>382.1407</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2000</td>
+          
+          
+          
+          <td>42.6247</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2000</td>
+          
+          
+          
+          <td>8.8671222148</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2000</td>
+          
+          
+          
+          <td>1.1123158856</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2001</td>
+          
+          
+          
+          <td>196.0093</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2001</td>
+          
+          
+          
+          <td>72.6543</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2001</td>
+          
+          
+          
+          <td>4.6991685863</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2001</td>
+          
+          
+          
+          <td>1.6855089929</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2002</td>
+          
+          
+          
+          <td>222.4434</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2002</td>
+          
+          
+          
+          <td>64.3767</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2002</td>
+          
+          
+          
+          <td>5.6545560843</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2002</td>
+          
+          
+          
+          <td>1.5203195886</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2003</td>
+          
+          
+          
+          <td>234.0671</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2003</td>
+          
+          
+          
+          <td>96.2536</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2003</td>
+          
+          
+          
+          <td>4.8106282104</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2003</td>
+          
+          
+          
+          <td>2.4603190305</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2004</td>
+          
+          
+          
+          <td>257.7788</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2004</td>
+          
+          
+          
+          <td>100.7184</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2004</td>
+          
+          
+          
+          <td>6.8506165065</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2004</td>
+          
+          
+          
+          <td>2.7300397234</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2005</td>
+          
+          
+          
+          <td>408.4309</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2005</td>
+          
+          
+          
+          <td>131.5607</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2005</td>
+          
+          
+          
+          <td>9.0961650472</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2005</td>
+          
+          
+          
+          <td>3.668369557</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2006</td>
+          
+          
+          
+          <td>430.9306</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2006</td>
+          
+          
+          
+          <td>137.4581</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2006</td>
+          
+          
+          
+          <td>9.1841917971</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2006</td>
+          
+          
+          
+          <td>3.5531282604</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2007</td>
+          
+          
+          
+          <td>709.0856</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2007</td>
+          
+          
+          
+          <td>258.4572</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2007</td>
+          
+          
+          
+          <td>12.8408506049</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2007</td>
+          
+          
+          
+          <td>6.3713929787</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2008</td>
+          
+          
+          
+          <td>441.7834</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2008</td>
+          
+          
+          
+          <td>312.0436</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2008</td>
+          
+          
+          
+          <td>8.7988544728</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2008</td>
+          
+          
+          
+          <td>7.1805862788</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>666.7606</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>484.6445</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>15.8343259265</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>11.8069504541</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>401.8723</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>673.504</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>9.1963916446</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>14.3398073861</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>545.5826</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>746.5458</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>10.3352321266</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>13.7707966162</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>685.4229</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>828.407</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>10.2562960354</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>14.9161965857</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>529.5228</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>1104.5057</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>8.4411654422</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>17.8681092182</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>549.1639</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>1029.0766</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>9.1228314346</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>15.9278926619</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>832.6078</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>921.7389</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>13.5947029551</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>13.2767693177</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>639.5132</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>831.2578</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>9.6924117878</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>10.2745972043</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>691.7135</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>773.3262</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>9.5270538809</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>8.8112026847</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>775.5665</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>946.899</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>10.011487245</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>11.8018085266</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>871.9167</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>1162.7154</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>10.6493262949</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>12.1959774366</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>930.8128</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>736.8611</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>11.4183013373</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>8.7713265399</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>1012.7312</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>869.1259</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>10.908923496</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>8.6379697236</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>1180.8527</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>1459.2242</td>
+          
+          
+          
+          <td>Mió. kr.</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>9.7321100762</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruinnflutningur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>11.4862591921</td>
+          
+          
+          
+          <td>% av samlaða handlinum</td>
+          
+          
+          
+          <td class="table-value">Vøruútflutningur</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    <p>Kelda: Hagstova Føroya</p>
+    
+    
+    <p>Landafrøðiligt øki: </p>
+    
+    
+    <p>Mátieind: </p>
+    
+    
+    <p>Fótnota: </p>
+    
+  </div>
   
 
 </div>
@@ -1422,12 +4264,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20250902084126'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20250903083950'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20250902084126"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20250903083950"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
