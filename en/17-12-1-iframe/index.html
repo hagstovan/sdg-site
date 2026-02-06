@@ -147,7 +147,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260205090424">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260206090310">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -356,7 +356,7 @@ Tariff that falls under a preferential trade agreement, where countries agree to
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;pct.&quot;,&quot;&quot;]},&quot;title&quot;:&quot;unit&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Average tariff applied by developed countries, most-favored nation status, by type of product (%)&quot;,&quot;Average tariff applied by developed countries, preferential status, by type of product (%)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;measure&quot;},{&quot;name&quot;:&quot;type of product&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Agricultura  produtcs&quot;,&quot;Clothing&quot;,&quot;Industrial products&quot;,&quot;Textiles&quot;,&quot;Oil&quot;,&quot;Arms&quot;,&quot;&quot;]},&quot;title&quot;:&quot;type of product&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -387,15 +387,617 @@ Tariff that falls under a preferential trade agreement, where countries agree to
   <div id="datatables">
 
     
+    <a role="button" href="https://hagstovan.github.io/sdg-data/en/headline/17-12-1.csv" class="btn btn-primary btn-download" download="indicator_17-12-1.csv" tabindex="0" role="button">Download headline data (.csv)</a>
+    
     <a role="button" href="https://hagstovan.github.io/sdg-data/en/data/17-12-1.csv" class="btn btn-primary btn-download" download='indicator_17-12-1.csv' tabindex='0' role='button'>Download source data (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
 
     
-    <h3>No headline data available</h3>
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Weighted average tariffs faced by developing countries, least developed countries and small island developing States</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col">Units</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2000</td>
+          
+          
+          
+          <td>3.65506</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, most-favored nation status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2000</td>
+          
+          
+          
+          <td>3.42459</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, preferential status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2005</td>
+          
+          
+          
+          <td>3.6273</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, most-favored nation status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2005</td>
+          
+          
+          
+          <td>1.99135</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, preferential status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>3.63485</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, most-favored nation status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>1.99218</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, preferential status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>3.70643</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, most-favored nation status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>2.01586</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, preferential status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>3.77731</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, most-favored nation status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>2.33854</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, preferential status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>3.50824</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, most-favored nation status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>2.23448</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, preferential status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>3.5094</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, most-favored nation status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>2.23841</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, preferential status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>3.51769</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, most-favored nation status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>2.2445</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, preferential status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>3.74558</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, most-favored nation status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>2.27181</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, preferential status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>3.41307</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, most-favored nation status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>1.86034</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, preferential status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>3.41989</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, most-favored nation status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>1.86302</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, preferential status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>3.42533</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, most-favored nation status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>1.86288</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, preferential status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>3.61779</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, most-favored nation status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>1.90099</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, preferential status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>3.60495</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, most-favored nation status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>1.90874</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Average tariff applied by developed countries, preferential status, by type of product (%)</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    <p>Source: Heimsmálsdátustovninum hjá ST</p>
+    
+    
+    <p>Geographical Area: </p>
+    
+    
+    <p>Unit of Measurement: </p>
+    
+    
+    <p>Footnote: </p>
+    
+  </div>
   
 
 </div>
@@ -828,6 +1430,22 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Metadata update </th>
+        <td>
+          
+            <p>{“Average tariff applied by developed countries, most-favored nation status, by type of product (%)”=&gt;”20231107 09:00”, “Average tariff applied by developed countries, preferential status, by type of product (%)”=&gt;”20231107 09:00”}</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -918,13 +1536,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Data providers </th>
+        <td>
           
-      
-      
-      
-        
+            <p>International Trade Centre (ITC), United Nations Conference on Trade and Development (UNCTAD) and World Trade Organisation (WTO) as reported to <u>&lt;A HREF=https://unstats.un.org/sdgs/dataportal/database TARGET=_blank&gt; UN SDG Indicators Database&lt;/A&gt;</u></p>
+
           
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1645,12 +2269,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20260205090424'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20260206090310'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20260205090424"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20260206090310"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
