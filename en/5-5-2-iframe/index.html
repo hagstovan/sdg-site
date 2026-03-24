@@ -147,7 +147,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260324091022">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260324112716">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -334,7 +334,7 @@ are to be categorised in compliance with the UN Agency ILO's International Stand
   data-country="data.faroeislands"
   data-charttitle="Proportion of women in managerial positions"
   data-charttitles="[{&quot;series&quot;:&quot;Chief executives/senior officials&quot;,&quot;title&quot;:&quot;Chief executives/senior officials&quot;},{&quot;series&quot;:&quot;Members of the board&quot;,&quot;title&quot;:&quot;Members of the board&quot;}]"
-  data-measurementunit="per cent"
+  data-measurementunit="{"TABLE"=>"unit", "Proportion of women in managerial positions"=>"?"}"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="bar"
@@ -348,7 +348,7 @@ are to be categorised in compliance with the UN Agency ILO's International Stand
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Proportion of women in managerial positions&quot;,&quot;&quot;]},&quot;title&quot;:&quot;measure&quot;},{&quot;name&quot;:&quot;position&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Chief executive/senior officials&quot;,&quot;Member of the board&quot;,&quot;&quot;]},&quot;title&quot;:&quot;position&quot;},{&quot;name&quot;:&quot;Public/private&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Private companies&quot;,&quot;Public institutions and companies&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Public/private&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;pct.&quot;,&quot;&quot;]},&quot;title&quot;:&quot;unit&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Proportion of women in managerial positions&quot;,&quot;&quot;]},&quot;title&quot;:&quot;measure&quot;},{&quot;name&quot;:&quot;position&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Chief executive/senior officials&quot;,&quot;Member of the board&quot;,&quot;&quot;]},&quot;title&quot;:&quot;position&quot;},{&quot;name&quot;:&quot;Public/private&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Private companies&quot;,&quot;Public institutions and companies&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Public/private&quot;},{&quot;name&quot;:&quot;unit&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;pct.&quot;,&quot;&quot;]},&quot;title&quot;:&quot;unit&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -842,19 +842,8 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-      
-      <tr>
-        <th scope="row">Metadata update </th>
-        <td>
-          
-            <p>{“Proportion of women in managerial positions”=&gt;”20210211 09:00”}</p>
-
-          
-        </td>
-        </tr>
         
-      
-  
+          
       
       
       
@@ -1907,12 +1896,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20260324091022'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20260324112716'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20260324091022"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20260324112716"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
