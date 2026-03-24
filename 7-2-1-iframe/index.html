@@ -147,7 +147,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260324112716">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260324120620">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -332,7 +332,7 @@ layout-indicator-iframe
   data-country="Varandi orka tilsamans"
   data-charttitle="Partur av varandi orku í samanløgdu endaligu orkunýtsluni"
   data-charttitles="[]"
-  data-measurementunit="{"TABLE"=>"eind", "Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)"=>"?"}"
+  data-measurementunit="Prosent"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -346,7 +346,7 @@ layout-indicator-iframe
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;unit&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;%&quot;,&quot;&quot;]},&quot;title&quot;:&quot;eind&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;mát&quot;},{&quot;name&quot;:&quot;renewable energy source&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Vatn&quot;,&quot;Vindur&quot;,&quot;Sólin&quot;,&quot;Havið&quot;,&quot;Lívfrøðiligt brennievni&quot;,&quot;Fjarhiti frá brennistøðum&quot;,&quot;Hitapumpur&quot;,&quot;&quot;]},&quot;title&quot;:&quot;varandi orkukelda&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;%&quot;,&quot;&quot;]},&quot;title&quot;:&quot;eind&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;mát&quot;},{&quot;name&quot;:&quot;renewable energy source&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Vatn&quot;,&quot;Vindur&quot;,&quot;Sólin&quot;,&quot;Havið&quot;,&quot;Lívfrøðiligt brennievni&quot;,&quot;Fjarhiti frá brennistøðum&quot;,&quot;Hitapumpur&quot;,&quot;&quot;]},&quot;title&quot;:&quot;varandi orkukelda&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -377,15 +377,497 @@ layout-indicator-iframe
   <div id="datatables">
 
     
+    <a role="button" href="https://hagstovan.github.io/sdg-data/fo/headline/7-2-1.csv" class="btn btn-primary btn-download" download="indicator_7-2-1.csv" tabindex="0" role="button">Tak niður dátur til yvirskrift (.csv)</a>
+    
     <a role="button" href="https://hagstovan.github.io/sdg-data/fo/data/7-2-1.csv" class="btn btn-primary btn-download" download='indicator_7-2-1.csv' tabindex='0' role='button'>Tak niður keldudátur (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Tak niður keldudátur fyri sundurgreiningar (.csv)</p>
 
     
-    <h3>Ongar dátur tøkar til yvirskrift</h3>
+    <h3>Dátur til yvirskrift</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Partur av varandi orku í samanløgdu endaligu orkunýtsluni</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col">Units</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2000</td>
+          
+          
+          
+          <td>2.77</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2001</td>
+          
+          
+          
+          <td>2.56</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2002</td>
+          
+          
+          
+          <td>3.4</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2003</td>
+          
+          
+          
+          <td>3.11</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2004</td>
+          
+          
+          
+          <td>3.42</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2005</td>
+          
+          
+          
+          <td>3.84</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2006</td>
+          
+          
+          
+          <td>4.3</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2007</td>
+          
+          
+          
+          <td>4.54</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2008</td>
+          
+          
+          
+          <td>4.51</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>5.12</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>3.38</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>5.0</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>4.6788643047</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>5.6675162746</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>7.0179813536</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>8.5761953235</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>7.2165098863</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>8.6019408075</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>8.0161572137</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>7.9275830496</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>7.9849843676</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>8.1556788781</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    <p>Kelda: Metingar frá ST (Energy Balances, UN Statistics Division, 2000-2011)</p>
+    
+    
+    <p>Landafrøðiligt øki: Varandi orka tilsamans</p>
+    
+    
+    <p>Mátieind: Prosent</p>
+    
+    
+    <p>Fótnota: Tølini frá 2000 til 2011 eru metingar frá ST (Energy Balances, UN Statistics Division, 2021). Frá 2012 eru tølini frá Hagstovu Føroya</p>
+    
+  </div>
   
 
 </div>
@@ -830,8 +1312,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Dagføring av metadátum </th>
+        <td>
           
+            <p>{“Uppsett framleiðsluorka til varandi orku (í watt upp á íbúgvan)”=&gt;”20210211 09:00”}</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1888,12 +2381,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20260324112716'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20260324120620'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20260324112716"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20260324120620"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -147,7 +147,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260324112716">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260324120620">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -309,6 +309,14 @@ layout-indicator-iframe
 
   
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    
+      <b><u>Symbols:</u></b>## <b>-</b>  Nil (exactly zero)# <b>0</b>  Rounded to zero# •  Not applicable# ••  Not available or too uncertain# ••• Not disclosed, confidentiality/privacy protected##<b>Method </b>#Full time equivalent are all jobs converted into  full-time jobs. For example, two half-time employees count as one FTE. Research and experimental development statistics are made in accordance with standards of UN (Frasacti manual). This ensures that the figures are comparable with similar figures from  other countries.#The data is collected with annual surveys.#Researchers (in full-time equivalents) per million inhabitants are calculated by dividing the number of full-time equivalent researchers by the population of the country and multiplying the res ult by 1,000,000. ##<b>Research and development </b>#A set of common features identifies R&D activities, even if these are carried out by different performers. R&D activities may be aimed at achieving either specific or general objectives. R&D is always  aimed at new findings, based on original concepts (and their interpretation) or hypotheses. It is largely uncertain about its final outcome (or at least about the quantity of time and resources needed to achieve it), it is planned for and budgeted (even  when carried out by individuals), and it is aimed at producing results that could be either freely transferred or traded in a marketplace. For an activity to be an R&D activity, it must satisfy five core criteria.#The activity must be:#• novel#• creative #• uncertain#• systematic#• transferable and/or reproducible#Source: Frascati manual 2025, OECD 2015
+    
+  </div>
+</div>
+
 
   
 
@@ -321,7 +329,7 @@ layout-indicator-iframe
   data-country="data.faroeislands"
   data-charttitle="Researchers (in full-time equivalent) per million inhabitants"
   data-charttitles="[]"
-  data-measurementunit="{"TABLE"=>"unit", "Researchers per million inhabitants"=>"?"}"
+  data-measurementunit=""
   data-xaxislabel=""
   data-showdata="false"
   data-graphtype="line"
@@ -335,7 +343,7 @@ layout-indicator-iframe
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Researchers per million inhabitants&quot;,&quot;&quot;]},&quot;title&quot;:&quot;measure&quot;},{&quot;name&quot;:&quot;unit&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;full-time equivalent&quot;,&quot;&quot;]},&quot;title&quot;:&quot;unit&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Researchers per million inhabitants&quot;,&quot;&quot;]},&quot;title&quot;:&quot;measure&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;full-time equivalent&quot;,&quot;&quot;]},&quot;title&quot;:&quot;unit&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -545,8 +553,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Metadata update </th>
+        <td>
           
+            <p>{“Researchers per million inhabitants”=&gt;”20260305 09:00”}</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1151,12 +1170,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20260324112716'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20260324120620'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20260324112716"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20260324120620"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

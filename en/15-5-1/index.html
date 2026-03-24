@@ -147,7 +147,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260324112716">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260324120620">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -474,7 +474,7 @@ Therefore the precise value for any particular year is uncertain.
   data-country="data.faroeislands"
   data-charttitle="Red List Index"
   data-charttitles="[]"
-  data-measurementunit="{"TABLE"=>"unit", "Red List Index"=>"?"}"
+  data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -488,7 +488,7 @@ Therefore the precise value for any particular year is uncertain.
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Red List Index&quot;,&quot;&quot;]},&quot;title&quot;:&quot;measure&quot;},{&quot;name&quot;:&quot;index&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Lowerbound&quot;,&quot;Upperbound&quot;,&quot;&quot;]},&quot;title&quot;:&quot;index&quot;},{&quot;name&quot;:&quot;unit&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;In number&quot;,&quot;&quot;]},&quot;title&quot;:&quot;unit&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Red List Index&quot;,&quot;&quot;]},&quot;title&quot;:&quot;measure&quot;},{&quot;name&quot;:&quot;index&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Lowerbound&quot;,&quot;Upperbound&quot;,&quot;&quot;]},&quot;title&quot;:&quot;index&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;In number&quot;,&quot;&quot;]},&quot;title&quot;:&quot;unit&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -519,15 +519,617 @@ Therefore the precise value for any particular year is uncertain.
   <div id="datatables">
 
     
+    <a role="button" href="https://hagstovan.github.io/sdg-data/en/headline/15-5-1.csv" class="btn btn-primary btn-download" download="indicator_15-5-1.csv" tabindex="0" role="button">Download headline data (.csv)</a>
+    
     <a role="button" href="https://hagstovan.github.io/sdg-data/en/data/15-5-1.csv" class="btn btn-primary btn-download" download='indicator_15-5-1.csv' tabindex='0' role='button'>Download source data (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
 
     
-    <h3>No headline data available</h3>
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Red List Index</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col">Units</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>1993</td>
+          
+          
+          
+          <td>0.8849944875</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1994</td>
+          
+          
+          
+          <td>0.9088753212</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1995</td>
+          
+          
+          
+          <td>0.8544786692</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1996</td>
+          
+          
+          
+          <td>0.8851053875</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1997</td>
+          
+          
+          
+          <td>0.9075723544</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1998</td>
+          
+          
+          
+          <td>0.851646441</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1999</td>
+          
+          
+          
+          <td>0.8852579812</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2000</td>
+          
+          
+          
+          <td>0.9062814942</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2001</td>
+          
+          
+          
+          <td>0.849285105</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2002</td>
+          
+          
+          
+          <td>0.8841512958</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2003</td>
+          
+          
+          
+          <td>0.9049609977</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2004</td>
+          
+          
+          
+          <td>0.8466516508</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2005</td>
+          
+          
+          
+          <td>0.8835694438</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2006</td>
+          
+          
+          
+          <td>0.9043829125</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2007</td>
+          
+          
+          
+          <td>0.8456339806</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2008</td>
+          
+          
+          
+          <td>0.8851965923</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>0.9058859221</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>0.8406962188</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>0.8858828758</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>0.910065211</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>0.8379640862</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>0.8845632254</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>0.9121414873</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>0.8379746991</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>0.8846798236</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>0.917771591</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>0.8321573164</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>0.885707959</td>
+          
+          
+          
+          <td>In number</td>
+          
+          
+          
+          <td class="table-value">Red List Index</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    <p>Source: Statistics Faroe Islands</p>
+    
+    
+    <p>Geographical Area: </p>
+    
+    
+    <p>Unit of Measurement: </p>
+    
+    
+    <p>Footnote: Definition#The Red List Index measures change in aggregate extinction risk across groups of species. It is based on genuine changes in the number of species in each category of extinction risk on The IUCN Red List of Threatened Species (www.iucnredlist.o rg)##<b><i>The index is calculated based on these weight categories:</i></b># <u>Category</u> = <u>Weight</u># Least Concern = 0# Near Threatened = 1# Vulnerable = 2# Endangered = 3# Critically Endangered = 4# Possibly Extinct = 5#The Red List Index has  a value between 0 (all extinct) and 1 (all least concern)##Red List Index for Faroe Islands is based on 23 mammal species and 61 bird species##<b>95% confidence intervals</b> are calculated to take into account the# • number of data deficient species and # • the uncertainty over exactly when changes in status occurred (given that assessments are repeated only at multi-year intervals)#Therefore the precise value for any particular year is uncertain.</p>
+    
+  </div>
   
 
 </div>
@@ -643,6 +1245,9 @@ data-event-label="Change to Table tab"
         
 
         
+        <dt>Footnote:</dt>
+        <dd>Definition#The Red List Index measures change in aggregate extinction risk across groups of species. It is based on genuine changes in the number of species in each category of extinction risk on The IUCN Red List of Threatened Species (www.iucnredlist.o rg)##<b><i>The index is calculated based on these weight categories:</i></b># <u>Category</u> = <u>Weight</u># Least Concern = 0# Near Threatened = 1# Vulnerable = 2# Endangered = 3# Critically Endangered = 4# Possibly Extinct = 5#The Red List Index has  a value between 0 (all extinct) and 1 (all least concern)##Red List Index for Faroe Islands is based on 23 mammal species and 61 bird species##<b>95% confidence intervals</b> are calculated to take into account the# • number of data deficient species and # • the uncertainty over exactly when changes in status occurred (given that assessments are repeated only at multi-year intervals)#Therefore the precise value for any particular year is uncertain.</dd>
+        
 
         
 
@@ -715,6 +1320,9 @@ data-event-label="Change to Table tab"
 
         
 
+        
+        <dt>Footnote:</dt>
+        <dd>Definition#The Red List Index measures change in aggregate extinction risk across groups of species. It is based on genuine changes in the number of species in each category of extinction risk on The IUCN Red List of Threatened Species (www.iucnredlist.o rg)##<b><i>The index is calculated based on these weight categories:</i></b># <u>Category</u> = <u>Weight</u># Least Concern = 0# Near Threatened = 1# Vulnerable = 2# Endangered = 3# Critically Endangered = 4# Possibly Extinct = 5#The Red List Index has  a value between 0 (all extinct) and 1 (all least concern)##Red List Index for Faroe Islands is based on 23 mammal species and 61 bird species##<b>95% confidence intervals</b> are calculated to take into account the# • number of data deficient species and # • the uncertainty over exactly when changes in status occurred (given that assessments are repeated only at multi-year intervals)#Therefore the precise value for any particular year is uncertain.</dd>
         
 
         
@@ -964,8 +1572,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Metadata update </th>
+        <td>
           
+            <p>{“Red List Index”=&gt;”20210211 09:00”}</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -2085,12 +2704,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20260324112716'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20260324120620'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20260324112716"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20260324120620"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
