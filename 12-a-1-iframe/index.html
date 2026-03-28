@@ -147,7 +147,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260327151338">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260328090042">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -312,8 +312,7 @@ layout-indicator-iframe
 <div class="row" id="page-content">
   <div class="col-xs-12">
     
-      **Viðmerkingar til ávísa 12.a.1**  
-  Eftir ásetingini hjá ST snýr hesin ávísin seg um *menningarlond*. Tað ber tó til at gera ávísan upp eisini fyri Føroyar, tí dátur eru tøkar.
+      Eftir ásetingini hjá ST snýr ávísi 12.a.1 um menningarlond. Tað ber tó til at gera ávísan upp eisini fyri Føroyar, tí dátur eru tøkar.
     
   </div>
 </div>
@@ -330,7 +329,7 @@ layout-indicator-iframe
   data-country="data.faroeislands"
   data-charttitle="Uppsett framleiðsluorka til varandi orku í menningarlondum (í watt upp á íbúgvan)"
   data-charttitles="[]"
-  data-measurementunit="eind"
+  data-measurementunit="Watt/íbúgva"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -344,7 +343,7 @@ layout-indicator-iframe
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;mát&quot;},{&quot;name&quot;:&quot;energy source&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Vatn&quot;,&quot;Vindur&quot;,&quot;Sólin&quot;,&quot;Havið&quot;,&quot;Lívfrøðilig brennievni&quot;,&quot;&quot;]},&quot;title&quot;:&quot;orkukelda&quot;},{&quot;name&quot;:&quot;unit&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Watt fyri hvønn íbúgva&quot;,&quot;&quot;]},&quot;title&quot;:&quot;eind&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;mát&quot;},{&quot;name&quot;:&quot;energy source&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Vatn&quot;,&quot;Vindur&quot;,&quot;Sólin&quot;,&quot;Havið&quot;,&quot;Lívfrøðilig brennievni&quot;,&quot;&quot;]},&quot;title&quot;:&quot;orkukelda&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Watt fyri hvønn íbúgva&quot;,&quot;&quot;]},&quot;title&quot;:&quot;eind&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -375,15 +374,515 @@ layout-indicator-iframe
   <div id="datatables">
 
     
+    <a role="button" href="https://hagstovan.github.io/sdg-data/fo/headline/12-a-1.csv" class="btn btn-primary btn-download" download="indicator_12-a-1.csv" tabindex="0" role="button">Tak niður dátur til yvirskrift (.csv)</a>
+    
     <a role="button" href="https://hagstovan.github.io/sdg-data/fo/data/12-a-1.csv" class="btn btn-primary btn-download" download='indicator_12-a-1.csv' tabindex='0' role='button'>Tak niður keldudátur (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Tak niður keldudátur fyri sundurgreiningar (.csv)</p>
 
     
-    <h3>Ongar dátur tøkar til yvirskrift</h3>
+    <h3>Dátur til yvirskrift</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Uppsett framleiðsluorka til varandi orku í menningarlondum (í watt upp á íbúgvan)</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col">Units</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2000</td>
+          
+          
+          
+          <td>704.7568311469</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2001</td>
+          
+          
+          
+          <td>694.2242727044</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2002</td>
+          
+          
+          
+          <td>682.3041464751</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2003</td>
+          
+          
+          
+          <td>713.2058316682</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2004</td>
+          
+          
+          
+          <td>704.2194709481</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2005</td>
+          
+          
+          
+          <td>740.5256882161</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2006</td>
+          
+          
+          
+          <td>740.7330581427</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2007</td>
+          
+          
+          
+          <td>741.0097321077</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2008</td>
+          
+          
+          
+          <td>739.6054471082</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>736.9952635001</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>735.6061386343</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>736.9192195384</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>991.8330590318</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>995.9670713454</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>1239.9118063067</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>1238.9234125712</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>1220.4285114703</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>1205.6794967739</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>1118.2602623572</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>1036.3539843888</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>1150.0948252506</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>1224.6531483458</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>1200.5081515986</td>
+          
+          
+          
+          <td>Watt fyri hvønn íbúgva</td>
+          
+          
+          
+          <td class="table-value">Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    
+    <p>Landafrøðiligt øki: </p>
+    
+    
+    <p>Mátieind: Watt/íbúgva</p>
+    
+    
+    <p>Fótnota: Eftir ásetingini hjá ST snýr ávísi 12.a.1 um menningarlond. Tað ber tó til at gera ávísan upp eisini fyri Føroyar, tí dátur eru tøkar.</p>
+    
+  </div>
   
 
 </div>
@@ -487,9 +986,6 @@ data-event-label="Change to Table tab"
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-        <dt>Kelda:</dt>
-        <dd>Hagstova Føroya, Altjóða felagsskapurin fyri varandi orkukeldur</dd>
-        
 
         
 
@@ -498,6 +994,9 @@ data-event-label="Change to Table tab"
 
         
 
+        
+        <dt>Fótnota:</dt>
+        <dd>Eftir ásetingini hjá ST snýr ávísi 12.a.1 um menningarlond. Tað ber tó til at gera ávísan upp eisini fyri Føroyar, tí dátur eru tøkar.</dd>
         
 
         
@@ -560,9 +1059,6 @@ data-event-label="Change to Table tab"
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-        <dt>Kelda:</dt>
-        <dd>Hagstova Føroya, Altjóða felagsskapurin fyri varandi orkukeldur</dd>
-        
 
         
 
@@ -571,6 +1067,9 @@ data-event-label="Change to Table tab"
 
         
 
+        
+        <dt>Fótnota:</dt>
+        <dd>Eftir ásetingini hjá ST snýr ávísi 12.a.1 um menningarlond. Tað ber tó til at gera ávísan upp eisini fyri Føroyar, tí dátur eru tøkar.</dd>
         
 
         
@@ -816,8 +1315,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Dagføring av metadátum </th>
+        <td>
           
+            <p>{“Framleiðsluførið av varandi orku (watt fyri hvønn íbúgva)”=&gt;”20230817 09:00”}</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1380,444 +1890,6 @@ data-event-label="Change to indicator.sources tab"
 
 
 
-  <div class="row">
-  
-    
-    
-    <div class="col-md-6">
-      
-      
-        <h4>Kelda 1</h4>
-      
-      <table class="table metadata-content">
-  <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Stovnur </th>
-        <td>
-          
-            <p>Hagstova Føroya</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Leinki til dátukeldu </th>
-        <td>
-          
-            
-            
-            
-            
-            
-              <a href="https://www.hagstova.fo" target="_blank">
-                Hagstova Føroya <span class="visuallyhidden">letur upp í nýggjum vindeyga</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </tbody>
-</table>
-
-    </div>
-    
-    
-    
-    <div class="col-md-6">
-      
-      
-        <h4>Kelda 2</h4>
-      
-      <table class="table metadata-content">
-  <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Stovnur </th>
-        <td>
-          
-            <p>Altjóða felagsskapurin fyri varandi orkukeldur</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Leinki til dátukeldu </th>
-        <td>
-          
-            
-            
-            
-            
-            
-              <a href="https://pxweb.irena.org/pxweb/en/IRENASTAT/IRENASTAT__Power%20Capacity%20and%20Generation/" target="_blank">
-                Altjóða felagsskapurin fyri varandi orkukeldur (IRENA) <span class="visuallyhidden">letur upp í nýggjum vindeyga</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </tbody>
-</table>
-
-    </div>
-    
-  </div>
-
 
             </article>
         </div>
@@ -1859,12 +1931,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20260327151338'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20260328090042'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20260327151338"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20260328090042"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

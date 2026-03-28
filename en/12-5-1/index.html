@@ -147,7 +147,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260327151338">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260328090042">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -438,26 +438,6 @@ data-event-label="high"
 
   
 
-<div class="row" id="page-content">
-  <div class="col-xs-12">
-    
-      ## Waste
-
-All municipalities have waste management for household waste, paper and cardboard and extraordinarily polluting waste. Additionally there are collection places in all municipalities where inhabitants can dispose of waste.
-The use is *mandatory:* Everybody is obliged to use the municipalty's waste management or their assigned places of disposal.
-
-Collected waste is either incinerated, placed on landfill or recycled. Certain waste is grouped as extraordinarily polluting and is exported for special treatment.
-
-Authorised recipients of waste Kommunala Brennistøðin (KB) in Tórshavnar municipality, and IRF, which is an inter-municipal wastemanagement association owned and run by the other 28 municipalities.
-Adittionally four private companies are authorised to receive special types of waste.
-
-KB and IRF are responsible for collecting and managing all waste in their municipalities. KB receives waste from about 7,500 households and IRF from about 11,000 households. In addition they accept waste from institutions and businesses.
-
-In addition to this IRF receives waste oil and oil-contaminated water for refining and resale.
-    
-  </div>
-</div>
-
 
   
 
@@ -470,7 +450,7 @@ In addition to this IRF receives waste oil and oil-contaminated water for refini
   data-country="data.faroeislands"
   data-charttitle="National recycling rate, tons of material recycled"
   data-charttitles="[]"
-  data-measurementunit="unit"
+  data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -484,7 +464,7 @@ In addition to this IRF receives waste oil and oil-contaminated water for refini
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;unit&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;per cent&quot;,&quot;tonnes&quot;,&quot;&quot;]},&quot;title&quot;:&quot;unit&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total waste&quot;,&quot;Incineration&quot;,&quot;Landfill&quot;,&quot;Recycling&quot;,&quot;Extraordinarily polluting&quot;,&quot;&quot;]},&quot;title&quot;:&quot;measure&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;per cent&quot;,&quot;tonnes&quot;,&quot;&quot;]},&quot;title&quot;:&quot;unit&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total waste&quot;,&quot;Incineration&quot;,&quot;Landfill&quot;,&quot;Recycling&quot;,&quot;Extraordinarily polluting&quot;,&quot;&quot;]},&quot;title&quot;:&quot;measure&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -515,15 +495,1055 @@ In addition to this IRF receives waste oil and oil-contaminated water for refini
   <div id="datatables">
 
     
+    <a role="button" href="https://hagstovan.github.io/sdg-data/en/headline/12-5-1.csv" class="btn btn-primary btn-download" download="indicator_12-5-1.csv" tabindex="0" role="button">Download headline data (.csv)</a>
+    
     <a role="button" href="https://hagstovan.github.io/sdg-data/en/data/12-5-1.csv" class="btn btn-primary btn-download" download='indicator_12-5-1.csv' tabindex='0' role='button'>Download source data (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
 
     
-    <h3>No headline data available</h3>
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>National recycling rate, tons of material recycled</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col">Units</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>100.0</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Total waste</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>100.0</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Total waste</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>100.0</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Total waste</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>100.0</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Total waste</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>100.0</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Total waste</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>69.8</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Incineration</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>67.3</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Incineration</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>65.4</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Incineration</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>66.7</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Incineration</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>64.9</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Incineration</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>14.2</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Landfill</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>15.4</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Landfill</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>16.6</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Landfill</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>12.5</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Landfill</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>16.8</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Landfill</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>13.7</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Recycling</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>15.6</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Recycling</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>15.4</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Recycling</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>18.8</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Recycling</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>16.3</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Recycling</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>2.3</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Extraordinarily polluting</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>1.6</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Extraordinarily polluting</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>2.6</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Extraordinarily polluting</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>2.0</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Extraordinarily polluting</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>2.0</td>
+          
+          
+          
+          <td>per cent</td>
+          
+          
+          
+          <td class="table-value">Extraordinarily polluting</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>43866.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Total waste</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>45300.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Total waste</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>51079.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Total waste</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>49902.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Total waste</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>51885.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Total waste</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>30638.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Incineration</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>30490.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Incineration</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>33396.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Incineration</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>33282.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Incineration</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>33677.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Incineration</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>6222.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Landfill</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>6993.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Landfill</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>8487.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Landfill</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>6237.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Landfill</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>8691.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Landfill</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>6008.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Recycling</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>7084.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Recycling</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>7869.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Recycling</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>9385.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Recycling</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>8482.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Recycling</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>998.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Extraordinarily polluting</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>733.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Extraordinarily polluting</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>1327.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Extraordinarily polluting</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>998.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Extraordinarily polluting</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>1035.0</td>
+          
+          
+          
+          <td>tonnes</td>
+          
+          
+          
+          <td class="table-value">Extraordinarily polluting</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    
+    <p>Geographical Area: </p>
+    
+    
+    <p>Unit of Measurement: </p>
+    
+    
+    <p>Footnote: </p>
+    
+  </div>
   
 
 </div>
@@ -627,9 +1647,6 @@ data-event-label="Change to Table tab"
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-        <dt>Source:</dt>
-        <dd>Statistics Faroe Islands, Faroese Environment Agency</dd>
-        
 
         
 
@@ -699,9 +1716,6 @@ data-event-label="Change to Table tab"
 <div id="selectionTableFooter" class="table-footer-text">
   <h5 class="sr-only">Chart details</h5>
     <dl>
-        
-        <dt>Source:</dt>
-        <dd>Statistics Faroe Islands, Faroese Environment Agency</dd>
         
 
         
@@ -960,8 +1974,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Metadata update </th>
+        <td>
           
+            <p>{“Total waste”=&gt;”20210211 09:00”, “Incineration”=&gt;”20210211 09:00”, “Landfill”=&gt;”20210211 09:00”, “Recycling”=&gt;”20210211 09:00”, “Extraordinarily polluting”=&gt;”20210211 09:00”}</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1524,455 +2549,6 @@ data-event-label="Change to indicator.sources tab"
 
 
 
-  <div class="row">
-  
-    
-    
-    <div class="col-md-6">
-      
-      
-        <h4>Source 1</h4>
-      
-      <table class="table metadata-content">
-  <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Organisation </th>
-        <td>
-          
-            <p>Statistics Faroe Islands</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Link to data source </th>
-        <td>
-          
-            
-            
-            
-            
-            
-              <a href="https://hagstova.fo/en" target="_blank">
-                Statistics Faroe Islands <span class="visuallyhidden">opens in a new window</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Contact details </th>
-        <td>
-          
-            <p>jogvanb@hagstova.fo</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </tbody>
-</table>
-
-    </div>
-    
-    
-    
-    <div class="col-md-6">
-      
-      
-        <h4>Source 2</h4>
-      
-      <table class="table metadata-content">
-  <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Organisation </th>
-        <td>
-          
-            <p>Faroese Environment Agency</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Link to data source </th>
-        <td>
-          
-            
-            
-            
-            
-            
-              <a href="https://www.us.fo" target="_blank">
-                Faroese Environment Agency <span class="visuallyhidden">opens in a new window</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </tbody>
-</table>
-
-    </div>
-    
-  </div>
-
 
             </article>
         </div>
@@ -2081,12 +2657,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20260327151338'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20260328090042'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20260327151338"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20260328090042"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

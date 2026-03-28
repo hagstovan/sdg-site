@@ -147,7 +147,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260327151338">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260328090042">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -450,7 +450,7 @@ data-event-label="high"
   data-country="data.faroeislands"
   data-charttitle="Total greenhouse gas emissions per year"
   data-charttitles="[]"
-  data-measurementunit="unit"
+  data-measurementunit="CO2 equivalent million tonnes"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -464,7 +464,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total greenhouse gas emissions per year&quot;,&quot;&quot;]},&quot;title&quot;:&quot;measure&quot;},{&quot;name&quot;:&quot;unit&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;CO2 equivalent million tonnes&quot;,&quot;&quot;]},&quot;title&quot;:&quot;unit&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total greenhouse gas emissions per year&quot;,&quot;&quot;]},&quot;title&quot;:&quot;measure&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;CO2 equivalent million tonnes&quot;,&quot;&quot;]},&quot;title&quot;:&quot;unit&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -495,15 +495,695 @@ data-event-label="high"
   <div id="datatables">
 
     
+    <a role="button" href="https://hagstovan.github.io/sdg-data/en/headline/13-2-2.csv" class="btn btn-primary btn-download" download="indicator_13-2-2.csv" tabindex="0" role="button">Download headline data (.csv)</a>
+    
     <a role="button" href="https://hagstovan.github.io/sdg-data/en/data/13-2-2.csv" class="btn btn-primary btn-download" download='indicator_13-2-2.csv' tabindex='0' role='button'>Download source data (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
 
     
-    <h3>No headline data available</h3>
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Total greenhouse gas emissions per year</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col">Units</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>1990</td>
+          
+          
+          
+          <td>0.81</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1991</td>
+          
+          
+          
+          <td>0.7849958619</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1992</td>
+          
+          
+          
+          <td>0.7748076529</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1993</td>
+          
+          
+          
+          <td>0.664053152</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1994</td>
+          
+          
+          
+          <td>0.6869505319</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1995</td>
+          
+          
+          
+          <td>0.6771349479</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1996</td>
+          
+          
+          
+          <td>0.6975039112</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1997</td>
+          
+          
+          
+          <td>0.6933330266</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1998</td>
+          
+          
+          
+          <td>0.7380318301</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>1999</td>
+          
+          
+          
+          <td>0.7695659016</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2000</td>
+          
+          
+          
+          <td>0.8089926671</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2001</td>
+          
+          
+          
+          <td>0.9861668727</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2002</td>
+          
+          
+          
+          <td>0.9374996677</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2003</td>
+          
+          
+          
+          <td>0.9431485469</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2004</td>
+          
+          
+          
+          <td>0.9465301583</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2005</td>
+          
+          
+          
+          <td>0.9452562156</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2006</td>
+          
+          
+          
+          <td>0.9323440662</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2007</td>
+          
+          
+          
+          <td>0.9597941287</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2008</td>
+          
+          
+          
+          <td>0.892391974</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>0.923754565</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>1.0008155866</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>0.8822221525</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>0.9744724478</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>0.9521964854</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>0.990432852</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>0.9698524729</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>0.9784196323</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>1.1491808533</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>1.2438474759</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>1.2931245261</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>1.3314961723</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>1.3390487367</td>
+          
+          
+          
+          <td>CO2 equivalent million tonnes</td>
+          
+          
+          
+          <td class="table-value">Total greenhouse gas emissions per year</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    
+    <p>Geographical Area: </p>
+    
+    
+    <p>Unit of Measurement: CO2 equivalent million tonnes</p>
+    
+    
+    <p>Footnote: </p>
+    
+  </div>
   
 
 </div>
@@ -607,9 +1287,6 @@ data-event-label="Change to Table tab"
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-        <dt>Source:</dt>
-        <dd>Statistics Faroe Islands, Faroese Environment Agency, Eionet</dd>
-        
 
         
 
@@ -679,9 +1356,6 @@ data-event-label="Change to Table tab"
 <div id="selectionTableFooter" class="table-footer-text">
   <h5 class="sr-only">Chart details</h5>
     <dl>
-        
-        <dt>Source:</dt>
-        <dd>Statistics Faroe Islands, Faroese Environment Agency, Eionet</dd>
         
 
         
@@ -940,8 +1614,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Metadata update </th>
+        <td>
           
+            <p>{“Total greenhouse gas emissions per year”=&gt;”20230822 09:00”}</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1504,672 +2189,6 @@ data-event-label="Change to indicator.sources tab"
 
 
 
-  <div class="row">
-  
-    
-    
-    <div class="col-md-6">
-      
-      
-        <h4>Source 1</h4>
-      
-      <table class="table metadata-content">
-  <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Organisation </th>
-        <td>
-          
-            <p>Statistics Faroe Islands</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Link to data source </th>
-        <td>
-          
-            
-            
-            
-            
-            
-              <a href="https://hagstova.fo/en" target="_blank">
-                Statistics Faroe Islands <span class="visuallyhidden">opens in a new window</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Contact details </th>
-        <td>
-          
-            <p>jogvanb@hagstova.fo</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </tbody>
-</table>
-
-    </div>
-    
-    
-    
-    <div class="col-md-6">
-      
-      
-        <h4>Source 2</h4>
-      
-      <table class="table metadata-content">
-  <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Organisation </th>
-        <td>
-          
-            <p>Faroese Environment Agency</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Link to data source </th>
-        <td>
-          
-            
-            
-            
-            
-            
-              <a href="https://www.us.fo/Default.aspx?ID=13804" target="_blank">
-                Faroese Environment Agency <span class="visuallyhidden">opens in a new window</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </tbody>
-</table>
-
-    </div>
-    
-    
-    
-    <div class="col-md-6">
-      
-      
-        <h4>Source 3</h4>
-      
-      <table class="table metadata-content">
-  <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Organisation </th>
-        <td>
-          
-            <p>Eionet</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Link to data source </th>
-        <td>
-          
-            
-            
-            
-            
-            
-              <a href="https://cdr.eionet.europa.eu/dk/Air_Emission_Inventories/Submission_UNFCCC/colylkoqa/envylkota/FRO_2022_2020_06042022_022606.xlsx" target="_blank">
-                Report to European Eionet <span class="visuallyhidden">opens in a new window</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </tbody>
-</table>
-
-    </div>
-    
-  </div>
-
 
             </article>
         </div>
@@ -2278,12 +2297,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20260327151338'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20260328090042'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20260327151338"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20260328090042"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

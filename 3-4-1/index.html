@@ -147,7 +147,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260327151338">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260328090042">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -438,6 +438,14 @@ data-event-label="high"
 
   
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    
+      Einans fólk millum 30 og 70 ára aldur eru tald við í hesi uppgerð.
+    
+  </div>
+</div>
+
 
   
 
@@ -450,7 +458,7 @@ data-event-label="high"
   data-country="data.faroeislands"
   data-charttitle="Deyð av hjarta-æðra-sjúkum, krabbameini, sukursjúku og kroniskum sjúkum í andaleiðini fyri hvørjar 100.000 íbúgvar"
   data-charttitles="[]"
-  data-measurementunit="eind"
+  data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -464,7 +472,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;unit&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Í tali&quot;,&quot;&quot;]},&quot;title&quot;:&quot;eind&quot;},{&quot;name&quot;:&quot;sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Menn&quot;,&quot;Kvinnur&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Kyn&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Tilsamans&quot;,&quot;Býur&quot;,&quot;Bygd&quot;,&quot;Sukursjúka&quot;,&quot;Kroniskar sjúkur í andaleiðini&quot;,&quot;&quot;]},&quot;title&quot;:&quot;mát&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Í tali&quot;,&quot;&quot;]},&quot;title&quot;:&quot;eind&quot;},{&quot;name&quot;:&quot;sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Menn&quot;,&quot;Kvinnur&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Kyn&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Tilsamans&quot;,&quot;Býur&quot;,&quot;Bygd&quot;,&quot;Sukursjúka&quot;,&quot;Kroniskar sjúkur í andaleiðini&quot;,&quot;&quot;]},&quot;title&quot;:&quot;mát&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -495,15 +503,1355 @@ data-event-label="high"
   <div id="datatables">
 
     
+    <a role="button" href="https://hagstovan.github.io/sdg-data/fo/headline/3-4-1.csv" class="btn btn-primary btn-download" download="indicator_3-4-1.csv" tabindex="0" role="button">Tak niður dátur til yvirskrift (.csv)</a>
+    
     <a role="button" href="https://hagstovan.github.io/sdg-data/fo/data/3-4-1.csv" class="btn btn-primary btn-download" download='indicator_3-4-1.csv' tabindex='0' role='button'>Tak niður keldudátur (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Tak niður keldudátur fyri sundurgreiningar (.csv)</p>
 
     
-    <h3>Ongar dátur tøkar til yvirskrift</h3>
+    <h3>Dátur til yvirskrift</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Deyð av hjarta-æðra-sjúkum, krabbameini, sukursjúku og kroniskum sjúkum í andaleiðini fyri hvørjar 100.000 íbúgvar</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col">Units</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>274.0351678465</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Tilsamans</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>74.7368639581</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Býur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>141.1696319209</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Bygd</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>29.0643359837</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Sukursjúka</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2009</td>
+          
+          
+          
+          <td>29.0643359837</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Kroniskar sjúkur í andaleiðini</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>210.9050307053</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Tilsamans</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>57.895498625</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Býur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>144.7387465625</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Bygd</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>4.1353927589</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Sukursjúka</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>4.1353927589</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Kroniskar sjúkur í andaleiðini</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>264.0754265437</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Tilsamans</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>66.0188566359</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Býur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>181.5518557488</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Bygd</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>8.2523570795</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Sukursjúka</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>8.2523570795</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Kroniskar sjúkur í andaleiðini</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>231.0278677365</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Tilsamans</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>90.7609480394</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Býur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>132.0159244209</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Bygd</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Sukursjúka</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>8.2509952763</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Kroniskar sjúkur í andaleiðini</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>272.6371447455</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Tilsamans</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>86.748182419</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Býur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>156.9729015202</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Bygd</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>4.1308658295</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Sukursjúka</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>24.7851949769</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Kroniskar sjúkur í andaleiðini</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>251.9047717371</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Tilsamans</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>74.3325555946</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Býur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>148.6651111891</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Bygd</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Sukursjúka</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>28.9071049534</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Kroniskar sjúkur í andaleiðini</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>221.8433539429</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Tilsamans</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>57.5149436148</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Býur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>135.5709385206</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Bygd</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Sukursjúka</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>28.7574718074</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Kroniskar sjúkur í andaleiðini</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>248.5535001222</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Tilsamans</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>65.1943606878</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Býur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>158.9112541765</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Bygd</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>16.298590172</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Sukursjúka</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>8.149295086</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Kroniskar sjúkur í andaleiðini</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>294.5151594618</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Tilsamans</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>84.7235390233</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Býur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>193.6538034817</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Bygd</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Sukursjúka</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>16.1378169568</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Kroniskar sjúkur í andaleiðini</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>238.9866964072</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Tilsamans</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>51.7804508882</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Býur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>163.3075758783</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Bygd</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Sukursjúka</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>23.8986696407</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Kroniskar sjúkur í andaleiðini</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>191.9874620433</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Tilsamans</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>54.8535605838</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Býur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>125.3795670487</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Bygd</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Sukursjúka</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>11.7543344108</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Kroniskar sjúkur í andaleiðini</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>127.3344651952</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Tilsamans</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>23.1517209446</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Býur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>88.7482636209</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Bygd</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Sukursjúka</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>15.4344806297</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Kroniskar sjúkur í andaleiðini</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>176.339799126</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Tilsamans</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>53.6686345166</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Býur</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>107.3372690332</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Bygd</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>0.0</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Sukursjúka</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>15.3338955762</td>
+          
+          
+          
+          <td>Í tali</td>
+          
+          
+          
+          <td class="table-value">Kroniskar sjúkur í andaleiðini</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    
+    <p>Landafrøðiligt øki: </p>
+    
+    
+    <p>Mátieind: </p>
+    
+    
+    <p>Fótnota: Einans fólk millum 30 og 70 ára aldur eru tald við í hesi uppgerð.</p>
+    
+  </div>
   
 
 </div>
@@ -607,9 +1955,6 @@ data-event-label="Change to Table tab"
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-        <dt>Kelda:</dt>
-        <dd>Hagstova Føroya, Landslæknin</dd>
-        
 
         
 
@@ -620,7 +1965,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Fótnota:</dt>
-        <dd>Einans fólk millum 30 og 70 ára aldur eru tald við í hesi uppgerð</dd>
+        <dd>Einans fólk millum 30 og 70 ára aldur eru tald við í hesi uppgerð.</dd>
         
 
         
@@ -683,9 +2028,6 @@ data-event-label="Change to Table tab"
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
-        <dt>Kelda:</dt>
-        <dd>Hagstova Føroya, Landslæknin</dd>
-        
 
         
 
@@ -696,7 +2038,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Fótnota:</dt>
-        <dd>Einans fólk millum 30 og 70 ára aldur eru tald við í hesi uppgerð</dd>
+        <dd>Einans fólk millum 30 og 70 ára aldur eru tald við í hesi uppgerð.</dd>
         
 
         
@@ -946,8 +2288,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Dagføring av metadátum </th>
+        <td>
           
+            <p>{“Tilsamans”=&gt;”20210211 09:00”, “Hjarta-æðra-sjúkur”=&gt;”20210211 09:00”, “Krabbamein”=&gt;”20210211 09:00”, “Sukursjúka”=&gt;”20210211 09:00”, “Kroniskar sjúkur í andaleiðini”=&gt;”20210211 09:00”}</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1510,455 +2863,6 @@ data-event-label="Change to indicator.sources tab"
 
 
 
-  <div class="row">
-  
-    
-    
-    <div class="col-md-6">
-      
-      
-        <h4>Kelda 1</h4>
-      
-      <table class="table metadata-content">
-  <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Stovnur </th>
-        <td>
-          
-            <p>Hagstova Føroya</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Leinki til dátukeldu </th>
-        <td>
-          
-            
-            
-            
-            
-            
-              <a href="https://www.hagstova.fo" target="_blank">
-                Hagstova Føroya <span class="visuallyhidden">letur upp í nýggjum vindeyga</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Samband </th>
-        <td>
-          
-            <p>jogvanb@hagstova.fo</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </tbody>
-</table>
-
-    </div>
-    
-    
-    
-    <div class="col-md-6">
-      
-      
-        <h4>Kelda 2</h4>
-      
-      <table class="table metadata-content">
-  <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Stovnur </th>
-        <td>
-          
-            <p>Landslæknin</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Leinki til dátukeldu </th>
-        <td>
-          
-            
-            
-            
-            
-            
-              <a href="https://landslaeknin.stps.dk/fo/" target="_blank">
-                Landslæknin <span class="visuallyhidden">letur upp í nýggjum vindeyga</span>
-              </a>
-            
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </tbody>
-</table>
-
-    </div>
-    
-  </div>
-
 
             </article>
         </div>
@@ -2067,12 +2971,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20260327151338'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20260328090042'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20260327151338"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20260328090042"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
