@@ -408,3 +408,7 @@ body.contrast-high .goal.reporting-status-item {
 body.contrast-high .goal-stats span.complete {
     background-color: white !important;
 }
+#selectionChartFooter dt::first-letter,
+#fields .variable-selector h5::first-letter {
+    text-transform: capitalize;
+}
