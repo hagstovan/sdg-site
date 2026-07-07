@@ -147,7 +147,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260706124025">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260707112603">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -354,7 +354,7 @@ layout-indicator-iframe
   data-graphtargetlines="[]"
   data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Proportion of population living below the national poverty line&quot;,&quot;&quot;]},&quot;title&quot;:&quot;measure&quot;},{&quot;name&quot;:&quot;region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Eysturoy region&quot;,&quot;Norðoyggjar region&quot;,&quot;Sandoy region&quot;,&quot;Streymoy region, north&quot;,&quot;Streymoy region, south&quot;,&quot;Suðuroy region&quot;,&quot;Vágar region&quot;,&quot;&quot;]},&quot;title&quot;:&quot;region&quot;},{&quot;name&quot;:&quot;sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Females&quot;,&quot;Males&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;age&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Age 0 - 17&quot;,&quot;Age 18 - 24&quot;,&quot;Age 25 - 54&quot;,&quot;Age 55 - 66&quot;,&quot;Age 67 + &quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;pct.&quot;,&quot;&quot;]},&quot;title&quot;:&quot;unit&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Proportion of population living below the national poverty line&quot;,&quot;&quot;]},&quot;title&quot;:&quot;measure&quot;},{&quot;name&quot;:&quot;region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Eysturoy region&quot;,&quot;Norðoyggjar region&quot;,&quot;Sandoy region&quot;,&quot;Streymoy region, north&quot;,&quot;Streymoy region, south&quot;,&quot;Suðuroy region&quot;,&quot;Vágar region&quot;,&quot;&quot;]},&quot;title&quot;:&quot;region&quot;},{&quot;name&quot;:&quot;sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Females&quot;,&quot;Males&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;age&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Age 0 - 17&quot;,&quot;Age 18 - 24&quot;,&quot;Age 25 - 54&quot;,&quot;Age 55 - 66&quot;,&quot;Age 67 + &quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;pct.&quot;,&quot;&quot;]},&quot;title&quot;:&quot;unit&quot;},{&quot;name&quot;:&quot;GeoCode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;GeoCode&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -410,7 +410,11 @@ layout-indicator-iframe
         
         
         
-        <th scope="col" class="table-value">Series</th>
+        <th scope="col">Series</th>
+        
+        
+        
+        <th scope="col" class="table-value">GeoCode</th>
         
         
       </thead>
@@ -431,7 +435,11 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value">Proportion of population living below the national poverty line</td>
+          <td>Proportion of population living below the national poverty line</td>
+          
+          
+          
+          <td class="table-value">TOTAL</td>
           
           
         </tr>
@@ -451,7 +459,11 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value">Proportion of population living below the national poverty line</td>
+          <td>Proportion of population living below the national poverty line</td>
+          
+          
+          
+          <td class="table-value">TOTAL</td>
           
           
         </tr>
@@ -471,7 +483,11 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value">Proportion of population living below the national poverty line</td>
+          <td>Proportion of population living below the national poverty line</td>
+          
+          
+          
+          <td class="table-value">TOTAL</td>
           
           
         </tr>
@@ -491,7 +507,11 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value">Proportion of population living below the national poverty line</td>
+          <td>Proportion of population living below the national poverty line</td>
+          
+          
+          
+          <td class="table-value">TOTAL</td>
           
           
         </tr>
@@ -511,7 +531,11 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value">Proportion of population living below the national poverty line</td>
+          <td>Proportion of population living below the national poverty line</td>
+          
+          
+          
+          <td class="table-value">TOTAL</td>
           
           
         </tr>
@@ -531,7 +555,11 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value">Proportion of population living below the national poverty line</td>
+          <td>Proportion of population living below the national poverty line</td>
+          
+          
+          
+          <td class="table-value">TOTAL</td>
           
           
         </tr>
@@ -551,7 +579,11 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value">Proportion of population living below the national poverty line</td>
+          <td>Proportion of population living below the national poverty line</td>
+          
+          
+          
+          <td class="table-value">TOTAL</td>
           
           
         </tr>
@@ -571,7 +603,11 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value">Proportion of population living below the national poverty line</td>
+          <td>Proportion of population living below the national poverty line</td>
+          
+          
+          
+          <td class="table-value">TOTAL</td>
           
           
         </tr>
@@ -591,7 +627,11 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value">Proportion of population living below the national poverty line</td>
+          <td>Proportion of population living below the national poverty line</td>
+          
+          
+          
+          <td class="table-value">TOTAL</td>
           
           
         </tr>
@@ -611,7 +651,11 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value">Proportion of population living below the national poverty line</td>
+          <td>Proportion of population living below the national poverty line</td>
+          
+          
+          
+          <td class="table-value">TOTAL</td>
           
           
         </tr>
@@ -631,7 +675,11 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value">Proportion of population living below the national poverty line</td>
+          <td>Proportion of population living below the national poverty line</td>
+          
+          
+          
+          <td class="table-value">TOTAL</td>
           
           
         </tr>
@@ -651,7 +699,11 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value">Proportion of population living below the national poverty line</td>
+          <td>Proportion of population living below the national poverty line</td>
+          
+          
+          
+          <td class="table-value">TOTAL</td>
           
           
         </tr>
@@ -671,7 +723,11 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value">Proportion of population living below the national poverty line</td>
+          <td>Proportion of population living below the national poverty line</td>
+          
+          
+          
+          <td class="table-value">TOTAL</td>
           
           
         </tr>
@@ -691,7 +747,11 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value">Proportion of population living below the national poverty line</td>
+          <td>Proportion of population living below the national poverty line</td>
+          
+          
+          
+          <td class="table-value">TOTAL</td>
           
           
         </tr>
@@ -711,7 +771,11 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value">Proportion of population living below the national poverty line</td>
+          <td>Proportion of population living below the national poverty line</td>
+          
+          
+          
+          <td class="table-value">TOTAL</td>
           
           
         </tr>
@@ -731,7 +795,11 @@ layout-indicator-iframe
           
           
           
-          <td class="table-value">Proportion of population living below the national poverty line</td>
+          <td>Proportion of population living below the national poverty line</td>
+          
+          
+          
+          <td class="table-value">TOTAL</td>
           
           
         </tr>
@@ -1884,12 +1952,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20260706124025'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20260707112603'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20260706124025"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20260707112603"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
