@@ -951,11 +951,11 @@
         },
         {
           "id": "8-9-2",
-          "title": "Employed persons in the tourism industries",
+          "title": "Arbeiðsvirkin í ferðavinnum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/8-9-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-10-1",
@@ -1279,7 +1279,7 @@
         },
         {
           "id": "11-5-3",
-          "title": "global_indicators.11-5-3-title",
+          "title": "(a) Skaðar á avgerandi undirstøðukervi og (b) tal av órógvum á grundleggjandi tænastur av volt av vanlukkum",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/11-5-3/",
@@ -1343,11 +1343,11 @@
         },
         {
           "id": "11-c-1",
-          "title": "Total official development assistance and other official flows in support of urban infrastructure or urban infrastructure projects, by sector",
+          "title": "Samlaður almennur menningarstuðul umframt onnur almenn fígging til býarkervi og verkætlanir um býarkervi , skift á geira",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/11-c-1/",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },

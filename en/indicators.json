@@ -955,7 +955,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site/en/8-9-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "8-10-1",
@@ -1279,7 +1279,7 @@
         },
         {
           "id": "11-5-3",
-          "title": "global_indicators.11-5-3-title",
+          "title": "(a) Damage to critical infrastructure and (b) number of disruptions to basic services, attributed to disasters",
           "description": "",
           "keywords": "",
           "href": "/sdg-site/en/11-5-3/",
@@ -1347,7 +1347,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdg-site/en/11-c-1/",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
