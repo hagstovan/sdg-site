@@ -147,7 +147,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260824090616">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260824123656">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -464,7 +464,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms&quot;,&quot;&quot;]},&quot;title&quot;:&quot;measure&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;pct.&quot;,&quot;&quot;]},&quot;title&quot;:&quot;unit&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -495,15 +495,115 @@ data-event-label="high"
   <div id="datatables">
 
     
+    <a role="button" href="https://hagstovan.github.io/sdg-data/en/headline/16-3-1.csv" class="btn btn-primary btn-download" download="indicator_16-3-1.csv" tabindex="0" role="button">Download headline data (.csv)</a>
+    
     <a role="button" href="https://hagstovan.github.io/sdg-data/en/data/16-3-1.csv" class="btn btn-primary btn-download" download='indicator_16-3-1.csv' tabindex='0' role='button'>Download source data (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
 
     
-    <h3>No headline data available</h3>
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col">Units</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>22.8411752743</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>5.6871449064</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>10.3403437359</td>
+          
+          
+          
+          <td>pct.</td>
+          
+          
+          
+          <td class="table-value">Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    
+    <p>Geographical Area: </p>
+    
+    
+    <p>Unit of Measurement: </p>
+    
+    
+    <p>Footnote: </p>
+    
+  </div>
   
 
 </div>
@@ -618,6 +718,44 @@ data-event-label="Change to Table tab"
         
 
         
+        
+        <dt
+          data-for-series=""
+          data-for-unit=""
+        >measure:</dt>
+        <dd
+          data-for-series=""
+          data-for-unit=""
+        >Source: Gallup World Poll survey conducted by Gallup Føroyar on behalf of the Council of Public Health.<br>Proportion of the respondents answering yes to the question: 'Have you been a victim of violence in the previous 12 months?'<br>The weighed estimates are used to calculate the percentage of reported violence.<br>Due to the relatively small number og victims of violence the uncertainty is significant. The numbers are, however, in good accordance with figures from 'The Women's House' where only a tiny fraction of the victims report or consider reporting the incidens to the police.</dd>
+        
+        <dt
+          data-for-series=""
+          data-for-unit=""
+        >year - 2013:</dt>
+        <dd
+          data-for-series=""
+          data-for-unit=""
+        >514 older than 15 years were surveyed</dd>
+        
+        <dt
+          data-for-series=""
+          data-for-unit=""
+        >year - 2017:</dt>
+        <dd
+          data-for-series=""
+          data-for-unit=""
+        >530 older than 15 years were surveyed</dd>
+        
+        <dt
+          data-for-series=""
+          data-for-unit=""
+        >year - 2020:</dt>
+        <dd
+          data-for-series=""
+          data-for-unit=""
+        >531 older than 17 years were surveyed</dd>
+        
+        
 
         
         
@@ -687,6 +825,44 @@ data-event-label="Change to Table tab"
 
         
 
+        
+        
+        <dt
+          data-for-series=""
+          data-for-unit=""
+        >measure:</dt>
+        <dd
+          data-for-series=""
+          data-for-unit=""
+        >Source: Gallup World Poll survey conducted by Gallup Føroyar on behalf of the Council of Public Health.<br>Proportion of the respondents answering yes to the question: 'Have you been a victim of violence in the previous 12 months?'<br>The weighed estimates are used to calculate the percentage of reported violence.<br>Due to the relatively small number og victims of violence the uncertainty is significant. The numbers are, however, in good accordance with figures from 'The Women's House' where only a tiny fraction of the victims report or consider reporting the incidens to the police.</dd>
+        
+        <dt
+          data-for-series=""
+          data-for-unit=""
+        >year - 2013:</dt>
+        <dd
+          data-for-series=""
+          data-for-unit=""
+        >514 older than 15 years were surveyed</dd>
+        
+        <dt
+          data-for-series=""
+          data-for-unit=""
+        >year - 2017:</dt>
+        <dd
+          data-for-series=""
+          data-for-unit=""
+        >530 older than 15 years were surveyed</dd>
+        
+        <dt
+          data-for-series=""
+          data-for-unit=""
+        >year - 2020:</dt>
+        <dd
+          data-for-series=""
+          data-for-unit=""
+        >531 older than 17 years were surveyed</dd>
+        
         
 
         
@@ -906,6 +1082,69 @@ data-event-label="Change to indicator.sources tab"
   
   
   
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Metadata update </th>
+        <td>
+          
+            <p>20210211 09:00</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data reporter </th>
+        <td>
+          
+            <p>Kári Holm Johannesen</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -954,43 +1193,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Unit of measure </th>
+        <td>
           
-      
-      
-      
-        
+            <p>unit<br />?</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
       
       
       
@@ -1014,6 +1229,54 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Data collection calendar </th>
+        <td>
+          
+            <p>20210426 09:00</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data release calendar </th>
+        <td>
+          
+            <p>A</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data providers </th>
+        <td>
+          
+            <p>The Council of Public Health and Statistics Faroe Islands: www.hagstova.fo/en</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -1034,28 +1297,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Comment and limitations </th>
+        <td>
           
-      
-      
-      
-        
+            <div id="symbolsNote"><h3>Symbols</h3><ul><li><span><b>-</b></span><span>Zero (not rounded)</span></li><li><span><b>0</b></span><span>Rounded to zero</span></li><li><span>&bull;</span><span>Not applicable</span></li><li><span>&bull;&bull;</span><span>Not available or too uncertain</span></li><li><span>&bull;&bull;&bull;</span><span>Not disclosed, confidentiality/privacy protected</span></li></ul></div>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
       
       
       
@@ -1350,6 +1604,23 @@ data-event-label="Change to indicator.sources tab"
       
         
           
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data release calendar </th>
+        <td>
+          
+            <p>Data on relevant SDG indicators are collected, compiled and sent back to countries for data review annually. Data are then reported to UN Statistics Division (UNSD) through the regular reporting channels annually.</p>
+<p>II quarter year n+1 (data for year n-1). For instance, data for the year 2023 are collected in III-IV quarter 2024 and released in II quarter 2025.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
   
   
   
@@ -1600,12 +1871,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20260824090616'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20260824123656'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20260824090616"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20260824123656"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

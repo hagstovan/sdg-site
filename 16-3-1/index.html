@@ -147,7 +147,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260824090616">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260824123656">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -464,7 +464,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Partur av harðskapsofrum undanfarnu 12 mánaðirnar, ið fráboðaðu einum skikkaðum myndugleika ella øðrum alment viðurkendum mátum at loysa ósemjur, at tey hava verið offur.&quot;,&quot;&quot;]},&quot;title&quot;:&quot;mát&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;%&quot;,&quot;&quot;]},&quot;title&quot;:&quot;eind&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
 >
@@ -495,15 +495,115 @@ data-event-label="high"
   <div id="datatables">
 
     
+    <a role="button" href="https://hagstovan.github.io/sdg-data/fo/headline/16-3-1.csv" class="btn btn-primary btn-download" download="indicator_16-3-1.csv" tabindex="0" role="button">Tak niður dátur til yvirskrift (.csv)</a>
+    
     <a role="button" href="https://hagstovan.github.io/sdg-data/fo/data/16-3-1.csv" class="btn btn-primary btn-download" download='indicator_16-3-1.csv' tabindex='0' role='button'>Tak niður keldudátur (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Tak niður keldudátur fyri sundurgreiningar (.csv)</p>
 
     
-    <h3>Ongar dátur tøkar til yvirskrift</h3>
+    <h3>Dátur til yvirskrift</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Partur av harðskapsofrum undanfarnu 12 mánaðirnar, ið fráboðaðu skikkaðum myndugleika ella øðrum alment viðurkendum ósemjuloysara, at tey hava verið offur</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col">Units</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>22.8411752743</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Partur av harðskapsofrum undanfarnu 12 mánaðirnar, ið fráboðaðu einum skikkaðum myndugleika ella øðrum alment viðurkendum mátum at loysa ósemjur, at tey hava verið offur.</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>5.6871449064</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Partur av harðskapsofrum undanfarnu 12 mánaðirnar, ið fráboðaðu einum skikkaðum myndugleika ella øðrum alment viðurkendum mátum at loysa ósemjur, at tey hava verið offur.</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>10.3403437359</td>
+          
+          
+          
+          <td>%</td>
+          
+          
+          
+          <td class="table-value">Partur av harðskapsofrum undanfarnu 12 mánaðirnar, ið fráboðaðu einum skikkaðum myndugleika ella øðrum alment viðurkendum mátum at loysa ósemjur, at tey hava verið offur.</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    
+    <p>Landafrøðiligt øki: </p>
+    
+    
+    <p>Mátieind: </p>
+    
+    
+    <p>Fótnota: </p>
+    
+  </div>
   
 
 </div>
@@ -618,6 +718,44 @@ data-event-label="Change to Table tab"
         
 
         
+        
+        <dt
+          data-for-series=""
+          data-for-unit=""
+        >mát:</dt>
+        <dd
+          data-for-series=""
+          data-for-unit=""
+        >Kelda: Gallup World Poll kanning, ið Gallup Føroyar gjørdi fyri Fólkaheilsuráðið.<br>Partur av fólkinum, ið svaraði ja til spurningin 'Hevur tú verið offur fyri harðskapi seinastu 12 mánaðirnar?'<br>Tølini eru vektað og sett í mun til fráboðað brot á revsilógina kap. 23, 24 og 25.<br>Av tí at lutfalsliga fá av teimum spurdu høvdu verið fyri harðskapi, er óvissan um upproknaðu tølini stór. Tølini samsvara tó væl við t.d. frágreiðingum frá Kvinnuhúsinum, har bert ein heilt lítil partur av harðskapsofrunum melda ella umhugsa at melda málið til løgregluna.</dd>
+        
+        <dt
+          data-for-series=""
+          data-for-unit=""
+        >ár - 2013:</dt>
+        <dd
+          data-for-series=""
+          data-for-unit=""
+        >514 eldri enn 15 ár vórðu spurd</dd>
+        
+        <dt
+          data-for-series=""
+          data-for-unit=""
+        >ár - 2017:</dt>
+        <dd
+          data-for-series=""
+          data-for-unit=""
+        >530 older than 15 years were surveyed</dd>
+        
+        <dt
+          data-for-series=""
+          data-for-unit=""
+        >ár - 2020:</dt>
+        <dd
+          data-for-series=""
+          data-for-unit=""
+        >531 eldri enn 17 ár vórðu spurd</dd>
+        
+        
 
         
         
@@ -687,6 +825,44 @@ data-event-label="Change to Table tab"
 
         
 
+        
+        
+        <dt
+          data-for-series=""
+          data-for-unit=""
+        >mát:</dt>
+        <dd
+          data-for-series=""
+          data-for-unit=""
+        >Kelda: Gallup World Poll kanning, ið Gallup Føroyar gjørdi fyri Fólkaheilsuráðið.<br>Partur av fólkinum, ið svaraði ja til spurningin 'Hevur tú verið offur fyri harðskapi seinastu 12 mánaðirnar?'<br>Tølini eru vektað og sett í mun til fráboðað brot á revsilógina kap. 23, 24 og 25.<br>Av tí at lutfalsliga fá av teimum spurdu høvdu verið fyri harðskapi, er óvissan um upproknaðu tølini stór. Tølini samsvara tó væl við t.d. frágreiðingum frá Kvinnuhúsinum, har bert ein heilt lítil partur av harðskapsofrunum melda ella umhugsa at melda málið til løgregluna.</dd>
+        
+        <dt
+          data-for-series=""
+          data-for-unit=""
+        >ár - 2013:</dt>
+        <dd
+          data-for-series=""
+          data-for-unit=""
+        >514 eldri enn 15 ár vórðu spurd</dd>
+        
+        <dt
+          data-for-series=""
+          data-for-unit=""
+        >ár - 2017:</dt>
+        <dd
+          data-for-series=""
+          data-for-unit=""
+        >530 older than 15 years were surveyed</dd>
+        
+        <dt
+          data-for-series=""
+          data-for-unit=""
+        >ár - 2020:</dt>
+        <dd
+          data-for-series=""
+          data-for-unit=""
+        >531 eldri enn 17 ár vórðu spurd</dd>
+        
         
 
         
@@ -906,6 +1082,69 @@ data-event-label="Change to indicator.sources tab"
   
   
   
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Dagføring av metadátum </th>
+        <td>
+          
+            <p>20210211 09:00</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Dátufráboðari </th>
+        <td>
+          
+            <p>Kári Holm Johannesen</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -954,43 +1193,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Eind fyri máti </th>
+        <td>
           
-      
-      
-      
-        
+            <p>eind<br />?</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
       
       
       
@@ -1014,6 +1229,54 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Dátuinnsavningarkalendari </th>
+        <td>
+          
+            <p>20210426 09:00</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Dátuútgávukalendari </th>
+        <td>
+          
+            <p>A</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Dátuveitarar </th>
+        <td>
+          
+            <p>Fólkaheilsuráðið og Hagstova Føroya: www.hagstova.fo</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -1034,28 +1297,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Viðmerkingar og avmarkingar </th>
+        <td>
           
-      
-      
-      
-        
+            <div id="symbolsNote"><h3>Tekn</h3><ul><li><span><b>-</b></span><span>Null (ikki rundað)</span></li><li><span><b>0</b></span><span>Rundað til null</span></li><li><span>&bull;</span><span>Kann ikki koma fyri</span></li><li><span>&bull;&bull;</span><span>Ikki til taks ella ikki álítandi</span></li><li><span>&bull;&bull;&bull;</span><span>Ikki upplýst, trúnaðarvart</span></li></ul></div>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
       
       
       
@@ -1350,6 +1604,23 @@ data-event-label="Change to indicator.sources tab"
       
         
           
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Dátuútgávukalendari </th>
+        <td>
+          
+            <p>Data on relevant SDG indicators are collected, compiled and sent back to countries for data review annually. Data are then reported to UN Statistics Division (UNSD) through the regular reporting channels annually.</p>
+<p>II quarter year n+1 (data for year n-1). For instance, data for the year 2023 are collected in III-IV quarter 2024 and released in II quarter 2025.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
   
   
   
@@ -1600,12 +1871,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20260824090616'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20260824123656'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20260824090616"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20260824123656"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
