@@ -147,7 +147,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260825090115">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20260826090316">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -466,7 +466,7 @@ data-event-label="high"
   data-indicatordownloads="null"
   data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Ár&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Útreiðslur til gransking og menning (GERD)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;mát&quot;},{&quot;name&quot;:&quot;Performance sector&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Vinnufeløg&quot;,&quot;Almenn fyrisiting og tænasta&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Fremjandi geiri&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;% av BTÚ&quot;,&quot;&quot;]},&quot;title&quot;:&quot;eind&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
-  data-precision="[]"
+  data-precision="[{&quot;decimals&quot;:2}]"
 >
   
   <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
@@ -1122,7 +1122,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Eind fyri máti </th>
         <td>
           
-            <p>eind<br />% av BTÚ</p>
+            <p>eind<br /><br />% av BTÚ</p>
 
           
         </td>
@@ -1226,7 +1226,8 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Viðmerkingar og avmarkingar </th>
         <td>
           
-            <p>Útreiðslur til G&amp;M, sum %-partur av bruttotjóðarúrtøkuni í ársins prísum<br />BTÚ er mát fyri virðið á framleiðsluni í landinum eitt ávíst tíðarskeið. Framleiðslan er sett saman av tilfarsnýtslu, arbeiðsmegi og framleiðslutólum, og burtur úr henni fáast vørur og tænastur av øllum slag.<br />BTÚ gjørt upp í ársins prísum merkir, at BTÚ er mátað í teimum prísum, sum keypt og selt er fyri í ávísa árinum. Hesir prísir verða eisini kallaðir marknaðarprísir.</p>
+            <div id="symbolsNote"><h3>Tekn</h3><ul><li><span><b>-</b></span><span>Null (ikki rundað)</span></li><li><span><b>0</b></span><span>Rundað til null</span></li><li><span>&bull;</span><span>Kann ikki koma fyri</span></li><li><span>&bull;&bull;</span><span>Ikki til taks ella ikki álítandi</span></li><li><span>&bull;&bull;&bull;</span><span>Ikki upplýst, trúnaðarvart</span></li></ul></div>
+<p><br /><b>Útreiðslur til gransking og menning (GERD):</b><br />GERD er samlaðu innlendis útreiðslurnar til gransking og menning (en: gross domestic expenditure on R&amp;D). GERD - serliga GERD, sum %-partur av BTÚ - er høvuðsávísin fyri altjóða samanbering av gransking og menning<br />GERD fevnir um samanløgdu útreiðslurnar fyri alla gransking og menning, ið er framd innanlands í ávísum tilvísingarskeiði. T.e. allar útreiðslur fyri gransking og menning, ið er framd í teimum fýra geirunum, eisini við útlendskari fígging (frá uttanlandsgeiranum). Hinvegin fevnir GERD ikki um G&amp;M, ið er framd uttanlands, hóast hendan kann vera framd av føroyskum granskarum ella við føroyskari fígging.<br />Einans gransking og menning, ið er fram innanveggja (en: intramural), tað vil siga av eindini sjálvari er tald við. Fígging og keyp av gransking og menning (en: funding for and extramural R&amp;D), verður ikki tald við. Soleiðis verur tryggja at onki verður talt við tvær ferðir.<br /><br /><b>Háttalag: </b><br />Hagtølini eru gjørd í samsvari við altjóða ásetingum hjá ST (Frascati hondbókin). Hetta tryggjar, at tølini kunnu samanberast við samsvarandi hagtøl úr øðrum londum.<br />Dáturnar eru savnaðar við eini spurnakanninging, ið er send øllum fyritøkum og og stovnum í Føroyum, ið fremja gransking og menning. Henda kanning verður gjørd árliga.<br /><br /><b>Gransking og menning </b><br />Gransking og menning á royndarstigi (G&amp;M) (en: research and experimental development) er skapandi og skipað arbeiði, hvørs endamál er at skapa nýggja vitan og at finna nýggjar hættir at brúka tøka vitan.<br />Allar fimm høvuðstreytir skulu lúkast, fyri at virksemi skal metast at vera gransking og menning á royndarstigi:<br />1. Nýtt: miðar eftir at skapa nýggja vitan.<br />2. Skapandi: grundað á nýggj hugtøk, uppskot ella vísindalig ætl (hypotesur). Sostatt eru regluligar mannagongdir sum t.d. dagføringar og viðlíkahald av ritbúnað ikki G&amp;M-virksemi.<br />3. Óvist: tá ið farið verður undir eina G&amp;M-verkætlan, ber ikki til at gera greiðar niðurstøður viðvíkjandi úrsliti ella kostnaði frammanundan.<br />4. Skipað: verður útint á ein skipaðan hátt, har bæði tilgongd (en: process) og úrslit verða skrásett. Verkætlanin skal hava eitt greitt endamál og fígging skal vera eyðmerkt og tøk.<br />5. Endurskapan: verkætlanin skal vera skjalfest til egna ella almenna nýtslu, soleiðis at hon møguliga kann endurtakast av øðrum granskarum og geva sama úrslit.<br /><br />Útreiðslur til G&amp;M, sum %-partur av bruttotjóðarúrtøkuni í ársins prísum<br />BTÚ er mát fyri virðið á framleiðsluni í landinum eitt ávíst tíðarskeið. Framleiðslan er sett saman av tilfarsnýtslu, arbeiðsmegi og framleiðslutólum, og burtur úr henni fáast vørur og tænastur av øllum slag.<br />BTÚ gjørt upp í ársins prísum merkir, at BTÚ er mátað í teimum prísum, sum keypt og selt er fyri í ávísa árinum. Hesir prísir verða eisini kallaðir marknaðarprísir.</p>
 
           
         </td>
@@ -1790,12 +1791,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20260825090115'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20260826090316'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20260825090115"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20260826090316"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
