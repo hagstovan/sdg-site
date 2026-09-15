@@ -74,7 +74,7 @@ email_contacts:
   questions: hagstova@hagstova.fo
   suggestions: hagstova@hagstova.fo
   functional: hagstova@hagstova.fo
-environment: staging
+environment: production
 favicons: favicon.io
 footer_language_toggle: none
 footer_menu:
@@ -135,15 +135,15 @@ hide_empty_metadata: true
 hide_single_series: true
 hide_single_unit: true
 indicator_config_form:
-  enabled: true
+  enabled: false
   dropdowns: []
   repository_link: /tree/develop/indicator-config
   translation_link: ''
 indicator_data_form:
-  enabled: true
+  enabled: false
   repository_link: /tree/develop/data
 indicator_metadata_form:
-  enabled: true
+  enabled: false
   dropdowns: []
   repository_link: /tree/develop/meta
   translation_link: ''
@@ -245,7 +245,7 @@ search_index_boost: []
 search_index_extra_fields: []
 series_toggle: true
 site_config_form:
-  enabled: true
+  enabled: false
   dropdowns: []
   repository_link: /tree/develop/_data
   translation_link: ''
