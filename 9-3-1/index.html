@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20261019130107">
+        <link rel="stylesheet" href="/sdg-site/assets/css/style.css?v=20261019140602">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -1345,90 +1345,46 @@ data-event-label="Change to Table tab"
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
     
-    
-        
-        
-        
-        
         <li role="presentation" class="nav-item">
-            <button
-                type="button"
-                class="nav-link active"
-                data-bs-toggle="tab"
-                id="tab-national"
-                data-bs-target="#national"
-                aria-controls="national"
-                role="tab"
-                data-on="click"
+    <button type="button" class="nav-link active" data-bs-toggle="tab" id="tab-national" data-bs-target="#national" aria-controls="national" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
-data-event-label="Change to indicator.national_metadata tab"
+data-event-label="Change to National Metadata tab"
+>Innlendis metadátur</button>
+</li>
 
-            >Innlendis metadátur</button>
-        </li>
-    
-        
-        
-        
-        
-        <li role="presentation" class="nav-item">
-            <button
-                type="button"
-                class="nav-link "
-                data-bs-toggle="tab"
-                id="tab-global"
-                data-bs-target="#global"
-                aria-controls="global"
-                role="tab"
-                data-on="click"
+<li role="presentation" class="nav-item">
+    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-global" data-bs-target="#global" aria-controls="global" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
-data-event-label="Change to indicator.global_metadata tab"
+data-event-label="Change to Global Metadata tab"
+>Altjóða metadátur</button>
+</li>
 
-            >Altjóða metadátur</button>
-        </li>
-    
-        
-        
-        
-        
-        <li role="presentation" class="nav-item">
-            <button
-                type="button"
-                class="nav-link "
-                data-bs-toggle="tab"
-                id="tab-sources"
-                data-bs-target="#sources"
-                aria-controls="sources"
-                role="tab"
-                data-on="click"
+<li role="presentation" class="nav-item">
+    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-sources" data-bs-target="#sources" aria-controls="sources" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
-data-event-label="Change to indicator.sources tab"
-
-            >Keldur</button>
-        </li>
-    
+data-event-label="Change to Sources tab"
+>Keldur</button>
+</li>
+  
     
     
 </ul>
 
 <div class="tab-content">
     
-        
-        
-        
-        
-        
-        
-        
-        
-        
         <div role="tabpanel" class="tab-pane active" id="national">
-            <article>
-                <p>Henda talvan vísir metadátur fyri tann ávísan, ið er tøkur úr Føroyar hagtølum, ið liggur næst upp at altjóða SDG-ávísanum. Gev gætur, at sjálvt tá altjóða SDG-ávísin er fult tøkur úr Faroese hagtølum, eigur at verða hugt í hesa talva eftir kunning um innlendis háttalag og aðrar upplýsingar um serstakar Faroese metadátur.</p>
-
-                <table class="table metadata-content">
+    <!-- National Metadata -->
+    <div>
+        <article>
+            <p>
+                
+                
+                Henda talvan vísir metadátur fyri tann ávísan, ið er tøkur úr Føroyar hagtølum, ið liggur næst upp at altjóða SDG-ávísanum. Gev gætur, at sjálvt tá altjóða SDG-ávísin er fult tøkur úr Faroese hagtølum, eigur at verða hugt í hesa talva eftir kunning um innlendis háttalag og aðrar upplýsingar um serstakar Faroese metadátur.
+            </p>
+            <table class="table metadata-content">
   <tbody>
   
   
@@ -1811,22 +1767,15 @@ data-event-label="Change to indicator.sources tab"
   </tbody>
 </table>
 
-            </article>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div role="tabpanel" class="tab-pane " id="global">
-            <article>
-                <p>Henda talvan kunnar um metadáturnar, ið eru ásettar av Hagfrøðinevndini hjá ST. <a href="https://unstats.un.org/sdgs/metadata/">Fullfíggjaðar altjóða metadátur</a> frá Hagfrøðistovninum hjá ST.</p>
-
-                <table class="table metadata-content">
+        </article>
+    </div>
+</div>
+<div role="tabpanel" class="tab-pane" id="global">
+    <!-- Global Metadata -->
+    <div>
+        <article>
+            <p>Henda talvan kunnar um metadáturnar, ið eru ásettar av Hagfrøðinevndini hjá ST. <a href="https://unstats.un.org/sdgs/metadata/">Fullfíggjaðar altjóða metadátur</a> frá Hagfrøðistovninum hjá ST.</p>
+            <table class="table metadata-content">
   <tbody>
   
       
@@ -2098,29 +2047,17 @@ data-event-label="Change to indicator.sources tab"
   </tbody>
 </table>
 
-            </article>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div role="tabpanel" class="tab-pane " id="sources">
-            <article>
-                
-                <!-- Count the non-empty sources (up to 5) -->
+        </article>
+    </div>
+</div>
+<div role="tabpanel" class="tab-pane" id="sources">
+    <!-- Count the non-empty sources (up to 5) -->
 
 
 
 
 
-            </article>
-        </div>
-        
+</div>
     
     
 </div>
@@ -2197,12 +2134,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Leita';</script>
 
-<script src='/sdg-site/assets/js/sdg.js?v=20261019130107'></script>
+<script src='/sdg-site/assets/js/sdg.js?v=20261019140602'></script>
 
 
     
     
-    <script src="/sdg-site/assets/js/custom.js?v=20261019130107"></script><script>
+    <script src="/sdg-site/assets/js/custom.js?v=20261019140602"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
