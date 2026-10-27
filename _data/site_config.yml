@@ -208,7 +208,7 @@ _edit_url:
 _tabs:
   - scope: national
     title: indicator.national_metadata
-    description: data.national_metadata_blurb
+    description: indicator.national_metadata_blurb
   - scope: global
     title: indicator.global_metadata
     description: indicator.global_metadata_blurb
